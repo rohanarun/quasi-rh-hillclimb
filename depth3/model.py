@@ -13,7 +13,11 @@ Names follow the Lean definitions; the Lean name is given in each docstring.
 from fractions import Fraction as Q
 
 # ---------------------------------------------------------------- constants
-BETA = Q(10499, 12000)                    # SlotPrice.betaBound
+import os as _os
+# SlotPrice.betaBound: the prior bound on the Hecke zero supremum that the slot price uses.
+# PR #67/#68 use Levy's 10499/12000; QRH_BETA overrides it (e.g. with PR #68's own proved
+# 8748087/10^7, see certify_gao_depth.py --five-beta / --six-beta).
+BETA = Q(_os.environ.get("QRH_BETA", "10499/12000"))
 KAPPA = 2 * BETA - 1                      # SlotPrice.slotPrice
 UNIT = Q(1, 10**8)                        # Slacks.allowanceUnit
 ALPHA = UNIT                              # lowReserveWeight

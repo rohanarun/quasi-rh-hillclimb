@@ -11,10 +11,20 @@ that PR #68's Lean imposes on every stage (`RegionalStage` and `FixedStages.stag
 where stage j's lam is the first-step plane slope for j = 0 and 6 k_{j-1} for j >= 1.
 
     python certify_gao_depth.py --pr68      # PR #68's own five stages (port check)
-    python certify_gao_depth.py --six | --seven | --eight
+    python certify_gao_depth.py --six | --six-k8 --kcap 8 | --eight-k12 --kcap 12
+    python certify_gao_depth.py --five-beta | --six-beta   # slot priced with PR #68's own beta
 """
+import os
 import sys
 from fractions import Fraction as Q
+
+# --five-beta / --six-beta re-price the slot with PR #68's own proved Hecke bound
+# beta <= 8748087/10^7 (ChosenAffine.lean, beta_le_theta_of_chosen_affine) instead of
+# Levy's 10499/12000. model.py reads QRH_BETA at import, so set it before importing.
+BETA_PR68 = "8748087/10000000"
+if any(a in sys.argv for a in ("--five-beta", "--six-beta")):
+    os.environ["QRH_BETA"] = BETA_PR68
+
 import certify_depth3 as C
 from model import Chain, KAPPA, amp_ratio
 
@@ -30,6 +40,10 @@ PTS = {
                   Q(73363, 100000)), Q(4041339, 100000000), Q(874807729, 10**9)),
     "--eight-k12": ((Q(25521, 40000), Q(669447, 10**6), Q(679457, 10**6), Q(689971, 10**6), Q(701021, 10**6),
                      Q(356297, 500000), Q(4529, 6250), Q(737081, 10**6)), Q(2022929, 50000000), Q(874806549, 10**9)),
+    "--five-beta": ((Q(319011, 500000), Q(135293, 200000), Q(173433, 250000), Q(355831, 500000), Q(365141, 500000)),
+                    Q(4038199, 10**8), Q(874808544, 10**9)),
+    "--six-beta": ((Q(638023, 10**6), Q(666019, 10**6), Q(682021, 10**6), Q(139673, 200000), Q(715059, 10**6),
+                    Q(732119, 10**6)), Q(505021, 12500000), Q(874807887, 10**9)),
     "--pr68": ((Q(127604383, 200000000), Q(676506091, 10**9), Q(693781289, 10**9), Q(142343339, 200000000),
                 Q(730301837, 10**9)), None, Q(8748087, 10**7)),
 }

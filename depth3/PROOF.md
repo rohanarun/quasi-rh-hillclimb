@@ -300,6 +300,40 @@ certificates are regenerated for the new constants. Nothing else in PR #68 is sp
 five stages as far as we read it, but we have not built it; this is not Lean-verified.
 The K ≤ 8 and K ≤ 12 rows additionally need PR #68's ratio cap re-bracketed.
 
+## Update 3: re-pricing the slot with PR #68's own β, θ ≤ 0.874807887 (six stages)
+
+The slot price of the whole chain is κ = 2·betaBound − 1 (`Cycle63/Optimization/SlotPrice.lean`
+l. 15–20), and betaBound is still Levy's 10499/12000 ≈ 0.8749167 (`Cycle63/Assembly/Prior.lean`
+l. 13, from `WeightedQRH.beta_le_theta`). PR #68 itself proves the sharper Hecke bound
+β ≤ 0.8748087 for the same family (`beta_le_theta_of_chosen_affine`,
+`Research/RecursiveAffine/Endpoint/Cycle63/Assembly/ChosenAffine.lean` l. 33). Using it as the
+prior bound is not circular: it is an earlier, already proved theorem, and the argument stays a
+contradiction under θ < β ≤ betaBound.
+
+With betaBound = 8748087/10⁷ the slot price becomes κ = 0.7496174 (still in `slotPrice_mem`'s
+range 37/50 < κ ≤ 3/4), and every stage keeps λ ≤ 6κ and PR #68's other per-stage caps
+(amplifier ratio ≤ 7, λ ≤ 5):
+
+| point | claimed θ | below PR #68 | `certify_gao_depth.py` |
+|---|---|---|---|
+| 5 stages (PR #68's structure, new κ) | 874808544/10⁹ | 1.56·10⁻⁷ | `--five-beta` 78/78 |
+| 6 stages, new κ | **874807887/10⁹** | 8.13·10⁻⁷ | `--six-beta` 88/88 |
+
+- 5 stages: q = 319011/500000, 135293/200000, 173433/250000, 355831/500000, 365141/500000;
+  s = 4038199/10⁸.
+- 6 stages: q = 638023/10⁶, 666019/10⁶, 682021/10⁶, 139673/200000, 715059/10⁶, 732119/10⁶;
+  s = 505021/12500000.
+- Iterating (feeding the new θ back in as β) moves θ by about 2·10⁻¹⁰ (dθ/dβ ≈ 1.2·10⁻³).
+
+**What a Lean build needs on top of Update 2:** PR #68's `Main.lean` exports only the Dirichlet
+theorem, so the Hecke bound `beta_le_theta_of_chosen_affine` has to be exported; `betaBound`
+changes; and the literal κ = 4499/6000 in `Geometry/Coordinates.lean` and the 38
+`Geometry/Certificate*.lean` LP certificates have to be regenerated. The five-stage point needs
+no new stage, only these constant changes. Not Lean-verified.
+
+`model.py` reads the prior bound from `QRH_BETA` (default 10499/12000, unchanged); the
+`--five-beta` / `--six-beta` modes set it.
+
 ## What is checked here, and how
 
 ```

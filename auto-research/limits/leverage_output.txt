@@ -1,0 +1,21 @@
+PR #68 five stages, re-solved: θ = 0.8748086741
+
+-- inputs other than the row count (1% changes)
+moment gain half_gain +1%                                      θ = 0.8748086825  gain -8.42e-09
+inverse/plain caps cap_unit +1%                                θ = 0.8748086778  gain -3.68e-09
+plain capacity cost 3/4 -> 0.74                                θ = 0.8748086789  gain -4.82e-09
+
+-- the unmarked row-count exponent rho(δ) = 1 - 10δ/(3(5-2δ))
+10/3 coefficient +1%                                           θ = 0.8747919143  gain +1.68e-05
+10/3 coefficient +2%                                           θ = 0.8747745377  gain +3.41e-05
+10/3 coefficient +5%                                           θ = 0.8747188688  gain +8.98e-05
+10/3 coefficient +10%                                          θ = 0.8746151783  gain +1.93e-04
+
+-- what-ifs for the long estimate's slope alpha = 5/6 (speculative; see large_values.md)
+alpha = 0.82                                                   θ = 0.8747986705  gain +1.00e-05
+alpha = 0.80                                                   θ = 0.8747825295  gain +2.61e-05
+alpha = 0.78                                                   θ = 0.8747648993  gain +4.38e-05
+alpha = 0.75                                                   θ = 0.8747353074  gain +7.34e-05
+alpha = 0.72                                                   θ = 0.8747027477  gain +1.06e-04
+alpha = 0.70                                                   θ = 0.8746817400  gain +1.27e-04
+density-hypothesis analogue rho = 1 - δ (floor of this detector) θ = 0.8745536427  gain +2.55e-04  (first junction below 3/5: outside the verified range)

@@ -16,6 +16,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
+| Constructive frequency/supply extension | With a strict endpoint margin and 1/2 ≤ h < 1, supply above 7/37 extends iff 37ℓ > 7h; [exact lemma, slot construction and scope](auto-research/frequency-extension.md). No new endpoint; `certify.py` retains h < 5ℓ. |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
 The original hill-climb results are conditional on the preprint's 7/8 theorem. The separately submitted source-moment manuscript states an unconditional theorem and records its distinct verification scope. See `README.md` and `AUDIT_SUMMARY.md`.
@@ -55,6 +56,8 @@ Known results (see `README.md`): the binding obstruction at large scale is the *
 1. A witness or saving for floor-bin rows.
 2. A sharper low estimate than Z^{l_x/2 + b/12}, or a probe where M + ℓ > 1 is allowed. The completed-row norm lemma is what forbids it now (`AUDIT_SUMMARY.md`, item 2).
 3. A better row count R_*(δ, x) near δ ≈ 0.39, x = 1/2, which is where the endpoint binds.
+
+The [constructive extension lemma](auto-research/frequency-extension.md) replaces the fixed `ℓ/d > 1/5` reserve by an explicit positive gap above `7/37` in the selected high-row argument. It supplies a rational extension width and a finite even slot count for any supplied positive mesh thresholds. Wider-budget applications must retain the other analytic and exponent constraints and include capacity allowances in the endpoint margin; the original certifier remains conservative.
 
 A structural idea is only a **proposal** until the changed lemma is proved. Write it up in `auto-research/proposals/` with:
 

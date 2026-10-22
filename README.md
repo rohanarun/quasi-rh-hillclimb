@@ -121,6 +121,7 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 ## What is checked, and how
 
+- **Constructive frequency/supply lemma** ([proof and source audit](auto-research/frequency-extension.md), `python auto-research/certify_frequency_extension.py`): with a strict high-endpoint margin and 1/2 ≤ h < 1, a positive extension preserving prime supply above 7/37 exists exactly when 37ℓ > 7h. The certificate gives explicit extension and even-slot parameters and a frozen-budget witness excluded by h < 5ℓ. This proves a relaxation of the frequency/supply argument, not a new endpoint; the existing certifier retains its conservative check.
 - **Exactly** (`certify.py`, rational arithmetic, about 1 second):
   - the adaptive endpoint inequality, via Bernstein positivity on 18 boxes;
   - every other inequality of the final section;

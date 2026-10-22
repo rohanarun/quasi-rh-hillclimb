@@ -22,7 +22,7 @@ ax = fig.add_axes([0.04, 0.16, 0.38, 0.62], facecolor=SURF)
 ax.set_xlim(0.49, 1.01); ax.set_ylim(0, 1)
 ax.axvspan(7/8, 1.0, ymin=0.38, ymax=0.62, color=BLUE_LT, lw=0)
 ax.hlines(0.5, 0.5, 7/8, color=INK2, lw=1)
-marks = [(0.5, "RH  1/2", GRAY, "below", "left"), (0.864, "ceiling with perfect\ninputs ≈ 0.864", GRAY, "above", "right"),
+marks = [(0.5, "RH  1/2", GRAY, "below", "left"), (float(Fr(1573, 1818)), "ideal low, h < 5ℓ:\nσ₀ > 0.865236…", GRAY, "above", "right"),
          (7/8, "preprint 7/8 + ours", BLUE, "below", "right"), (11/12, "Part I\n11/12", GRAY, "above", "left"),
          (1.0, "", GRAY, "below", "right")]
 for x, lab, c, pos, ha in marks:
@@ -34,7 +34,7 @@ ax.text(0.9583, 0.5, "zero-\nfree", ha="center", va="center", fontsize=9.5, colo
 ax.set_yticks([]); ax.set_xticks([0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
 for s in ("left", "right", "top"): ax.spines[s].set_visible(False)
 ax.spines["bottom"].set_color(GRID); ax.set_xlabel("Re s", color=INK2)
-ax.set_title("Where the boundary sits (the gain is too small to see)", loc="left", fontsize=12.5, weight="semibold", pad=10)
+ax.set_title("Boundary on the full scale", loc="left", fontsize=12.5, weight="semibold", pad=10)
 
 # ---------- right: gain below 7/8 ----------
 bx = fig.add_axes([0.66, 0.16, 0.31, 0.62], facecolor=SURF)

@@ -94,6 +94,8 @@ applying the edits listed in `AUDIT_SUMMARY.md`. This point is about 99% of the 
 
 ![The original conditional improvement past 7/8](graphs/improvement.png)
 
+The chart's ideal-low floor-bin bound retains `h < 5ℓ`; see the [exact assumptions and proof](auto-research/floor-bin-obstruction.md).
+
 ## Separate track: a third affine level for the Lean tracker (conditional)
 
 The accepted record on the [QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker) is Zhongpai Gao's PR #68, θ = 8748087/10000000 = 0.8748087. ArviFoxy's earlier PR #67 gives θ = 174963413/200000000 ≈ 0.874817065, already well below the conditional bound above. [`depth3/`](depth3/PROOF.md) extends PR #67's two affine levels to three and gets **θ ≤ 874812431/10⁹ ≈ 0.874812431**, about 4.6·10⁻⁶ lower, a fourth level gets **θ ≤ 0.874810282** (6.8·10⁻⁶ below PR #67), and re-optimising with the branch-D room held at the certifier threshold gets **θ ≤ 0.874810187** at four levels and **θ ≤ 0.874809963** at seven (7.1·10⁻⁶ below PR #67). On top of tracker PR #68 (Lean-proved 0.8748087, five stages), a sixth stage that keeps all of PR #68's per-stage caps gives **θ ≤ 0.874807999** (`python depth3/certify_gao_depth.py --six`), and eight stages with a larger ratio cap give 0.874806549. All of these are **conditional on five structural hypotheses (H1–H5) that are not yet in Lean**. The arithmetic is certified exactly (`python depth3/certify_depth3.py`, `--four`, `--four-tight`, `--seven`; the same code reproduces PR #67's own constants). It is not a tracker record until the full proof checks in Lean.
@@ -113,11 +115,12 @@ The current comparison chart and PR verification table are shown in [Progress an
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
 2. **The preprint's constants are near-optimal.** The binding inequality is Lemma *balanced-endpoint*. Its true slack is about 2.3·10⁻⁴ (the paper certifies 1.1·10⁻⁴). The edge of feasibility is ℓ ≈ 1/6 + 1.717·10⁻⁴.
 3. **M + ℓ = 1 is the right choice.** Freeing M gives σ₀ = 5/6 + M/12 − ℓ/6. The most efficient direction needs M + ℓ > 1, and the completed-row norm lemma rules that out.
-4. **Ceiling of the architecture.** Keep the other structural choices frozen: the detector floor at 51/100, the contour at Re z = 17/50, and the probe scale relations. Then:
-   - perfect row counts give σ₀ ≥ 167/192 ≈ 0.8698;
-   - a perfect additive large sieve gives about 0.864.
+4. **Exact floor-bin obstructions.** Keep the detector floor at 51/100, its count exponent R = 1, the worst allowed q = 1/100, and the probe scale relations. Regardless of improvements to other row counts:
+   - the original low estimate and b > 0 force σ₀ > 167/192 ≈ 0.869792;
+   - hypothetically removing the low estimate's b/12 loss changes the boundary to σ₀ = 1 − h/6. Retaining the extension rule h < 5ℓ then forces **σ₀ > 1573/1818 ≈ 0.865237**;
+   - dropping that extension rule and retaining only ℓ/h > 7/37 instead gives the weaker necessary bound **σ₀ > 11513/13326 ≈ 0.863950**.
 
-   The obstruction is the floor bin, not the moment estimates.
+   The earlier ≈ 0.864 ceiling did not specify this distinction. With h < 5ℓ retained, targeting σ₀ = 0.864 even with the ideal low estimate needs a floor-row power saving ρ > 281/51000 in R = 1 − ρ. These are necessary bounds for explicitly relaxed budgets, not attained zero-free endpoints or proofs of the hypothetical low estimate. See the [exact proof, source lines and certificate](auto-research/floor-bin-obstruction.md).
 
 ## What is checked, and how
 

@@ -14,7 +14,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
-| Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
+| Floor-bin obstruction with ideal low estimate and h < 5ℓ retained | σ₀ > 1573/1818 ≈ 0.865237; [exact necessary bound](auto-research/floor-bin-obstruction.md), not an attained endpoint |
+| Weaker supply-only relaxation of that obstruction | σ₀ > 11513/13326 ≈ 0.863950 when h < 5ℓ is dropped and only ℓ/h > 7/37 is retained; same [proof and scope](auto-research/floor-bin-obstruction.md) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
@@ -55,6 +56,8 @@ Known results (see `README.md`): the binding obstruction at large scale is the *
 1. A witness or saving for floor-bin rows.
 2. A sharper low estimate than Z^{l_x/2 + b/12}, or a probe where M + ℓ > 1 is allowed. The completed-row norm lemma is what forbids it now (`AUDIT_SUMMARY.md`, item 2).
 3. A better row count R_*(δ, x) near δ ≈ 0.39, x = 1/2, which is where the endpoint binds.
+
+The [exact floor-bin analysis](auto-research/floor-bin-obstruction.md) specifies the idealization behind the earlier ≈ 0.864 ceiling. Removing the low estimate's b/12 term alone cannot reach 0.864 while h < 5ℓ is retained: at that target the same budget would need a floor-row power saving ρ > 281/51000. This is a necessary proof obligation, not a proved saving or a new endpoint.
 
 A structural idea is only a **proposal** until the changed lemma is proved. Write it up in `auto-research/proposals/` with:
 

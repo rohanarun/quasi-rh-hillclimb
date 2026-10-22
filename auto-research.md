@@ -15,6 +15,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
+| Formal structural budget lemmas | [31 Lean theorems](lean-budget/README.md): floor-bin obstructions, balanced-count slope bounds, constructive frequency/supply extension and finite even mesh; standard-axiom checks and fresh kernel replay passed; no new endpoint |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 

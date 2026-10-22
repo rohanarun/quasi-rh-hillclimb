@@ -43,6 +43,8 @@ Snapshot: **22 October 2026**. PR numbers in this table refer to **this reposito
 
 The independent verification and comparison chart in this update were prepared by Rohan Arun with Codex (AI-assisted). Hailey Collet remains the sole human author of the PR #8 contribution; all inherited proof credits and licenses are retained. [PR metadata snapshot](verification/readme-progress/pull-requests.json).
 
+**Structural budget proofs (23 October 2026):** Sagar Thakrar, with Codex, contributes [31 Lean theorems](lean-budget/README.md) formalizing the floor-bin bounds and constructive frequency/supply extension from PRs [#15](https://github.com/rohanarun/quasi-rh-hillclimb/pull/15) and [#19](https://github.com/rohanarun/quasi-rh-hillclimb/pull/19). The pinned standalone build passed all 31 standard-axiom checks, eight concrete checks and a fresh Lean kernel replay. These are algebraic lemmas under explicit hypotheses; they establish no new zero-free endpoint or analytic estimate.
+
 ### Upstream contributors and verified bounds
 
 These **26 entries** come from the [tracker catalogue snapshot](verification/readme-progress/tracker-catalogue.json), retrieved on 22 October 2026. “Tracker verified” links to that entry's certificate; it reports the tracker's verification, rather than claiming a new independent rebuild of every row here. Decimal bounds below are rounded to 12 places; exact statements and source revisions are in the certificates. Useful non-record contributions remain listed and credited.

@@ -11,9 +11,9 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
-| Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
-| Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
-| Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
+| Best certified Track A (final section only) | Re s > 4374785349/5000000000 = 0.8749570698 (ℓ = 625643953/3750000000, h = 8119602997/10000000000); [exact evidence and audit scope](auto-research/track-a-near-edge.md) |
+| Audited point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
+| Exact obstruction in the frozen budget | Every feasible point requires σ₀ > (1507 − 2√921)/1653; [algebra checked against the budget](auto-research/track-a-near-edge.md), matching the prior report in issue #4 |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
@@ -32,14 +32,14 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
-The remaining room is about 2·10⁻⁸ in σ₀ (the edge is ℓ − 1/6 ≈ 1/5823.4), so Track A is nearly exhausted. To claim any of it:
+The remaining room is **less than 10⁻¹² in σ₀**, by an exact obstruction checked in `auto-research/edge_certificate.py`. For ℓ = 1/6 + 1/N with N > 0, feasibility requires N > 2910 + 96√921 ≈ 5823.406253854755. Thus N = 5824 is the best possible integer choice; the current record uses rational N = 1250000000/214651. To claim any remaining room:
 
-1. Pick a rational ℓ = 1/6 + 1/N with N < 5826, and a rational h near 0.811978.
-2. Run `python certify.py N h`. Every line must print `OK`, and the adaptive endpoint must print `True`.
-3. If the Bernstein bisection gives up (prints `False`) close to the edge, raise `maxdepth` in `prove_positive`, or subdivide more cleverly. A `False` is not a disproof.
+1. Pick rational N between 2910 + 96√921 and 1250000000/214651, and rational h near 0.8119602997.
+2. Run `python certify.py N h --maxdepth 34`. Every side constraint must print `OK`, and the adaptive endpoint and denominator must print `True`.
+3. If the Bernstein bisection gives up (prints `False`) close to the edge, raise `--maxdepth`, or subdivide more cleverly. A `False` is not a disproof.
 4. Record the result (see "Reporting" below).
 
-`auto-research/hillclimb.py` automates this: it finds the numerical edge, then tries rational candidates from the edge inward until one certifies.
+`auto-research/hillclimb.py` searches **integer N**: it numerically optimizes h for each candidate, then tries rational h values until one certifies. Its defaults use unit steps and depth 22, reproducing N = 5824. Use `certify.py` directly for fractional N. Reproducing either recorded point is not a new result.
 
 ### Track B: structural changes (where real progress is)
 
@@ -82,7 +82,9 @@ Append one row to `auto-research/results.md` and open a pull request:
 
 ```
 pip install numpy scipy sympy
-python certify.py                   # current best, about 1 s
+python certify.py                   # audited baseline
+python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate
+python auto-research/edge_certificate.py # exact frozen-budget obstruction and near-edge certificate
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B
 ```

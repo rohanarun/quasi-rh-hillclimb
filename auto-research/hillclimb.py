@@ -1,6 +1,6 @@
 """Track A: find the numerical edge in (ell, h), then certify the best rational point exactly.
 
-  python auto-research/hillclimb.py [--start 5900] [--stop 5820] [--step 5] [--maxdepth 18]
+  python auto-research/hillclimb.py [--start 5900] [--stop 5820] [--step 1] [--maxdepth 22]
 
 Tries ell = 1/6 + 1/N for N from --stop upward to --start (largest ell first) and, for each N,
 a few rational h near the numerically optimal h. Stops at the first point that certifies and
@@ -19,8 +19,8 @@ import certify as C
 ap = argparse.ArgumentParser()
 ap.add_argument("--start", type=int, default=5900)
 ap.add_argument("--stop", type=int, default=5820)
-ap.add_argument("--step", type=int, default=5)
-ap.add_argument("--maxdepth", type=int, default=18)
+ap.add_argument("--step", type=int, default=1)
+ap.add_argument("--maxdepth", type=int, default=22)
 a = ap.parse_args()
 
 dl = np.linspace(0, 5/6, 4001)[:, None]; xs = np.linspace(0, 0.5, 201)[None, :]

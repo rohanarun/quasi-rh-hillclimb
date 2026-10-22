@@ -54,7 +54,7 @@ def bernstein_min(P, box):
             best = b if best is None or b < best else best
     return best
 
-def prove_positive(P, box, depth=0, maxdepth=20, log=None):
+def prove_positive(P, box, depth=0, maxdepth=22, log=None):
     b = bernstein_min(P, box)
     if b > 0:
         if log is not None: log.append((box, b))
@@ -87,17 +87,27 @@ def side_constraints(ell, h):
     return c
 
 if __name__ == "__main__":
-    import sys
-    ell = Fr(1, 6) + Fr(1, int(sys.argv[1]) if len(sys.argv) > 1 else 5900)
-    h = Fr(sys.argv[2]) if len(sys.argv) > 2 else Fr(405989, 500000)
+    import argparse
+    ap = argparse.ArgumentParser(description="Exact final-section certificate at ell = 1/6 + 1/N.")
+    ap.add_argument("N", nargs="?", type=Fr, default=Fr(5900), help="positive rational, e.g. 1250000000/214651")
+    ap.add_argument("h", nargs="?", type=Fr, default=Fr(405989, 500000))
+    ap.add_argument("--maxdepth", type=int, default=22, help="maximum Bernstein bisection depth (default: 22)")
+    try:
+        args = ap.parse_args()
+    except ZeroDivisionError:
+        ap.error("rational values must have nonzero denominators")
+    if args.N <= 0 or args.h <= 0 or args.maxdepth < 0:
+        ap.error("N and h must be positive; maxdepth must be nonnegative")
+    ell = Fr(1, 6) + 1/args.N
+    h = args.h
     s0 = Fr(11, 12) - ell/4
     print(f"ell = {ell}  h = {h}  ->  sigma0 = {s0} = 7/8 - {Fr(7,8)-s0}  (~{float(s0):.8f})")
     print("check paper point: sigma0(1/6) =", Fr(11, 12) - Fr(1, 6)/4)
     F, J = adaptive_poly(ell, h)
     box = ((sp.Rational(0), sp.Rational(5, 6)), (sp.Rational(0), sp.Rational(1, 2)))
-    print("J>0 on box:", prove_positive(J, box))
+    print("J>0 on box:", prove_positive(J, box, maxdepth=args.maxdepth))
     log = []
-    ok = prove_positive(F, box, log=log)
+    ok = prove_positive(F, box, maxdepth=args.maxdepth, log=log)
     print(f"adaptive endpoint F>0 on delta in [0,5/6], y in [0,1/2]: {ok}  ({len(log)} boxes)")
     if ok:
         print(f"   smallest Bernstein lower bound among boxes: {float(min(b for _, b in log)):.3e}")
@@ -105,4 +115,4 @@ if __name__ == "__main__":
         print(f"   {'OK ' if v > 0 else 'FAIL'} {k}: {v} (~{float(v):.5f})")
     # sanity: the paper's own point must certify
     F0, _ = adaptive_poly(Fr(1, 6), Fr(13, 16))
-    print("paper point (1/6, 13/16) certifies:", prove_positive(F0, box))
+    print("paper point (1/6, 13/16) certifies:", prove_positive(F0, box, maxdepth=args.maxdepth))

@@ -11,8 +11,8 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
-| Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
-| Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
+| Best certified (final section only) | σ₀ = **4374785349/5000000000 = 0.8749570698**, submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12); [independently replayed with Node BigInt](auto-research/track-a-independent-replay.md). No new point is claimed by the replay. |
+| Audited default point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
@@ -32,7 +32,7 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
-The remaining room is about 2·10⁻⁸ in σ₀ (the edge is ℓ − 1/6 ≈ 1/5823.4), so Track A is nearly exhausted. To claim any of it:
+The near-edge point submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) is already within 10⁻¹² of the frozen-budget obstruction. The [independent Node replay](auto-research/track-a-independent-replay.md) checks it against the same formulas without Python or SymPy. Check current submissions before searching; the original integer-search recipe below starts from the historical N=5826 certificate, and the submitted N=5824 and fractional-N points must not be claimed again as new.
 
 1. Pick a rational ℓ = 1/6 + 1/N with N < 5826, and a rational h near 0.811978.
 2. Run `python certify.py N h`. Every line must print `OK`, and the adaptive endpoint must print `True`.
@@ -82,7 +82,9 @@ Append one row to `auto-research/results.md` and open a pull request:
 
 ```
 pip install numpy scipy sympy
-python certify.py                   # current best, about 1 s
+python certify.py                   # audited default point, about 1 s
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B
 ```
+
+For an independent replay of the four known points, run `node auto-research/verify_track_a.mjs` (tested with Node.js 22; no Python or packages required for that command).

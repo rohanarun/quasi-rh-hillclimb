@@ -1,0 +1,30 @@
+'OAI.SevenEighths.PerturbedBoundaryMain.sameDataCutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.SevenEighths.PerturbedBoundaryMain.sigmaBoundary_value :
+  Eq.{1} OAI.SevenEighths.HighFrontierTargets.sigmaBoundary (139999 / 160000)
+'OAI.SevenEighths.PerturbedBoundaryMain.sigmaBoundary_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.SevenEighths.PerturbedBoundaryMain.principal_request_le_sameDataCutoff
+  (D : OAI.SevenEighths.Parameters.HighDataPerturbed OAI.SevenEighths.HighFrontierTargets.positiveGap) :
+'OAI.SevenEighths.PerturbedBoundaryMain.principal_request_le_sameDataCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.assembly_cutoff_le_sameDataCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.commonProbeConstruction_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.uniformCommonProbeBoundary_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.hecke_current' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.DirichletCharacter.LFunction_ne_zero_of_perturbed_boundary_lt_re {q : ℕ} [NeZero.{0} q]
+  (chi : DirichletCharacter.{0} ℂ q) {s : ℂ} (hs : LT.lt.{0} (139999 / 160000) s.re)
+'OAI.DirichletCharacter.LFunction_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.riemannZeta_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_perturbed_boundary_lt_re
+  (chi : OAI.SevenEighths.HeckeFamily.Character) {s : ℂ} (hs : LT.lt.{0} (139999 / 160000) s.re)
+'OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

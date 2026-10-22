@@ -1,0 +1,33 @@
+'OAI.SevenEighths.PerturbedMomentConstruction.exists_D_first_cutoff_source_counts_chosen_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.LocalPrincipalCutoffRequestV2.euler_raw_of_D_first_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.LocalPrincipalCutoffRequestV2.euler_comparison_of_D_first_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedCanonicalLocalPrep.same_data_canonical_physical_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedCommonProbeAssembly.chosenTheta_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.commonProbeConstruction_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.uniformCommonProbeBoundary_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.SevenEighths.PerturbedBoundaryMain.hecke_current' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.DirichletCharacter.LFunction_ne_zero_of_perturbed_boundary_lt_re : ∀ {q : ℕ} [inst : NeZero q]
+  (chi : DirichletCharacter ℂ q) {s : ℂ},
+'OAI.DirichletCharacter.LFunction_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.riemannZeta_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_perturbed_boundary_lt_re : ∀
+  (chi : OAI.SevenEighths.HeckeFamily.Character) {s : ℂ},
+'OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_perturbed_boundary_lt_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

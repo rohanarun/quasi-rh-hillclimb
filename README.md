@@ -33,6 +33,10 @@ applying the edits listed in `AUDIT_SUMMARY.md`. This point is about 99% of the 
 
 The Lean-verified record is on the [QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker): ArviFoxy's PR #67, θ = 174963413/200000000 ≈ 0.874817065, well below the bound above. [`depth3/`](depth3/PROOF.md) extends PR #67's two affine levels to three and gets **θ ≤ 874812431/10⁹ ≈ 0.874812431**, about 4.6·10⁻⁶ lower, a fourth level gets **θ ≤ 0.874810282** (6.8·10⁻⁶ below the record), and re-optimising with the branch-D room held at the certifier threshold gets **θ ≤ 0.874810187** at four levels and **θ ≤ 0.874809963** at seven (7.1·10⁻⁶ below the record). On top of tracker PR #68 (Lean-proved 0.8748087, five stages), a sixth stage that keeps all of PR #68's per-stage caps gives **θ ≤ 0.874807999** (`python depth3/certify_gao_depth.py --six`), and eight stages with a larger ratio cap give 0.874806549. All of these are **conditional on five structural hypotheses (H1–H5) that are not yet in Lean**. The arithmetic is certified exactly (`python depth3/certify_depth3.py`, `--four`, `--four-tight`, `--seven`; the same code reproduces PR #67's own constants). It is not a tracker record until the full proof checks in Lean.
 
+## Separate track: a Lean-verified point on the ℓ line
+
+[`lean-tau/`](lean-tau/README.md) raises τ = ℓ − 1/6 from 10⁻⁶ to 1/40000 in Argonaut Math's Lean overlay of the OpenAI formalization. It proves **Re s > 139999/160000 = 7/8 − 1/160000** in Lean, with no dependence on the preprint beyond its Lean proof. A clean build, both axiom audits and Comparator all pass. This is weaker than the conditional points above. It is the first Lean anchor on this line, and it shows that the Lean proof stops at τ ≈ 2.965·10⁻⁵, where a central-budget split binds. The folder lists what it would take to bring 7/8 − 1/23600 into Lean.
+
 ![The best boundary over time, with contributors](graphs/timeline.png)
 
 ## Main structural facts
@@ -81,6 +85,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The pipeline already found a slightly better final-section certificate, 7/8 − 1/23304; see `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
+- `lean-tau/`: the Lean-verified τ = 1/40000 point (patch, build/audit/Comparator evidence); `.github/workflows/lean-tau-comparator.yml` re-runs Comparator.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
 - `upload.sh`: pushes this folder to GitHub.
 

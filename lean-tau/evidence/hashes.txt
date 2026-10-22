@@ -1,0 +1,4 @@
+aa22e3cdd35e23866b9fde29825b37bef2d4ef1290bd6e41056e6e984b527a18  task17-src001-reviewed-v1/PerturbedBoundaryMain.lean
+e355b74084a93eb529f069c873b9fd2eb7f4461c4d8782dbc628ad5743fa9785  comparator-check-v1/ArgonautBoundaryChallenge.lean
+8360aeaa9bc237646799eeaecf0b037aafaec2e6befdb9534c7dc250d84bd8c1  three-roots.json
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)

@@ -1,0 +1,4 @@
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.DirichletCharacter.LFunction_ne_zero_of_perturbed_boundary_lt_re, OAI.riemannZeta_ne_zero_of_perturbed_boundary_lt_re, OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_perturbed_boundary_lt_re, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from PerturbedBoundaryMain
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

@@ -13,7 +13,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
-| Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
+| Infimum of the frozen Track A budget | **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, not attained; [exact global sharpness proof](auto-research/track-a-exact-limit.md) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
@@ -32,7 +32,7 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
-The remaining room is about 2·10⁻⁸ in σ₀ (the edge is ℓ − 1/6 ≈ 1/5823.4), so Track A is nearly exhausted. To claim any of it:
+The [exact limit proof](auto-research/track-a-exact-limit.md) establishes the sharp infimum of this frozen budget, including arbitrarily close strictly feasible rational points. The concurrent [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies the best integer choice `N=5824`, its necessary obstruction, and a fractional-N point less than 10⁻¹² above the limit. Check its current status before starting another search. The search recipe below starts from the historical main-branch certificate; do not report those submitted points as new.
 
 1. Pick a rational ℓ = 1/6 + 1/N with N < 5826, and a rational h near 0.811978.
 2. Run `python certify.py N h`. Every line must print `OK`, and the adaptive endpoint must print `True`.

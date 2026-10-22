@@ -111,7 +111,7 @@ The current comparison chart and PR verification table are shown in [Progress an
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
-2. **The preprint's constants are near-optimal.** The binding inequality is Lemma *balanced-endpoint*. Its true slack is about 2.3·10⁻⁴ (the paper certifies 1.1·10⁻⁴). The edge of feasibility is ℓ ≈ 1/6 + 1.717·10⁻⁴.
+2. **The frozen Track A limit is exact.** With plain capacity 2/9, strictly feasible boundaries have infimum **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, which is not attained. The [global limiting certificate and strict-feasibility proof](auto-research/track-a-exact-limit.md) establish sharpness on the whole adaptive rectangle with all twelve side constraints. The formula was already reported in [issue #4](https://github.com/rohanarun/quasi-rh-hillclimb/issues/4); [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies a rational point within 10⁻¹². This is a limit of the frozen budget, not a new zero-free theorem.
 3. **M + ℓ = 1 is the right choice.** Freeing M gives σ₀ = 5/6 + M/12 − ℓ/6. The most efficient direction needs M + ℓ > 1, and the completed-row norm lemma rules that out.
 4. **Ceiling of the architecture.** Keep the other structural choices frozen: the detector floor at 51/100, the contour at Re z = 17/50, and the probe scale relations. Then:
    - perfect row counts give σ₀ ≥ 167/192 ≈ 0.8698;
@@ -149,6 +149,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `budget.py`: the Part II exponent budget for general (ℓ, h).
 - `certify.py`: an exact certificate. By default it checks (ℓ, h) = (2953/17700, 405989/500000). Run `python certify.py N h` to check ℓ = 1/6 + 1/N.
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
+- `auto-research/certify_track_a_limit.py`: exact global sharpness certificate for the frozen Track A infimum; [proof and scope](auto-research/track-a-exact-limit.md).
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
 - `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The pipeline already found a slightly better final-section certificate, 7/8 − 1/23304; see `auto-research/results.md`.

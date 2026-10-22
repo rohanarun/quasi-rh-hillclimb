@@ -112,7 +112,7 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
 2. **The preprint's constants are near-optimal.** The binding inequality is Lemma *balanced-endpoint*. Its true slack is about 2.3·10⁻⁴ (the paper certifies 1.1·10⁻⁴). The edge of feasibility is ℓ ≈ 1/6 + 1.717·10⁻⁴.
-3. **M + ℓ = 1 is the right choice.** Freeing M gives σ₀ = 5/6 + M/12 − ℓ/6. The most efficient direction needs M + ℓ > 1, and the completed-row norm lemma rules that out.
+3. **Freeing M requires a low-side loss.** The [general completed-row bound](auto-research/completed-row-geometry.md) permits ρ = M + ℓ − 1 of either sign, with low allowance L = ρ₊/2 + (5ℓ − 1 − 2ρ)₊/8. The corrected boundary is σ₀ = 5/6 + M/12 − ℓ/6 + L. With the existing row counts and this allowance, nonzero ρ strictly worsens the high exponent at the same boundary. An exact comparison gives a positive penalty above the known frozen-budget obstruction; improving the underlying norm estimate remains open.
 4. **Ceiling of the architecture.** Keep the other structural choices frozen: the detector floor at 51/100, the contour at Re z = 17/50, and the probe scale relations. Then:
    - perfect row counts give σ₀ ≥ 167/192 ≈ 0.8698;
    - a perfect additive large sieve gives about 0.864.
@@ -148,6 +148,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 
 - `budget.py`: the Part II exponent budget for general (ℓ, h).
 - `certify.py`: an exact certificate. By default it checks (ℓ, h) = (2953/17700, 405989/500000). Run `python certify.py N h` to check ℓ = 1/6 + 1/N.
+- `auto-research/certify_completed_row_geometry.py`: exact identities and controls for the [general completed-row loss and geometry comparison](auto-research/completed-row-geometry.md).
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.

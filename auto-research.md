@@ -53,7 +53,7 @@ Within the frozen architecture, tuning cannot beat about 7/8 − 4.3·10⁻⁵. 
 Known results (see `README.md`): the binding obstruction at large scale is the **floor bin**, i.e. rows with zeros near Re s = 0.51 have no witness and get no saving. Promising directions:
 
 1. A witness or saving for floor-bin rows.
-2. A sharper low estimate than Z^{l_x/2 + b/12}, or a probe where M + ℓ > 1 is allowed. The completed-row norm lemma is what forbids it now (`AUDIT_SUMMARY.md`, item 2).
+2. A sharper low estimate than Z^{l_x/2 + b/12}. The [general completed-row bound](auto-research/completed-row-geometry.md) allows M + ℓ ≠ 1 but charges an explicit low-side loss; with that loss and the existing row counts, changing M alone cannot improve the frozen-budget obstruction. A useful extension must improve this bound or another structural input (`AUDIT_SUMMARY.md`, item 2).
 3. A better row count R_*(δ, x) near δ ≈ 0.39, x = 1/2, which is where the endpoint binds.
 
 A structural idea is only a **proposal** until the changed lemma is proved. Write it up in `auto-research/proposals/` with:

@@ -117,7 +117,9 @@ The current comparison chart and PR verification table are shown in [Progress an
    - perfect row counts give σ₀ ≥ 167/192 ≈ 0.8698;
    - a perfect additive large sieve gives about 0.864.
 
-   The obstruction is the floor bin, not the moment estimates.
+   These broader idealizations retain an obstruction from the floor bin.
+
+**Improving only adaptive row counts has a separate limit.** If the other final-section checks stay fixed, they require **σ₀ > 84031/96156 ≈ 0.8739028246**, even with ideal adaptive counts. Restricting the intermediate-row check to δ ≤ 3/4, as justified by the assumed 7/8 theorem, instead of the certifier's conservative 5/6 gives **σ₀ > 368153/422028 ≈ 0.8723425934**. Both bounds are sharp infima of the explicitly stated idealized budgets, not certified zero-free endpoints. The [exact certificate and proof](auto-research/side-constraint-limits.md) identify the intermediate-row estimate that must improve alongside the adaptive count.
 
 ## What is checked, and how
 
@@ -150,6 +152,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `certify.py`: an exact certificate. By default it checks (ℓ, h) = (2953/17700, 405989/500000). Run `python certify.py N h` to check ℓ = 1/6 + 1/N.
 - `optimize.py`, `edge.py`: a numerical search for the feasibility edge.
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
+- `auto-research/certify_side_constraint_limits.py`: exact limits from the retained floor-bin and intermediate-row checks under ideal adaptive counts; [proof and source audit](auto-research/side-constraint-limits.md).
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
 - `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The pipeline already found a slightly better final-section certificate, 7/8 − 1/23304; see `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.

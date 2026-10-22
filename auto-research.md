@@ -15,6 +15,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Ceiling with idealized inputs | ≈ 0.864 (perfect row counts and large sieve) |
+| Ideal adaptive counts, other checks retained | Sharp infimum **84031/96156** with intermediate δ ≤ 5/6; **368153/422028** with intermediate δ ≤ 3/4; [exact proof and assumptions](auto-research/side-constraint-limits.md). Neither is a zero-free endpoint. |
 | Accepted Lean tracker record (separate admission) | θ = 0.8748087 (QuasiRiemannTracker PR #68) |
 | Conditional nested levels on PR #67 | θ ≤ 0.874812431 (three levels), θ ≤ 0.874810282 (four levels), θ ≤ 0.874809989 (six levels, larger H4 caps), conditional on H1–H5 (`depth3/PROOF.md`) |
 
@@ -49,6 +50,8 @@ Within the frozen architecture, tuning cannot beat about 7/8 − 4.3·10⁻⁵. 
 - `--cap`: a multiplier on the plain-moment capacity (2/9);
 - `--floor`: the detector floor δ₀ (1/50, i.e. Re s = 0.51);
 - `--z0`: the contour Re z (17/50).
+
+Changing only `--cap`, with the other knobs at their defaults, cannot bypass the retained side constraints: they force σ₀ > 84031/96156 regardless of the adaptive count. The [exact side-constraint proof](auto-research/side-constraint-limits.md) also treats the intermediate range δ ≤ 3/4 justified by the assumed 7/8 theorem, where the corresponding limit is 368153/422028. These sharp idealized bounds show why the intermediate-row estimate must also improve; they do not establish ideal row counts or a new analytic endpoint.
 
 Known results (see `README.md`): the binding obstruction at large scale is the **floor bin**, i.e. rows with zeros near Re s = 0.51 have no witness and get no saving. Promising directions:
 

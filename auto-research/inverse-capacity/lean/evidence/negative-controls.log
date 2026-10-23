@@ -1,0 +1,21 @@
+controls/NegativeControls.lean:7:54: error: linarith failed to find a contradiction
+case mp
+r z m : ℝ
+h : r + 2 * z < m + (0 + 5 * 0) / 2
+a✝ : m ≤ r + 5 / 3 * z
+⊢ False
+failed
+controls/NegativeControls.lean:7:54: error: linarith failed to find a contradiction
+case mpr
+r z m : ℝ
+h : r + 5 / 3 * z < m
+a✝ : m + (0 + 5 * 0) / 2 ≤ r + 2 * z
+⊢ False
+failed
+controls/NegativeControls.lean:9:63: error: linarith failed to find a contradiction
+θ : ℝ
+h : 11 / 3 - 4 * θ < 1 / 5
+a✝ : θ ≤ 7 / 8
+⊢ False
+failed
+exit=1

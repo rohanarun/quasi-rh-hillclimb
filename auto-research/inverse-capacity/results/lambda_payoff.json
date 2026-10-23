@@ -1,0 +1,23 @@
+{
+  "model_baseline_lam2": {
+    "theta": 0.874770952835679,
+    "h": 0.8007592126098179,
+    "note": "what-if model at lam=2; exact model gives 0.8747712758 and the certified value is 0.87477128 (PR #27)"
+  },
+  "second_relaxed": {
+    "1.75": 0.8741503977090122,
+    "1.5": 0.8731508430659769,
+    "1.25": 0.8728094296574593,
+    "1.0": 0.8728094296574593
+  },
+  "second_fixed": {
+    "1.5": 0.8732701877713203,
+    "1.0": 0.8732701877713203
+  },
+  "binding": {
+    "relaxed_1.5": "edge new_top, delta 0.38, p 0.5",
+    "relaxed_<=1.25": "prime supply z<=ell/d, edge new_top, delta 0.47",
+    "fixed_<=1.5": "second condition z<=(3-2r)/8, delta 0.44"
+  },
+  "scope": "Floating-point what-if; sources held at PR #27 faces; source chains not re-run; admission windows not modelled; delta grid 0.01."
+}

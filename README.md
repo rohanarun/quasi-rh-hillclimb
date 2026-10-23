@@ -108,6 +108,30 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 [QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue), used extensively for this work, is a public index of reusable QRH mathematics and formal components, open to source-backed contributions and corrections.
 
+## Inverse slot capacity and adaptive caps (proposal, 23 October 2026)
+
+Subhanjan Das (@subhanjandas), with substantial assistance from Claude
+(Anthropic), contributes two things. Neither is a Lean-verified record.
+
+- **[Inverse slot capacity analysis](auto-research/inverse-capacity/README.md)**
+  ([proposal](auto-research/proposals/2026-10-23-inverse-slot-capacity.md),
+  [research log](auto-research/inverse-capacity/RESEARCH_LOG.md)):
+  an exact anatomy of the same-zero count, showing that the marked inverse
+  moment's slot capacity (1−r)/2 carries half its weight; **Lemma S**, an
+  unconditional structured-mark bound using the pairwise cubic-residue phases
+  of the slot primes; and an exact obstruction showing that the preprint's
+  terminal estimate forces the same capacity a second time, in its column
+  branch. Their algebraic and abstract-analytic cores are **checked in Lean
+  4.34.1** (19 theorems, standard axioms only, fresh `leanchecker` replay),
+  with Heath-Brown's cubic large sieve as an explicit hypothesis. No new
+  boundary is claimed; the remaining column-branch estimate is stated precisely.
+- **[Adaptive per-stage caps](auto-research/adaptive-caps/README.md)**: a
+  conditional candidate **θ = 87477127/100000000 = 0.87477127**, 10⁻⁸ below
+  [PR #27](https://github.com/rohanarun/quasi-rh-hillclimb/pull/27), from a
+  41,056-stage source graph whose stages use separate width caps. The exact
+  rational replay passes and the same graph is rejected at 0.87477126. Same
+  status as PR #26/#27: inherited analytic premises, no Lean endpoint.
+
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
@@ -157,6 +181,8 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
+- `auto-research/inverse-capacity/`: inverse slot capacity anatomy, Lemma S, the column-branch obstruction, what-if models and a Lean formalization (`lean/`).
+- `auto-research/adaptive-caps/`: the conditional adaptive-cap candidate at θ = 0.87477127 (exact graph, certificate, replay, controls).
 - `upload.sh`: pushes this folder to GitHub.
 
 ## Sponsors

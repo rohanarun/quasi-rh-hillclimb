@@ -1,0 +1,32 @@
+{
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_source": "compiled from source at the pinned revision (download cache unreachable from the build machine)",
+  "mathlib_slice_build": "lake build of the imported Mathlib modules: Build completed successfully (1536 jobs).",
+  "machine": "Linux x86_64, 2 cores, 7 GB RAM",
+  "checks": {
+    "lake build QRHResearch": "Build completed successfully (1537 jobs), no errors or warnings",
+    "axiom audit": "19/19 theorems: [propext, Classical.choice, Quot.sound]",
+    "leanchecker --fresh --verbose QRHResearch": "exit 0 (3m58.086s)",
+    "negative controls": "both rejected (3 errors, exit 1)"
+  },
+  "source_sha256": {
+    "lean/QRHResearch/BranchAlgebra.lean": "20c91aaa96d2a1d1a5c3278de589dc7a8addbedb39f5c325b74bd912bf7e3580",
+    "lean/QRHResearch/CountAnatomy.lean": "206facb2f10376eb9c1c9ddcb8e9ff475bb9541219edd9e3eb3cf2f5ee9e1fc2",
+    "lean/QRHResearch/GeometryFloor.lean": "70c31dd038a51fdb25eb7b220a1a8b3450284612f1e822928c09acd0d9dd63a5",
+    "lean/QRHResearch/LemmaS.lean": "95a924620397a0e7202fc3bf03eab0f299a749e3a7d9b30be1022e0c6ebe2bbf",
+    "lean/QRHResearch.lean": "19efb15892540a64c48c6b1bb93b9d5c4de3c06aaf53b1ce314b1c5f6ee45538",
+    "lean/AxiomAudit.lean": "2d11fde60a60adfe2eb546578af4ef5396f9e8015c1de2874ea2d6c3c8940f11",
+    "lean/lakefile.lean": "e3778e5cd13c01f86103dffa7df13ba2d177b9a9fc25daf78c29160fbad3fa34",
+    "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lean/lake-manifest.json": "d538e340f685a0fb2083a0896c39c5b33419567bf8a094aa379355a1c2cf2938",
+    "lean/controls/NegativeControls.lean": "88eb148b24c624f8086720ddbea4948e784eaca312566edb922afe79b1b76998"
+  },
+  "scope": "Checks the stated algebraic and abstract-analytic lemmas only. No zero-free region is formalized; Heath-Brown's cubic large sieve and the preprint's analytic inequalities enter only as explicit hypotheses or definitions.",
+  "theorem_count": 19,
+  "evidence_sha256": {
+    "lean/evidence/axiom-audit.log": "8d47aa9ffe4fdff9d564c5885f7a9cfb6ff40593a0d3ce98914dddcdc85f5e59",
+    "lean/evidence/kernel-replay.log": "e7574b85eec3c31809d01a88e6fcc3631172650961cd06261dbdb81b666a2500",
+    "lean/evidence/negative-controls.log": "ec52e5c2686078645dfbd4c6bdbb0f8f7aa7ac2d63b88f0b19ce3f67911f9f30"
+  }
+}

@@ -1,0 +1,4 @@
+PASS 41,056 sources (21,527 count + 19,529 physical); 38355 distinct caps, from 0.013178 to 0.044001
+PASS 224 return boxes, 49 admissions, 33 reserves
+Conditional theta = 87477127/100000000; 1e-8 below PR #27
+exit=0

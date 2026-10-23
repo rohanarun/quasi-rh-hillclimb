@@ -1,0 +1,50 @@
+{
+  "upstream_commit": "e4cf5a2b1f967746b36606d3352549ee598e373f",
+  "pr26_head_commit": "f7798b155bd6d3938730a81fa4a5e987ca3fdaf2",
+  "pr27_head_commit": "97da52123ac330274495cf5f47da2f5b5a2d6416",
+  "reused_from_pr26_unchanged": [
+    "nf_source.py",
+    "return_budget.py",
+    "search.py",
+    "search_model.py",
+    "combine.py"
+  ],
+  "reused_from_pr27_unchanged": [
+    "certify.py"
+  ],
+  "preprint_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "preprint_paper_git_blob": "268c4e3206d460c617d3d2129742a72b831b3def",
+  "files_sha256": {
+    "auto-research/adaptive-caps/sources.json": "44b42ec1673ae688384e4dc00a4f501e444fbb4c776b272ed324c34294144d8b",
+    "auto-research/adaptive-caps/certificate.json": "a16b6b32cf4a46c4df8b50e8f15e81b5a062a4ee65a86659866f66c19cf7d198",
+    "auto-research/adaptive-caps/replay.py": "cf83f9d402a36c7788bed7c80ccf7d118bda599239f1dc9eb8be50eba07a9521",
+    "auto-research/adaptive-caps/certify.py": "2de3b6d7f68860ee2c0b18d0739ab30ebf6b8e8c68e9fdc7e71c00a30a46df12",
+    "auto-research/adaptive-caps/nf_source.py": "f3feeec60e696636593816345a1a917dd89c6f18b0028406598882949437a1e8",
+    "auto-research/adaptive-caps/return_budget.py": "b82c7bb46fa9aa80598955b1358534a92b1ee06b5c5392e2d53f6452bb8ca7c1",
+    "auto-research/adaptive-caps/search.py": "e0994deb8483904e5045e663d278ebbacab78798ed2ddf994924afccbec124a8",
+    "auto-research/adaptive-caps/search_model.py": "a2ee01d6183390110e36d198c403ea492724a68b39ce68a08a014960231ce719",
+    "auto-research/adaptive-caps/combine.py": "503a9903df90c08591494a227c615ae0f2f406366fad95dff3287343dbd831bb",
+    "auto-research/adaptive-caps/adaptive.py": "288db96fdeacdc4cee8257ad643369b2d9481c670d5470ae450663b483453392",
+    "auto-research/adaptive-caps/adaptive_final.py": "55aacaf8dc6541a7262f44eb8411e9757566adeec4918bc519a4dbe90b67f2de",
+    "submissions/hailey-collet-1252270103/lean-sources.zip": "e69c31261bb4f7b997679220f7b0c32063af4721dd95dcb787d8b5074f95adfa",
+    "submissions/hailey-collet-1252270103/paper/certificates.tex": "932bd79b913d88485194bab9a75f25d7709b539d9134202ef915e1e20b967ef7",
+    "submissions/hailey-collet-1252270103/paper/feedback.tex": "922e9e0ec5dbacdd58a1db9480e95d1bf376783ab87e68d426ff401f24d62e3c",
+    "submissions/hailey-collet-1252270103/paper/return.tex": "feb05e61e8abcee1c09dc6bcb70df6b4e913b05b861fb5c91b72cf536d3becce"
+  },
+  "graph_canonical_sha256": "73c5997d093c94f938faf6e14b1ea8a2e22af4aaf48cdf53cc37e09c37f665f6",
+  "certified": {
+    "theta": "87477127/100000000",
+    "h": "80008783/100000000",
+    "count_id": "count_21527",
+    "physical_id": "physical_19529",
+    "nodes": 41056,
+    "rejected_at": "87477126/100000000"
+  },
+  "environment": {
+    "python": "3.13.17",
+    "sympy": "1.14.0",
+    "numpy (search only)": "2.5.3",
+    "scipy (search only)": "1.18.1"
+  },
+  "scope": "Pinned input identity and environment. Exact rational replay only; no Lean endpoint and no independent mathematical acceptance."
+}

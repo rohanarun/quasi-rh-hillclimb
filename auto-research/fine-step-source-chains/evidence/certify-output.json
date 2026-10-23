@@ -1,0 +1,78 @@
+{
+  "theta": "10934641/12500000",
+  "h": "80008777/100000000",
+  "physical_width": "1/25",
+  "reserve": "1/1000000000",
+  "return_boxes": 224,
+  "return_coefficients": 2688,
+  "admission_windows": 49,
+  "scalar_reserves": 33,
+  "minimum_return": "692870905837797064685587264030613/88719397999009778766970880000000000000000",
+  "minimum_admission": "20431864637599249777363526751/1041728723990257598464000000000000",
+  "minimum_scalar": "1/1000000",
+  "edge_minima": {
+    "old_small": "113357521398398542278409/1316751677932860000000000",
+    "old_peak": "425460450658483814418083/7292778523935840000000000",
+    "old_switch": "126265580156320284068088599899/30465541790408994979840000000000",
+    "new_switch": "126265580156320284068088599899/30465541790408994979840000000000",
+    "new_top": "692870905837797064685587264030613/88719397999009778766970880000000000000000",
+    "new_kink": "12108420291041819192917396511669/37548433295421881069486080000000000"
+  },
+  "failures": [],
+  "upstream_certificate_sha256": "932bd79b913d88485194bab9a75f25d7709b539d9134202ef915e1e20b967ef7",
+  "archived_lean_coefficients_compared": 0,
+  "scope": "Exact finite arithmetic; conditional on Collet source moments and parameterized analytic return. No fresh Lean verification.",
+  "source_receipt": {
+    "nodes": 20527,
+    "natural_premise": {
+      "B": "1",
+      "Lambda": "11243277/2500000",
+      "cap": "11/200"
+    },
+    "graph_sha256": "aa8595bd4dc44f9c2e4b98985eea03aec0817702ad8f9e5220f5b4a230eabec7",
+    "width_endpoints": 41054,
+    "strict_scalar_tests": 656864,
+    "weak_LOW_cap_tests": 41054,
+    "density_polynomials": 369486,
+    "density_intervals": 369486,
+    "minimum_positive_coefficient_or_scalar": "4496671827374077099750294411/4497310800000000000000000000000000000000",
+    "minimum_weak_LOW_cap_guard": "3925157369347909203725455892592078047/2338252678243456156316350000000000000000",
+    "upstream_interpolation_identities_checked": 369486,
+    "all_dependencies_strictly_earlier": true,
+    "scope": "Exact NF finite induction premises. Conditional on the inherited analytic source theorem; no Lean build."
+  },
+  "selected_sources": {
+    "count": {
+      "id": "count_10763",
+      "B": "0.96259643646619",
+      "L": "3.1519358",
+      "cap": ".044001",
+      "q": "0.54573751917269",
+      "low": "count_10762",
+      "high": "count_10762"
+    },
+    "physical": {
+      "id": "physical_9764",
+      "B": "0.96771143048276",
+      "L": "3.2768108",
+      "cap": ".043001",
+      "q": "0.56435964423131",
+      "low": "physical_9763",
+      "high": "physical_9763"
+    }
+  },
+  "geometry": {
+    "theta": "10934641/12500000",
+    "h": "80008777/100000000",
+    "s": "1/25",
+    "ell": "1571077/9375000",
+    "x": "110248133/300000000",
+    "y": "139477403/300000000",
+    "k": "4684641/6250000",
+    "ds": "3486935075/4424588304",
+    "dk": "69738701500000/87252075113793",
+    "dp": "8000877701/10000000000",
+    "d0": "1/200"
+  }
+}
+exit=0

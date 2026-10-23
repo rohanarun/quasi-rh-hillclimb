@@ -1,0 +1,62 @@
+PR #8 (Collet), exact 0.8747729897 0.8747729872007431 0.8001035254797995
+PR #26, exact 0.87477137 0.8747713594876725 0.8000885384954067
+this proposal, exact 0.87477128 0.8747712757782852 0.8000877731060373
+count_1/2000 (PR #26) physical_1/1000 (PR #26) 0.8747713594876725
+count_1/2000 (PR #26) physical_1/2000 0.8747713214581092
+count_1/2000 (PR #26) physical_1/4000 0.8747713025379701
+count_1/2000 (PR #26) physical_1/8000 (this proposal) 0.8747712931680358
+count_1/4000 physical_1/1000 (PR #26) 0.874771347834819
+count_1/4000 physical_1/2000 0.8747713098054303
+count_1/4000 physical_1/4000 0.8747712908853024
+count_1/4000 physical_1/8000 (this proposal) 0.8747712815155875
+count_1/8000 (this proposal) physical_1/1000 (PR #26) 0.8747713420972343
+count_1/8000 (this proposal) physical_1/2000 0.8747713040682837
+count_1/8000 (this proposal) physical_1/4000 0.874771285148064
+count_1/8000 (this proposal) physical_1/8000 (this proposal) 0.8747712757782852
+continuum estimate 0.874771260671204
+gradients {'BC': -0.0036100836708907735, 'LC': 0.0001530693505280567, 'BP': -0.00624993092279702, 'LP': 0.00024775587470493576} {'count': 0.042400499401801246, 'count_search_target': 0.04232527914, 'physical': 0.03964137808327296, 'physical_search_target': 0.03960260713}
+HIGH parents {'count_10762': np.float64(0.0423223613465512), 'count_10000': np.float64(0.0423248733552041), 'count_8000': np.float64(0.04235202457852692), 'count_5000': np.float64(0.04243469888415562), 'count_2000': np.float64(0.04255285344331405), 'count_500': np.float64(0.04262203051077756), 'natural': np.float64(0.042646381109632994)}
+leverage {'uniform E reduction 0.0001': 0.22341373701606493, 'uniform E reduction 0.001': 0.2234137372986167, 'V0 = 5/6 - 1/1000': 6.522402160702434e-06, 'V0 = 5/6 - 1/100': 6.616575491846799e-05, 'binding_point': {'edge_index': 4, 'edge': 'new_top', 'delta': 0.458, 'p': 0.5, 'd': 0.8000877732060373, 'capacity': 0.03171615190809221, 'R_star': 0.600943599585504, 'count_term_3d_R_over_4': 0.3606057198110898}}
+K = 4.4973108 0.8747713594876724
+K = 6(2*0.8747729897-1) = 4.4972758764 0.8747713567835897
+{
+ "refinement": {
+  "theta_by_steps": {
+   "count_1/2000 (PR #26) x physical_1/1000 (PR #26)": 0.8747713594876725,
+   "count_1/2000 (PR #26) x physical_1/2000": 0.8747713214581092,
+   "count_1/2000 (PR #26) x physical_1/4000": 0.8747713025379701,
+   "count_1/2000 (PR #26) x physical_1/8000 (this proposal)": 0.8747712931680358,
+   "count_1/4000 x physical_1/1000 (PR #26)": 0.874771347834819,
+   "count_1/4000 x physical_1/2000": 0.8747713098054303,
+   "count_1/4000 x physical_1/4000": 0.8747712908853024,
+   "count_1/4000 x physical_1/8000 (this proposal)": 0.8747712815155875,
+   "count_1/8000 (this proposal) x physical_1/1000 (PR #26)": 0.8747713420972343,
+   "count_1/8000 (this proposal) x physical_1/2000": 0.8747713040682837,
+   "count_1/8000 (this proposal) x physical_1/4000": 0.874771285148064,
+   "count_1/8000 (this proposal) x physical_1/8000 (this proposal)": 0.8747712757782852
+  },
+  "last_halving_gain_count": 5.737302299912983e-09,
+  "last_halving_gain_physical": 9.369778841694654e-09,
+  "first_order_continuum_estimate": 0.874771260671204
+ },
+ "break_even_slope": {
+  "count": 0.042400499401801246,
+  "count_search_target": 0.04232527914,
+  "physical": 0.03964137808327296,
+  "physical_search_target": 0.03960260713
+ },
+ "multi_face_gain": 0.0,
+ "natural_cost_bootstrap": {
+  "theta_at_steps_1/2000_and_1/1000": {
+   "K = 4.4973108": 0.8747713594876724,
+   "K = 6(2*0.8747729897-1) = 4.4972758764": 0.8747713567835897
+  },
+  "gain": 2.704082624482851e-09
+ },
+ "geometry_floor": {
+  "ell(theta)": "11/3 - 4*theta",
+  "reserve": "1/5 - ell > 0",
+  "theta_floor": "13/15",
+  "decimal": 0.8666666666666667
+ }
+}

@@ -108,6 +108,23 @@ The current comparison chart and PR verification table are shown in [Progress an
 
 [QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue), used extensively for this work, is a public index of reusable QRH mathematics and formal components, open to source-backed contributions and corrections.
 
+## Conditional source-chain refinement (proposal, 23 October 2026)
+
+Subhanjan Das (@subhanjandas), with substantial assistance from Claude
+(Anthropic), contributes a [fine-step source-chain proposal](auto-research/proposals/2026-10-23-fine-step-source-chains.md)
+for **θ = 87477128/100000000 = 0.87477128**. It keeps every analytic input
+of Collet's PR #8 framework and the role-specific design of PR #26, and
+only refines both finite source chains to Λ steps of 1/8000 (20,527
+stages). The self-contained exact replay passes
+(`python auto-research/fine-step-source-chains/replay.py`), and the same
+graph is rejected at 0.87477127. **This is a conditional candidate, not a
+Lean-verified or accepted record**: the analytic NF/NR application at the
+new constants, the Lean endpoint and independent review remain open. Its
+[research log](auto-research/fine-step-source-chains/RESEARCH_LOG.md)
+also records that finite tuning of this framework has about 2·10⁻⁸ left
+(continuum estimate ≈ 0.87477126) and that its probe geometry cannot go
+below 13/15.
+
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
@@ -157,6 +174,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.
 - `CONTRIBUTING.md`, `AGENTS.md`, `CONTRIBUTORS.md`: how to contribute, the agent quick start, and credits.
 - `depth3/`: the conditional third affine level on top of tracker PR #67 (`PROOF.md`, `certify_depth3.py`, `model.py`, `reports/`).
+- `auto-research/fine-step-source-chains/`: the conditional fine-step source-chain proposal at θ = 0.87477128 (exact graph, certificate, replay, controls, diagnostics and research log).
 - `upload.sh`: pushes this folder to GitHub.
 
 ## Sponsors

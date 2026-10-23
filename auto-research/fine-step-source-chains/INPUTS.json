@@ -1,0 +1,35 @@
+{
+  "upstream_commit": "e4cf5a2b1f967746b36606d3352549ee598e373f",
+  "pr26_head_commit": "f7798b155bd6d3938730a81fa4a5e987ca3fdaf2",
+  "reused_from_pr26_unchanged": [
+    "nf_source.py",
+    "return_budget.py",
+    "search.py",
+    "search_model.py",
+    "combine.py"
+  ],
+  "preprint_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "preprint_paper_git_blob": "268c4e3206d460c617d3d2129742a72b831b3def",
+  "files_sha256": {
+    "auto-research/fine-step-source-chains/sources.json": "f04d9faeba9f9fac1982e7f11155541427b5d79cc743a9ecffa5b84bc51c5edc",
+    "auto-research/fine-step-source-chains/certificate.json": "74e271612f43fb8c8a6d8d56c3ba081d5b2007895e2bb74b4d8b5aaa983f9f74",
+    "auto-research/fine-step-source-chains/certify.py": "2de3b6d7f68860ee2c0b18d0739ab30ebf6b8e8c68e9fdc7e71c00a30a46df12",
+    "auto-research/fine-step-source-chains/nf_source.py": "f3feeec60e696636593816345a1a917dd89c6f18b0028406598882949437a1e8",
+    "auto-research/fine-step-source-chains/return_budget.py": "b82c7bb46fa9aa80598955b1358534a92b1ee06b5c5392e2d53f6452bb8ca7c1",
+    "auto-research/fine-step-source-chains/search.py": "e0994deb8483904e5045e663d278ebbacab78798ed2ddf994924afccbec124a8",
+    "auto-research/fine-step-source-chains/search_model.py": "a2ee01d6183390110e36d198c403ea492724a68b39ce68a08a014960231ce719",
+    "auto-research/fine-step-source-chains/combine.py": "503a9903df90c08591494a227c615ae0f2f406366fad95dff3287343dbd831bb",
+    "submissions/hailey-collet-1252270103/lean-sources.zip": "e69c31261bb4f7b997679220f7b0c32063af4721dd95dcb787d8b5074f95adfa",
+    "submissions/hailey-collet-1252270103/paper/certificates.tex": "932bd79b913d88485194bab9a75f25d7709b539d9134202ef915e1e20b967ef7",
+    "submissions/hailey-collet-1252270103/paper/feedback.tex": "922e9e0ec5dbacdd58a1db9480e95d1bf376783ab87e68d426ff401f24d62e3c",
+    "submissions/hailey-collet-1252270103/paper/return.tex": "feb05e61e8abcee1c09dc6bcb70df6b4e913b05b861fb5c91b72cf536d3becce"
+  },
+  "graph_canonical_sha256": "aa8595bd4dc44f9c2e4b98985eea03aec0817702ad8f9e5220f5b4a230eabec7",
+  "environment": {
+    "python": "3.13.17",
+    "sympy": "1.14.0",
+    "numpy (search/diagnostics only)": "2.5.3",
+    "scipy (search/diagnostics only)": "1.18.1"
+  },
+  "scope": "Pinned input identity and environment. No complete Lean endpoint or independent mathematical acceptance."
+}

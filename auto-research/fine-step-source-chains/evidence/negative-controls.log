@@ -1,0 +1,8 @@
+PASS rejection: self-dependent first source | 'count_1'
+PASS rejection: out-of-domain source face | 
+PASS rejection: missing rectangle in the cover | 
+PASS rejection: duplicated rectangle in the cover | 
+PASS rejection: Python -O
+PASS rejection: same graph and h at theta = .87477127 | Uncertified return box new_top (Fraction(960063, 2097152), Fraction(122888067, 268435456), Fraction(33554431, 67108864), Fraction(1, 2))
+6 negative controls passed; no analytic or Lean verification is implied.
+exit=0

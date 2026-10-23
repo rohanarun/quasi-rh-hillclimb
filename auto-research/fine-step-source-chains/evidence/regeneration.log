@@ -1,0 +1,7 @@
+# Regeneration of sources.json from search.py (generate.md commands)
+count: {"nodes": 10763, "last": {"id": "vector_10763", "B": "0.96259643646619", "L": "3.1519358", "cap": ".044001", "q": "0.545
+physical: {"nodes": 9764, "last": {"id": "vector_9764", "B": "0.96771143048276", "L": "3.2768108", "cap": ".043001", "q": "0.56435
+sha256 regenerated: f04d9faeba9f9fac1982e7f11155541427b5d79cc743a9ecffa5b84bc51c5edc
+sha256 committed:   f04d9faeba9f9fac1982e7f11155541427b5d79cc743a9ecffa5b84bc51c5edc
+result: REGEN_IDENTICAL
+environment: Python 3.13.17, NumPy 2.5.3, SciPy 1.18.1

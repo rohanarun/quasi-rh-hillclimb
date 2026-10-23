@@ -1,0 +1,8 @@
+PASS 20,527 acyclic sources (10,763 count + 9,764 physical stages)
+PASS 41,054 width endpoints: 656,864 strict and 41,054 weak gates
+PASS 369,486 cubic density polynomials with interpolation cross-checks
+PASS 224 return boxes; 2,688 coefficients; 49 admissions; 33 reserves
+Conditional theta = 87477128/100000000 = .87477128; reserve = 1e-9
+Gain over PR #26 (.87477137) = 9e-8; over PR #8 (.8747729897) = 1.7097e-6
+No new Lean build, analytic review or accepted record is claimed.
+exit=0

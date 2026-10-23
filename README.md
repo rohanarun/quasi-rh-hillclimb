@@ -43,6 +43,18 @@ Snapshot: **22 October 2026**. PR numbers in this table refer to **this reposito
 
 The independent verification and comparison chart in this update were prepared by Rohan Arun with Codex (AI-assisted). Hailey Collet remains the sole human author of the PR #8 contribution; all inherited proof credits and licenses are retained. [PR metadata snapshot](verification/readme-progress/pull-requests.json).
 
+### Additional conditional proposal (23 October 2026)
+
+Subhanjan Das (@subhanjandas), with substantial OpenAI Codex assistance,
+contributes a [role-specific source/return proposal](auto-research/proposals/2026-10-23-role-specific-source-caps.md)
+for `theta = 87477137/100000000 = .87477137`, extending Collet's PR #8
+framework with two finite source chains. The self-contained exact replay
+passes. **The changed endpoint is not Lean-verified or independently
+accepted:** analytic integration, the revised return formalization and
+kernel replay remain outstanding. This proposal does not replace the
+independently checked endpoint or accepted tracker record above.
+See the [readable account, evidence, failed routes and next steps](auto-research/role-source-caps/README.md).
+
 ### Upstream contributors and verified bounds
 
 These **26 entries** come from the [tracker catalogue snapshot](verification/readme-progress/tracker-catalogue.json), retrieved on 22 October 2026. “Tracker verified” links to that entry's certificate; it reports the tracker's verification, rather than claiming a new independent rebuild of every row here. Decimal bounds below are rounded to 12 places; exact statements and source revisions are in the certificates. Useful non-record contributions remain listed and credited.

@@ -1,0 +1,3 @@
+PASS 3,911 exact data exports, validity goals and earlier-parent induction links
+PASS 251 generated Lean source hashes
+Export fidelity only: no Lean compilation or endpoint proof is established.

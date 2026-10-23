@@ -1,0 +1,5 @@
+PASS 3,911 acyclic sources; 70,398 density polynomials/interpolation checks
+PASS 125,152 strict gates, 7,822 weak gates; both actual source caps
+PASS 224 return boxes; 2,688 coefficients; 49 admissions; 33 reserves
+Conditional theta = 87477137/100000000 = .87477137; reserve = 1e-9
+Gain over previous candidate = 3e-8; no new Lean build or independent acceptance

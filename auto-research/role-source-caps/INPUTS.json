@@ -1,0 +1,16 @@
+{
+  "upstream_commit": "e4cf5a2b1f967746b36606d3352549ee598e373f",
+  "preprint_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "preprint_paper_git_blob": "268c4e3206d460c617d3d2129742a72b831b3def",
+  "files": {
+    "auto-research/role-source-caps/sources.json": "e3802dcab42b566c558898ac072a0a72b51df447c24dadd45e90878fa6d826ac",
+    "submissions/hailey-collet-1252270103/lean-sources.zip": "e69c31261bb4f7b997679220f7b0c32063af4721dd95dcb787d8b5074f95adfa",
+    "submissions/hailey-collet-1252270103/paper/certificates.tex": "932bd79b913d88485194bab9a75f25d7709b539d9134202ef915e1e20b967ef7",
+    "submissions/hailey-collet-1252270103/paper/feedback.tex": "922e9e0ec5dbacdd58a1db9480e95d1bf376783ab87e68d426ff401f24d62e3c",
+    "submissions/hailey-collet-1252270103/paper/return.tex": "feb05e61e8abcee1c09dc6bcb70df6b4e913b05b861fb5c91b72cf536d3becce"
+  },
+  "graph_canonical_sha256": "054525db8315c689c0e8c9da9de1bd65fa19dd0282dfb4dd81e187ac2c4b8568",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "scope": "Pinned input identity and environment. No complete Lean endpoint or independent mathematical acceptance."
+}

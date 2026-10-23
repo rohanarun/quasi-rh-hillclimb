@@ -1,0 +1,6 @@
+{
+  "checked_stages": 3911,
+  "minimum_strict_FD2_gap": "69875366489073228495410793/7321771374954019998175000000000",
+  "symbolic_identities": 3,
+  "scope": "Necessary gate and exact flow algebra only; no limiting ceiling or new endpoint"
+}

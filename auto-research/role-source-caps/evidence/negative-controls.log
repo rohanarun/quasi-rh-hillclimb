@@ -1,0 +1,6 @@
+PASS rejection: self-dependent first source
+PASS rejection: out-of-domain source face
+PASS rejection: missing rectangle in the cover
+PASS rejection: duplicated rectangle in the cover
+PASS rejection: Python -O
+Five negative controls passed; no analytic or Lean verification is implied.

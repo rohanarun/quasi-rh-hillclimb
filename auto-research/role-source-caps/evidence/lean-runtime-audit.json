@@ -1,0 +1,19 @@
+{
+  "lean": {
+    "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "archived_pin": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "matches_pin": true
+  },
+  "leanchecker": {
+    "sha256": "ccef1bfe9bfeecea65137d94a69033c1a89f360711f50fa3178e7ba3e696fcbe",
+    "archived_pin": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "matches_pin": false,
+    "scope": "Official release executable. The archived judge checker has a different pin; equivalence is not asserted and neither checker was used successfully here."
+  },
+  "numeric_proc_executable": {
+    "readable": false,
+    "errno": 13,
+    "error": "Permission denied"
+  },
+  "diagnosis": "Unmodified Lean IO.appPath uses /proc/<pid>/exe; access denied. No runtime modification or workaround applied."
+}

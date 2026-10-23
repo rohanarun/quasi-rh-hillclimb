@@ -9,6 +9,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | | value |
 |---|---|
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
+| Conditional role-specific source/return proposal | theta = 87477137/100000000 = .87477137; [exact finite replay and handoff](auto-research/role-source-caps/README.md); new analytic integration and Lean endpoint pending; not an accepted record |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best certified (final section only) | Re s > 10195/11652 = 7/8 − 1/23304 (ℓ = 1/6 + 1/5826, h = 405967/500000) |

@@ -1,0 +1,2 @@
+sympy==1.14.0
+# Optional numerical search only: numpy==2.3.5, scipy==1.17.0

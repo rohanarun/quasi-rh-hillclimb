@@ -1,0 +1,33 @@
+{
+  "scope": "Floating-point diagnostics only; not certificates or optimality proofs",
+  "cases": [
+    {
+      "case": "previous",
+      "numerical_theta": 0.8747713884193243,
+      "h": 0.8000687865202412,
+      "count": "narrow_1345",
+      "physical": "narrow_1220"
+    },
+    {
+      "case": "finer_count_only",
+      "numerical_theta": 0.8747713649473746,
+      "h": 0.8000697769413397,
+      "count": "vector_2691",
+      "physical": "narrow_1220"
+    },
+    {
+      "case": "physical_cap_only",
+      "numerical_theta": 0.8747713851454215,
+      "h": 0.8000687698379139,
+      "count": "narrow_1345",
+      "physical": "vector_1220"
+    },
+    {
+      "case": "both",
+      "numerical_theta": 0.8747713616734686,
+      "h": 0.8000697604017478,
+      "count": "vector_2691",
+      "physical": "vector_1220"
+    }
+  ]
+}

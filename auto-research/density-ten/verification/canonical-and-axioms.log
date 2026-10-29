@@ -1,0 +1,21 @@
+'Candidate.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.canonical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityTen.final_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityTen.physical_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityTen.Return.beta_le_theta_of_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage3_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage4_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage5_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage6_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage7_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage8_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityTenAudit.stage9_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityTen.Density.ds_low_aux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityTen.Bridge.Return.GenericPhysical.Assembly.exists_compatible_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QRH.DensityTen.Bridge.Return.GenericPhysical.Assembly.exists_compatible_data_with_mesh' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

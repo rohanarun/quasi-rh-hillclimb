@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-28T20:12:37.371741+00:00",
+  "tracker_old_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "tracker_publication_base": "d52ee460644ef549df52ca180872e04ee2f84504",
+  "research_old_base": "1dfdbc51bb887aaabc65b3b78686453a2a77e25b",
+  "research_publication_base": "d706ccb3a128285e122247852824f7b84b2e15a3",
+  "tracker_change": "Only the merged2026-10-28-density-refined submission was added; no previously used dependency, verifier or library pin changed.",
+  "research_change": "Only the independent PR1-28 audit report was added.",
+  "submitted_source_hashes_unchanged": true,
+  "submitted_source_count": 749,
+  "merged_tracker_pr": 90,
+  "merged_at": "2026-10-28T19:48:56Z",
+  "merged_bound": "8739461/10000000",
+  "new_result_baseline_remains": "436972583/500000000 (pending tracker91)"
+}

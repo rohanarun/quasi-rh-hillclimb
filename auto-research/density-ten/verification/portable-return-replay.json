@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "Recompute all ten return certificates with the portable published verifier. Every geometry, identity, admission and return certificate matches the original.",
+  "rounds": [
+    {
+      "round": 1,
+      "status": "PASS",
+      "return_rectangles": 101,
+      "elapsed_seconds": 12.324
+    },
+    {
+      "round": 2,
+      "status": "PASS",
+      "return_rectangles": 101,
+      "elapsed_seconds": 7.365
+    },
+    {
+      "round": 3,
+      "status": "PASS",
+      "return_rectangles": 101,
+      "elapsed_seconds": 5.945
+    },
+    {
+      "round": 4,
+      "status": "PASS",
+      "return_rectangles": 101,
+      "elapsed_seconds": 3.143
+    },
+    {
+      "round": 5,
+      "status": "PASS",
+      "return_rectangles": 99,
+      "elapsed_seconds": 8.923
+    },
+    {
+      "round": 6,
+      "status": "PASS",
+      "return_rectangles": 101,
+      "elapsed_seconds": 11.736
+    },
+    {
+      "round": 7,
+      "status": "PASS",
+      "return_rectangles": 99,
+      "elapsed_seconds": 4.673
+    },
+    {
+      "round": 8,
+      "status": "PASS",
+      "return_rectangles": 99,
+      "elapsed_seconds": 3.731
+    },
+    {
+      "round": 9,
+      "status": "PASS",
+      "return_rectangles": 99,
+      "elapsed_seconds": 7.16
+    },
+    {
+      "round": 10,
+      "status": "PASS",
+      "return_rectangles": 99,
+      "elapsed_seconds": 9.421
+    }
+  ]
+}

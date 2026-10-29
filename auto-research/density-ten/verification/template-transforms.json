@@ -1,0 +1,1264 @@
+{
+  "Candidate/Main.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Candidate/Main.lean",
+    "old_sha256": "83a7a5f0db007aea3a4241f7fad5b2e780bc9d76d6f7000ff39b6cca5f1fb8f6",
+    "change": [
+      "namespaces/imports",
+      "exact endpoint/source literals"
+    ],
+    "new_sha256": "0338e147fc5bfe4c21a4b3db84006f7227da72b8a8cb0a3434c5872d6364eaeb"
+  },
+  "Submissions/density_ten/Theorem.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Theorem.lean",
+    "old_sha256": "627e30bbc81d6f802df1a05c443b1669070567af5d756c136be44bc3dd92ed71",
+    "change": [
+      "namespaces/imports",
+      "exact endpoint/source literals"
+    ],
+    "new_sha256": "a542dc272ff36567d028b41fdb9843a0dca2795afa0f504424a9560dad8d30f8"
+  },
+  "Submissions/density_ten/Source/HybridGates.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Source/HybridGates.lean",
+    "old_sha256": "3f4b4be3359a48aa385e6c8d72abd04b0305e179dcb92b9951b4834ca001ffb7",
+    "change": [
+      "namespaces/imports",
+      "LOW profile and identities"
+    ],
+    "new_sha256": "3baae9b9b5807f5dc543e7e5d483420a00dc48ba91e94924827c3cbfec569b5d"
+  },
+  "Submissions/density_ten/Source/Step.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Source/Step.lean",
+    "old_sha256": "b24065fc7645fc764dacdc8a570a855cb67bc4698ca4788ea39c598bdce2d4b5",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "08b778c5eb830cedeb7b4f6dd58a4ba743ed1546d44c133595c03986343c143c"
+  },
+  "Submissions/density_ten/Return/CountAdmission.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/CountAdmission.lean",
+    "old_sha256": "81b51eb3e67c31239bcdcd4ce7ac892ea18c903b8d57a4eab2a63000f67b08b4",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bf8922b0fdaee4f17f5dd2297bf9c563ff26a58becf5543e058d3b711bb82ec7"
+  },
+  "Submissions/density_ten/Return/Geometry.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Geometry.lean",
+    "old_sha256": "26b56763c9adde5fdccd87d3327e85fb7471994e21cb24e6f087944e695ccb95",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "54a99a7b8d727bad347b200de03d970f391386cf6a2b05982196003b202beef0"
+  },
+  "Submissions/density_ten/Return/EndpointFromSources.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/EndpointFromSources.lean",
+    "old_sha256": "4cac2588b6c033eb8bdedae124e594fd13b0db24f96ff86a9cc18d97d7ac7931",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "7f605d0501f8f18121cfcabb8dd6f08dd7c0ea701a7dd60de9cb54acfeb13fad"
+  },
+  "Submissions/density_ten/Return/CountDecode.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/CountDecode.lean",
+    "old_sha256": "dddc1b66d38f8e88691fdfc6ab6f6cac6258c8ce98b3f5b1abe710ba46ba1adf",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "32bb4f65667d671bddae3f7af72b6855d3e6278d5fcff109e72f8253d4804d12"
+  },
+  "Submissions/density_ten/Return/Conductor.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Conductor.lean",
+    "old_sha256": "734040b14d6bb69a5eff2fbc17d5e6bc9861d99508d16f55dab0115cc6eda37e",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ac1d66974fc236811c8e2a9aeeb00c7f8aa4a5aec11d02e6a4240c6b1a1dd830"
+  },
+  "Submissions/density_ten/Return/SourceInlet.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/SourceInlet.lean",
+    "old_sha256": "d441d133cbd9f86421a7cc32cf522b8ef3c99a2df3842624890c760fb501101f",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "d0479d3b569869bd9307df32258e4c66a830b72b8370d951b0797e992189fb11"
+  },
+  "Submissions/density_ten/Return/Endpoint.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Endpoint.lean",
+    "old_sha256": "210adbdf328b8a0ed21bfcb75cd1b15702343f8fd8856bbb043d0f9331a47618",
+    "change": [
+      "namespaces/imports",
+      "exact endpoint/source literals"
+    ],
+    "new_sha256": "12f0994a96f9300c8cbda7d82f32eeb12417eb6c00294f3bea44ff36cfb217c9"
+  },
+  "Submissions/density_ten/Return/FinalWindows.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/FinalWindows.lean",
+    "old_sha256": "750b44039b9f8514efc4034f2a045e84ba1098e85ee2e46542f2a28588f1234b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "68fb2c71a7f918b04400d7971613e59018ea180c496e1d2408d328b16028a676"
+  },
+  "Submissions/density_ten/Return/Facts.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Facts.lean",
+    "old_sha256": "1cceda33820c0ebfd3940d104c7e5905c2cb1e2d7900c76ae33c7602253252e6",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "1745408c210ff545cd1de68d357e8f8001c8a4bb32419a3a3a4aaa5714f0cb39"
+  },
+  "Submissions/density_ten/Return/Windows.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Windows.lean",
+    "old_sha256": "a4b1070f06da1809640e7443dda228026ced794b2ee7d3db5a10bf903a01c7f6",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "d55490ec868012bf440fc033b0e21c2e65ea34d1e8d4096fca1fc12a6b5a4463"
+  },
+  "Submissions/density_ten/Return/TransportInstances.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/TransportInstances.lean",
+    "old_sha256": "c207c25c251e367ea51f65545ff9b60cac12c23d1242a39c0016e226e94abdb1",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bf37bebfc8a0f6cd4a6c7d5eb8a486a0259d01499d661cf8a6178a39566d7bee"
+  },
+  "Submissions/density_ten/Return/CountWidth.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/CountWidth.lean",
+    "old_sha256": "a8a9acccb9334c4207b8778eddcc844141fffaed3316a0705daa396132eca747",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "824866d4bd0962af941d7b0f114cb33eb36eeb53a7c71772bff39c85d1f37339"
+  },
+  "Submissions/density_ten/Return/FinalRows.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/FinalRows.lean",
+    "old_sha256": "722a7f2e9f8e7aa29ba105affe7f2a0910669a70f4f506b625134c79a2259a5c",
+    "change": [
+      "namespaces/imports",
+      "return reserve equality and comments"
+    ],
+    "new_sha256": "54f74ee90d9e7827ab6582881dd3cb5351e7e878776c7367fcd29e58bc887386"
+  },
+  "Submissions/density_ten/Return/WindowSources.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/WindowSources.lean",
+    "old_sha256": "1c41b4dde16e85716e753316fa74bf536e55c0cef6a954a7d9f4be3c43b18ab8",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "c0174b9401191ba738de768f538cd06c049f4673b4a53f78b581cce9bdb85cf6"
+  },
+  "Submissions/density_ten/Return/FinalSchedule.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/FinalSchedule.lean",
+    "old_sha256": "2c0aee303ef0e2fd2051130e8dcacd416f80759fc2ed200ed056a9615b71a121",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e5c5149de530d491df31346cf87fe63ad746ca4527b657e0f64d81118816e5cd"
+  },
+  "Submissions/density_ten/Return/CountWindow.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/CountWindow.lean",
+    "old_sha256": "a24553d003b483e66c86f0d8255acde6ea40eb6df6c50cc43eb3b0541fda1945",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "312e6ed31e5132519a62c02ab2832cc2e7b32cd3e63b21d3e0a95ebd49416fff"
+  },
+  "Submissions/density_ten/Return/EndpointFromNumerator.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/EndpointFromNumerator.lean",
+    "old_sha256": "6149a0ee6e787a3effaf0857dd9d4b818546aba87c93f78435a9fc25dd707568",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "6000bdf974a0683d89ec33433d338ee8da51113c8b353a422a923594b31da3a6"
+  },
+  "Submissions/density_ten/Return/CountMonotonicity.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/CountMonotonicity.lean",
+    "old_sha256": "0840ae68089dd439d22dedc62e4cbeb6b0148477f9077d2822e06473f4f71ebf",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "abd8e0b725e5c40fae2eec43d5cd1b719577583f52f56de19518a40da7a98835"
+  },
+  "Submissions/density_ten/Return/Formulas.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Formulas.lean",
+    "old_sha256": "cdb310c7a8918896de3efcb6ee6e84a4e8e62fff5363fb320a39ffbf0fcea017",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0501e3b2cfbfbac96c3d709d2bda7a4e48bd15f769902adb1d9a053d411de946"
+  },
+  "Submissions/density_ten/Return/Constants.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/Constants.lean",
+    "old_sha256": "46ece8f9475b5159ee709e1526c1615fa7bb6341b93b2ee76c890943af76ef1e",
+    "change": [
+      "exact candidate constants and derived edge values"
+    ],
+    "new_sha256": "ee67a1ba268245eac9b0f9a2ecb6c252b026cb662e73435177cb35fee0d96cbc"
+  },
+  "Submissions/density_ten/Return/FinalEnvelopeBounds.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/FinalEnvelopeBounds.lean",
+    "old_sha256": "08c7a45168014bc9a9d83b36f2b85301acdb235cec4e8126ecbd6536df5aa9d6",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "257de1500b612c7aed5d2b9d13bbc3c5cf833ecbd090c6620b75832ddd7af092"
+  },
+  "Submissions/density_ten/Return/FinalScheme.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Return/FinalScheme.lean",
+    "old_sha256": "1b4d41beada16cef12a0d6791747238bba1e415c1b63ff08b5b3432f16c6ed15",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e33d04acbbecc6c47907a7b1d16cd7e5ac66c490acd105c52066837254ec7088"
+  },
+  "Submissions/density_ten/Density/StepGates.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Density/StepGates.lean",
+    "old_sha256": "efb75a0bf31de1b54c0bb87afcadc2ce12a2adab6d67acfa244d37e95a27e696",
+    "change": [
+      "namespaces/imports",
+      "LOW identity premise only"
+    ],
+    "new_sha256": "683f7f658836b7110599511c43f5e6d2e9872a4434667253c32ea4f244a303f8"
+  },
+  "Submissions/density_ten/Density/LeafHigh.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Density/LeafHigh.lean",
+    "old_sha256": "80f46f151a23d2adcf9ac80f91872be09a90d082d98914e67dc745277bcd6175",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "fdd4eb67216181cc75365c45f2495c3bf09a546add22e71669deb5d0c2967c50"
+  },
+  "Submissions/density_ten/Density/Leaf.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Density/Leaf.lean",
+    "old_sha256": "562492cefce02741b42f5a24f6a4efef6f8450bb488d59237eebcfe3e243d2a6",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "07a1b5098a54d1fd31582821f904a686f52fe1973882df13ee248fed10f849f3"
+  },
+  "Submissions/density_ten/Density/Price.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Density/Price.lean",
+    "old_sha256": "37c67f569cf653e80eaccf692279a240f30bf7b4aab9010497c40b1627146cec",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "7ebbfaad413f2acbf75d8d2ce37ef9348da6f24e033f9e2d9b86b895e7b4f9ba"
+  },
+  "Submissions/density_ten/Density/LeafHighEnergy.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/Density/LeafHighEnergy.lean",
+    "old_sha256": "68575cc258ea0e9d27830017a44ba5c3efe8d2a4bb54c0138f0a5e10c8743a6d",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "8dde3ea2b886bb2951cc0d1749d9faf157e16db6871d9940da0a7b0a8578a578"
+  },
+  "Submissions/density_ten/DensityWide/SmallHeight.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/SmallHeight.lean",
+    "old_sha256": "28ec07216a6cd20d824853a4542d41a2e0d50f1c69d711d2f35850ad69aa07e4",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f8bc7f650418bbdb11ba627573684be9e304d0ae39da6dcf67d6b64327509521"
+  },
+  "Submissions/density_ten/DensityWide/UniformFree.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/UniformFree.lean",
+    "old_sha256": "bd650b5e9d35a86e254c850d315b36db243616f90fa2bf2ecb10c98abdf2e842",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "4acd49c3189e3a2e5365977826228a91d8892885a54da9fe9db1428f6afd0608"
+  },
+  "Submissions/density_ten/DensityWide/NaturalEndpoint.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/NaturalEndpoint.lean",
+    "old_sha256": "a96ef2beed394aa6260e7b9e61c9729b28c902fe13e50f7485521075ebdb6a87",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "4855992da7e0b51d63b1fcdf8e8a471ce1da7f403aac532a52e00b84b97cdbcc"
+  },
+  "Submissions/density_ten/DensityWide/BufferedPartition.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/BufferedPartition.lean",
+    "old_sha256": "28dcad6c1f645c1532af19a39049af9c8c03a4b95e15e9c15415fd2abd185c20",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "a9e111dc3d2c1e200aa6c90c036d72e43166784c716a697e7a5ff93a528ecf75"
+  },
+  "Submissions/density_ten/DensityWide/ActualZeros.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/ActualZeros.lean",
+    "old_sha256": "078e519984513b1908021f0a6b1c21dd0a66b45fa2f3f0562ab43b6ab7886ecb",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "c1385a28f813274aeae9a98edeeaab5764d63862331aeceb244ca3cdb147246d"
+  },
+  "Submissions/density_ten/DensityWide/FixedDensity.lean": {
+    "old_path": "/tmp/qrh-four-tracker/submissions/2026-10-28-density-batch/src/Submissions/density_batch/DensityWide/FixedDensity.lean",
+    "old_sha256": "7794327bdc643bbdb4a7c662e9e259b0396dd965ef66fe8d8f85fe30d979fc52",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "1e374bb1b96944c7e9cc325812b45c673ed4383a29322cff768cfa53879eb829"
+  },
+  "Submissions/density_ten/Bridge/GenericFeedback.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/GenericFeedback.lean",
+    "old_sha256": "afff91177013a96f5bb9eeb357cb017848e4a007dc617505c1a7bfd22744f1f6",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f07046e72c05314665524e2bf69a29f9213a3e05da1c2d834266dbd64a3c0dbb"
+  },
+  "Submissions/density_ten/Bridge/GenericScalar.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/GenericScalar.lean",
+    "old_sha256": "bb26e451526b0c29669fd50e2115e47d534fa711298044d213e7e1585e22e14c",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "5920c22d9a0ef8b1add497c434158544f43dac72bb17a1c257d7422aa18062bb"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Active.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Active.lean",
+    "old_sha256": "c7f4b4128c66afc8d43882e85d06f1e7dab143c3e211559e220129ca5043a6c1",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "713228dc37f8987d01a03ebaed6c79ffe2c8324bafa0d319a3d60cba8380611a"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/ActualBin.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ActualBin.lean",
+    "old_sha256": "34e81dbcbf6a77d729f5bee8149afff5d7ec5164789a807de640fb97ac453020",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "9e905cae94f09f6e800b0e1935ce727ac8cf50b89dc4bb6647166cecab3de489"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean",
+    "old_sha256": "01a0d5a0aac7426d9c1b99b4354eb1a63ba6f9745cc38bef56d7ccafc1596c5a",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ab331771d9cb632bee7a2cdfa8a10092819d689f7119406e377fa012d954ebd7"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/BinBound.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/BinBound.lean",
+    "old_sha256": "f29dee56a6718e70b55f5a4518affb07d2a4c20c9426f89d8aab6ba8dc6299ac",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "743e598b6d8b5023cb17235e34ad9e798a590912f362f9da65048373569e3e8f"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/CanonicalCount.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/CanonicalCount.lean",
+    "old_sha256": "f5b0801611dd28bd333302299002d5d1b1bd774a227972e60df5dd320db917c0",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e8c33f17baaebf694c6c82aeb66a6a45d1ca5c2c7d3240f07c6c697fac4d8ec8"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Chosen.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Chosen.lean",
+    "old_sha256": "2775f1bb23560cd1d1f07cf3fac2181352e54569cf63f0b96784a48102660d05",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "37052f39c5e37caf703f7aaf31ddfa452242becd91bb738e17550e8fd0bc7383"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/ChosenMesh.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ChosenMesh.lean",
+    "old_sha256": "44ce55e62d3fb57022bff3ff64764c3b4b208e54ee4f48605bd1ed0fc3d3f645",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "add182917ed2ff39a71d1d6874ead65e303082032cf5b008fd773264344dc063"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/ChosenSource.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ChosenSource.lean",
+    "old_sha256": "c6a9b343b1dad32c80326f1d2acbd0b4ecc3f7b0917447e9663e8d99ceef0a27",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "70c74df47f9cfc495fcdb2c355cb6960e1e5ac97544f1725d8a480fce652e8fa"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/ClippedCapacityDamping.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ClippedCapacityDamping.lean",
+    "old_sha256": "fb348431691f5afd74f07e6e7cedf6f001a0daa9f3e664bd986c7261abf3dd28",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f3cc31cd34c2c6fba997ff0aa13ba98d2f953721dd811ef3175d6d417528bee5"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean",
+    "old_sha256": "49eff5dccbc7758476280252322b5b0d0ecdc23ed60281d9984e82f290880195",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "9fdd77e3f23aedb8c1c1feb8bea40122b7efb4b4d6ec49ffecfe8196898ce7dd"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean",
+    "old_sha256": "798feb61eebdd6a68558425a9dac0c6cf836eeda781885883646727767c9abb9",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "4083edde1396438d1935d5723caa9a340a6aeb9a728b2f4aacc81aff4d4ed6bf"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/CountParameters.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/CountParameters.lean",
+    "old_sha256": "0a219c2d5b04f90b81b524d2573e4414bc190024bccbe995f3b06d74304fcf39",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bd52719ab44268b152c6c6891af9d9de9c17cd8253492b6b1cc29c980af9a64f"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Data.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Data.lean",
+    "old_sha256": "b77460ff5d0e674c74a9cca9899e6a3934e119e2def0d5a5568ec21c80220ce9",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "24f152c6702d880d99ed094de4b2b529c270546d13ff4ab91620b8892e55ab93"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Bridge.lean",
+    "old_sha256": "c6700d9778f0f57bbc5400a3a9a0815cea19fc9d620c382b7b42e1e58c84c8ae",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "025d4c8089a4b31ce0910f9d6435b4da614dc1d154a4b9f41dceb4494d0a2a8c"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Cells.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Cells.lean",
+    "old_sha256": "263129132d201b7d769c7ca56c8f2ab90542c8975e017b9cda27dd9cdcbf90c0",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e1b662b0f392777b91b010a95b249f3d5ea69dd428b29d8a438836bd06ada831"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Geometry.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Geometry.lean",
+    "old_sha256": "6fb2f037dfdb9c648a2c0b8ce0f2b0d8d897079b7cca7cfd2adb05f729416eda",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "5ee167105906cc813187d737fc8987298b1fc7230dca2a55287784033867548b"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Partition.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Partition.lean",
+    "old_sha256": "be5c8927e01143cc288301393535aa4ab335840612aa38942d9e5f2ccf218ed3",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "db4f1cee393cda0921c3b2cd8a1ce97038a94142f07e5928e21591080788a329"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/SourceCells.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/SourceCells.lean",
+    "old_sha256": "ebd4ef967632448f2355815a271bb27ede76da8662d3e133e6ac98037535e9c8",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ab0dc4dc91ceba466853015b5a7db36563e1455b0dfe118152d7e582ed785fac"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Summation.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Summation.lean",
+    "old_sha256": "7c34ad6848ca20924b7959f9567a2a5ae49a28ca8645541e26e5896d6d0e8d03",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "b18af92222f5eb0ac8266dab6171e1b268a953d9687bca53d78284e7b2250c68"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Finite/Transfer.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Transfer.lean",
+    "old_sha256": "7ee63a6f4f890782dd4e338e477af42ff00cbbb84075b4a7adc8dcf6a01f7dc8",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "6609b56a0e9bfc1f0584ae0d808c16739379936a6635a8e43dff9126255ae8c6"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/FiniteBins.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteBins.lean",
+    "old_sha256": "c26de7aa28d5b023de9d465ec00cbe64dc13db633d2a6d9ef59946e9869e34d1",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "fac75af788d2df26703003b59b8a4f13e1ce51658a8e781312940925e852e75b"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/CubeTransfer.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/CubeTransfer.lean",
+    "old_sha256": "b720c96144464ba1b4adff3a773a1d3b1261c6be0d974c7d7905a9ef25c42199",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "1aba02783f8c4b876c552fdcac1e946cd9bbdba5df21cbd6b017d40af2b98571"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/FullW.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/FullW.lean",
+    "old_sha256": "89f84c4c7d8e9bb60b99c69e7c270bf84348e26043830d9c6bfb74d41e39813b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "fe24da0ea40aabfe2f0e65984d937d27fa93bfc6d7840509c7a344ab71a424c0"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/Normalized.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/Normalized.lean",
+    "old_sha256": "e3f11829389935f46fa01b29de2e0df2916627f4f16718c5b6935906fc32d489",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "2ba622ac3ea76ee30a73cd8ff3241a3dbf03813e978b88260dab846bad4c8856"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Fixed.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fixed.lean",
+    "old_sha256": "fcbce70969d0f4aa1f0f7ac9665a1d0a6c8d12237dc894d8ee117f59362645a2",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bf3a6347d95d2b516d849de865cf22411911fbd3df3f3eef8a46df83bdd869c9"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Fourier.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fourier.lean",
+    "old_sha256": "53fc14e15b0b899344ba39278143ac091bdd30fb1731ded898676d636491fec4",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e1d8f1253b20012cfed50a15994d1421d8d2b46f805142da6a2015d57a1f8fd0"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Geometry.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Geometry.lean",
+    "old_sha256": "dc7e06157eb04733fd8bb82ef89e4af6fed7fbb4991123f35b3018ad48ec8979",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "de596ed0915e06e95b6a8496817e1fae91a1f9adbcdbffa2b423d83bacb20311"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Helpers.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Helpers.lean",
+    "old_sha256": "db31ee8106291beba3f6c8033af8211db569fbca5d195e23f7d810529cad288e",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ffeb3da805742e1a4582cf120428ed58594fd6d4be12ffd17139dc412414e48a"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Hybrid.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Hybrid.lean",
+    "old_sha256": "fddab540ed7fad3b56484bb6eb77ee8d883c8a86b604423da844817c77fc1b33",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "75f8f912b259206cbdbe95201c217a85b547e6bfca51caeae9efe0219fda5368"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Input.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Input.lean",
+    "old_sha256": "d23f5e28d1331cb8a4af77473fbd77d1207498a5616c361991806d01582362f8",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "20d3e301975191a2ab2a2f8d4bcf1f850fc2f4c89c2e59510a43008104f9e149"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/JointHeight.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/JointHeight.lean",
+    "old_sha256": "dae50cb4affb14743bb684c4d6071d21a81579af1a7b7dcb25729f4f0a26a4f0",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bf73caf89ceb3da402b047cd315c38ce63738f223ad71f7d82763c50f2597192"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean",
+    "old_sha256": "09d33e3abc12907bb3ec9668c85e5e82a34f948119c5031532df1b3ecc940f83",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "b880f4ac12488b286b82b190abce50a7edcf791afab570ff79a55bfacdf1145c"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/MaskedCount.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MaskedCount.lean",
+    "old_sha256": "0b891e61e6d29f513ec852e89fe7a8c6fbdebc19e3015f6081b79751d6fb00de",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "57ddab9bbf6dfb36b713c9aae3f633657db6781b6510f210aa96bc88210f6a8e"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/MaskedSourceCount.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MaskedSourceCount.lean",
+    "old_sha256": "3627b7b70ea48b51f95c8f90f6bbbc8cdb043a5e084e9b7c838ff8a6cd0f0720",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0b8cb128b907795ffe5a566a3926ffcb19ea9ece3c685cdcfd27820aad9b899a"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/MomentGates.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MomentGates.lean",
+    "old_sha256": "4a3f8d032392f372cd8bfc26a2ff66c22ad2254b6e10e622a39fd054ab8c179b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "35fe220ea3ade1703d4248786af99c3242e9932ca1b388fe7a30f82a27a72be8"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/MomentMono.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MomentMono.lean",
+    "old_sha256": "56b6ac829290369be0ff3d47ba9901fda0eed59eeabdb31fb92db9b449c55e9a",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0012946489be052436a76b8375fbd796960580ff8824f6b7094d6b1aae166533"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/NormalizerHelpers.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/NormalizerHelpers.lean",
+    "old_sha256": "d6cd2a1144ca416fb03c94ee7b17ac84b69217ed4846d9950ed9cc68b92e9302",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "430055ca1a5089f27b9df70a2efe726d1ef011c4895f935fee84b8f5d9962411"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldActive.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldActive.lean",
+    "old_sha256": "1960d2ce82b0c32a04a446e61c1dc2a858aae1b5e48a8288a7e2891e2202534e",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "095b3355d12c24c8116d8a2a221df4abdd9aedd2188d679942f1bb12d0e82cc0"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean",
+    "old_sha256": "e87333d01f4ba12f498c573c4573c92bb02065cdc2f9d0a8bd4bc7a36016d0df",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "e32fba6e6150fc1a056e76f63e1536f1886961926d0f704d2cd5ef5e4a8863c4"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean",
+    "old_sha256": "0fb96a60a28506b933dd8f0a90fd99e418ab075532679f266958139a921dbc07",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "64a8f980f61cfce789d84422ee8155bccf70e87088dae792ab0f43db4928a2e6"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldGeometry.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldGeometry.lean",
+    "old_sha256": "5ce979b2ea0598d55dd89da89c8157fe32e58e13589298e9821b22f4537d2fa2",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "975c723aa1754e1f5b708492f86e5be461b7462c0be3c92e9ffed94df71db8bb"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldPacket.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPacket.lean",
+    "old_sha256": "35f4badc2605676cb0356c88324809f081d0e823d8f92e1785386e7c28b5feeb",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "9f592e51c36898db3b05bb5bb662096b8c7a8d563839175330121030a553e884"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldPublic.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPublic.lean",
+    "old_sha256": "efef415c0f51ef024d28add169b4e14be7225c2be088cad6f42fa09e4ee3c63d",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "92160926404f501dfa5b640660b334d895732cb405c16c4ea1aac2102e1b3a13"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/OldSelected.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldSelected.lean",
+    "old_sha256": "14a39c5e7ce32534adb7100ba9201d142b63d780e182c4d9adfd4aef0208d196",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "be8452ac55f9678c8d8f9b663fdef0621b2247e121b40d7693bd11b72739c732"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Original.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Original.lean",
+    "old_sha256": "b46c392ec2cdbbe1dc2d422913fb354962d8b51dcf742087f08f62ee286b0e9c",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "fd236dd1fa3fc5ee5964e3fc0ca2e11933132b5b8a84c2eb6b023f31939077ef"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/PacketBound.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PacketBound.lean",
+    "old_sha256": "5654ebd6e92740e9d9ba011fd148f753997c5c1431b109545e16c83e2ed3d779",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "08f2d7db43aea1e10ece0508fb14e1fec01bbf2066cad6625e68091cd454b3b4"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/PhysicalSourceCount.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PhysicalSourceCount.lean",
+    "old_sha256": "1a2701107893b3b197b12436cd868477e554e2b7290310a2fce43dc0e6a8006b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "c5f177979efa77fdada17d1a7d8d3109d32fc8652787439aed23f941cb98786e"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Public.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Public.lean",
+    "old_sha256": "50f4a5fdfba5e758fbff87da12b73f72243c69f09acb3899dc64420aca33488d",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "8a0988442290776c35249f8039a04ba6809a0db664c33793e841cd8c835f7f91"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/PublicCount.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PublicCount.lean",
+    "old_sha256": "1341a8b97ef66ff22d3a77c844bc9697568f2bc4c31c23f0d50513d068fce928",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "40dbc08bd0e6c30d5a494935a0ec9be45a8f14af3c864464c13c97d1d7c9f7a4"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Retained.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Retained.lean",
+    "old_sha256": "d9635d6d1beeb8e9b6387d58179d3cc905e5bc72a4c0065068c4029c688f7703",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "3a2e4a031cbff126e9f9403800212531367090814083f3909e222b3ae2be3634"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SelectedBin.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SelectedBin.lean",
+    "old_sha256": "80d72ae8ce60d917245de52d38b1655bfee43d34aa5e30c5b6ab00921278da90",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0438678b94b10573ede85433d595b4502e28c06b6f45a56c66727a33bb2d6293"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/Selection.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Selection.lean",
+    "old_sha256": "ca80159c8579275ee8671c6bd2f9adf4cd15548df6350c4477f8d82d31ecab75",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "b1c3c0c6bb34ed313aaddbf918add2c6c553c11025fafaef39a00712d88bb091"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceActual.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceActual.lean",
+    "old_sha256": "9bd753bb7ed4d8facf49480e88e73476a6c41a186be47451d43fd6fc5d24d36b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "dc8e22c7ecd1bcf76a8db6c20a93f88e9609b1593bc1a1579072217e8b7d4b8a"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceClosure.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceClosure.lean",
+    "old_sha256": "bbfc9c101c6ba61925c19b5397605f30ba8b7795a759910699dad3161f9300c0",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "47442a0882837d9bb86b344a31ec5d5e42d665641b9e16eb4541e7187fc9370d"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceCountInitial.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceCountInitial.lean",
+    "old_sha256": "f59cadfd6dd61f70805117c818753d0cb46ab32d110e803aa8205f7d4a3f4bc2",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "48a8a73671cbf7f5a9f0187203fff4c979e627260ca9b0c4334d21705581e4ae"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceFullW.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceFullW.lean",
+    "old_sha256": "2635d9ef72c8bc2c13e14e2cb3bbc94a95cd7c0bba7c770bc5c17803c2c09f01",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "8fe0de83872857ddfcc1c36f57d415bd8ac8f08d7fddd9673cc713667e6166d7"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceLedger.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceLedger.lean",
+    "old_sha256": "15a4be51ad68a79f81e1eea71af1e0e82fb3336e5aa7dcf1a54d49cefbaa905d",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "8d143019bf1ca2880c224e1a083b05646dd46bfb87c7d29fed6eb1edd2b1ef14"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceMoments.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceMoments.lean",
+    "old_sha256": "cebfcdb7c6b4fdb11f7e93897c9dc94ec370121c5bd4243c6380ca80c4204a1c",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "d3864d0950d31e02ded2535723f07ec737f1b5ccbb71813b66e465de7a0648e0"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceParameters.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceParameters.lean",
+    "old_sha256": "303641306c474e663fe0c2eb6452767d3765c7f2990b148bd966a5cf580830ae",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "d837c18f119eff88226b129c9e98e7991a5080e6e77f1322690807d05b38652b"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourcePools.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourcePools.lean",
+    "old_sha256": "4906d90c047d116b0171dbdf0874bdb0349f091eae80aec9a31fcb09878b0b60",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "a038b61b7f308f997e5d9645f67ef689c7ba7ceec5df21e9b49e91ac0eb00c16"
+  },
+  "Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceSelection.lean",
+    "old_sha256": "7de6682d5800485cc83aa7d3d5cfe1a7703abe4eda98855414cffde1b588225c",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "abc7abdba1570c2e829e00473c826a7c4b0d2c1e0b6948b2187d5e6e676dd904"
+  },
+  "Submissions/density_ten/Bridge/Schedule.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Schedule.lean",
+    "old_sha256": "32c36aa9269eacd9c2b284a19fe4aeb0ccc6cbb9de20c37e12025b8105157a4a",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "462665dc6a269a0704eed316689cdbe2005169d02bd4d370a337400a24334adf"
+  },
+  "Submissions/density_ten/Bridge/Transport/FinalCommonProbe.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalCommonProbe.lean",
+    "old_sha256": "458f3ce1ab80b7840f639d7dc6b03dd777b5d8a8a51e112be019fa2f8c808205",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f78be781a84afba391ed046ae25f7c01ea1bb6a246adb130b2d6e2e5b8704c83"
+  },
+  "Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean",
+    "old_sha256": "f5dcd9357f16b4ea344fb2dd8b4b0fdfc09ece32481702c14e5a27bf17cc8f20",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "1044e958b343ac42dfc2729e40fd6f059d144dbba224f4c3f5104e0e54eacbf8"
+  },
+  "Submissions/density_ten/Bridge/Transport/FinalHeight.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalHeight.lean",
+    "old_sha256": "0ac5ce217204282780f843d4e35b4be1219cd0f49fd0484ebec5bd2ee93cc2fe",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "038ab85585bf0a33a3e245e27572d7eb00edbeac5da8220c69eae2be9b92af94"
+  },
+  "Submissions/density_ten/Bridge/Transport/FinalSourceProbe.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalSourceProbe.lean",
+    "old_sha256": "8f2651ca23a9768ae188644bdc47b6874f7db1e95a72e4652ab036f16ead5835",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ca4f7ceeb879b84fc14e870f3175f7d5a64b550e3e5d4ca965969baa610de441"
+  },
+  "Submissions/density_ten/Bridge/Transport/Normalizer.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Normalizer.lean",
+    "old_sha256": "08430006c9bfe90555f1b9d9fe662fa9b5a2a1c0bb38779bbb54ad073e3513e5",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f7b617acc016c1bf00edf9d460c8d0f10bb68c41127528933382fc37e325f8b4"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeChoice.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeChoice.lean",
+    "old_sha256": "42f7123bdb412324689d25191369f15c618478c9a2332a41fc526d66d7cc9dff",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "46a82084f4cac6931cec329f776227bce7c1d8323ac1c172844bd76a2c8f1c7b"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeReduction.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeReduction.lean",
+    "old_sha256": "24163dc93842fdf39202972622498e84b13bf63753241819050562a73c48d72b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "9a2a18758817ee24954b958394cf08d1fb99c444296ea61ea0c3de4e269ba5cc"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CanonicalRayCube.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalRayCube.lean",
+    "old_sha256": "324ca7bf915074a28698e3f2ddb92e0fff8a763ec015f4ecf734625b9761c883",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "9aa4480daee80bdba61101916a57754b1f43448be3a8dd5b4062e6eb9097c270"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CanonicalReduction.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalReduction.lean",
+    "old_sha256": "7ef1c6b44036adf7d585b77574129f3125b451d676eae3405c0f4df158550705",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ba7a5a9463634c9cb67c61f9c09e4b3a303426b2b94a71c7b894a159112a29c6"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CanonicalTails.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalTails.lean",
+    "old_sha256": "40094a0e868b7ed5b8fb7c505dc807bf5c8a353309b188b48c2ca71b8de3c8e2",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "8fe8492a5ed7c23c164ead2cf1091291dfb1304367e50f83e42c492e29cef6ba"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CentralErrorSaving.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralErrorSaving.lean",
+    "old_sha256": "44f0f14b3ea59127060fb6060664935a748901b9a124d8fe251cb8db45de92cc",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "08669ec43ed2b9d1de2d729c90097c627e9725a3e9646b1bcf62755abde59554"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CentralFiniteError.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralFiniteError.lean",
+    "old_sha256": "d79c9040061929fc42dcb05a236cacaa4e61542fb9889288076dfe7d5fca07df",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "92dd92b22f651017d353557dff10dae98f5e15e2f0929c9b9a929d4292b017c7"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CommonProbe.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CommonProbe.lean",
+    "old_sha256": "1d8a641c0a48ed5c28183a1bab647465373e4f8b2cf66df1e949fadf1c84675f",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "4bc465ecb4ab022a82102f658f488a6dbb764da03629eb44234825c4fadcd2d3"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeErrorSaving.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeErrorSaving.lean",
+    "old_sha256": "6f673756c3639c3036f9c6397e092b926eca4c8b1737f782974fafa7af6194d3",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0db737c94dd6e60f9a7d3502f2c15341069e1f8e15a8bf716829ee597a1af66c"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFiniteError.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFiniteError.lean",
+    "old_sha256": "8d998413853e5c9e13f930e92f7a5c2d094a8f85a4d028bb04381a0c3aff7526",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "2ef2b5d76f7439147a5f9eebd6189b28e4200000f373e9605f290103a8f61d8c"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorArithmetic.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorArithmetic.lean",
+    "old_sha256": "5aa21c6b4931438ef405da40b0c5cbe440ccb84be829d530655cc3f8ff149e42",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "bf0b6b79634ceeef5ac6de28133211da3ae3ebf6653ba8ea955fdedc752318fb"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorCollected.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorCollected.lean",
+    "old_sha256": "3b0e77e8dd7958cfa57815a8d90e1c239fe933213a0d104abe2404d7d54fa230",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "e9655eff258b6bb9de9c86ef43e463aec0212c37af244db91026737e3011b9aa"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobal.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobal.lean",
+    "old_sha256": "e1feb6f9b022a5d479c39784a1ee6915548311613b942d974d54b42080e34968",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "dcca19f27b8f8e68b134867f5c66c38e7e65f7e764077972cce3dea76dc106cd"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobalIntegral.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobalIntegral.lean",
+    "old_sha256": "d937379cc94bf6ad2848c73fccf89a3700de7d5da10e79e1db9e39f117564ac3",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "994f93ea12ed3ed266b78211237f4e62127062926d3962bddf23256956caeaee"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorNormalized.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorNormalized.lean",
+    "old_sha256": "5a4fed37ca8326642b195ec81b8f505afdd9bfc653538e82eb485449bf3679f9",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "3fa5c40e5a31b8bc8d45ee4b53ba4df3a79862674539f939c5945d87a0fb2d45"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeFloorSaving.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorSaving.lean",
+    "old_sha256": "cf66f2f5a586427248c69039b7128beb8d4f4a522cf91f5ccba8556e9919eb13",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "6627315ab2378bf2f65cdf083e0bdfab7ca44a3db156b94ecfedeea69f7bac40"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/CubeSlotExponent.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeSlotExponent.lean",
+    "old_sha256": "69e611332fd62721a64faa57214c8ec42f7644b1deea9fba74d1cf1b0ae2ed05",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "233046e286d9809ee11963a331d063cb81fff1130c8071a0f0b006273c5b9ca2"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/FloorExponent.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/FloorExponent.lean",
+    "old_sha256": "5abae8b68c031acdff111cd4448c49c2cda5a71f8d6b7ae3558cbdbf5b970156",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "4100a695ccaf5b3447dd3ed9984607270edf3bb0f52daa0422d4251cfd7b4504"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/GeometricTail.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/GeometricTail.lean",
+    "old_sha256": "b95bb14746db13b94b9b0221be22110bc13f8894882e68c73fc5c1a15f6a6d96",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "52f5f9b684ba1c158902c2bdda4298096d96ee583fc79b82a0e8bdb2609bdd06"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/HighApproximation.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/HighApproximation.lean",
+    "old_sha256": "f99295853ad26c19706a6db21812c818626aacdbb8e1ede6b00dc44bf6c359fa",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "99b50372ba920744f142bef41bde758f14e83086cb538757a7da1580a2687971"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/LargeDyad.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeDyad.lean",
+    "old_sha256": "e007093d169536647a99b3e2e5ea53922dd958311a4c3ff433892a8a11502167",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "830eebd624c4c66ad39dc716b80094bbe88845f1c542aa6bf0ad51a01f48c1e2"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/LargeSaving.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeSaving.lean",
+    "old_sha256": "36b06bee95ae29d4794822b542256e8d86bd06e739beb36ce4ca9e7721b951ad",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "b39e3b942297314ff755689727171db2e6eb910e781458d2a0bf880cb0dcb4eb"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/LargeTail.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeTail.lean",
+    "old_sha256": "85298b29b5b42f3dbd8169f8043844c177bac48dbf278205a56f6618fb860a96",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "b56c75611aff2716bf26f2ebabbd7039cdb8a9af1fefd026b011128c90ada799"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/LowNormalizer.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LowNormalizer.lean",
+    "old_sha256": "e387a4c9502ae40cca73d89aee5baf3d1baa16718101cc782c744584a9875d66",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "457e61aa0ca3f710991df56babde6de92d97901d4ef843e5ae3c3339df48f882"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/NonfloorTransport.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NonfloorTransport.lean",
+    "old_sha256": "ab0a3ab282c35a691e893a624141945ba6be07a48efccb46e40fff6284ccc798",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "c90c3a6b9d67b8e68655ccd241033d7b664c1e4742b51fb3c7894b85cd22710b"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransport.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransport.lean",
+    "old_sha256": "2965ea1d0c39a44421be7be0fe001e8ea61f9fe2ce0782ad0bbe882acbe8ea10",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "47d06bd1a82ccf66cfef3b4956bf87afae216495f56a77ad7539e78226b4a7b7"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransportSaving.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransportSaving.lean",
+    "old_sha256": "a3861cfb6276e9a1f5ca0e752085080c2a9d890b1c741b89d3563624ecf17557",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "abc5f68512a8a610b02effaea36ba7665b900e7acca90674c32b9f8bf69daa6e"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PhysicalLargeTail.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalLargeTail.lean",
+    "old_sha256": "070e76b2e76ec055a2655ebf5264284e63545afae3914264af9d193f9fe50464",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "6ceaeb55e067ac9e3dca7e3c7569fbb65e83138306388754aec641630c43a412"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PhysicalSmallTail.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalSmallTail.lean",
+    "old_sha256": "0d4d64db49e51adf117864715e9f126d859fc8f18a333a542ee666a6799112cc",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "ecb384527ba47872325efc02de4f486d0fe1b0cbf4935f95d84ddcecf1f4b55d"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean",
+    "old_sha256": "54881cd01742b7d5f55eb636e6fdc141f3d41e65d93af64fd4bed19d3eb0063a",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "c7a215b74a6931a5f778f762473381cf94e809d3137d4cc60fb52b7da954d8a2"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean",
+    "old_sha256": "e51128b311b400f10ae409f085c2bd5cdfc9c9846bdf8e94f458021dabb8b0d9",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "f72e4077a7902ee6e24f3c8971ca2b3fd0a763335c5d5e13128c33ab972806c2"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProduct.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProduct.lean",
+    "old_sha256": "0d4a8a60d00604a7a4aff4098bed1828ed9c94eaf7d5820993857a4119fe1197",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "42c6de4098075a21f73479e47ab5c3a8d4ff4397ca5802b69a3f7e84e37dd2cc"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProductX.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProductX.lean",
+    "old_sha256": "cb6688a8b08a49bb2af68bccf401da005ae0acb184b7756f617f3b96faaaea79",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "185869efb0413163ceea3f7c5f7ee77f2f623094b7f89a7e8d24442cb0453546"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderNormalized.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderNormalized.lean",
+    "old_sha256": "5996f34870358384251c33daa155d247dcb4b594668aa7584bd35eeb6bb05f0b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "08184ef55937c067fad9696485b61dbfca7b1393f311c115fde84f8208f254a6"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysical.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysical.lean",
+    "old_sha256": "05488b548eed63590433a397402f8db502c074409e43b8a865e9604dcc5ddb76",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "efb76ef864491439ea806bad7fc61bc9b52747a940c29ace538124e76751ecee"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysicalBounds.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysicalBounds.lean",
+    "old_sha256": "5fc94425648acdf2b7b59acee853724d7e8ffdbe14bae248bdb9a85d1137f1ac",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "0a06cc0b287318d07e3616cd4cbd28015a0377ddf7f84c932754605d57fe119d"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRayThresholds.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRayThresholds.lean",
+    "old_sha256": "f56f70fbabf22ea12db2947f28dfd7c101b9e8174a3df9294354513b675ee7f0",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "c6d82c7080a1b8b7583f0ad370af8127cf957693602befce1a31c692baac4a89"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRegion.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRegion.lean",
+    "old_sha256": "979d41a5b333b4507d7c4130aaeb2e4db242ab19c52b52713f0f3aeaf93968b7",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "d67af48d4fc2a025eb295738d061d5fad8d660e7c211594f4f4b6c6399b4c7f7"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderResidueActual.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderResidueActual.lean",
+    "old_sha256": "7f4aa60875691f16b6c7031b3a0f44a5ac30633cc05f8757041f0492467149ea",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "4d7b1ce9def6302b1dd74e369f4e1f6763fb36010060a13225272ef33c7e545d"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderTransport.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderTransport.lean",
+    "old_sha256": "c1a7ebdb5f0363e0615efa3149deae7ad075e4f377970a8c33d4a4d56b680605",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "a91ea8abc4eee027ac8d3591a6822ac01d6d5c88faab4ea6341d0c9b0f9189e2"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalSignal.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSignal.lean",
+    "old_sha256": "fcc46f5af85462dfd08de012ac3bd454624267d00a766d3a51e3bac3b9758f56",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "08f6a7a99961302df5c65f53706267516107cc36c36480acfe460d40e00c80e9"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/PrincipalSlots.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSlots.lean",
+    "old_sha256": "6215e26bd98fad7726c58422634e2401861a4c5711f97fb7b04aaf7da1c27959",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "16c8c7d78e49572dc1a2c54c98edd5aa70a134da2dbd0808b4fc903a2b8e7ef5"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/ProbeDefinition.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/ProbeDefinition.lean",
+    "old_sha256": "b8ef58d9838b3b9c1a26e41f990a775883cd308022f35102f166d7f9d0ac712b",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "963c87bd2bc36bf64e4ba1ae55f0291f496457ebcd0fa39506bba5fae77dbb0e"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/SharedNonfloor.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SharedNonfloor.lean",
+    "old_sha256": "4f3b396a30d12593d97fdb9182d12a6a65a567fc2b1694098ed5fe09584a5833",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "ebed8cb69632add1b11dd1181605fb77e15b6cd5da310863333789db527e1b4a"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/SignalShift.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SignalShift.lean",
+    "old_sha256": "86f25831a57d2f7ae420c0b43d95e37b85809f004cec65accb57cb1a52112870",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "aa024d4bc077ebfa1c680513dbb3942c8368622583606179e324346e68a34f4a"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/SmallTail.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SmallTail.lean",
+    "old_sha256": "f7f4be72b56f510d26d8811942edbb79b9a059d853d6596695c1f9b1adff4dca",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "61d30751d35767bcdd256c20f0a3dcf58ff67f14980d004fd40c2d8be13c4d99"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/SourceCorrection.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SourceCorrection.lean",
+    "old_sha256": "168a61ecff492e292746f0b584ae224a29439a7f1cf512f028a2e2340d927300",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "3c31a004d248ca7f8256eaf7a802209d5d6c57dcca0a98a384f712eb35fc28e4"
+  },
+  "Submissions/density_ten/Bridge/Transport/Transport/TailScales.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/TailScales.lean",
+    "old_sha256": "1d5114c321d7cf227edfe3e59edce45688e78b00bc8c0d4701222145b310eb81",
+    "change": [
+      "namespaces/imports"
+    ],
+    "new_sha256": "814ea3ed62153d5c7e140f4e7e05cfb38645d3580d403cb2d46968ffc6ab8637"
+  },
+  "Submissions/density_ten/Bridge/Transport/TransportParameters.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/TransportParameters.lean",
+    "old_sha256": "305da57932d6abe77ca3b47962af827c66ec7505f2898f7e0b263ef62d5e57a8",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "8929200820d2bf0204f5b6e98e2ee9a89e26e91edb05b707c01e9d2084b622a6"
+  },
+  "Submissions/density_ten/Bridge/TransportGeometry.lean": {
+    "old_path": "/tmp/qrh-ten-tracker/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/TransportGeometry.lean",
+    "old_sha256": "734e058234eba06e0151d9c8b41269e68b2858583ceaf311b057d4d35bd2a5bb",
+    "change": [
+      "namespaces/imports",
+      "matched floor reserve1/200 to1/250"
+    ],
+    "new_sha256": "47d64ae87e007ea0968159d5e034d323921b5a06ab95be734b33ee4fbb874b3c"
+  }
+}

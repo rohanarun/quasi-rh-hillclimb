@@ -1,0 +1,579 @@
+{
+  "status": "read-only source audit; no new Lean generated or run",
+  "source_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "modules": {
+    "Submissions.sil_density_split_20261026.ReturnD.GenericFeedback": {
+      "sha256": "afff91177013a96f5bb9eeb357cb017848e4a007dc617505c1a7bfd22744f1f6",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/GenericFeedback.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.GenericScalar": {
+      "sha256": "bb26e451526b0c29669fd50e2115e47d534fa711298044d213e7e1585e22e14c",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/GenericScalar.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Active": {
+      "sha256": "c7f4b4128c66afc8d43882e85d06f1e7dab143c3e211559e220129ca5043a6c1",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Active.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.ActualBin": {
+      "sha256": "34e81dbcbf6a77d729f5bee8149afff5d7ec5164789a807de640fb97ac453020",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ActualBin.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.AmplitudeClass": {
+      "sha256": "01a0d5a0aac7426d9c1b99b4354eb1a63ba6f9745cc38bef56d7ccafc1596c5a",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.BinBound": {
+      "sha256": "f29dee56a6718e70b55f5a4518affb07d2a4c20c9426f89d8aab6ba8dc6299ac",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/BinBound.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.CanonicalCount": {
+      "sha256": "f5b0801611dd28bd333302299002d5d1b1bd774a227972e60df5dd320db917c0",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/CanonicalCount.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Chosen": {
+      "sha256": "2775f1bb23560cd1d1f07cf3fac2181352e54569cf63f0b96784a48102660d05",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Chosen.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.ChosenMesh": {
+      "sha256": "44ce55e62d3fb57022bff3ff64764c3b4b208e54ee4f48605bd1ed0fc3d3f645",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ChosenMesh.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.ChosenSource": {
+      "sha256": "c6a9b343b1dad32c80326f1d2acbd0b4ecc3f7b0917447e9663e8d99ceef0a27",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ChosenSource.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.ClippedCapacityDamping": {
+      "sha256": "fb348431691f5afd74f07e6e7cedf6f001a0daa9f3e664bd986c7261abf3dd28",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ClippedCapacityDamping.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Collect": {
+      "sha256": "49eff5dccbc7758476280252322b5b0d0ecdc23ed60281d9984e82f290880195",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Combined": {
+      "sha256": "798feb61eebdd6a68558425a9dac0c6cf836eeda781885883646727767c9abb9",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.CountParameters": {
+      "sha256": "0a219c2d5b04f90b81b524d2573e4414bc190024bccbe995f3b06d74304fcf39",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/CountParameters.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Data": {
+      "sha256": "b77460ff5d0e674c74a9cca9899e6a3934e119e2def0d5a5568ec21c80220ce9",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Data.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Bridge": {
+      "sha256": "c6700d9778f0f57bbc5400a3a9a0815cea19fc9d620c382b7b42e1e58c84c8ae",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Bridge.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Cells": {
+      "sha256": "263129132d201b7d769c7ca56c8f2ab90542c8975e017b9cda27dd9cdcbf90c0",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Cells.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Geometry": {
+      "sha256": "6fb2f037dfdb9c648a2c0b8ce0f2b0d8d897079b7cca7cfd2adb05f729416eda",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Geometry.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Partition": {
+      "sha256": "be5c8927e01143cc288301393535aa4ab335840612aa38942d9e5f2ccf218ed3",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Partition.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.SourceCells": {
+      "sha256": "ebd4ef967632448f2355815a271bb27ede76da8662d3e133e6ac98037535e9c8",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/SourceCells.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Summation": {
+      "sha256": "7c34ad6848ca20924b7959f9567a2a5ae49a28ca8645541e26e5896d6d0e8d03",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Summation.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Finite.Transfer": {
+      "sha256": "7ee63a6f4f890782dd4e338e477af42ff00cbbb84075b4a7adc8dcf6a01f7dc8",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Transfer.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.FiniteBins": {
+      "sha256": "c26de7aa28d5b023de9d465ec00cbe64dc13db633d2a6d9ef59946e9869e34d1",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteBins.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.FiniteError.CubeTransfer": {
+      "sha256": "b720c96144464ba1b4adff3a773a1d3b1261c6be0d974c7d7905a9ef25c42199",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/CubeTransfer.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.FiniteError.FullW": {
+      "sha256": "89f84c4c7d8e9bb60b99c69e7c270bf84348e26043830d9c6bfb74d41e39813b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/FullW.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.FiniteError.Normalized": {
+      "sha256": "e3f11829389935f46fa01b29de2e0df2916627f4f16718c5b6935906fc32d489",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/Normalized.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Fixed": {
+      "sha256": "fcbce70969d0f4aa1f0f7ac9665a1d0a6c8d12237dc894d8ee117f59362645a2",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fixed.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Fourier": {
+      "sha256": "53fc14e15b0b899344ba39278143ac091bdd30fb1731ded898676d636491fec4",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fourier.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Geometry": {
+      "sha256": "dc7e06157eb04733fd8bb82ef89e4af6fed7fbb4991123f35b3018ad48ec8979",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Geometry.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Helpers": {
+      "sha256": "db31ee8106291beba3f6c8033af8211db569fbca5d195e23f7d810529cad288e",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Helpers.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Hybrid": {
+      "sha256": "fddab540ed7fad3b56484bb6eb77ee8d883c8a86b604423da844817c77fc1b33",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Hybrid.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Input": {
+      "sha256": "d23f5e28d1331cb8a4af77473fbd77d1207498a5616c361991806d01582362f8",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Input.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.JointHeight": {
+      "sha256": "dae50cb4affb14743bb684c4d6071d21a81579af1a7b7dcb25729f4f0a26a4f0",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/JointHeight.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Mask": {
+      "sha256": "09d33e3abc12907bb3ec9668c85e5e82a34f948119c5031532df1b3ecc940f83",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.MaskedCount": {
+      "sha256": "0b891e61e6d29f513ec852e89fe7a8c6fbdebc19e3015f6081b79751d6fb00de",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MaskedCount.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.MaskedSourceCount": {
+      "sha256": "3627b7b70ea48b51f95c8f90f6bbbc8cdb043a5e084e9b7c838ff8a6cd0f0720",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MaskedSourceCount.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.MomentGates": {
+      "sha256": "4a3f8d032392f372cd8bfc26a2ff66c22ad2254b6e10e622a39fd054ab8c179b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MomentGates.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.MomentMono": {
+      "sha256": "56b6ac829290369be0ff3d47ba9901fda0eed59eeabdb31fb92db9b449c55e9a",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MomentMono.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.NormalizerHelpers": {
+      "sha256": "d6cd2a1144ca416fb03c94ee7b17ac84b69217ed4846d9950ed9cc68b92e9302",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/NormalizerHelpers.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldActive": {
+      "sha256": "1960d2ce82b0c32a04a446e61c1dc2a858aae1b5e48a8288a7e2891e2202534e",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldActive.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldClass": {
+      "sha256": "e87333d01f4ba12f498c573c4573c92bb02065cdc2f9d0a8bd4bc7a36016d0df",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldCollect": {
+      "sha256": "0fb96a60a28506b933dd8f0a90fd99e418ab075532679f266958139a921dbc07",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldGeometry": {
+      "sha256": "5ce979b2ea0598d55dd89da89c8157fe32e58e13589298e9821b22f4537d2fa2",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldGeometry.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldPacket": {
+      "sha256": "35f4badc2605676cb0356c88324809f081d0e823d8f92e1785386e7c28b5feeb",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPacket.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldPublic": {
+      "sha256": "efef415c0f51ef024d28add169b4e14be7225c2be088cad6f42fa09e4ee3c63d",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPublic.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.OldSelected": {
+      "sha256": "14a39c5e7ce32534adb7100ba9201d142b63d780e182c4d9adfd4aef0208d196",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldSelected.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Original": {
+      "sha256": "b46c392ec2cdbbe1dc2d422913fb354962d8b51dcf742087f08f62ee286b0e9c",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Original.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.PacketBound": {
+      "sha256": "5654ebd6e92740e9d9ba011fd148f753997c5c1431b109545e16c83e2ed3d779",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PacketBound.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.PhysicalSourceCount": {
+      "sha256": "1a2701107893b3b197b12436cd868477e554e2b7290310a2fce43dc0e6a8006b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PhysicalSourceCount.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Public": {
+      "sha256": "50f4a5fdfba5e758fbff87da12b73f72243c69f09acb3899dc64420aca33488d",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Public.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.PublicCount": {
+      "sha256": "1341a8b97ef66ff22d3a77c844bc9697568f2bc4c31c23f0d50513d068fce928",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PublicCount.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Retained": {
+      "sha256": "d9635d6d1beeb8e9b6387d58179d3cc905e5bc72a4c0065068c4029c688f7703",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Retained.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SelectedBin": {
+      "sha256": "80d72ae8ce60d917245de52d38b1655bfee43d34aa5e30c5b6ab00921278da90",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SelectedBin.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.Selection": {
+      "sha256": "ca80159c8579275ee8671c6bd2f9adf4cd15548df6350c4477f8d82d31ecab75",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Selection.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceActual": {
+      "sha256": "9bd753bb7ed4d8facf49480e88e73476a6c41a186be47451d43fd6fc5d24d36b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceActual.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceClosure": {
+      "sha256": "bbfc9c101c6ba61925c19b5397605f30ba8b7795a759910699dad3161f9300c0",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceClosure.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceCountInitial": {
+      "sha256": "f59cadfd6dd61f70805117c818753d0cb46ab32d110e803aa8205f7d4a3f4bc2",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceCountInitial.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceFullW": {
+      "sha256": "2635d9ef72c8bc2c13e14e2cb3bbc94a95cd7c0bba7c770bc5c17803c2c09f01",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceFullW.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceLedger": {
+      "sha256": "15a4be51ad68a79f81e1eea71af1e0e82fb3336e5aa7dcf1a54d49cefbaa905d",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceLedger.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceMoments": {
+      "sha256": "cebfcdb7c6b4fdb11f7e93897c9dc94ec370121c5bd4243c6380ca80c4204a1c",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceMoments.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceParameters": {
+      "sha256": "303641306c474e663fe0c2eb6452767d3765c7f2990b148bd966a5cf580830ae",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceParameters.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourcePools": {
+      "sha256": "4906d90c047d116b0171dbdf0874bdb0349f091eae80aec9a31fcb09878b0b60",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourcePools.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.PhysicalDirect.SourceSelection": {
+      "sha256": "7de6682d5800485cc83aa7d3d5cfe1a7703abe4eda98855414cffde1b588225c",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceSelection.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Schedule": {
+      "sha256": "32c36aa9269eacd9c2b284a19fe4aeb0ccc6cbb9de20c37e12025b8105157a4a",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Schedule.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.FinalCommonProbe": {
+      "sha256": "458f3ce1ab80b7840f639d7dc6b03dd777b5d8a8a51e112be019fa2f8c808205",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/FinalCommonProbe.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.FinalFixedHigh": {
+      "sha256": "f5dcd9357f16b4ea344fb2dd8b4b0fdfc09ece32481702c14e5a27bf17cc8f20",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.FinalHeight": {
+      "sha256": "0ac5ce217204282780f843d4e35b4be1219cd0f49fd0484ebec5bd2ee93cc2fe",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/FinalHeight.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.FinalSourceProbe": {
+      "sha256": "8f2651ca23a9768ae188644bdc47b6874f7db1e95a72e4652ab036f16ead5835",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/FinalSourceProbe.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Normalizer": {
+      "sha256": "08430006c9bfe90555f1b9d9fe662fa9b5a2a1c0bb38779bbb54ad073e3513e5",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Normalizer.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CanonicalCubeChoice": {
+      "sha256": "42f7123bdb412324689d25191369f15c618478c9a2332a41fc526d66d7cc9dff",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeChoice.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CanonicalCubeReduction": {
+      "sha256": "24163dc93842fdf39202972622498e84b13bf63753241819050562a73c48d72b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeReduction.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CanonicalRayCube": {
+      "sha256": "324ca7bf915074a28698e3f2ddb92e0fff8a763ec015f4ecf734625b9761c883",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalRayCube.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CanonicalReduction": {
+      "sha256": "7ef1c6b44036adf7d585b77574129f3125b451d676eae3405c0f4df158550705",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalReduction.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CanonicalTails": {
+      "sha256": "40094a0e868b7ed5b8fb7c505dc807bf5c8a353309b188b48c2ca71b8de3c8e2",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalTails.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CentralErrorSaving": {
+      "sha256": "44f0f14b3ea59127060fb6060664935a748901b9a124d8fe251cb8db45de92cc",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralErrorSaving.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CentralFiniteError": {
+      "sha256": "d79c9040061929fc42dcb05a236cacaa4e61542fb9889288076dfe7d5fca07df",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralFiniteError.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CommonProbe": {
+      "sha256": "1d8a641c0a48ed5c28183a1bab647465373e4f8b2cf66df1e949fadf1c84675f",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CommonProbe.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeErrorSaving": {
+      "sha256": "6f673756c3639c3036f9c6397e092b926eca4c8b1737f782974fafa7af6194d3",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeErrorSaving.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFiniteError": {
+      "sha256": "8d998413853e5c9e13f930e92f7a5c2d094a8f85a4d028bb04381a0c3aff7526",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFiniteError.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorArithmetic": {
+      "sha256": "5aa21c6b4931438ef405da40b0c5cbe440ccb84be829d530655cc3f8ff149e42",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorArithmetic.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorCollected": {
+      "sha256": "3b0e77e8dd7958cfa57815a8d90e1c239fe933213a0d104abe2404d7d54fa230",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorCollected.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorGlobal": {
+      "sha256": "e1feb6f9b022a5d479c39784a1ee6915548311613b942d974d54b42080e34968",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobal.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorGlobalIntegral": {
+      "sha256": "d937379cc94bf6ad2848c73fccf89a3700de7d5da10e79e1db9e39f117564ac3",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobalIntegral.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorNormalized": {
+      "sha256": "5a4fed37ca8326642b195ec81b8f505afdd9bfc653538e82eb485449bf3679f9",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorNormalized.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorSaving": {
+      "sha256": "cf66f2f5a586427248c69039b7128beb8d4f4a522cf91f5ccba8556e9919eb13",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorSaving.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeSlotExponent": {
+      "sha256": "69e611332fd62721a64faa57214c8ec42f7644b1deea9fba74d1cf1b0ae2ed05",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeSlotExponent.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.FloorExponent": {
+      "sha256": "5abae8b68c031acdff111cd4448c49c2cda5a71f8d6b7ae3558cbdbf5b970156",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/FloorExponent.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.GeometricTail": {
+      "sha256": "b95bb14746db13b94b9b0221be22110bc13f8894882e68c73fc5c1a15f6a6d96",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/GeometricTail.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.HighApproximation": {
+      "sha256": "f99295853ad26c19706a6db21812c818626aacdbb8e1ede6b00dc44bf6c359fa",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/HighApproximation.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.LargeDyad": {
+      "sha256": "e007093d169536647a99b3e2e5ea53922dd958311a4c3ff433892a8a11502167",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeDyad.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.LargeSaving": {
+      "sha256": "36b06bee95ae29d4794822b542256e8d86bd06e739beb36ce4ca9e7721b951ad",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeSaving.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.LargeTail": {
+      "sha256": "85298b29b5b42f3dbd8169f8043844c177bac48dbf278205a56f6618fb860a96",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeTail.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.LowNormalizer": {
+      "sha256": "e387a4c9502ae40cca73d89aee5baf3d1baa16718101cc782c744584a9875d66",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LowNormalizer.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.NonfloorTransport": {
+      "sha256": "ab0a3ab282c35a691e893a624141945ba6be07a48efccb46e40fff6284ccc798",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NonfloorTransport.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.NormalizedTransport": {
+      "sha256": "2965ea1d0c39a44421be7be0fe001e8ea61f9fe2ce0782ad0bbe882acbe8ea10",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransport.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.NormalizedTransportSaving": {
+      "sha256": "a3861cfb6276e9a1f5ca0e752085080c2a9d890b1c741b89d3563624ecf17557",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransportSaving.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PhysicalLargeTail": {
+      "sha256": "070e76b2e76ec055a2655ebf5264284e63545afae3914264af9d193f9fe50464",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalLargeTail.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PhysicalSmallTail": {
+      "sha256": "0d4d64db49e51adf117864715e9f126d859fc8f18a333a542ee666a6799112cc",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalSmallTail.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderBounds": {
+      "sha256": "54881cd01742b7d5f55eb636e6fdc141f3d41e65d93af64fd4bed19d3eb0063a",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderContours": {
+      "sha256": "e51128b311b400f10ae409f085c2bd5cdfc9c9846bdf8e94f458021dabb8b0d9",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderFiniteProduct": {
+      "sha256": "0d4a8a60d00604a7a4aff4098bed1828ed9c94eaf7d5820993857a4119fe1197",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProduct.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderFiniteProductX": {
+      "sha256": "cb6688a8b08a49bb2af68bccf401da005ae0acb184b7756f617f3b96faaaea79",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProductX.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderNormalized": {
+      "sha256": "5996f34870358384251c33daa155d247dcb4b594668aa7584bd35eeb6bb05f0b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderNormalized.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderPhysical": {
+      "sha256": "05488b548eed63590433a397402f8db502c074409e43b8a865e9604dcc5ddb76",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysical.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderPhysicalBounds": {
+      "sha256": "5fc94425648acdf2b7b59acee853724d7e8ffdbe14bae248bdb9a85d1137f1ac",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysicalBounds.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderRayThresholds": {
+      "sha256": "f56f70fbabf22ea12db2947f28dfd7c101b9e8174a3df9294354513b675ee7f0",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRayThresholds.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderRegion": {
+      "sha256": "979d41a5b333b4507d7c4130aaeb2e4db242ab19c52b52713f0f3aeaf93968b7",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRegion.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderResidueActual": {
+      "sha256": "7f4aa60875691f16b6c7031b3a0f44a5ac30633cc05f8757041f0492467149ea",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderResidueActual.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalRemainderTransport": {
+      "sha256": "c1a7ebdb5f0363e0615efa3149deae7ad075e4f377970a8c33d4a4d56b680605",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderTransport.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalSignal": {
+      "sha256": "fcc46f5af85462dfd08de012ac3bd454624267d00a766d3a51e3bac3b9758f56",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSignal.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.PrincipalSlots": {
+      "sha256": "6215e26bd98fad7726c58422634e2401861a4c5711f97fb7b04aaf7da1c27959",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSlots.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.ProbeDefinition": {
+      "sha256": "b8ef58d9838b3b9c1a26e41f990a775883cd308022f35102f166d7f9d0ac712b",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/ProbeDefinition.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.SharedNonfloor": {
+      "sha256": "4f3b396a30d12593d97fdb9182d12a6a65a567fc2b1694098ed5fe09584a5833",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SharedNonfloor.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.SignalShift": {
+      "sha256": "86f25831a57d2f7ae420c0b43d95e37b85809f004cec65accb57cb1a52112870",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SignalShift.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.SmallTail": {
+      "sha256": "f7f4be72b56f510d26d8811942edbb79b9a059d853d6596695c1f9b1adff4dca",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SmallTail.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.SourceCorrection": {
+      "sha256": "168a61ecff492e292746f0b584ae224a29439a7f1cf512f028a2e2340d927300",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SourceCorrection.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.TailScales": {
+      "sha256": "1d5114c321d7cf227edfe3e59edce45688e78b00bc8c0d4701222145b310eb81",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/TailScales.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.TransportParameters": {
+      "sha256": "305da57932d6abe77ca3b47962af827c66ec7505f2898f7e0b263ef62d5e57a8",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/Transport/TransportParameters.lean"
+    },
+    "Submissions.sil_density_split_20261026.ReturnD.TransportGeometry": {
+      "sha256": "734e058234eba06e0151d9c8b41269e68b2858583ceaf311b057d4d35bd2a5bb",
+      "path": "Submissions/sil_density_split_20261026/ReturnD/TransportGeometry.lean"
+    }
+  },
+  "floor_occurrences": {
+    "Submissions.sil_density_split_20261026.ReturnD.TransportGeometry": [
+      [
+        25,
+        "floor_margin : 4/25*QRH.Record1252270103Return.Geometry.x-3/20-51/100*QRH.Record1252270103Return.Geometry.y+67/100*QRH.Record1252270103Return.Geometry.dPlus-3/20*QRH.Record1252270103Return.Geometry.ell \u2264 QRH.Record1252270103Return.Geometry.signal QRH.Record1252270103Return.Geometry.theta-1/200"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.TransportParameters": [
+      [
+        71,
+        "floor_budget : 26*D.e+(D.N+8)*eps+D.t+mesh*QRH.Record1252270103Return.Geometry.ell+nu+sigma\u22641/200"
+      ],
+      [
+        158,
+        "change 26*e+(D.N+8)*eps+D.t+mesh*QRH.Record1252270103Return.Geometry.ell+D.t/8+sigma\u22641/200"
+      ],
+      [
+        254,
+        "change 26*e+(D.N+8)*eps+D.t+mesh*QRH.Record1252270103Return.Geometry.ell+D.t/8+sigma\u22641/200"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.HighApproximation": [
+      [
+        121,
+        "(hfloorbudget : 26*e+(K+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+sigma\u22641/200)"
+      ],
+      [
+        198,
+        "(hfloorbudget : 26*e+(K+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+sigma\u22641/200)"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.SharedNonfloor": [
+      [
+        54,
+        "(hfloorbudget : 26*e+(K+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+sigma\u22641/200) :"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.NonfloorTransport": [
+      [
+        58,
+        "(hfloorbudget : 26*e+(K+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+sigma\u22641/200) :"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorCollected": [
+      [
+        54,
+        "(htotal : 26*e+(N+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+saving\u22641/200) :"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.CubeFloorSaving": [
+      [
+        54,
+        "(htotal : 26*e+(N+8)*eps+loss+mesh*QRH.SilDensitySplit.ReturnT.Transport.Arithmetic.ell+nu+saving\u22641/200) :"
+      ]
+    ],
+    "Submissions.sil_density_split_20261026.ReturnD.Transport.Transport.FloorExponent": [
+      [
+        24,
+        "floorSourceExponent v\u2264 signal theta-1/200 := by"
+      ]
+    ]
+  },
+  "namespace_lines": [
+    "OAI",
+    "OAI.SevenEighths.SilDensitySplitReturn.TransportHighTransport",
+    "PhysicalHighRowFamily",
+    "QRH.SilDensitySplit.Return.GenericArithmetic",
+    "QRH.SilDensitySplit.Return.GenericPhysical.Assembly",
+    "QRH.SilDensitySplit.Return.GenericPhysical.FinalAssembly",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.ClippedCapacityDamping",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.FiniteNumerator",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.FullWError",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.OldFourth",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.Packet",
+    "QRH.SilDensitySplit.Return.GenericPhysical.PhysicalDirect.Source",
+    "QRH.SilDensitySplit.Return.GenericPhysical.Scalar",
+    "QRH.SilDensitySplit.Return.Geometry",
+    "QRH.SilDensitySplit.ReturnT.Transport.Arithmetic",
+    "QRH.SilDensitySplit.ReturnT.Transport.Assembly",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalContours",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalFiniteProduct",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalFiniteProductX",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalNormalized",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalPhysical",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalRaySlots",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalRemainderBounds",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalResidueActual",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalSignal",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalSlots",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.PrincipalTransport",
+    "QRH.SilDensitySplit.ReturnT.Transport.Transport.SignalShift",
+    "SevenEighths.SilDensitySplitReturn.TransportHighRowFamily",
+    "SevenEighths.SilDensitySplitReturn.TransportHighTransport",
+    "SevenEighths.SilDensitySplitTransportLow"
+  ]
+}

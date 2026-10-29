@@ -1,0 +1,8 @@
+{
+  "python": "3.14.10 (main, Oct 27 2026, 12:26:08) [GCC 14.3.1 20250801]",
+  "numpy": "2.5.3",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0",
+  "baseline_exit_code": 0,
+  "baseline_true_and_12_ok_checked": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS: exact rational budget, with accompanying ordered-field proof",
+  "coefficient": "11313/5000",
+  "maximum_charged_floor_loss": "11313/500000000000",
+  "chosen_reserve": "1/250",
+  "condition": "preprint seven-eighths theorem and inherited analytic estimates",
+  "source_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "source_sha256": {
+    "TransportGeometry.lean": "734e058234eba06e0151d9c8b41269e68b2858583ceaf311b057d4d35bd2a5bb",
+    "Transport/Transport/FloorExponent.lean": "5abae8b68c031acdff111cd4448c49c2cda5a71f8d6b7ae3558cbdbf5b970156",
+    "Transport/TransportParameters.lean": "305da57932d6abe77ca3b47962af827c66ec7505f2898f7e0b263ef62d5e57a8",
+    "Transport/Transport/CubeFloorSaving.lean": "cf66f2f5a586427248c69039b7128beb8d4f4a522cf91f5ccba8556e9919eb13",
+    "Transport/Transport/CubeFloorCollected.lean": "3b0e77e8dd7958cfa57815a8d90e1c239fe933213a0d104abe2404d7d54fa230",
+    "Transport/Transport/SharedNonfloor.lean": "4f3b396a30d12593d97fdb9182d12a6a65a567fc2b1694098ed5fe09584a5833",
+    "Transport/Transport/NonfloorTransport.lean": "ab0a3ab282c35a691e893a624141945ba6be07a48efccb46e40fff6284ccc798",
+    "Transport/Transport/HighApproximation.lean": "f99295853ad26c19706a6db21812c818626aacdbb8e1ede6b00dc44bf6c359fa"
+  }
+}

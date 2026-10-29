@@ -1,0 +1,371 @@
+{
+  "objective": "Ten successive exact improvements before new Lean verification and PR submission",
+  "baseline": "436972583/500000000",
+  "baseline_tracker_pr": 91,
+  "baseline_tracker_head": "c67a1450476b10e200e1bc095748dc4889ba40d5",
+  "condition": "preprint seven-eighths theorem",
+  "new_lean_started": true,
+  "rounds": [
+    {
+      "round": 1,
+      "theta": "17478902521/20000000000",
+      "decimal": "0.87394512605",
+      "h": "8051263777/10000000000",
+      "improvement": "799/20000000000",
+      "method": "Refine the count chain to Lambda decrement 1/1600 at LOW reserve 1/10000",
+      "source_evidence": {
+        "count": {
+          "input": "round1/count.json",
+          "input_sha256": "c8f081a86c982f64f5f5081c51ae9e98badd3d8a68112853b63bc0e7fe737452",
+          "receipt": "round1/count.receipt.json",
+          "receipt_sha256": "cb9449059e5bd5f58eb9988c8672634a96d507bd32713ff206267706f4df5187",
+          "steps": 251,
+          "low_reserve": "1/10000",
+          "strict_gates": 3514,
+          "denominators": 753
+        },
+        "physical": {
+          "input": "round1/physical.json",
+          "input_sha256": "a84323eebfb3af0e03aea3ca4e6be4be8f3b255526513b7810bf174946959beb",
+          "receipt": "round1/physical.receipt.json",
+          "receipt_sha256": "29a53a7fe498c18acadf30221657307061a7d40b7f7d2dbf7d0bee235807d81c",
+          "steps": 77,
+          "low_reserve": "1/10000",
+          "strict_gates": 1078,
+          "denominators": 231
+        }
+      },
+      "return_input": "round1/candidate.json",
+      "return_receipt": "round1/candidate.receipt.json",
+      "return_receipt_sha256": "608880fc3223d5018f438e845cb176667e10b2bc077545c5ba8f9c843ae55c17",
+      "return_boxes": 101,
+      "exact_certification_completed_at": "2026-10-28T19:16:02.569489+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 2,
+      "theta": "436972497/500000000",
+      "decimal": "0.873944994",
+      "h": "8051251417/10000000000",
+      "improvement": "2641/20000000000",
+      "method": "Refine the physical chain to Lambda decrement 1/800, retaining round 1 count source",
+      "source_evidence": {
+        "count": {
+          "input": "round2/count.json",
+          "input_sha256": "c8f081a86c982f64f5f5081c51ae9e98badd3d8a68112853b63bc0e7fe737452",
+          "receipt": "round2/count.receipt.json",
+          "receipt_sha256": "cb9449059e5bd5f58eb9988c8672634a96d507bd32713ff206267706f4df5187",
+          "steps": 251,
+          "low_reserve": "1/10000",
+          "strict_gates": 3514,
+          "denominators": 753
+        },
+        "physical": {
+          "input": "round2/physical.json",
+          "input_sha256": "e3059af465466c142c1b44ef39616dbd2fad415f86b5892069424a19a63e376c",
+          "receipt": "round2/physical.receipt.json",
+          "receipt_sha256": "b5f0bf9bf94ec6cef81c47e61b815e8c4d140e2ffc426a2387da73c0fba84623",
+          "steps": 155,
+          "low_reserve": "1/10000",
+          "strict_gates": 2170,
+          "denominators": 465
+        }
+      },
+      "return_input": "round2/candidate.json",
+      "return_receipt": "round2/candidate.receipt.json",
+      "return_receipt_sha256": "de3d5363b8121d708ba1d1c605dd88cce1fcc54c200e1c7ff183ad761d24273e",
+      "return_boxes": 101,
+      "exact_certification_completed_at": "2026-10-28T19:16:03.373188+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 3,
+      "theta": "87394498959/100000000000",
+      "decimal": "0.87394498959",
+      "h": "1610250201/2000000000",
+      "improvement": "441/100000000000",
+      "method": "Reduce the numerical source-gate margins from 2e-6 to 2e-7, with all strict gates exactly rechecked",
+      "source_evidence": {
+        "count": {
+          "input": "round3/count.json",
+          "input_sha256": "ed1e79ff6277fa32acc3416f87cca41024c7184e9a5ccc5ba0e2e4bb5be43014",
+          "receipt": "round3/count.receipt.json",
+          "receipt_sha256": "b83ec2eaf2baaaee447e6a70af85812367524d147552b25a0fd8d0d7b3cdbcaf",
+          "steps": 251,
+          "low_reserve": "1/10000",
+          "strict_gates": 3514,
+          "denominators": 753
+        },
+        "physical": {
+          "input": "round3/physical.json",
+          "input_sha256": "e24b870af0903622b5619a7c1c13cc03b5fe5798ad3575725cc7a3d9c4f99d9b",
+          "receipt": "round3/physical.receipt.json",
+          "receipt_sha256": "808633b94044e4219499b7599dbeedf8866aa169ab818790101c738d3dbcefce",
+          "steps": 155,
+          "low_reserve": "1/10000",
+          "strict_gates": 2170,
+          "denominators": 465
+        }
+      },
+      "return_input": "round3/candidate.json",
+      "return_receipt": "round3/candidate.receipt.json",
+      "return_receipt_sha256": "bf290c183cee7781cc890ac89f14b3e1513dc75e17c2124cd3b85d8395be0f36",
+      "return_boxes": 101,
+      "exact_certification_completed_at": "2026-10-28T19:20:53.862154+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 4,
+      "theta": "87394494041/100000000000",
+      "decimal": "0.87394494041",
+      "h": "8051246401/10000000000",
+      "improvement": "2459/50000000000",
+      "method": "Reduce the LOW profile reserve from 1/10000 to 1/100000 and retune both source chains",
+      "source_evidence": {
+        "count": {
+          "input": "round4/count.json",
+          "input_sha256": "705223eec7948d687d9a2b2e347b73971ba7e6a3faf76977e487516030428fa3",
+          "receipt": "round4/count.receipt.json",
+          "receipt_sha256": "37133bf9bce7dcfa06d4c382274f087a3c0df516b3e8f42276637463d79a3410",
+          "steps": 251,
+          "low_reserve": "1/100000",
+          "strict_gates": 3514,
+          "denominators": 753
+        },
+        "physical": {
+          "input": "round4/physical.json",
+          "input_sha256": "b84088c67e952aea983a7b0f5e561d6c7ec8ffa15d321a94ef2a4e4608d12296",
+          "receipt": "round4/physical.receipt.json",
+          "receipt_sha256": "69b749224874333dc79c4226cd10ebe17c38edbb7fde40d625867ae281af3aba",
+          "steps": 155,
+          "low_reserve": "1/100000",
+          "strict_gates": 2170,
+          "denominators": 465
+        }
+      },
+      "return_input": "round4/candidate.json",
+      "return_receipt": "round4/candidate.receipt.json",
+      "return_receipt_sha256": "f213627b7d77e90cf8ec2a643944846bc1d941a39bd5be2ea58a4f5b7856ca5d",
+      "return_boxes": 101,
+      "exact_certification_completed_at": "2026-10-28T19:22:45.041926+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 5,
+      "theta": "43697231383/50000000000",
+      "decimal": "0.87394462766",
+      "h": "8055795399/10000000000",
+      "improvement": "1251/4000000000",
+      "method": "Reduce the floor-row proof reserve from 1/200 to 1/250 using the proved transport-loss bound",
+      "source_evidence": {
+        "count": {
+          "input": "round5/count.json",
+          "input_sha256": "62136976e82740248b631c993934064ed0876939366d0d6c912c8a458f4317ff",
+          "receipt": "round5/count.receipt.json",
+          "receipt_sha256": "73884b27ac1e0471d3b80d6a89752bc62857f906f533bf9f29508e1e9806e1e3",
+          "steps": 253,
+          "low_reserve": "1/100000",
+          "strict_gates": 3542,
+          "denominators": 759
+        },
+        "physical": {
+          "input": "round5/physical.json",
+          "input_sha256": "43d83beb00770e5b05911e665ab4df20712cdc52aef8e85808867885a673d486",
+          "receipt": "round5/physical.receipt.json",
+          "receipt_sha256": "2ee8fdfda20384528f98e8a772c001100146dfc47150623e23de0eaaa7b975cf",
+          "steps": 156,
+          "low_reserve": "1/100000",
+          "strict_gates": 2184,
+          "denominators": 468
+        }
+      },
+      "return_input": "round5/candidate.json",
+      "return_receipt": "round5/candidate.receipt.json",
+      "return_receipt_sha256": "ba1f8d6f4f95ee8afee3a435009d2bde0c15e8055542e99b22940e5ba1d4b30d",
+      "return_boxes": 99,
+      "exact_certification_completed_at": "2026-10-28T19:22:48.401082+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 6,
+      "theta": "87394441941/100000000000",
+      "decimal": "0.87394441941",
+      "h": "8059999999/10000000000",
+      "improvement": "833/4000000000",
+      "method": "Increase the physical numerator slot cap from 3/50 to 61/1000 within the proved source cap",
+      "source_evidence": {
+        "count": {
+          "input": "round6/count.json",
+          "input_sha256": "99fd567a533fa22be077f3e40ebfd3294f3611684b5fd21472d7b476066d2dfe",
+          "receipt": "round6/count.receipt.json",
+          "receipt_sha256": "b6b50dde68da4fe4ece57ce29138b1f3452cf1c4a03ff55bca1e9a0a4d196cdd",
+          "steps": 255,
+          "low_reserve": "1/100000",
+          "strict_gates": 3570,
+          "denominators": 765
+        },
+        "physical": {
+          "input": "round6/physical.json",
+          "input_sha256": "9eff99edfe7212b61457d17f3c1eb982389631dc90928f51d0b79a8dc827efd2",
+          "receipt": "round6/physical.receipt.json",
+          "receipt_sha256": "a306e5bc55a2a3497676b1fde06fb0daa3d3117364215edfae0aac3b9973b348",
+          "steps": 157,
+          "low_reserve": "1/100000",
+          "strict_gates": 2198,
+          "denominators": 471
+        }
+      },
+      "return_input": "round6/candidate.json",
+      "return_receipt": "round6/candidate.receipt.json",
+      "return_receipt_sha256": "e60847a3b1f54b79c8122cb79f98a1e0b9bae03966f1bcadc8b199ca17131498",
+      "return_boxes": 101,
+      "exact_certification_completed_at": "2026-10-28T19:22:52.624091+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 7,
+      "theta": "87394435183/100000000000",
+      "decimal": "0.87394435183",
+      "h": "8059999999/10000000000",
+      "improvement": "3379/50000000000",
+      "method": "Refine the physical source chain again, to Lambda decrement 1/1600",
+      "source_evidence": {
+        "count": {
+          "input": "round7/count.json",
+          "input_sha256": "99fd567a533fa22be077f3e40ebfd3294f3611684b5fd21472d7b476066d2dfe",
+          "receipt": "round7/count.receipt.json",
+          "receipt_sha256": "b6b50dde68da4fe4ece57ce29138b1f3452cf1c4a03ff55bca1e9a0a4d196cdd",
+          "steps": 255,
+          "low_reserve": "1/100000",
+          "strict_gates": 3570,
+          "denominators": 765
+        },
+        "physical": {
+          "input": "round7/physical.json",
+          "input_sha256": "8241b1701fc80dcef1200e5167c617bcf6e86916858ef19d6395d675234db12b",
+          "receipt": "round7/physical.receipt.json",
+          "receipt_sha256": "894488ad9461b90c718862e11e2d2059b335ce630730124fcb7f3989ba1db978",
+          "steps": 314,
+          "low_reserve": "1/100000",
+          "strict_gates": 4396,
+          "denominators": 942
+        }
+      },
+      "return_input": "round7/candidate.json",
+      "return_receipt": "round7/candidate.receipt.json",
+      "return_receipt_sha256": "0031236918fc9c0bb7e22a99b37684c00b317799c24b29043b869715bfeb766b",
+      "return_boxes": 99,
+      "exact_certification_completed_at": "2026-10-28T19:29:13.892073+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 8,
+      "theta": "8739443501/10000000000",
+      "decimal": "0.8739443501",
+      "h": "8059999999/10000000000",
+      "improvement": "173/100000000000",
+      "method": "Reduce the exact return reserve from 1/100000000 to 1/500000000 while retaining the 1/1000000000 row fee",
+      "source_evidence": {
+        "count": {
+          "input": "round8/count.json",
+          "input_sha256": "99fd567a533fa22be077f3e40ebfd3294f3611684b5fd21472d7b476066d2dfe",
+          "receipt": "round8/count.receipt.json",
+          "receipt_sha256": "b6b50dde68da4fe4ece57ce29138b1f3452cf1c4a03ff55bca1e9a0a4d196cdd",
+          "steps": 255,
+          "low_reserve": "1/100000",
+          "strict_gates": 3570,
+          "denominators": 765
+        },
+        "physical": {
+          "input": "round8/physical.json",
+          "input_sha256": "8241b1701fc80dcef1200e5167c617bcf6e86916858ef19d6395d675234db12b",
+          "receipt": "round8/physical.receipt.json",
+          "receipt_sha256": "894488ad9461b90c718862e11e2d2059b335ce630730124fcb7f3989ba1db978",
+          "steps": 314,
+          "low_reserve": "1/100000",
+          "strict_gates": 4396,
+          "denominators": 942
+        }
+      },
+      "return_input": "round8/candidate.json",
+      "return_receipt": "round8/candidate.receipt.json",
+      "return_receipt_sha256": "d5d0fbce8af21d5f1b502dbb58b26cdad47bf9f5ea86616ca88040323e780229",
+      "return_boxes": 99,
+      "exact_certification_completed_at": "2026-10-28T19:29:14.996689+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 9,
+      "theta": "21848608627/25000000000",
+      "decimal": "0.87394434508",
+      "h": "8059999999/10000000000",
+      "improvement": "251/50000000000",
+      "method": "Reduce the LOW profile reserve from 1/100000 to 1/1000000 and retune both source chains",
+      "source_evidence": {
+        "count": {
+          "input": "round9/count.json",
+          "input_sha256": "39b6d3e1bbf71ba3c9888fdd2b2dcd7edf3773c5ac26a3c2b4210612d4e28ba0",
+          "receipt": "round9/count.receipt.json",
+          "receipt_sha256": "5d683cd464eac5711e329d77b6a3ee75ccd4d441b354fc9476c4c253753bea63",
+          "steps": 255,
+          "low_reserve": "1/1000000",
+          "strict_gates": 3570,
+          "denominators": 765
+        },
+        "physical": {
+          "input": "round9/physical.json",
+          "input_sha256": "6c602a1fb42f447c88813bb2fefd948504583371ae719dc6a4381aaa4a2f1e01",
+          "receipt": "round9/physical.receipt.json",
+          "receipt_sha256": "acf0eb0efa3f4ee9bdeb005a87590924607cbc2b3e8bce009fc86328d145f589",
+          "steps": 314,
+          "low_reserve": "1/1000000",
+          "strict_gates": 4396,
+          "denominators": 942
+        }
+      },
+      "return_input": "round9/candidate.json",
+      "return_receipt": "round9/candidate.receipt.json",
+      "return_receipt_sha256": "bf9f9db790595fdcd98748de360ea76c2deab11600354f0a3077d4c3b3cae1d9",
+      "return_boxes": 99,
+      "exact_certification_completed_at": "2026-10-28T19:33:24.004925+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    },
+    {
+      "round": 10,
+      "theta": "2731076077/3125000000",
+      "decimal": "0.87394434464",
+      "h": "8059999999/10000000000",
+      "improvement": "11/25000000000",
+      "method": "Reduce the numerical search margin for non-LOW gates to 2e-8, use denser sampling and finer rational parameters, then recheck every source gate exactly",
+      "source_evidence": {
+        "count": {
+          "input": "round10/count.json",
+          "input_sha256": "edd47228a4d73a75b2f411153078f372c4ca75cb25ac8c5f3ab1b2b28a6e313b",
+          "receipt": "round10/count.receipt.json",
+          "receipt_sha256": "3056d0eeaec227e6108cb6d741523fb22c7798ef7b64d0f76bce312e7c7c213e",
+          "steps": 255,
+          "low_reserve": "1/1000000",
+          "strict_gates": 3570,
+          "denominators": 765
+        },
+        "physical": {
+          "input": "round10/physical.json",
+          "input_sha256": "8bbcb64cdd3680a717f3a9c73a3848d6bd7770640e49430ccb5a7ae6bb2e87b3",
+          "receipt": "round10/physical.receipt.json",
+          "receipt_sha256": "b85e1149ec892fc8914f79c57fdfdb343d5542b4255b9423165aaa3ad87afb1d",
+          "steps": 314,
+          "low_reserve": "1/1000000",
+          "strict_gates": 4396,
+          "denominators": 942
+        }
+      },
+      "return_input": "round10/candidate.json",
+      "return_receipt": "round10/candidate.receipt.json",
+      "return_receipt_sha256": "ad1edeaa8e695ba244d81c36996283a128571724369d34dd9d02f6d0b0b794fa",
+      "return_boxes": 99,
+      "exact_certification_completed_at": "2026-10-28T19:37:06.151462+00:00",
+      "verification_scope": "Exact finite source/return certificates and proved arithmetic lemmas; new Lean endpoint verification deferred until ten rounds."
+    }
+  ],
+  "lean_phase_started_at": "2026-10-28T19:38:04.093080+00:00"
+}

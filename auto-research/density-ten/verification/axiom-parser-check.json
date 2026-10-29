@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "real_reports": 17,
+  "wrapped_reports_supported": true,
+  "negative_controls_rejected": [
+    "sorry",
+    "custom",
+    "missing",
+    "duplicate"
+  ],
+  "note": "Lean accepted the original canonical audit. The initial wrapper split only comma-space and rejected line-wrapped standard axiom lists; parsing now trims each comma-separated item and checks the exact declaration set."
+}

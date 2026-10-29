@@ -1,0 +1,1493 @@
+{
+  "status": "PASS: every whitespace flag is unchanged inherited formatting; no flags in generated proofs or other submitted files.",
+  "raw_tracker_diff_check_exit_code": 2,
+  "raw_tracker_output_sha256": "3a27ebf87eea71e690aa4ab5d7d89889bf743185d16beddba6150643a8a104cb",
+  "research_diff_check_exit_code": 0,
+  "inherited_warning_count": 247,
+  "inherited_file_count": 96,
+  "policy": "Retain inherited whitespace so the transport review remains exactly namespace changes plus 11 matched floor-reserve replacements. No mathematical source or compiled object was changed for formatting.",
+  "warnings": [
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericFeedback.lean",
+      "line": 103,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/GenericFeedback.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericFeedback.lean",
+      "line": 116,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/GenericFeedback.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericScalar.lean",
+      "line": 225,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/GenericScalar.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Active.lean",
+      "line": 187,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Active.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/ActualBin.lean",
+      "line": 124,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/ActualBin.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 39,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 40,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 41,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 43,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 44,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 45,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 46,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 47,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 54,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 56,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 59,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 90,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean",
+      "line": 129,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/AmplitudeClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/BinBound.lean",
+      "line": 59,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/BinBound.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/CanonicalCount.lean",
+      "line": 36,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/CanonicalCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 40,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 41,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 42,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 44,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 45,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 47,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 48,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 49,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 50,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 51,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 52,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 53,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 61,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 63,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 65,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 67,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 69,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean",
+      "line": 147,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Collect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 43,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 44,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 45,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 47,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 48,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 50,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 51,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 52,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 53,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 54,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 55,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 56,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 64,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 66,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 68,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 70,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 72,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean",
+      "line": 96,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Combined.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean",
+      "line": 16,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Bridge.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean",
+      "line": 17,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Bridge.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean",
+      "line": 107,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Bridge.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Cells.lean",
+      "line": 89,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Cells.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Geometry.lean",
+      "line": 82,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Geometry.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Partition.lean",
+      "line": 101,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Partition.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/SourceCells.lean",
+      "line": 51,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/SourceCells.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Summation.lean",
+      "line": 103,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Summation.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Transfer.lean",
+      "line": 70,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Finite/Transfer.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteBins.lean",
+      "line": 84,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteBins.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/CubeTransfer.lean",
+      "line": 76,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/CubeTransfer.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/FullW.lean",
+      "line": 226,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/FullW.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/Normalized.lean",
+      "line": 120,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/FiniteError/Normalized.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Fixed.lean",
+      "line": 101,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fixed.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Fourier.lean",
+      "line": 103,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Fourier.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Helpers.lean",
+      "line": 136,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Helpers.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Hybrid.lean",
+      "line": 119,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Hybrid.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Input.lean",
+      "line": 110,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Input.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 44,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 45,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 46,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 48,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 49,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 50,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 51,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 52,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 53,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 54,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 61,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 62,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 63,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 64,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 66,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 67,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 102,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean",
+      "line": 180,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Mask.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/MaskedSourceCount.lean",
+      "line": 24,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/MaskedSourceCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldActive.lean",
+      "line": 194,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldActive.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 40,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 78,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 186,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 187,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 188,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 190,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 191,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 192,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 193,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 194,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 201,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 203,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 206,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 237,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean",
+      "line": 277,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldClass.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 42,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 43,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 44,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 46,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 47,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 48,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 49,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 50,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 51,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 52,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 59,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 60,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 61,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 62,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 64,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 65,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 100,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 184,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 185,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 186,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 188,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 189,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 191,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 192,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 193,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 194,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 195,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 196,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 197,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 205,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 207,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 209,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 211,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 213,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean",
+      "line": 292,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldCollect.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldGeometry.lean",
+      "line": 169,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldGeometry.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldPacket.lean",
+      "line": 269,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPacket.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldPublic.lean",
+      "line": 64,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldPublic.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldSelected.lean",
+      "line": 138,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldSelected.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldSelected.lean",
+      "line": 175,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/OldSelected.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Original.lean",
+      "line": 107,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Original.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PacketBound.lean",
+      "line": 24,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PacketBound.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PacketBound.lean",
+      "line": 69,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PacketBound.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PhysicalSourceCount.lean",
+      "line": 33,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PhysicalSourceCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PhysicalSourceCount.lean",
+      "line": 127,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PhysicalSourceCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Public.lean",
+      "line": 40,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Public.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PublicCount.lean",
+      "line": 25,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PublicCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PublicCount.lean",
+      "line": 71,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/PublicCount.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Retained.lean",
+      "line": 126,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Retained.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SelectedBin.lean",
+      "line": 140,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SelectedBin.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SelectedBin.lean",
+      "line": 177,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SelectedBin.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Selection.lean",
+      "line": 66,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/Selection.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceActual.lean",
+      "line": 98,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceActual.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceActual.lean",
+      "line": 149,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceActual.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceFullW.lean",
+      "line": 139,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceFullW.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceLedger.lean",
+      "line": 92,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceLedger.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceLedger.lean",
+      "line": 113,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceLedger.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceParameters.lean",
+      "line": 58,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceParameters.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean",
+      "line": 38,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceSelection.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean",
+      "line": 76,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceSelection.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean",
+      "line": 176,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/PhysicalDirect/SourceSelection.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean",
+      "line": 15,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean",
+      "line": 16,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean",
+      "line": 17,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean",
+      "line": 18,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean",
+      "line": 140,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalFixedHigh.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalHeight.lean",
+      "line": 12,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalHeight.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalHeight.lean",
+      "line": 13,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalHeight.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalSourceProbe.lean",
+      "line": 68,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/FinalSourceProbe.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeChoice.lean",
+      "line": 84,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeChoice.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeReduction.lean",
+      "line": 84,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalCubeReduction.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalRayCube.lean",
+      "line": 95,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalRayCube.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalReduction.lean",
+      "line": 82,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalReduction.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalTails.lean",
+      "line": 93,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CanonicalTails.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CentralErrorSaving.lean",
+      "line": 69,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralErrorSaving.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CentralFiniteError.lean",
+      "line": 46,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CentralFiniteError.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CommonProbe.lean",
+      "line": 78,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CommonProbe.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeErrorSaving.lean",
+      "line": 83,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeErrorSaving.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFiniteError.lean",
+      "line": 110,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFiniteError.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorArithmetic.lean",
+      "line": 134,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorArithmetic.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorCollected.lean",
+      "line": 125,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorCollected.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobal.lean",
+      "line": 129,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobal.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobalIntegral.lean",
+      "line": 107,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorGlobalIntegral.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorNormalized.lean",
+      "line": 111,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorNormalized.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorSaving.lean",
+      "line": 95,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeFloorSaving.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeSlotExponent.lean",
+      "line": 62,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/CubeSlotExponent.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/FloorExponent.lean",
+      "line": 42,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/FloorExponent.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/GeometricTail.lean",
+      "line": 60,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/GeometricTail.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/HighApproximation.lean",
+      "line": 13,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/HighApproximation.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/HighApproximation.lean",
+      "line": 251,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/HighApproximation.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeDyad.lean",
+      "line": 63,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeDyad.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeSaving.lean",
+      "line": 56,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeSaving.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeTail.lean",
+      "line": 83,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/LargeTail.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NonfloorTransport.lean",
+      "line": 157,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NonfloorTransport.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransport.lean",
+      "line": 156,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransport.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransportSaving.lean",
+      "line": 114,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/NormalizedTransportSaving.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PhysicalLargeTail.lean",
+      "line": 75,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalLargeTail.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PhysicalSmallTail.lean",
+      "line": 73,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PhysicalSmallTail.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 92,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 151,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 192,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 231,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 418,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 453,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 495,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 498,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 572,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 611,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 614,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean",
+      "line": 633,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 141,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 154,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 226,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 262,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 264,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 307,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 432,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 618,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean",
+      "line": 800,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderContours.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProduct.lean",
+      "line": 449,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProduct.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProductX.lean",
+      "line": 117,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderFiniteProductX.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderNormalized.lean",
+      "line": 60,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderNormalized.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderNormalized.lean",
+      "line": 125,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderNormalized.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysical.lean",
+      "line": 107,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysical.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysicalBounds.lean",
+      "line": 43,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysicalBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysicalBounds.lean",
+      "line": 79,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderPhysicalBounds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRayThresholds.lean",
+      "line": 77,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRayThresholds.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRegion.lean",
+      "line": 222,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderRegion.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderResidueActual.lean",
+      "line": 58,
+      "warning": "trailing whitespace.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderResidueActual.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderResidueActual.lean",
+      "line": 78,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderResidueActual.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderTransport.lean",
+      "line": 420,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalRemainderTransport.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalSignal.lean",
+      "line": 418,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSignal.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalSlots.lean",
+      "line": 435,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/PrincipalSlots.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SharedNonfloor.lean",
+      "line": 103,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SharedNonfloor.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SignalShift.lean",
+      "line": 96,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SignalShift.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SmallTail.lean",
+      "line": 95,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/SmallTail.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/TailScales.lean",
+      "line": 59,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/Transport/TailScales.lean"
+    },
+    {
+      "path": "submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/TransportParameters.lean",
+      "line": 273,
+      "warning": "new blank line at EOF.",
+      "inherited_from": "submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/ReturnD/Transport/TransportParameters.lean"
+    }
+  ]
+}

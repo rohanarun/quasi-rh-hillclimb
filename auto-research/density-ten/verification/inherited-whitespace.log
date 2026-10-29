@@ -1,0 +1,248 @@
+Git diff --check warning locations; source excerpts omitted.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericFeedback.lean:103: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericFeedback.lean:116: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/GenericScalar.lean:225: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Active.lean:187: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/ActualBin.lean:124: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:39: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:40: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:41: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:43: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:44: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:45: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:46: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:47: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:54: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:56: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:59: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:90: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/AmplitudeClass.lean:129: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/BinBound.lean:59: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/CanonicalCount.lean:36: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:40: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:41: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:42: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:44: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:45: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:47: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:48: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:49: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:50: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:51: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:52: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:53: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:61: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:63: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:65: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:67: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:69: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Collect.lean:147: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:43: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:44: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:45: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:47: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:48: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:50: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:51: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:52: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:53: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:54: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:55: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:56: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:64: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:66: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:68: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:70: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:72: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Combined.lean:96: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean:16: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean:17: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Bridge.lean:107: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Cells.lean:89: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Geometry.lean:82: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Partition.lean:101: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/SourceCells.lean:51: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Summation.lean:103: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Finite/Transfer.lean:70: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteBins.lean:84: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/CubeTransfer.lean:76: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/FullW.lean:226: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/FiniteError/Normalized.lean:120: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Fixed.lean:101: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Fourier.lean:103: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Helpers.lean:136: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Hybrid.lean:119: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Input.lean:110: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:44: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:45: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:46: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:48: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:49: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:50: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:51: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:52: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:53: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:54: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:61: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:62: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:63: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:64: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:66: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:67: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:102: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Mask.lean:180: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/MaskedSourceCount.lean:24: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldActive.lean:194: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:40: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:78: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:186: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:187: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:188: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:190: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:191: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:192: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:193: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:194: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:201: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:203: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:206: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:237: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldClass.lean:277: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:42: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:43: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:44: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:46: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:47: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:48: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:49: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:50: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:51: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:52: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:59: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:60: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:61: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:62: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:64: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:65: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:100: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:184: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:185: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:186: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:188: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:189: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:191: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:192: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:193: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:194: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:195: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:196: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:197: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:205: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:207: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:209: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:211: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:213: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldCollect.lean:292: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldGeometry.lean:169: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldPacket.lean:269: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldPublic.lean:64: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldSelected.lean:138: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/OldSelected.lean:175: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Original.lean:107: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PacketBound.lean:24: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PacketBound.lean:69: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PhysicalSourceCount.lean:33: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PhysicalSourceCount.lean:127: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Public.lean:40: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PublicCount.lean:25: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/PublicCount.lean:71: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Retained.lean:126: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SelectedBin.lean:140: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SelectedBin.lean:177: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/Selection.lean:66: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceActual.lean:98: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceActual.lean:149: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceFullW.lean:139: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceLedger.lean:92: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceLedger.lean:113: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceParameters.lean:58: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean:38: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean:76: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/PhysicalDirect/SourceSelection.lean:176: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean:15: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean:16: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean:17: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean:18: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalFixedHigh.lean:140: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalHeight.lean:12: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalHeight.lean:13: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/FinalSourceProbe.lean:68: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeChoice.lean:84: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalCubeReduction.lean:84: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalRayCube.lean:95: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalReduction.lean:82: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CanonicalTails.lean:93: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CentralErrorSaving.lean:69: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CentralFiniteError.lean:46: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CommonProbe.lean:78: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeErrorSaving.lean:83: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFiniteError.lean:110: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorArithmetic.lean:134: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorCollected.lean:125: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobal.lean:129: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorGlobalIntegral.lean:107: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorNormalized.lean:111: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeFloorSaving.lean:95: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/CubeSlotExponent.lean:62: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/FloorExponent.lean:42: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/GeometricTail.lean:60: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/HighApproximation.lean:13: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/HighApproximation.lean:251: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeDyad.lean:63: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeSaving.lean:56: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/LargeTail.lean:83: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NonfloorTransport.lean:157: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransport.lean:156: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/NormalizedTransportSaving.lean:114: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PhysicalLargeTail.lean:75: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PhysicalSmallTail.lean:73: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:92: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:151: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:192: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:231: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:418: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:453: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:495: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:498: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:572: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:611: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:614: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderBounds.lean:633: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:141: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:154: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:226: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:262: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:264: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:307: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:432: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:618: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderContours.lean:800: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProduct.lean:449: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderFiniteProductX.lean:117: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderNormalized.lean:60: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderNormalized.lean:125: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysical.lean:107: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysicalBounds.lean:43: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderPhysicalBounds.lean:79: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRayThresholds.lean:77: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderRegion.lean:222: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderResidueActual.lean:58: trailing whitespace.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderResidueActual.lean:78: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalRemainderTransport.lean:420: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalSignal.lean:418: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/PrincipalSlots.lean:435: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SharedNonfloor.lean:103: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SignalShift.lean:96: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/SmallTail.lean:95: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/Transport/TailScales.lean:59: new blank line at EOF.
+submissions/2026-10-28-density-ten/src/Submissions/density_ten/Bridge/Transport/TransportParameters.lean:273: new blank line at EOF.

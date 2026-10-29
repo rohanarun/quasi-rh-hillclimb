@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-28T20:38:27.383002+00:00",
+  "initial_workers": 8,
+  "replacement_workers": 4,
+  "reason": "Measured memory pressure and active swapping, not quiet output.",
+  "total_memory_gib": 62,
+  "swap_used_gib_before": 7.8,
+  "swap_used_gib_during": 26,
+  "vmstat_samples": [
+    {
+      "swap_in_kib_per_second": 35808,
+      "swap_out_kib_per_second": 46864,
+      "io_wait_percent": 47
+    },
+    {
+      "swap_in_kib_per_second": 18440,
+      "swap_out_kib_per_second": 56380,
+      "io_wait_percent": 49
+    }
+  ],
+  "scope": "Restart the native kernel audit for the same 749 submitted modules plus TenAudit. Completed source builds are retained. No partial kernel result is counted as success.",
+  "after_interrupt": {
+    "used_memory_gib": 7.9,
+    "free_memory_gib": 46,
+    "swap_out_kib_per_second": 0,
+    "io_wait_percent": 0
+  }
+}

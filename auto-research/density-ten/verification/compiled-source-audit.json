@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "submitted_modules": 749,
+  "all_compiler_source_stamps_match_current_sources": true,
+  "all_sources_match_pre_base_refresh_manifest": true,
+  "source_manifest_sha256": "fc34e63f6321e90713c6712649d7907ed37836d5d404190e5d603969763bf246",
+  "canonical_audit_source_sha256": "f0b5e3e15a69ac4c9f2cb84a9c00b0ae942e2d7f33ee4904855c3c3b60ef4c5d",
+  "canonical_audit_olean_sha256": "98d5ccb2b3828ea253da44c0288e4991345ad0ed3a77bba96588b81e3cf80454"
+}

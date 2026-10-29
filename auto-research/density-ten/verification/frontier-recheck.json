@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-28T21:02:35.465971+00:00",
+  "tracker_main": "d52ee460644ef549df52ca180872e04ee2f84504",
+  "research_main": "d706ccb3a128285e122247852824f7b84b2e15a3",
+  "previous_result": {
+    "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/91",
+    "head": "c67a1450476b10e200e1bc095748dc4889ba40d5",
+    "state": "OPEN",
+    "bound": "436972583/500000000",
+    "admission": "SUCCESS",
+    "admission_completed_at": "2026-10-28T19:55:26Z",
+    "verification": "SUCCESS",
+    "verification_completed_at": "2026-10-28T19:54:00Z",
+    "workflow": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/40746214653"
+  }
+}

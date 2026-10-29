@@ -1,0 +1,66 @@
+{
+  "scope": "Inherited analytic and physical-source modules unchanged except namespace/import substitutions. Step wrapper extracted without changing statement or proof. Both separately checked by Lean.",
+  "inherited_modules": {
+    "DensityWide/SmallHeight.lean": {
+      "original_sha256": "5480be7c1da98944b61188e76c66e2282005eae32c7c5756066cabb849a5e1e4",
+      "new_sha256": "0951655bb1569cfc78ceb87f7ded30e630f208cdf393591fd7359c50897f53e3"
+    },
+    "DensityWide/UniformFree.lean": {
+      "original_sha256": "6fecf933101bde7a14b06762ed0cbcab368ebc3dc5855106edbf711bccc3cf91",
+      "new_sha256": "b5419de80363b91e8cd635e0cd51949b891294d790342e8cc32bb3cd575b7f74"
+    },
+    "DensityWide/NaturalEndpoint.lean": {
+      "original_sha256": "fc5045c76ef21c6422d8ff6caaad1bdaa1146b8fc941f05a91628b8d8d82fd42",
+      "new_sha256": "d727c2e6fff21e55c1bef83c4cef5853ca79317ceb4a93ffcef5b9053dcc8d46"
+    },
+    "DensityWide/BufferedPartition.lean": {
+      "original_sha256": "990bae02e841482204a61c5568bf25dc9938b399d7b5b07c336201e846dba088",
+      "new_sha256": "06c742d08613cd40fc9b4ab0fe686e76ea60556ff829b31a44ea6f6dd40873c6"
+    },
+    "DensityWide/ActualZeros.lean": {
+      "original_sha256": "ed8af6333ef5c41a11f31c32ed45d04e4143a5b3d98fbed278577f964ec9d68d",
+      "new_sha256": "ead95726baddb723a02f39040099cf64bb32683d91a59452d6c40911c4d53050"
+    },
+    "DensityWide/FixedDensity.lean": {
+      "original_sha256": "6e218090387cc37629f91d3484737f4e134be0a1269abc5f215e4949c0914553",
+      "new_sha256": "d17f3edfaefd41f182b2eced2f104e817668f7c305f51b8d47f1cdef7b8eee36"
+    },
+    "Density/StepGates.lean": {
+      "original_sha256": "13b2ed7512a5c2e6c7c0bad099b6465d21219792bcb081c3867bad29605f5239",
+      "new_sha256": "89f5fb378f1e106657ccf0e100592159daccc2f3e3fc3345b10f6e3e844defce"
+    },
+    "Density/LeafHigh.lean": {
+      "original_sha256": "26213c18578a7bcf6ebd66aff532ab9beaa81733d37c03ca0220af5cc76dd8ef",
+      "new_sha256": "11de0dc0db2b2f9aa68054792d5e0fbfcb54088a955d698be1e30fb439c06741"
+    },
+    "Density/Leaf.lean": {
+      "original_sha256": "12691db93fab86c9905d3faa7cb614a9e95efc9003bdc3f14612f486959cd095",
+      "new_sha256": "24c8a5382e62b172ae8376c2d811293cdf51ab0649ca4c079290e8f1e73c0003"
+    },
+    "Density/Price.lean": {
+      "original_sha256": "3a55e24bbfefafc49ab6ff7045bfe2b3c1c03c7bf99f01fb839d065bff542987",
+      "new_sha256": "d167d8ad8c2cbaf43263754e000a97110bb74b23bb445a28505806a65cc93bf0"
+    },
+    "Density/LeafHighEnergy.lean": {
+      "original_sha256": "bc4c8763287fd74dbecc0d8dddb926ae76171437e36aa748680e32bab19923e5",
+      "new_sha256": "0da0bc8394a7bca8e648634eb70b79d0cadcb4ca388cbe1e226c1d7ce9afb3ee"
+    },
+    "Source/HybridGates.lean": {
+      "original_sha256": "f06200eadee8153cfaa27a8d7b195d340da4140a20fa27ae4cd9457655ef64a7",
+      "new_sha256": "e24c7a568691fe577b3548d5eb4187c83a99f7229e96c21422acf54838f28b0d"
+    },
+    "Source/Physical.lean": {
+      "original_sha256": "3848821fa96e82092957ae06ae93669f294d17871d520e3a7b4d0eeba934a7a3",
+      "new_sha256": "9d533d031ca61bee46632fd281132cc70434b2293eb7e58910d1271df191640c"
+    }
+  },
+  "source_commit": "85f66481c20545bf9c8ee61bde8ce4d62b844718",
+  "source_tree": "49af09a3bd2ed631811471fd856585380d7a121f",
+  "source_prefix": "submissions/2026-10-28-density-wide/src/Submissions/density_wide",
+  "namespace_substitutions": {
+    "Submissions.density_wide": "Submissions.density_refined",
+    "QRH.DensityWide": "QRH.DensityRefined",
+    "LocalMoment.WideDensity": "LocalMoment.RefinedDensity"
+  },
+  "extracted_step_source_sha256": "e4d5090dc383e34830707a3532d2fba84de612ecfbff93f844eee4ac640a88b5"
+}

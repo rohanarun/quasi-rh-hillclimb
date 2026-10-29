@@ -1,0 +1,44 @@
+{
+  "verified_unchanged_templates": [
+    "Conductor.lean",
+    "CountAdmission.lean",
+    "CountDecode.lean",
+    "CountMonotonicity.lean",
+    "CountWidth.lean",
+    "CountWindow.lean",
+    "Endpoint.lean",
+    "EndpointFromNumerator.lean",
+    "EndpointFromSources.lean",
+    "Facts.lean",
+    "FinalEnvelopeBounds.lean",
+    "FinalRows.lean",
+    "FinalSchedule.lean",
+    "FinalScheme.lean",
+    "FinalWindows.lean",
+    "Formulas.lean",
+    "Geometry.lean",
+    "SourceInlet.lean",
+    "TransportInstances.lean",
+    "WindowSources.lean",
+    "Windows.lean"
+  ],
+  "separately_regenerated": [
+    "Constants.lean",
+    "EdgeCertificates.lean",
+    "Rows/*.lean"
+  ],
+  "direct_dependency_namespaces": [
+    "arvi_repeated_marks_on_sil_face_20261025",
+    "hailey_collet_1252270103",
+    "sil_density_split_20261026"
+  ],
+  "scope": "Return templates and their direct imports only; source dependencies are recorded in metadata.",
+  "source_commit": "85f66481c20545bf9c8ee61bde8ce4d62b844718",
+  "substitutions": {
+    "Submissions.density_wide": "Submissions.density_refined",
+    "QRH.DensityWide": "QRH.DensityRefined",
+    "theta": "1747893/2000000 -> 8739461/10000000",
+    "count_B": "977400389/1000000000 -> 488842537/500000000",
+    "count_Lambda": "4383001/2000000 -> 4388001/2000000"
+  }
+}

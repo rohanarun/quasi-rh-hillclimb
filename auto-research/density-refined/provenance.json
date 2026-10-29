@@ -1,0 +1,22 @@
+{
+  "condition": "All analytic conclusions conditional on the preprint seven-eighths theorem.",
+  "research_base": "1dfdbc51bb887aaabc65b3b78686453a2a77e25b",
+  "tracker_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "wider_density_source": "https://github.com/GTimG/QuasiRiemannTracker/pull/89",
+  "wider_density_head": "85f66481c20545bf9c8ee61bde8ce4d62b844718",
+  "previous_research": "https://github.com/rohanarun/quasi-rh-hillclimb/pull/32",
+  "claim": "https://github.com/rohanarun/quasi-rh-hillclimb/issues/33",
+  "source_chain_parent": "QRH.SilDensitySplit.K15.final_source (tracker #86)",
+  "physical_source": "tracker #86 step 38, proof from #89",
+  "analytic_packaging": "13 inherited analytic/physical modules plus extracted source-step wrapper included under separate namespaces; no pending submission dependency.",
+  "ai_assistance": "Substantial OpenAI Codex research, code and formalization assistance.",
+  "credit": [
+    "OpenAI",
+    "Hailey Collet",
+    "Sil",
+    "ArviFoxy",
+    "Jacob Sussman",
+    "Rohan Arun",
+    "SovereignSteak"
+  ]
+}

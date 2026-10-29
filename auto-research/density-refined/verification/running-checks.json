@@ -1,0 +1,26 @@
+[
+  {
+    "name": "canonical-and-axioms",
+    "command": [
+      "/tmp/qrh-lean-toolchain/lean4/build/release/stage1/bin/lean",
+      "--root=/tmp/qrh-next",
+      "-o",
+      "/tmp/qrh-density-build/lib/RefinedAudit.olean",
+      "/tmp/qrh-next/RefinedAudit.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 8.473
+  },
+  {
+    "name": "kernel-all-new-modules",
+    "command": [
+      "/tmp/qrh-lean-toolchain/lean4/build/release/stage1/bin/leanchecker",
+      "-v",
+      "Submissions.density_refined",
+      "Candidate.Main",
+      "RefinedAudit"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 360.473
+  }
+]

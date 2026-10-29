@@ -1,0 +1,31 @@
+Domain-widening audit, tracker commit 8f77ade2f22d40197711e45af08286faed51de13
+All consequences for the zero-free bound are conditional on the preprint seven-eighths theorem. AI-assisted adaptation; existing Collet and Sil proof layout retained and credited.
+
+1. Existing analytic estimate already reaches the needed bins.
+Original source prefix:
+  submissions/2026-10-21-hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Cycle61/Density/
+ActualMaximaCount.lean:18 begins actual_maxima_bin_count; line29 permits 51/100 < b <= 7/8; line40 gives the unchanged exponent unmarkedDensity(2b-1)+156*epsilon+epsilon_m+eta_loss.
+https://github.com/GTimG/QuasiRiemannTracker/blob/8f77ade2f22d40197711e45af08286faed51de13/submissions/2026-10-21-hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Cycle61/Density/ActualMaximaCount.lean#L18
+No stronger inverse/plain moment estimate is postulated.
+
+2. The narrowing to a >= 33/40 is only wrapper arithmetic.
+BufferedPartition.lean:52 starts actual_buffered_partition; line58 states the historical lower endpoint; line78 only needs a > 51/100 to infer the beta lower premise from a nonempty bin.
+SmallHeight.lean:18 has e < 1/1000; line25 uses a >= 33/40; lines74-76 derive b > 51/100 from b > a-e. Replacing a >= 33/40 by a >= 3/4 gives b > a-e > 749/1000 > 51/100, exactly. No epsilon allowance or exponent changes.
+UniformFree.lean:27 chooses e=min(epsilon/2000,1/2000), independently of a; line33 proves the fixed bound e <=1/2000. Uniformity in all live bin endpoints/heights remains unchanged.
+
+3. Natural dictionary endpoint carries only this domain change.
+Original NaturalEndpoint.lean:88-99 is fixed_natural_dictionary_raw_density, with a >=33/40 at line91. The production replacement is src/Submissions/density_wide/DensityWide/NaturalEndpoint.lean:41, requiring3/4 <=a. Fixed dictionary, common constant, degree and threshold remain before live orientation,a,T,H,row set. Exponent remains rho(2a-1)=1-10(2a-1)/(15-6(2a-1)). Positive-zero transfer, exceptional cores and sixth-power convolution are unchanged existing lemmas. Downstream intermediary wrappers are copied only where their theorem hypotheses must widen; unchanged predicates/helpers are imported.
+
+4. HIGH source branch now covers q >=1/2.
+Original Sil source prefix:
+  submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/
+Density/LeafHigh.lean:102 high_row_count uses b >=33/40 at107 and old natural dictionary count at112. The retained-row zero-to-dictionary transfer at144 needs only b >51/100. Production changes b >=3/4 and calls the broadened endpoint.
+Density/LeafHighEnergy.lean:39 high_branch uses q >=13/20 at52; its per-bin count call is152. HIGH has b >=(q+1)/2, so q>=1/2 supplies b>=3/4 exactly. Count, row energy, summation and height estimates are unchanged.
+Density/Leaf.lean:139 begins density_priced_source; local lower-cut assertion at293 is widened. The degree remains chosen before the height scale and the common threshold before the live cut/width.
+
+5. Scalar price/gate integration.
+Source/HybridGates.lean:74 is gQFloor=q-13/20 and120 is its uniform positivity field. The widened copy substitutes1/2. Existing HIGH comparison already assumes only1/2<=nu: highJ_mono_quant at179, highJ_mono at193, highJ_deriv_ge at220. No derivative estimate is strengthened.
+Density/Price clips q to[1/2,3/4]; generic StepGates is unchanged beyond its imported price/gates and independent namespace. Both lower-gate fields are kept for generator compatibility.
+
+Validation completed
+Lean4.34.1 compiled all12 production modules against actual Sil namespace dependencies. The fixed natural dictionary raw count, high_branch, density_priced_source and dsGates each report only propext, Classical.choice, Quot.sound. Independent leanchecker replay passed all6 changed dictionary wrappers. Parent agent owns final source-chain/return endpoint construction and remaining module/kernel replay. No final zero-free numerical bound is claimed by this audit alone.

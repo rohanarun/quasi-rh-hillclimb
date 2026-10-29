@@ -1,0 +1,21 @@
+{
+  "lean_version": "Lean (version 4.34.1, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "source_revision": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_executable_sha256": "ec56ba46e010fe034a1e47e599833177dcc9fdd305f96d6500acb747c3d72206",
+  "toolchain_location": "Built locally in a work directory; no system Lean replaced.",
+  "tracker_pins": {
+    "schema_version": 1,
+    "challenge_version": "all-dirichlet-v1",
+    "lean": "leanprover/lean4:v4.34.1",
+    "openai_math": {
+      "url": "https://github.com/openai/math.git",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+    },
+    "lean4export": {
+      "url": "https://github.com/leanprover/lean4export.git",
+      "commit": "076e8e57707e813375e8f9da8bf989799ace9680"
+    },
+    "challenge_sha256": "8fb13ad977bca104591fcbc6ef01a58496e7385053c9b1445f95749afc0eff54"
+  },
+  "lake_manifest_sha256": "5c6d8777513f3fa9eee95a8475ea8d2109e7efaff4b315d8c22d4d2714ec9c79"
+}

@@ -1,0 +1,320 @@
+[
+  {
+    "file": "DensityWide/ActualZeros.lean",
+    "sha256": "ed8af6333ef5c41a11f31c32ed45d04e4143a5b3d98fbed278577f964ec9d68d",
+    "declarations": [
+      {
+        "name": "actual_zero_regular_bin",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "oriented_zero_core_predicate",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "fixed_dictionary_eventual_with_exceptions",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "fixed_dictionary_actual_raw_zero_density",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "DensityWide/BufferedPartition.lean",
+    "sha256": "990bae02e841482204a61c5568bf25dc9938b399d7b5b07c336201e846dba088",
+    "declarations": [
+      {
+        "name": "actual_buffered_partition",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "DensityWide/FixedDensity.lean",
+    "sha256": "6e218090387cc37629f91d3484737f4e134be0a1269abc5f215e4949c0914553",
+    "declarations": [
+      {
+        "name": "fixed_dictionary_eventual_free_density",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "DensityParameter",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "DensityWide/NaturalEndpoint.lean",
+    "sha256": "fc5045c76ef21c6422d8ff6caaad1bdaa1146b8fc941f05a91628b8d8d82fd42",
+    "declarations": [
+      {
+        "name": "natural_zero_to_literal_dictionary",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "fixed_natural_dictionary_raw_density",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "fixed_natural_dictionary_free_density",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "DensityWide/SmallHeight.lean",
+    "sha256": "5480be7c1da98944b61188e76c66e2282005eae32c7c5756066cabb849a5e1e4",
+    "declarations": [
+      {
+        "name": "actual_small_height_density",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "DensityWide/UniformFree.lean",
+    "sha256": "6fecf933101bde7a14b06762ed0cbcab368ebc3dc5855106edbf711bccc3cf91",
+    "declarations": [
+      {
+        "name": "actual_uniform_free_density_normalized",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "Density/Leaf.lean",
+    "sha256": "12691db93fab86c9905d3faa7cb614a9e95efc9003bdc3f14612f486959cd095",
+    "declarations": [
+      {
+        "name": "scale_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "low_cost_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "low_total_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "height_gate",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "density_priced_source",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "Density/LeafHigh.lean",
+    "sha256": "26213c18578a7bcf6ebd66aff532ab9beaa81733d37c03ca0220af5cc76dd8ef",
+    "declarations": [
+      {
+        "name": "unmarkedDensity_le_one",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "high_exponent",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "height_count_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "density_power_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highDictionary",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "high_row_count",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "Density/LeafHighEnergy.lean",
+    "sha256": "bc4c8763287fd74dbecc0d8dddb926ae76171437e36aa748680e32bab19923e5",
+    "declarations": [
+      {
+        "name": "high_branch",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "Density/Price.lean",
+    "sha256": "3a55e24bbfefafc49ab6ff7045bfe2b3c1c03c7bf99f01fb839d065bff542987",
+    "declarations": [
+      {
+        "name": "densQ",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densQ_ge",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densQ_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densQ_nonneg",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densQ_eq",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highTerm",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highTerm_eq_rho",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highSup",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "rhoGap_mem",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highTerm_le_abs",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highSup_bdd",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "le_highSup",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highSup_le",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "highSup_le_add",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "max_le_max_add",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "lowPart",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "lowPart_lip",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densityPrice",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densityPrice_f",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "densityPrice_lip",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "lowPart_le_native",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  },
+  {
+    "file": "Density/StepGates.lean",
+    "sha256": "13b2ed7512a5c2e6c7c0bad099b6465d21219792bcb081c3867bad29605f5239",
+    "declarations": [
+      {
+        "name": "dsSel",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "dsData",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "DSFace",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "sel_zero",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "DSFace.cross_nonneg",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "DSFace.cross_mul",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "_root_.QRH.DensityWide.HybridGates.dsA_pos",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "_root_.QRH.DensityWide.HybridGates.dsCross_lt_c\u2080",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "_root_.QRH.DensityWide.HybridGates.dsSel_nonneg",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "_root_.QRH.DensityWide.HybridGates.dsSel_mono",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "_root_.QRH.DensityWide.HybridGates.dsDens_overshoot",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_cap_aux",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_defect_aux",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_low_aux",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_high_aux",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_ledger",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "ds_reference",
+        "same_except_declared_endpoint_namespace_delta": true
+      },
+      {
+        "name": "dsGates",
+        "same_except_declared_endpoint_namespace_delta": true
+      }
+    ]
+  }
+]

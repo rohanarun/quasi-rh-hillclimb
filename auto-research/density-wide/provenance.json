@@ -1,0 +1,16 @@
+{
+  "research_repository": "rohanarun/quasi-rh-hillclimb",
+  "research_base": "1dfdbc51bb887aaabc65b3b78686453a2a77e25b",
+  "tracker_repository": "GTimG/QuasiRiemannTracker",
+  "tracker_base": "8f77ade2f22d40197711e45af08286faed51de13",
+  "parent_result": "density-split-fine-chain",
+  "parent_boundary": "4369779/5000000",
+  "candidate_boundary": "1747893/2000000",
+  "candidate_submission": "submissions/2026-10-28-density-wide",
+  "lean_version": "4.34.1",
+  "condition": "Uses the preprint seven-eighths theorem and inherited source/count/return results.",
+  "ai_assistance": "Substantial research, certificate generation and formalization assistance from OpenAI Codex.",
+  "tracker_pr": "https://github.com/GTimG/QuasiRiemannTracker/pull/89",
+  "tracker_submission_head": "85f66481c20545bf9c8ee61bde8ce4d62b844718",
+  "tracker_verified_tree": "49af09a3bd2ed631811471fd856585380d7a121f"
+}

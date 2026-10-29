@@ -1,0 +1,38 @@
+[
+  {
+    "module": "Submissions.density_wide.DensityWide.BufferedPartition",
+    "exit_code": 0,
+    "elapsed_seconds": 21.755775606725365,
+    "source_sha256": "990bae02e841482204a61c5568bf25dc9938b399d7b5b07c336201e846dba088"
+  },
+  {
+    "module": "Submissions.density_wide.DensityWide.SmallHeight",
+    "exit_code": 0,
+    "elapsed_seconds": 18.77043975982815,
+    "source_sha256": "5480be7c1da98944b61188e76c66e2282005eae32c7c5756066cabb849a5e1e4"
+  },
+  {
+    "module": "Submissions.density_wide.DensityWide.UniformFree",
+    "exit_code": 0,
+    "elapsed_seconds": 18.65608357777819,
+    "source_sha256": "6fecf933101bde7a14b06762ed0cbcab368ebc3dc5855106edbf711bccc3cf91"
+  },
+  {
+    "module": "Submissions.density_wide.DensityWide.FixedDensity",
+    "exit_code": 0,
+    "elapsed_seconds": 18.705832755658776,
+    "source_sha256": "6e218090387cc37629f91d3484737f4e134be0a1269abc5f215e4949c0914553"
+  },
+  {
+    "module": "Submissions.density_wide.DensityWide.ActualZeros",
+    "exit_code": 0,
+    "elapsed_seconds": 18.73577962908894,
+    "source_sha256": "ed8af6333ef5c41a11f31c32ed45d04e4143a5b3d98fbed278577f964ec9d68d"
+  },
+  {
+    "module": "Submissions.density_wide.DensityWide.NaturalEndpoint",
+    "exit_code": 0,
+    "source_sha256": "fc5045c76ef21c6422d8ff6caaad1bdaa1146b8fc941f05a91628b8d8d82fd42",
+    "log": "logs/kernel-natural-endpoint.log"
+  }
+]

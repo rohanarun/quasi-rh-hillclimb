@@ -1,0 +1,5 @@
+'Candidate.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRHDensityWideAudit.canonical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityWide.final_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityWide.physical_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QRH.DensityWide.Return.beta_le_theta_of_sources' depends on axioms: [propext, Classical.choice, Quot.sound]

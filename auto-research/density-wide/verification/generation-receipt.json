@@ -1,0 +1,71 @@
+{
+  "steps": [
+    {
+      "step": "source-replay-and-generation",
+      "command": [
+        "python3",
+        "source/generate_lean.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "return-replay",
+      "command": [
+        "python3",
+        "return/certify.py",
+        "return/candidate-15.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "return-generation",
+      "command": [
+        "python3",
+        "return/generate_lean.py",
+        "return/candidate-15.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "all_generated_modules_match_tracker_submission": true,
+  "generated_modules": {
+    "Source/Wide01.lean": "bf0629f1fef80259e69f3dec23ddfca6d7458e03a260206f654ac0ba118e0f15",
+    "Source/Wide04.lean": "51e2863fb70f2ef685f460a3e5be71b4478f450ecfaeb3e3ce1c638b6842b33b",
+    "Source/Wide06.lean": "ad92895b750af50b54deab764219cb455c22f359c9a9ce08b7bfdbf44e75d9b2",
+    "Source/Wide08.lean": "f0c4f582761b53dc55aa4ad7ad39613c65d8f940e3278cd8415fc77a65dabfaa",
+    "Source/Wide12.lean": "96b7f9c76d981e5536e985328ec840a0bd953f9513a734790bb67d22c9a70e2f",
+    "Source/Wide02.lean": "912b0d59eeab137fe32f7d197b14787bfcf0f7a87913b682dc73870ab5bc01ab",
+    "Source/Wide05.lean": "30975625eaf33b5fcf4b322f0fd3ebfebdcf621f21d9d8f0029f8eb0f9ce1759",
+    "Source/Wide14.lean": "6301ff7d08c769c78bad2af0e1ee7945763e50c0ea351f4ff51e20827f296334",
+    "Source/Wide03.lean": "54071404f241f8d44c3fe03812fc3bd6b33f96b7fc2f813e532a018a63a68dcd",
+    "Source/Chain.lean": "978b1588b6e41b213141f196364e3793cb9b26619ec5b2f5458c2fecf6677edc",
+    "Source/Wide09.lean": "b71b1a66523a5b7612d17b5f6cd694bfb6dbd2e2c35896828d2ae50b9deabcca",
+    "Source/Wide07.lean": "2f87ad23545398ac1c72a5381e93bacfd952d677f38394cae9aab9bfe853b192",
+    "Source/Wide10.lean": "82ed892233b1cddbbfc4027e7b69363ae0299a70bed52c08568440cbbf4ef792",
+    "Source/Wide13.lean": "2568be4c3ced7d9d208015cbfa060f9eb84c955c44902b308a333b5a7f4aec7d",
+    "Source/Wide11.lean": "07b2ac1e8704684a6b84fd8353a6b885dc41db519c63818b7dd90258b6b006ab",
+    "Source/Wide15.lean": "4951190f6715db6b07dc000a35550e4af2bf9087012a5a7918cc35a0e4236c36",
+    "Return/EdgeCertificates.lean": "2197679e0dfef13c5ff3990791f261e085d4c9a8c75b559fb61ee56f54c68122",
+    "Return/Rows/Admission08.lean": "5ab268f8b0124ba4c0ab265425f65273206a5316a2e794a80396732c5c77d9f0",
+    "Return/Rows/Edge_oldSmall.lean": "4ea2a330fc9569ac931f0fe19bbe9bfa98f4b075741caa718c3efa7aa412a6d2",
+    "Return/Rows/Admission03.lean": "b49a281a258308cae11b41ee10d35c943d50d28aed16ac274351ba2fc2c561c5",
+    "Return/Rows/Admission09.lean": "2a3748e2a9869f08427e3222f77b08dd9084e4101ddd4bc91aab41a34491c698",
+    "Return/Rows/Edge_newTop_2.lean": "658b06d8238d8e7e5863dac12cac1991253b5f683dc6ec88418e1dc8a90fdfc2",
+    "Return/Rows/Admission05.lean": "4a632dbe64b22e8a33977ba81bda33c2567f4514b9e32d2edf2144eb681b2ed2",
+    "Return/Rows/Edge_newSwitch.lean": "3dd6b836ae8027f1acf1e1bfc9b098b19b4dbedb522c5046b8d6f4847e9c5694",
+    "Return/Rows/Edge_oldSwitch.lean": "9ba089418f1947e3eeb13389a4cfe2eaeb11b67d4db5e5a8d362c616413c479c",
+    "Return/Rows/Admission14.lean": "6a51416cf7f623bb0c089c865793d0239af295a4cb32eac979e83423086453b5",
+    "Return/Rows/Admission15.lean": "f116ec785a9869a9c446d43426c017d6614900f4108e02c49864a5061210977a",
+    "Return/Rows/Admission11.lean": "4c852b9de5dfa32e98f4c1a2578014b3ebb7d3598ef97ce42f511fd57a70d72b",
+    "Return/Rows/Admission06.lean": "36253d084f3cf4fc359a7ef8e5cba28586726ac1d3ba14297724a7784ef27580",
+    "Return/Rows/Admission02.lean": "bbc51025148777f45a68774c73242a0a57b152ead236a61e32086af760a55f8a",
+    "Return/Rows/Admission04.lean": "0c2d4ee3c0e031f96c28f825b74866a01a3d717b97562c0ddaf6a31aa9fd1ede",
+    "Return/Rows/Admission07.lean": "ad2797351b281cae7165d40feb0b77ffdfa11644d89a29a35619859656945912",
+    "Return/Rows/Admission13.lean": "ae3452d906169542b18f92010bb6bdbb2726e430386a0cf0fd6332df976e8777",
+    "Return/Rows/Admission01.lean": "4a8d5700189b766ca164648155909a333048e8905ab7e014fb7c32209ce6fcca",
+    "Return/Rows/Admission10.lean": "67acd37596065bdea04be86817806975796d20a8b063cc1bc8d1c2636b0bfeb8",
+    "Return/Rows/Edge_newTop_1.lean": "579cf4c9639c101c0643a8999a32d1bb3b803ceb81fc3711a4f05e9fd0f8ec0a",
+    "Return/Rows/Admission12.lean": "3bf29d917a5c0e37d1bc8a30696e03dc86bc97cffcbde9b48410cf36b18334af",
+    "Return/Rows/Admission16.lean": "d90545113e0e5aac47b227bbf25aff469e711baad7778d2584f23ee4a0ee78e0"
+  }
+}

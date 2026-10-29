@@ -1,9 +1,9 @@
 {
   "candidate_theta": "8747729897/10000000000",
-  "accepted_best_theta": "4369779/5000000",
+  "accepted_best_theta": "43693617/50000000",
   "previous_record_theta": "8748087/10000000",
-  "difference_exact": "8529/10000000",
-  "relative_gain_beyond_baseline_exact": "10442/1913",
+  "difference_exact": "23409/25000000",
+  "relative_gain_beyond_baseline_exact": "56383/9565",
   "conditional_points": [
     {
       "time_utc": "2026-10-20 15:07",
@@ -109,12 +109,12 @@
   "tracker_acceptance": true,
   "tracker_pr": 69,
   "current_record": {
-    "id": "density-split-fine-chain",
-    "tracker_pr": 86,
-    "theta": "4369779/5000000"
+    "id": "arvi-density",
+    "tracker_pr": 94,
+    "theta": "43693617/50000000"
   },
   "catalogue_as_of": "2026-10-21",
-  "tracker_updates_as_of": "2026-10-28",
+  "tracker_updates_as_of": "2026-10-29",
   "retrieved_at": "2026-10-22T05:25:38.860154+00:00",
   "source_commit": "ac76d5ef6008d976a7b8f3c1d921af2317e79ce9"
 }

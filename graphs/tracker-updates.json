@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-28",
-  "source": "GTimG/QuasiRiemannTracker main at 8f77ade2f22d40197711e45af08286faed51de13: verifier/standard/receipts/*/result.json (status PASS), merged new-bound tracker PRs and submissions/*/metadata.json",
+  "as_of": "2026-10-29",
+  "source": "GTimG/QuasiRiemannTracker main at feb945a4ce36a93539807ad5d632df5c50188d94: verifier receipts, merged new-bound tracker PRs and submissions/*/metadata.json. Tracker #89 and #91-#94 were merged together on 29 Oct 07:51-07:53 UTC, so their timeline position uses tracker PR submission time (submitted_at); first_verified_at is the merge time.",
   "records": [
     {"id": "hailey-collet-1252270103", "pr": 69, "status": "framework-verified", "first_verified_at": "2026-10-22T22:13:39Z",
      "theta": {"numerator": "8747729897", "denominator": "10000000000"}, "authors": [{"name": "Hailey Collet"}],
@@ -30,7 +30,28 @@
      "theta": {"numerator": "4369779", "denominator": "5000000"}, "authors": [{"name": "Jacob Sussman"}],
      "evidence": "tracker PR #86 merged 2026-10-28T04:30:17Z after canonical Comparator and three-kernel admission; submissions/2026-10-28-density-split-fine-chain/metadata.json"},
     {"id": "density-split-fourth", "pr": 85, "status": "framework-verified", "first_verified_at": "2026-10-28T10:29:32Z",
-     "theta": {"numerator": "873981", "denominator": "1000000"}, "authors": [{"name": "Rohan Arun"}],
-     "evidence": "tracker PR #85 merged 2026-10-28T10:29:32Z; proof worker run 40622628467 accepted with canonical Comparator and all three kernels; submissions/2026-10-28-density-split-fourth/metadata.json; PR opened by @SovereignSteak", "hillclimb_pr": 30}
+     "theta": {"numerator": "873981", "denominator": "1000000"}, "authors": [{"name": "SovereignSteak"}],
+     "evidence": "tracker PR #85 by @SovereignSteak, merged 2026-10-28T10:29:32Z; proof worker run 40622628467 accepted with canonical Comparator and all three kernels; submissions/2026-10-28-density-split-fourth/metadata.json (its authors field still lists Rohan Arun, inherited from #84's metadata; its description credits Rohan Arun only for the parent #84 proof)", "hillclimb_pr": 30},
+    {"id": "density-wide", "pr": 89, "status": "framework-verified", "submitted_at": "2026-10-28T16:18:36Z", "first_verified_at": "2026-10-29T07:52:59Z",
+     "theta": {"numerator": "1747893", "denominator": "2000000"}, "authors": [{"name": "SovereignSteak"}],
+     "evidence": "tracker PR #89 merged 2026-10-29T07:52:59Z; submissions/*-density-wide/metadata.json", "hillclimb_pr": 32},
+    {"id": "density-refined", "pr": 90, "status": "framework-verified", "submitted_at": "2026-10-28T17:21:14Z", "first_verified_at": "2026-10-28T19:48:56Z",
+     "theta": {"numerator": "8739461", "denominator": "10000000"}, "authors": [{"name": "SovereignSteak"}],
+     "evidence": "tracker PR #90 merged 2026-10-28T19:48:56Z; submissions/*-density-refined/metadata.json", "hillclimb_pr": 34},
+    {"id": "density-batch", "pr": 91, "status": "framework-verified", "submitted_at": "2026-10-28T18:33:18Z", "first_verified_at": "2026-10-29T07:52:48Z",
+     "theta": {"numerator": "436972583", "denominator": "500000000"}, "authors": [{"name": "SovereignSteak"}],
+     "evidence": "tracker PR #91 merged 2026-10-29T07:52:48Z; submissions/*-density-batch/metadata.json", "hillclimb_pr": 36},
+    {"id": "density-ten", "pr": 92, "status": "framework-verified", "submitted_at": "2026-10-28T21:08:18Z", "first_verified_at": "2026-10-29T07:52:34Z",
+     "theta": {"numerator": "2731076077", "denominator": "3125000000"}, "authors": [{"name": "SovereignSteak"}],
+     "evidence": "tracker PR #92 merged 2026-10-29T07:52:34Z; submissions/*-density-ten/metadata.json", "hillclimb_pr": 39},
+    {"id": "joint-detector-fine-chain", "pr": 93, "status": "framework-verified", "submitted_at": "2026-10-28T23:28:54Z", "first_verified_at": "2026-10-29T07:52:18Z",
+     "theta": {"numerator": "87393379", "denominator": "100000000"}, "authors": [{"name": "Joseph Bebel"}],
+     "evidence": "tracker PR #93 merged 2026-10-29T07:52:18Z; submissions/*-joint-detector-fine-chain/metadata.json"},
+    {"id": "arvi-density", "pr": 94, "status": "framework-verified", "submitted_at": "2026-10-29T01:23:28Z", "first_verified_at": "2026-10-29T07:51:58Z",
+     "theta": {"numerator": "43693617", "denominator": "50000000"}, "authors": [{"name": "ArviFoxy"}],
+     "evidence": "tracker PR #94 merged 2026-10-29T07:51:58Z; submissions/*-arvi-density/metadata.json"},
+    {"id": "joint-detector-source-curves", "pr": 95, "status": "pending", "submitted_at": "2026-10-29T12:59:28Z",
+     "theta": {"numerator": "4369178514865427", "denominator": "5000000000000000"}, "authors": [{"name": "Joseph Bebel"}],
+     "evidence": "open tracker PR #95; QRH-Bound in the PR body; author-reported local Lean build; tracker admission pending"}
   ]
 }

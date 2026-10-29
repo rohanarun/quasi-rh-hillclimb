@@ -43,7 +43,8 @@ records = [r for r in catalogue["records"] if r["status"] == "framework-verified
 # tracker's verifier receipts; see graphs/tracker-updates.json).
 updates = json.loads((ROOT / "graphs/tracker-updates.json").read_text())
 known = {r["id"] for r in records}
-records += [r for r in updates["records"] if r["id"] not in known]
+records += [r for r in updates["records"] if r["id"] not in known and r["status"] == "framework-verified"]
+pending = [r for r in updates["records"] if r["status"] == "pending"]
 fraction = lambda r: Fraction(int(r["theta"]["numerator"]), int(r["theta"]["denominator"]))
 best = min(records, key=fraction)
 baseline = next(r for r in records if r["id"] == "openai-baseline")
@@ -90,7 +91,7 @@ accent = GREEN if verified else AMBER
 plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK,
                      "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": MUTED,
                      "font.size": 11, "svg.fonttype": "none"})
-fig = plt.figure(figsize=(20, 13.5), facecolor=BG)
+fig = plt.figure(figsize=(20, 16.5), facecolor=BG)
 fig.text(.06, .955, "Quasi-Riemann Hypothesis: progress in the zero-free boundary", fontsize=25, weight="bold")
 fig.text(.06, .922, "All-moduli Dirichlet nonvanishing for Re(s) > θ, excluding the principal pole. Lower θ is stronger.", fontsize=12, color=MUTED)
 best_name = ", ".join(a["name"] for a in best["authors"])
@@ -108,8 +109,11 @@ if off_frontier or own:
     parts = []
     if own:
         parts.append(f"tracker #84 ({float(fraction(own)):g}, Rohan Arun) accepted {stamp(own):%d %b}")
-    for r in off_frontier:
-        parts.append(f"repo PR #{r['hillclimb_pr']} formalized as tracker #{r['pr']} ({float(fraction(r)):g}), Lean-accepted {stamp(r):%d %b}")
+    repo_acc = sorted((r for r in records if r.get("hillclimb_pr") and r is not pr8_record), key=lambda r: r["pr"])
+    if repo_acc:
+        names = ", ".join(sorted({x["name"] for r in repo_acc for x in r["authors"]}))
+        parts.append("this repo's PRs " + ", ".join(f"#{r['hillclimb_pr']}" for r in repo_acc) + f" ({names}) became tracker "
+                     + ", ".join(f"#{r['pr']}" for r in repo_acc) + ", all Lean-accepted")
     fig.text(.06, .727, "Also: " + "; ".join(parts), fontsize=11, color=PURPLE, weight="bold")
 fig.text(.66, .865, f"{float(relative_gain):.2f}×", fontsize=32, weight="bold", color=BLUE)
 fig.text(.66, .83, "the improvement beyond 7/8", fontsize=12)
@@ -118,7 +122,7 @@ fig.text(.66, .755, f"Boundary reduction since then: {float(gain):.10f}", fontsi
 
 ax = fig.add_axes([.07, .1, .47, .54], facecolor=BG)
 times, values = [stamp(r) for r in frontier], [float(fraction(r)) for r in frontier]
-now = max(stamp(r) for r in updates["records"]).replace(hour=23, minute=59)
+now = max(stamp(r) for r in updates["records"] if r["status"] == "framework-verified").replace(hour=23, minute=59)
 ax.step(times + [now], values + [values[-1]], where="post", color=BLUE, lw=2.4)
 ax.scatter(times, values, s=26, color=BLUE, zorder=3)
 ax.scatter([stamp(pr8_record)], [float(target)], s=95, marker="D", color=accent, edgecolor=accent, lw=2, zorder=4)
@@ -127,6 +131,9 @@ for r in off_frontier:
 # Track A points from this repo (unchanged scope: Lean anchor and final-section certificate).
 track_a = [("2026-10-22T01:32:12Z", Fraction(139999, 160000), "rohanarun", "repo #9 · Lean (τ = 1/40000)"),
            ("2026-10-22T17:45:17Z", Fraction(4374785349, 5000000000), "thakrarsagar", "repo #12 · Track A certificate")]
+for r in pending:
+    ax.scatter([stamp(r)], [float(fraction(r))], s=70, facecolor=BG, edgecolor=MUTED, lw=1.8, zorder=5)
+    ax.plot([stamp(r)] * 2, [float(fraction(r)), values[-1]], color=MUTED, lw=1, ls=":", zorder=2)
 ax.scatter([date(t) for t, *_ in track_a], [float(v) for _, v, *_ in track_a], s=70, marker="s", color=TEAL, zorder=4)
 conditional_time = lambda row: date(row["time_utc"].replace(" ", "T") + ("Z" if not row["time_utc"].endswith("Z") else ""))
 conditional_groups = {number: [r for r in conditional if r["pr"] == number]
@@ -150,16 +157,17 @@ ax.margins(x=.05, y=.08)
 # separates the crowded recent points while retaining a leader to every point.
 fig.text(.59, .69, "Contributor · source PR · boundary θ", fontsize=12, weight="bold")
 def tracker_color(r):
-    if r is pr8_record or r in off_frontier:
+    if r is pr8_record or r in off_frontier or r.get("hillclimb_pr"):
         return accent
     return PURPLE if r is own else BLUE
 points = [
     (stamp(r), fraction(r), ", ".join(a["name"] for a in r["authors"]),
      (f"#{r['pr']} (repo PR #{r['hillclimb_pr']})" if r.get("hillclimb_pr") else f"#{r['pr']}") if r.get("pr") else "",
-     tracker_color(r), r["id"] == best["id"] or r is pr8_record or r is own or r in off_frontier)
+     tracker_color(r), r["id"] == best["id"] or r is pr8_record or r is own or r in off_frontier or bool(r.get("hillclimb_pr")))
     for r in frontier + off_frontier
 ]
 points += [(date(t), v, name, source, TEAL, True) for t, v, name, source in track_a]
+points += [(stamp(r), fraction(r), ", ".join(a["name"] for a in r["authors"]), f"tracker #{r['pr']} · pending", MUTED, False) for r in pending]
 for row in conditional_endpoints:
     points.append((conditional_time(row), Fraction(row["theta_exact"]),
                    row["contributor"].split(" · ")[0],
@@ -173,7 +181,7 @@ for index, (time, boundary, name, source, color, highlight) in enumerate(points)
     annotation = ax.annotate(
         label, (time, float(boundary)), xycoords="data",
         xytext=(.59, label_y), textcoords="figure fraction",
-        ha="left", va="center", fontsize=12,
+        ha="left", va="center", fontsize=11,
         color=color if highlight else INK,
         weight="bold" if highlight else "normal", annotation_clip=False,
         arrowprops=dict(arrowstyle="-", color=color if highlight else MUTED,
@@ -188,13 +196,13 @@ for a in (ax,):
     a.tick_params(length=0, pad=8)
     for spine in a.spines.values():
         spine.set_visible(False)
-foot = ("Blue: accepted tracker records (frontier). Green: this repo's PRs accepted on the tracker (diamond: PR #8 as #69; hollow: PR #30 as #85, admitted after #86)."
-        " Purple: tracker #84. Teal squares: Track A points. Orange dashed: conditional PRs in this repo, not Lean-verified.")
-fig.text(.06, .043, "Tracker records after 22 Oct come from the tracker's verifier receipts (Comparator/NanoDa/con-ron PASS) and merged tracker PRs; see graphs/tracker-updates.json.", fontsize=9, color=MUTED)
+foot = ("Blue: accepted tracker records (frontier). Green: this repo's PRs accepted on the tracker (diamond: PR #8 as #69; hollow: PR #30 as #85, admitted after #86).\n"
+        "Purple: tracker #84. Teal squares: Track A points. Gray hollow: open tracker PR, not yet admitted. Orange dashed: conditional PRs in this repo, not Lean-verified.")
+fig.text(.06, .038, "Tracker records after 22 Oct come from verifier receipts and merged tracker PRs; #89 and #91–#94 were merged together on 29 Oct and are placed at submission time. See graphs/tracker-updates.json.", fontsize=9, color=MUTED)
 
-fig.text(.06, .058, foot, fontsize=9, color=MUTED)
+fig.text(.06, .058, foot, fontsize=9, color=MUTED, linespacing=1.6)
 fig.text(.06, .012, f"Updated {updates['as_of']} · {len(records)} accepted tracker entries and {len(conditional)} conditional PR points. Timeline dates shown in America/New_York.\n"
-         "Comparison of cited sources, not a worldwide-record claim. Sources: GTimG/QuasiRiemannTracker catalogue, receipts and merged PRs; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8, #9, #12, #26–28, #30; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
+         "Comparison of cited sources, not a worldwide-record claim. Sources: GTimG/QuasiRiemannTracker catalogue, receipts and merged PRs; rohanarun/quasi-rh-hillclimb PRs #1–3, #6, #8, #9, #12, #26–28, #30, #32, #34, #36, #39; original timeline.csv; frozen source package.", fontsize=9, color=MUTED, linespacing=1.7)
 # (scope note moved into the sources line below)
 # Measure the rendered labels, shrink long entries only as needed, and ensure
 # the expanded contributor list stays on the canvas without overlapping.

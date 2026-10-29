@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "four_strict_improvements_before_lean": true,
+  "bound": "436972583/500000000",
+  "total_gain": "467/500000000",
+  "ledger_sha256": "f16d5acc9d31006f9d2ad8849d72a49e89b2bf1a17b1cfd97f4286a3550f6743"
+}

@@ -1,0 +1,15 @@
+4055 submission modules; 4042 reused; 13 to build
+OK 6.6s Submissions.density_batch.Source.HybridGates
+OK 9.1s Submissions.density_batch.DensityWide.BufferedPartition
+OK 7.1s Submissions.density_batch.Density.Price
+OK 9.2s Submissions.density_batch.DensityWide.SmallHeight
+OK 13.5s Submissions.density_batch.Density.StepGates
+OK 18.4s Submissions.density_batch.DensityWide.UniformFree
+OK 6.2s Submissions.density_batch.DensityWide.FixedDensity
+OK 6.5s Submissions.density_batch.DensityWide.ActualZeros
+OK 5.6s Submissions.density_batch.DensityWide.NaturalEndpoint
+OK 6.9s Submissions.density_batch.Density.LeafHigh
+OK 65.9s Submissions.density_batch.Density.LeafHighEnergy
+OK 104.3s Submissions.density_batch.Density.Leaf
+OK 8.2s Submissions.density_batch.Source.Step
+All requested modules built successfully.

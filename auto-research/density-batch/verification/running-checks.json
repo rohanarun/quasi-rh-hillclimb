@@ -1,0 +1,26 @@
+[
+  {
+    "name": "canonical-and-axioms",
+    "command": [
+      "/tmp/qrh-lean-toolchain/lean4/build/release/stage1/bin/lean",
+      "--root=/tmp/qrh-four-20261028",
+      "-o",
+      "/tmp/qrh-density-build/lib/BatchAudit.olean",
+      "/tmp/qrh-four-20261028/BatchAudit.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 8.453
+  },
+  {
+    "name": "kernel-all-new-modules",
+    "command": [
+      "/tmp/qrh-lean-toolchain/lean4/build/release/stage1/bin/leanchecker",
+      "-v",
+      "Submissions.density_batch",
+      "Candidate.Main",
+      "BatchAudit"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 761.45
+  }
+]

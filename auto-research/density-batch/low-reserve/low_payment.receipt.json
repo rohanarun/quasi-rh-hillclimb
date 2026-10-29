@@ -1,0 +1,8 @@
+{
+  "status": "PASS: exact rational-function identities",
+  "profile_identity": "0",
+  "payment_decomposition": "0",
+  "reserve": "1/10000",
+  "complement": "9999/10000",
+  "scope": "The accompanying ordered-field proof establishes the payment inequality; these identities alone do not prove the analytic endpoint."
+}

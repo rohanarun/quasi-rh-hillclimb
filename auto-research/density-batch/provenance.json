@@ -1,0 +1,31 @@
+{
+  "condition": "All analytic conclusions conditional on the preprint seven-eighths theorem.",
+  "research_base": "1dfdbc51bb887aaabc65b3b78686453a2a77e25b",
+  "tracker_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "previous_tracker_pr": 90,
+  "previous_tracker_head": "3c225e927dae1d0f1283ed10ac9222607a6395c5",
+  "wider_density_tracker_pr": 89,
+  "wider_density_head": "85f66481c20545bf9c8ee61bde8ce4d62b844718",
+  "previous_research_pr": 34,
+  "previous_research_head": "ec7c5618886d68cfd380c60f8e06c5ca4fb100f2",
+  "claim": "https://github.com/rohanarun/quasi-rh-hillclimb/issues/35",
+  "count_root": "QRH.SilDensitySplit.K15.final_source (merged tracker #86)",
+  "physical_root": "QRH.SilDensitySplit.K15.boot_source (merged tracker #86)",
+  "analytic_packaging": "Required wider-density proofs included in separate namespaces; only merged-submission dependencies.",
+  "low_reserve": "1/10000",
+  "ai_assistance": "Substantial OpenAI Codex research, search, exact certification and formalization assistance.",
+  "credit": [
+    "OpenAI",
+    "Hailey Collet",
+    "Sil",
+    "ArviFoxy",
+    "Jacob Sussman",
+    "Rohan Arun",
+    "SovereignSteak"
+  ],
+  "formal_submission_head": "c67a1450476b10e200e1bc095748dc4889ba40d5",
+  "formal_submission_tree": "6a31222380a0788123bb7ea7023d71e36f4cb75b",
+  "published_tree_equals_verified_local_tree": true,
+  "formal_submission_directory": "submissions/2026-10-28-density-batch",
+  "formal_submission_url": "https://github.com/SovereignSteak/QuasiRiemannTracker/tree/c67a1450476b10e200e1bc095748dc4889ba40d5/submissions/2026-10-28-density-batch"
+}

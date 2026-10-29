@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "validator": "Tracker dependencyGraph, validateSubmissionDirectory and validateSubmissionMetadata",
+  "tracker_base": "e14f7e7924faaa0a19b37979ed532cbe3df6d830",
+  "compiled_submission_closure": 4619,
+  "submitted_modules_in_closure": 263,
+  "submission_dependencies": [
+    "density-batch",
+    "openai-baseline",
+    "hailey-collet-1252270103",
+    "arvi-repeated-marks-on-sil-face-20261025",
+    "sil-density-split-20261026",
+    "density-split-fine-chain"
+  ],
+  "declared_direct_dependencies": [
+    "openai-baseline",
+    "hailey-collet-1252270103",
+    "arvi-repeated-marks-on-sil-face-20261025",
+    "sil-density-split-20261026",
+    "density-split-fine-chain"
+  ]
+}

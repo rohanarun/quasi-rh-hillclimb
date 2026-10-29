@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "previous_tracker_head": "3c225e927dae1d0f1283ed10ac9222607a6395c5",
+  "files": {
+    "Density/Leaf.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "24c8a5382e62b172ae8376c2d811293cdf51ab0649ca4c079290e8f1e73c0003",
+      "new_sha256": "562492cefce02741b42f5a24f6a4efef6f8450bb488d59237eebcfe3e243d2a6"
+    },
+    "Density/LeafHigh.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "11de0dc0db2b2f9aa68054792d5e0fbfcb54088a955d698be1e30fb439c06741",
+      "new_sha256": "80f46f151a23d2adcf9ac80f91872be09a90d082d98914e67dc745277bcd6175"
+    },
+    "Density/LeafHighEnergy.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "0da0bc8394a7bca8e648634eb70b79d0cadcb4ca388cbe1e226c1d7ce9afb3ee",
+      "new_sha256": "68575cc258ea0e9d27830017a44ba5c3efe8d2a4bb54c0138f0a5e10c8743a6d"
+    },
+    "Density/Price.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "d167d8ad8c2cbaf43263754e000a97110bb74b23bb445a28505806a65cc93bf0",
+      "new_sha256": "37c67f569cf653e80eaccf692279a240f30bf7b4aab9010497c40b1627146cec"
+    },
+    "Density/StepGates.lean": {
+      "change": "ds_low_aux LOW identity premise only; proof unchanged",
+      "old_sha256": "89f5fb378f1e106657ccf0e100592159daccc2f3e3fc3345b10f6e3e844defce",
+      "new_sha256": "efb75a0bf31de1b54c0bb87afcadc2ce12a2adab6d67acfa244d37e95a27e696"
+    },
+    "DensityWide/ActualZeros.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "ead95726baddb723a02f39040099cf64bb32683d91a59452d6c40911c4d53050",
+      "new_sha256": "078e519984513b1908021f0a6b1c21dd0a66b45fa2f3f0562ab43b6ab7886ecb"
+    },
+    "DensityWide/BufferedPartition.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "06c742d08613cd40fc9b4ab0fe686e76ea60556ff829b31a44ea6f6dd40873c6",
+      "new_sha256": "28dcad6c1f645c1532af19a39049af9c8c03a4b95e15e9c15415fd2abd185c20"
+    },
+    "DensityWide/FixedDensity.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "d17f3edfaefd41f182b2eced2f104e817668f7c305f51b8d47f1cdef7b8eee36",
+      "new_sha256": "7794327bdc643bbdb4a7c662e9e259b0396dd965ef66fe8d8f85fe30d979fc52"
+    },
+    "DensityWide/NaturalEndpoint.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "d727c2e6fff21e55c1bef83c4cef5853ca79317ceb4a93ffcef5b9053dcc8d46",
+      "new_sha256": "a96ef2beed394aa6260e7b9e61c9729b28c902fe13e50f7485521075ebdb6a87"
+    },
+    "DensityWide/SmallHeight.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "0951655bb1569cfc78ceb87f7ded30e630f208cdf393591fd7359c50897f53e3",
+      "new_sha256": "28ec07216a6cd20d824853a4542d41a2e0d50f1c69d711d2f35850ad69aa07e4"
+    },
+    "DensityWide/UniformFree.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "b5419de80363b91e8cd635e0cd51949b891294d790342e8cc32bb3cd575b7f74",
+      "new_sha256": "bd650b5e9d35a86e254c850d315b36db243616f90fa2bf2ecb10c98abdf2e842"
+    },
+    "Return/Conductor.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "7fc485907d64b5a8b555cba9943421de590de377fe2618ff67797d37937a3cd7",
+      "new_sha256": "734040b14d6bb69a5eff2fbc17d5e6bc9861d99508d16f55dab0115cc6eda37e"
+    },
+    "Return/CountAdmission.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "a7bcf8106e66595173526c2efb537bee66bcd314e86906c3d3c244fa497feda4",
+      "new_sha256": "81b51eb3e67c31239bcdcd4ce7ac892ea18c903b8d57a4eab2a63000f67b08b4"
+    },
+    "Return/CountDecode.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "797c241a15caf66c11941a38e3fbd35ddb90d4697bb9cac61a36cf0f3976375a",
+      "new_sha256": "dddc1b66d38f8e88691fdfc6ab6f6cac6258c8ce98b3f5b1abe710ba46ba1adf"
+    },
+    "Return/CountMonotonicity.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "604607cc12eba56a266aaea713aec83b12e0463d5c525985612ae373fb43acaa",
+      "new_sha256": "0840ae68089dd439d22dedc62e4cbeb6b0148477f9077d2822e06473f4f71ebf"
+    },
+    "Return/CountWidth.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "4d6f6b48fa70b31b13bd865df14e31169bd5a054c4aee5ce7f1aa43df910cd70",
+      "new_sha256": "a8a9acccb9334c4207b8778eddcc844141fffaed3316a0705daa396132eca747"
+    },
+    "Return/CountWindow.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "8aa2404548825bc7e9d5856f5b1c9b74886e8676f3dff07af8b6b7b71653c71d",
+      "new_sha256": "a24553d003b483e66c86f0d8255acde6ea40eb6df6c50cc43eb3b0541fda1945"
+    },
+    "Return/Endpoint.lean": {
+      "change": "exact source faces and endpoint literals only",
+      "old_sha256": "24e28dedec4d06f30bdcfd7cef7775dce9ba33815ec47a6229dfa558dc5b04e0",
+      "new_sha256": "210adbdf328b8a0ed21bfcb75cd1b15702343f8fd8856bbb043d0f9331a47618"
+    },
+    "Return/EndpointFromNumerator.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "7e261c8f4dc9f079ae6e462f1f70c2790aa82440d58cd1ae9951a92071bfbf32",
+      "new_sha256": "6149a0ee6e787a3effaf0857dd9d4b818546aba87c93f78435a9fc25dd707568"
+    },
+    "Return/EndpointFromSources.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "fa059610cd261681c9a6e61aefe8ceb170853ccc7936eb2b2b660af4de325689",
+      "new_sha256": "4cac2588b6c033eb8bdedae124e594fd13b0db24f96ff86a9cc18d97d7ac7931"
+    },
+    "Return/Facts.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "fce87bc33cbf6fc7c96c5ba7fc9472e39a43baaa52ef2a0454177601403b7507",
+      "new_sha256": "1cceda33820c0ebfd3940d104c7e5905c2cb1e2d7900c76ae33c7602253252e6"
+    },
+    "Return/FinalEnvelopeBounds.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "6db7abc350493321d9c29c79ab1159bb4edb36b2dedb0f5e67c533abe141d9fd",
+      "new_sha256": "08c7a45168014bc9a9d83b36f2b85301acdb235cec4e8126ecbd6536df5aa9d6"
+    },
+    "Return/FinalRows.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "a4b6393005fd7fdd94ed2a8226fe9878fb3f0f5b5e294efa380f596bccd778da",
+      "new_sha256": "722a7f2e9f8e7aa29ba105affe7f2a0910669a70f4f506b625134c79a2259a5c"
+    },
+    "Return/FinalSchedule.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "cf6ae90cb303568f23380efcdbf20ec66d6502d21d76835453c3cbfadc4b30fb",
+      "new_sha256": "2c0aee303ef0e2fd2051130e8dcacd416f80759fc2ed200ed056a9615b71a121"
+    },
+    "Return/FinalScheme.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "11a24cb91710a21c5b4a5e8b5efb0ad2da8cabc06b02d330c0f87115e49620a6",
+      "new_sha256": "1b4d41beada16cef12a0d6791747238bba1e415c1b63ff08b5b3432f16c6ed15"
+    },
+    "Return/FinalWindows.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "0f0c9fe20270ddfc2ec199191a51331a38a0717802504c081a23bcc86b083f99",
+      "new_sha256": "750b44039b9f8514efc4034f2a045e84ba1098e85ee2e46542f2a28588f1234b"
+    },
+    "Return/Formulas.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "70fa9ad3a9378912984dc8b4d6398af505da7918bf6bd892e68dc80bdcb61256",
+      "new_sha256": "cdb310c7a8918896de3efcb6ee6e84a4e8e62fff5363fb320a39ffbf0fcea017"
+    },
+    "Return/Geometry.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "fba01ee3e4973b84d7937e782c602fa38fd1fd7d44a3dfec54dc1ce86656f688",
+      "new_sha256": "26b56763c9adde5fdccd87d3327e85fb7471994e21cb24e6f087944e695ccb95"
+    },
+    "Return/SourceInlet.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "ffbb4b786a1300327aebfbee6597d0dc52ccc432f5a967dfea39e8dd753e3f87",
+      "new_sha256": "d441d133cbd9f86421a7cc32cf522b8ef3c99a2df3842624890c760fb501101f"
+    },
+    "Return/TransportInstances.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "1cf1f0e88d72e75aaa7ad0496ed3afda9941aa7cec9caf55b1711dabc1fbdbec",
+      "new_sha256": "c207c25c251e367ea51f65545ff9b60cac12c23d1242a39c0016e226e94abdb1"
+    },
+    "Return/WindowSources.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "8a3a0e5af547c29b4c9de89bbc54cf8ab57a69b6407642ae088877ec4bf91d78",
+      "new_sha256": "1c41b4dde16e85716e753316fa74bf536e55c0cef6a954a7d9f4be3c43b18ab8"
+    },
+    "Return/Windows.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "0d3f8e44622baf26353ed3709bd1e62e3f748f9937b38a1703cf5cd443e4b8df",
+      "new_sha256": "a4b1070f06da1809640e7443dda228026ced794b2ee7d3db5a10bf903a01c7f6"
+    },
+    "Source/HybridGates.lean": {
+      "change": "LOW profile reserve and its algebraic identities: 1/1000 to 1/10000",
+      "old_sha256": "e24c7a568691fe577b3548d5eb4187c83a99f7229e96c21422acf54838f28b0d",
+      "new_sha256": "3f4b4be3359a48aa385e6c8d72abd04b0305e179dcb92b9951b4834ca001ffb7"
+    },
+    "Source/Step.lean": {
+      "change": "namespaces/imports only",
+      "old_sha256": "e4d5090dc383e34830707a3532d2fba84de612ecfbff93f844eee4ac640a88b5",
+      "new_sha256": "b24065fc7645fc764dacdc8a570a855cb67bc4698ca4788ea39c598bdce2d4b5"
+    },
+    "Theorem.lean": {
+      "change": "exact source faces and endpoint literals only",
+      "old_sha256": "60b9044729ee23fbf41582643a9f4a68b879d79ef61f8e46803eeafa208a7bbc",
+      "new_sha256": "627e30bbc81d6f802df1a05c443b1669070567af5d756c136be44bc3dd92ed71"
+    }
+  }
+}

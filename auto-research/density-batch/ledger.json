@@ -1,0 +1,144 @@
+{
+  "objective": "Four successive exact improvements before Lean verification and PR submission",
+  "baseline": "8739461/10000000",
+  "baseline_tracker_pr": 90,
+  "condition": "preprint seven-eighths theorem",
+  "new_lean_started": true,
+  "rounds": [
+    {
+      "round": 1,
+      "theta": "873945927/1000000000",
+      "decimal": "0.873945927",
+      "h": "805133843/1000000000",
+      "improvement": "173/1000000000",
+      "method": "Finer count chain (Lambda decrement 1/800), with count face and return height jointly retuned",
+      "source_evidence": {
+        "count": {
+          "input": "round1/count.json",
+          "input_sha256": "f561214364768a4078c30ef36690d6b2353099609ced812d0ba80525f9b5f21d",
+          "receipt": "round1/count.receipt.json",
+          "receipt_sha256": "311ccde46daee9ecaa09ed2138fa6c495f834dbc9418ae18abb21f2904d65d37",
+          "steps": 124,
+          "strict_gates": 1736,
+          "denominators": 372
+        },
+        "physical": {
+          "inherited_theorem": "QRH.DensityRefined.physical_source",
+          "tracker_pr": 90,
+          "source_head": "3c225e927dae1d0f1283ed10ac9222607a6395c5"
+        }
+      },
+      "return_input": "round1/candidate.json",
+      "return_receipt": "round1/candidate.receipt.json",
+      "return_receipt_sha256": "2ceeb8352656feae2cf5f39c8cd63216a1813273921be45e614eff9c13fbbd87",
+      "return_boxes": 97,
+      "exact_certification_completed_at": "2026-10-28T17:42:23.185938+00:00",
+      "verification_scope": "Exact finite source/return certificates using previously proved analytic steps; new Lean endpoint verification deferred until four rounds."
+    },
+    {
+      "round": 2,
+      "theta": "436972827/500000000",
+      "decimal": "0.873945654",
+      "h": "805131291/1000000000",
+      "improvement": "273/1000000000",
+      "method": "Retain round 1 count source and improve physical source with Lambda decrement 1/400",
+      "source_evidence": {
+        "count": {
+          "input": "round2/count.json",
+          "input_sha256": "f561214364768a4078c30ef36690d6b2353099609ced812d0ba80525f9b5f21d",
+          "receipt": "round1/count.receipt.json",
+          "receipt_sha256": "311ccde46daee9ecaa09ed2138fa6c495f834dbc9418ae18abb21f2904d65d37",
+          "steps": 124,
+          "strict_gates": 1736,
+          "denominators": 372
+        },
+        "physical": {
+          "input": "round2/physical.json",
+          "input_sha256": "d9fe31e4f2e549ecea49115587e8e57302894da356411fc88f54a2ba6ac0233a",
+          "receipt": "round2/physical.receipt.json",
+          "receipt_sha256": "105c02513e51068c513ce7c8c29858b2fb14a73b23f4226af72293921099f5ac",
+          "steps": 77,
+          "strict_gates": 1078,
+          "denominators": 231
+        }
+      },
+      "return_input": "round2/candidate.json",
+      "return_receipt": "round2/candidate.receipt.json",
+      "return_receipt_sha256": "7bdeb0a2228b21672c15431177a4049f8c1a0b9804e496722c4a6a30034069da",
+      "return_boxes": 97,
+      "exact_certification_completed_at": "2026-10-28T17:42:24.080633+00:00",
+      "verification_scope": "Exact finite source/return certificates using previously proved analytic steps; new Lean endpoint verification deferred until four rounds."
+    },
+    {
+      "round": 3,
+      "theta": "436972809/500000000",
+      "decimal": "0.873945618",
+      "h": "100641369/125000000",
+      "improvement": "9/250000000",
+      "method": "Retain round 2 physical source and refine count chain to Lambda decrement 1/1600",
+      "source_evidence": {
+        "count": {
+          "input": "round3/count.json",
+          "input_sha256": "692ca82e183acb4570eaf772920b1c881923c4a81fd66c43f1914d3644a24d4d",
+          "receipt": "round3/count.receipt.json",
+          "receipt_sha256": "445ab8a99966389324ac27421c718dba849684dfd723b56a3ccb604bb9104b79",
+          "steps": 249,
+          "strict_gates": 3486,
+          "denominators": 747
+        },
+        "physical": {
+          "input": "round3/physical.json",
+          "input_sha256": "d9fe31e4f2e549ecea49115587e8e57302894da356411fc88f54a2ba6ac0233a",
+          "receipt": "round2/physical.receipt.json",
+          "receipt_sha256": "105c02513e51068c513ce7c8c29858b2fb14a73b23f4226af72293921099f5ac",
+          "steps": 77,
+          "strict_gates": 1078,
+          "denominators": 231
+        }
+      },
+      "return_input": "round3/candidate.json",
+      "return_receipt": "round3/candidate.receipt.json",
+      "return_receipt_sha256": "1f462b8d02778dc0842024cb798d477be1508f2726ceb4d460605e94f04bc663",
+      "return_boxes": 97,
+      "exact_certification_completed_at": "2026-10-28T17:48:16.028612+00:00",
+      "verification_scope": "Exact finite source/return certificates using previously proved analytic steps; new Lean endpoint verification deferred until four rounds."
+    },
+    {
+      "round": 4,
+      "theta": "436972583/500000000",
+      "decimal": "0.873945166",
+      "h": "402563361/500000000",
+      "improvement": "113/250000000",
+      "method": "Reduce the LOW profile reserve to 1/10000 and retune count and physical source chains",
+      "source_evidence": {
+        "count": {
+          "input": "round4/count.json",
+          "input_sha256": "8d90019fce7ca9727fc599cdfcaf876bf5df4cfc884db11000797d91055b7975",
+          "receipt": "low-preview/count.receipt.json",
+          "receipt_sha256": "690b9faedfef521c5aa750f438499c78a9184023cf02460d170919424f95b8db",
+          "steps": 125,
+          "low_reserve": "1/10000",
+          "strict_gates": 1750,
+          "denominators": 375
+        },
+        "physical": {
+          "input": "round4/physical.json",
+          "input_sha256": "a84323eebfb3af0e03aea3ca4e6be4be8f3b255526513b7810bf174946959beb",
+          "receipt": "round4/physical.receipt.json",
+          "receipt_sha256": "29a53a7fe498c18acadf30221657307061a7d40b7f7d2dbf7d0bee235807d81c",
+          "steps": 77,
+          "low_reserve": "1/10000",
+          "strict_gates": 1078,
+          "denominators": 231
+        }
+      },
+      "return_input": "round4/candidate.json",
+      "return_receipt": "round4/candidate.receipt.json",
+      "return_receipt_sha256": "dd9a965a17812588b2ed8b4044f11be077ef6183cb7163710c0de3a7ab9bb999",
+      "return_boxes": 97,
+      "exact_certification_completed_at": "2026-10-28T17:59:07.448174+00:00",
+      "verification_scope": "Exact finite source/return certificates using previously proved analytic steps; new Lean endpoint verification deferred until four rounds."
+    }
+  ],
+  "lean_phase_started_at": "2026-10-28T18:00:16.979658+00:00"
+}

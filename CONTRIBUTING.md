@@ -60,4 +60,4 @@ These are the most valuable contributions right now:
 - **Build on others openly.** Name the work you build on and say what yours adds, even if a parallel result has a stronger headline.
 - **Credit is kept.** Useful contributions stay credited in [CONTRIBUTORS.md](CONTRIBUTORS.md) even when superseded.
 - **Disclose AI help.** Say if a contribution was substantially AI-assisted, as the initial audit was.
-- **Licensing:** contributions are accepted under the MIT License (see `LICENSE`). The preprint itself is OpenAI's work and is not covered by it; this repo only references it.
+- **Licensing:** contributions are accepted under the Apache License, Version 2.0 (see `LICENSE`). The preprint itself is OpenAI's work and is not covered by it; this repo only references it.

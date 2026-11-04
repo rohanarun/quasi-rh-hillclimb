@@ -48,4 +48,4 @@ Hailey Collet is the sole human author. Research, drafting and Lean development 
 
 ## Licensing
 
-New repository integration documentation follows this repository's MIT license. The bundled Hailey Collet manuscript and Lean code are **Apache-2.0** ([license](LICENSE-APACHE-2.0)); inherited code retains its original notices and terms as recorded in the archive. These externally authored proof artifacts are supplied under their stated licenses, not relicensed by this PR. The root license statement is qualified accordingly.
+New repository integration documentation follows this repository's Apache License 2.0. The bundled Hailey Collet manuscript and Lean code are **Apache-2.0** ([license](LICENSE-APACHE-2.0)); inherited code retains its original notices and terms as recorded in the archive. These externally authored proof artifacts are supplied under their stated licenses, not relicensed by this PR. The root license statement is qualified accordingly.

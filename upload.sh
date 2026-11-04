@@ -4,7 +4,7 @@
 # Usage:  bash upload.sh ["commit message"]
 set -euo pipefail
 REPO="https://github.com/rohanarun/quasi-rh-hillclimb.git"
-MSG="${1:-Update: contributing guide, MIT license, auto-research harness}"
+MSG="${1:-Update repository}"
 SRC="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT

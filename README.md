@@ -253,4 +253,4 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 
 ## License
 
-[MIT](LICENSE) for the repository code and integration documentation, except externally authored proof artifacts under `submissions/hailey-collet-1252270103/`: those retain Apache-2.0 and inherited notices as documented in their [NOTICE](submissions/hailey-collet-1252270103/NOTICE.md). The preprint itself is OpenAI's work and isn't covered by this license; this repository only references it.
+[Apache License 2.0](LICENSE) for the repository code and integration documentation, except externally authored proof artifacts under `submissions/hailey-collet-1252270103/`: those retain Apache-2.0 and inherited notices as documented in their [NOTICE](submissions/hailey-collet-1252270103/NOTICE.md). Prior MIT attribution and permission notices are retained in [NOTICE](NOTICE). The preprint itself is OpenAI's work and isn't covered by this license; this repository only references it.

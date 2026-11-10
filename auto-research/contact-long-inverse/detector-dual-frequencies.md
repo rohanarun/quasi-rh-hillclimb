@@ -48,4 +48,6 @@ This isolates the unresolved high-frequency sectors for the squarefree detector 
 
 The [sparse detector frequency estimate](sparse-detector-frequencies.md) covers the full Fourier support for sufficiently large sixth-power factors and extends part of this calculation to rows with small repeated-prime factors.
 
+The [sparse detector projection](sparse-detector-gauss-projection.md) removes two families of smooth Gauss profiles from the actual adjoint input within the moment budget and transfers these frequency estimates to its residual.
+
 Prepared with OpenAI Codex assistance.

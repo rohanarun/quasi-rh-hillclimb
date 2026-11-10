@@ -469,6 +469,34 @@ theorem frozenHighPowerDetectorMargins :
     1 / 2 - a < 2 * s / 3 := by
   decide +kernel
 
+theorem sparseDetectorProjectionMargins :
+    let nu : Rat := 8445 / 10000
+    let w : Rat := 14616 / 1000000
+    let r : Rat := 636 / 1000
+    let d0 : Rat := 199 / 1000
+    let d1 : Rat := 140 / 1000
+    let l : Rat := 4 / 1000
+    let a : Rat := 350 / 1000
+    let b : Rat := 75 / 1000
+    let mode : Rat := 1 / 100000
+    let universal := 1 + nu / 6
+    2 * d0 + 2 * l + mode < 1 / 2 ∧
+    3 * d1 / 2 + mode < 1 / 2 ∧
+    3 * (d0 + d1) / 4 + d0 + 3 * l / 2 + mode < 1 / 2 ∧
+    2 * (d0 + d1) / 3 + d0 / 2 + l + mode < 1 / 3 ∧
+    7 * d0 / 4 + a / 4 + b / 2 + 3 * l / 2 + mode < 1 / 2 ∧
+    7 * d0 / 6 + a / 6 + b / 2 + l + mode < 1 / 3 ∧
+    b < d1 ∧ d1 < d0 + 2 * l ∧
+    5 * nu / 6 + 1 / 3 < universal ∧
+    2 * nu / 3 + 1 / 2 < universal ∧
+    nu < universal ∧
+    5 / 6 + nu / 3 < universal ∧
+    1 / 3 + 5 * nu / 6 < universal ∧
+    universal + r - 1 + d0 + 2 * l + w = 998366 / 1000000 ∧
+    universal + r - 1 + d0 + 2 * l + w + mode < 1 - gain := by
+  decide +kernel
+
+#print axioms sparseDetectorProjectionMargins
 #print axioms frozenHighPowerDetectorMargins
 #print axioms sparseDetectorFrequencyMargins
 #print axioms detectorDualFrequencyMargins

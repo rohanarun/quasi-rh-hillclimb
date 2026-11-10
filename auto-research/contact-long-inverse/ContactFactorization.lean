@@ -328,6 +328,26 @@ theorem projectionPoissonTransferMargins :
     3 * l + 1 / 50000 = 1 / 20000 := by
   decide +kernel
 
+theorem fullJointObstructionMargins :
+    let x : Rat := 1129 / 1000
+    let p : Rat := 38 / 1000
+    let d0 : Rat := 199 / 1000
+    let d1 : Rat := 184 / 1000
+    let l : Rat := 1 / 100000
+    let w : Rat := 1 / 1000000
+    let main := 5 / 6 + x / 3 - 5 * p / 6
+    d1 < 5 * p ∧
+    main = 1178 / 1000 ∧
+    1 + (2 * x - 1) / 12 < main ∧ p + x < main ∧
+    x - p / 2 - (3 / 2) * d1 > 22 / 100 ∧
+    x / 2 - (7 / 4) * d0 - (5 / 4) * p - (3 / 2) * l - w / 2 > 112 / 1000 ∧
+    x / 3 - (7 / 6) * d0 - (5 / 6) * p - l > 112 / 1000 ∧
+    1 / 6 + x - 22 / 100 < main ∧
+    d0 / 2 + l < 11 / 100 ∧
+    (138 / 125 : Rat) < main := by
+  decide +kernel
+
+#print axioms fullJointObstructionMargins
 #print axioms projectionPoissonTransferMargins
 #print axioms asymmetricJointProjectionMargins
 #print axioms jointGaussProjectionMargins

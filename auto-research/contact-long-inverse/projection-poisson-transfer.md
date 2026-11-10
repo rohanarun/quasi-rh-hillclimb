@@ -56,4 +56,6 @@ Let \(\mathcal S\) be a frequency sector where both \(\mathcal E_\pm(a;\mathcal 
 
 The [small-core cubic reflection sector](cubic-small-core.md) is an example: the pointwise column argument there bounds each separated squared norm after summation, so it transfers even though the residual coefficients no longer have the Möbius–ordinary form. The generic and lower-order dual-sieve sectors transfer by the same argument. A sector controlled only by cancellation in a signed sum, with no separate energy estimates, requires a different transfer argument. The remaining high-frequency energy of the actual residual is still open.
 
+The [full joint obstruction](full-joint-gauss-obstruction.md) gives a coefficient-size-bounded witness whose full row norm exceeds the budget after the joint projection.
+
 Prepared with OpenAI Codex assistance.

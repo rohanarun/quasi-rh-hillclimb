@@ -46,4 +46,6 @@ It follows that \(c_0'+f\le0.140\) suffices for the quadratic grouping at every 
 
 This isolates the unresolved high-frequency sectors for the squarefree detector row norm. The remaining signed estimate still uses the actual weighted marked inverse vector. Rows with repeated good primes require their own bound or a version retaining the different primitive ratio moduli.
 
+The [sparse detector frequency estimate](sparse-detector-frequencies.md) covers the full Fourier support for sufficiently large sixth-power factors and extends part of this calculation to rows with small repeated-prime factors.
+
 Prepared with OpenAI Codex assistance.

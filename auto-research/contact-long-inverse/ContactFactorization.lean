@@ -424,6 +424,29 @@ theorem detectorDualFrequencyMargins :
     2 * n / 3 + 1 / 3 + 88 / 1000 + w < 1 - gain := by
   decide +kernel
 
+theorem sparseDetectorFrequencyMargins :
+    let n : Rat := 8445 / 10000
+    let w : Rat := 14616 / 1000000
+    let r : Rat := 636 / 1000
+    let f : Rat := 131 / 1000
+    let a : Rat := 4222 / 10000
+    let t : Rat := 30 / 1000
+    let y : Rat := 829 / 1000
+    let k : Rat := 844 / 1000
+    1 + r - 5 * f + w < 1 - gain ∧
+    1 + r - 651 / 1000 + w < 1 - gain ∧
+    n + f + w < 1 - gain ∧
+    n / 6 + 4 * a - n + w < 1 - gain ∧
+    2 * n / 3 + a + w < 1 - gain ∧
+    1 / 2 - a < 78 / 1000 ∧
+    k - 6 * (t / 2) = 754 / 1000 ∧
+    n + t / 2 + w < 1 - gain ∧
+    n / 6 + y + w < 1 - gain ∧
+    n / 3 + 5 * y / 6 + w < 1 - gain ∧
+    5 * n / 6 + y / 3 + t / 6 + w < 1 - gain := by
+  decide +kernel
+
+#print axioms sparseDetectorFrequencyMargins
 #print axioms detectorDualFrequencyMargins
 #print axioms detectorRatioClassMargins
 #print axioms weightedDetectorRowGramMargins

@@ -45,4 +45,6 @@ The [cubic reflection estimate](cubic-small-core.md) also covers high frequencie
 
 The [lower-order dual sieves](lower-order-dual.md) handle additional large-core frequencies with dominant square, cube, or fourth-power layers.
 
+The [centered shell estimate](centered-dual-shell.md) removes the artificial diagonal before completing smooth frequency shells and bounds the large-divisor part of those shells.
+
 Prepared with OpenAI Codex assistance.

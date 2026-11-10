@@ -90,6 +90,11 @@ theorem lowerOrderDualMargins :
       1044 / 1000 := by
   decide +kernel
 
+theorem centeredDualShellMargin :
+    (1 : Rat) + 1135 / 1000 - 2 * (516 / 1000) < 138 / 125 := by
+  decide +kernel
+
+#print axioms centeredDualShellMargin
 #print axioms lowerOrderDualMargins
 #print axioms cubicReflectionSectorMargins
 #print axioms dualSieveMargins

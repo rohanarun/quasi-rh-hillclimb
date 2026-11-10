@@ -68,4 +68,6 @@ At \(J=U^{0.293}\) its exponent is strictly below \(1.104\) on the detector wind
 
 Consequently the removed column projection fits the varying squared moment budget on the full smooth row average. The same smooth majorant can be used for the orthogonal complement. A bound on that complement is still needed, in particular after the exact gcd decomposition. Estimates which used the original Möbius–ordinary factorization on each shortened column require separate justification if applied to the projected residual.
 
+The [primitive-conductor estimate](primitive-conductor-ordinary.md) extends the short-core range and the label range for the same projection.
+
 Prepared with OpenAI Codex assistance.

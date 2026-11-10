@@ -164,6 +164,25 @@ theorem fullColumnProjectionMargins :
       (5 / 6 - deltaLo) * (1 / 13000 + 1 / 26000) - eta := by
   decide +kernel
 
+theorem conductorOrdinaryMargins :
+    let theta : Rat := 8749 / 10000
+    let bLo : Rat := 749 / 1000
+    let bHi : Rat := 757 / 1000
+    let cLo : Rat := 374 / 1000
+    let d : Rat := 207 / 1000
+    let base := 1 / 6 + (2 * theta - 1) * bHi - (1 - theta) * cLo
+    1 - theta < theta / 2 ∧
+    base + (5 / 6 + theta / 2) * (327 / 1000) < 138 / 125 ∧
+    base + (1 + theta / 2) * (4 / 10) - (96 / 100) / 6 < 138 / 125 ∧
+    (3 / 2) * d < (bLo + cLo) / 2 ∧
+    (1 + theta / 2) * d < (2 - theta) * cLo ∧
+    1 - 2 * (1 - theta) * bLo - (2 - theta) * cLo + (3 + theta / 2) * d < 138 / 125 ∧
+    1 - 2 * (1 - theta) * bLo - (bLo + cLo) + (7 / 2) * d < 138 / 125 ∧
+    base + (1 + theta / 2) * d < 138 / 125 ∧
+    1 / 6 - 2 * (1 - theta) * bLo + (3 / 2) * d < 138 / 125 := by
+  decide +kernel
+
+#print axioms conductorOrdinaryMargins
 #print axioms fullColumnProjectionMargins
 #print axioms columnGaussProjectionMargins
 #print axioms centeredCoprimeObstructionMargins

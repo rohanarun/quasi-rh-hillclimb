@@ -40,4 +40,6 @@ For the smooth column sum at \(N=U^{0.8445}\), primitive completion still gives 
 
 Thus it suffices to estimate the signed Gram form on the actual marked vector \(z\) for the pairs with \(\mathrm Ng<U^{0.1555}\) and \(Q>U^{0.698}\), with the kernel including the outside product \(Q_{\rm out}(u)\overline{Q_{\rm out}(v)}\). The Cauchy–Schwarz argument is the same, using \(DT_{\rm in}\) in place of \(T\). The original unweighted kernel provides a separate reduction with a larger low-conductor range. Each reduction has its own remaining signed form.
 
+The [lower-order ratio classes](detector-ratio-classes.md) remove further pairs where one component of the ratio has small prime support.
+
 Prepared with OpenAI Codex assistance.

@@ -391,6 +391,21 @@ theorem weightedDetectorRowGramMargins :
     (636 / 1000 : Rat) + (698 / 1000) / 2 + cost < 1 - gain := by
   decide +kernel
 
+theorem detectorRatioClassMargins :
+    let n : Rat := 8445 / 10000
+    let w : Rat := 14616 / 1000000
+    let c : Rat := 88 / 1000
+    let q : Rat := 140 / 1000
+    n + c + w < 1 - gain ∧
+    n / 3 + 1 / 2 + c + w < 1 - gain ∧
+    (2 / 3) * (n + 1 / 2) + c + w < 1 - gain ∧
+    (1 - (1555 / 10000)) / 2 = n / 2 ∧
+    n / 2 + 1 / 3 < n ∧
+    n + q + w < 1 - gain ∧
+    2 * q < 698 / 1000 := by
+  decide +kernel
+
+#print axioms detectorRatioClassMargins
 #print axioms weightedDetectorRowGramMargins
 #print axioms detectorRowGramMargins
 #print axioms radicalPhaseExpansionMargins

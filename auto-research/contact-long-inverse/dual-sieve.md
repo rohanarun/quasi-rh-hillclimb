@@ -43,4 +43,6 @@ The high-frequency corner remains. At \(y=1.129,\ \kappa=2y-1=1.258,\ f=\lambda=
 
 The [cubic reflection estimate](cubic-small-core.md) also covers high frequencies with a small sixth-power-free core.
 
+The [lower-order dual sieves](lower-order-dual.md) handle additional large-core frequencies with dominant square, cube, or fourth-power layers.
+
 Prepared with OpenAI Codex assistance.

@@ -79,6 +79,18 @@ theorem cubicReflectionSectorMargins :
     (13 / 6 : Rat) * (135 / 1000) < 293 / 1000 := by
   decide +kernel
 
+theorem lowerOrderDualMargins :
+    (1134 / 1000 : Rat) + 1 / 13000 + 1 / 26000 < 1135 / 1000 ∧
+    (1 : Rat) + 103 / 1000 < 138 / 125 ∧
+    (1 / 2 : Rat) + 103 / 1000 < 138 / 125 ∧
+    (2 / 3 : Rat) + 103 / 1000 < 138 / 125 ∧
+    (2 / 3 : Rat) + (1135 / 1000) / 3 + 58 / 1000 < 138 / 125 ∧
+    (2 / 3 : Rat) * (87 / 1000) = 58 / 1000 ∧
+    (1 : Rat) - 1129 / 1000 + (2 / 3) * (629 / 1000 + 1129 / 1000) <
+      1044 / 1000 := by
+  decide +kernel
+
+#print axioms lowerOrderDualMargins
 #print axioms cubicReflectionSectorMargins
 #print axioms dualSieveMargins
 #print axioms gaussProjectionMargins

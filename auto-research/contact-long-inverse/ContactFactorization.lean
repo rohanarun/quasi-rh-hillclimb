@@ -133,6 +133,18 @@ theorem centeredCoprimeObstructionMargins :
     2 * y - 1 = 1258 / 1000 := by
   decide +kernel
 
+theorem columnGaussProjectionMargins :
+    let b : Rat := 749 / 1000
+    let c : Rat := 374 / 1000
+    let d : Rat := 197 / 1000
+    (3 / 2) * d < (b + c) / 2 ∧
+    1 - b / 4 < 138 / 125 ∧
+    1 - b / 4 - (11 / 10) * c + (71 / 20) * d < 138 / 125 ∧
+    1 - b / 4 - (b + c) + (7 / 2) * d < 138 / 125 ∧
+    d < 1 := by
+  decide +kernel
+
+#print axioms columnGaussProjectionMargins
 #print axioms centeredCoprimeObstructionMargins
 #print axioms amplitudeDispersionMargins
 #print axioms powerfulDetectorMargins

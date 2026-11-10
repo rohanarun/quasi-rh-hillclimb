@@ -55,4 +55,6 @@ This is below the required \(U^{138/125+\epsilon}\) budget, uniformly for the pr
 
 Consequently the squarefree-row part of the full mixed moment can be reduced to \(\|(I-P)f\|_2^2\), with the entire small-label projection already bounded. This is a projection in the original row space, not a subtraction from the signed Poisson sum. It does not imply that the difficult contribution lies in the removed projection. The complementary squarefree-row norm and the nonsquarefree rows not excluded by the conductor condition still need a bound at the target exponent. The conditional scalar endpoint and the tracker record are unchanged.
 
+The [column projection](column-gauss-projection.md) removes smooth Gauss directions in coefficient space and bounds their contribution on the actual detector rows.
+
 Prepared with OpenAI Codex assistance.

@@ -70,6 +70,16 @@ theorem dualSieveMargins :
     (1 : Rat) + (1258 / 1000) / 3 - (1129 / 1000) / 6 > 138 / 125 := by
   decide +kernel
 
+theorem cubicReflectionSectorMargins :
+    (22503 / 20000 : Rat) - 1 / 4000 - 1 / 3500 - 1 / 1000000 > 281 / 250 ∧
+    (189 / 500 : Rat) + 1 / 26000 < 379 / 1000 ∧
+    (2 / 3 : Rat) - (103 / 1000) / 2 - (281 / 250) / 3 +
+      (3 / 2) * (379 / 1000) + (1 / 1000000) / 2 + 293 / 1000 < 138 / 125 ∧
+    (5 / 6 : Rat) * (13 / 40) + (13 / 6) * (1 / 100) < 293 / 1000 ∧
+    (13 / 6 : Rat) * (135 / 1000) < 293 / 1000 := by
+  decide +kernel
+
+#print axioms cubicReflectionSectorMargins
 #print axioms dualSieveMargins
 #print axioms gaussProjectionMargins
 #print axioms signedRangeMargins

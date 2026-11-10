@@ -41,4 +41,6 @@ The first three ranges have strict uniform margins checked in [the Lean replay](
 
 The high-frequency corner remains. At \(y=1.129,\ \kappa=2y-1=1.258,\ f=\lambda=0\), even the fourth term in this sieve estimate has exponent above \(138/125\). The generic dual estimate therefore localizes the signed cancellation still needed. It does not bound the full mixed moment or the complementary row projection.
 
+The [cubic reflection estimate](cubic-small-core.md) also covers high frequencies with a small sixth-power-free core.
+
 Prepared with OpenAI Codex assistance.

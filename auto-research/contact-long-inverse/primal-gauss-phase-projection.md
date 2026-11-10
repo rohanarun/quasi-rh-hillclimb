@@ -35,4 +35,6 @@ The [growing-divisor projection](growing-divisor-projection.md) also works when 
 
 The same obstruction proof also supplies an example outside this enlarged family. Set \(h=1.188,\ y=1.129,\ p=0.200\), so the high frequency length is \(U^h\), the column length is \(U^y\), and the chosen prime has norm comparable to \(U^p\). The fifth-power label again costs \(p/6\) in the Gram main exponent. Put \(\tau=5h/6+y/3\). The two squarefree Gauss error exponents \(h+(2y-h)/12\) and \(p+y\) are below \(\tau-p/6\). The radial Poisson error saves \((2y-1-h)/2>p/6\). The exact coprimality argument is unchanged. The radical-indexed projection has a power-saving squared overlap with this constructed vector, using the same Gram completion and the fact that its prime radical lies beyond the cutoff. The resulting coefficient-uniform obstruction is \(U^{1-y+\tau-p/6-o(1)}=U^{1.204-o(1)}\). Thus the extension removes the earlier example but the isolated signed high shell still requires a bound that uses the actual coefficients or cancellation between blocks.
 
+The [joint projection](joint-gauss-projection.md) bounds the cross Gram block on the stated ray classes and combines the two families at a common cutoff.
+
 Prepared with OpenAI Codex assistance.

@@ -288,6 +288,20 @@ theorem phaseProjectionMargins :
     (138 / 125 : Rat) < 301 / 250 := by
   decide +kernel
 
+theorem jointGaussProjectionMargins :
+    let xLo : Rat := 1123 / 1000
+    let xHi : Rat := 1135 / 1000
+    let d : Rat := 136 / 1000
+    let w : Rat := 1 / 1000000
+    let theta : Rat := 8749 / 10000
+    xLo / 2 - (7 / 4) * (2 * d) - w > 1 / 100 + 1 / 10000 ∧
+    xLo / 3 - (4 / 3) * (2 * d) - (2 / 3) * w > 1 / 100 + 1 / 10000 ∧
+    (1 : Rat) / 6 + (3 / 2) * (379 / 1000) + w / 2 + 2 * d < 138 / 125 ∧
+    1 / 6 + xHi - 2 / 100 - 2 * (1 - theta) * (749 / 1000) < 138 / 125 ∧
+    (1 + theta / 2) * d < (2 - theta) * (374 / 1000) := by
+  decide +kernel
+
+#print axioms jointGaussProjectionMargins
 #print axioms phaseProjectionMargins
 #print axioms projectedGaussObstructionMargins
 #print axioms growingDivisorProjectionMargins

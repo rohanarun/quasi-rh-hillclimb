@@ -94,6 +94,18 @@ theorem centeredDualShellMargin :
     (1 : Rat) + 1135 / 1000 - 2 * (516 / 1000) < 138 / 125 := by
   decide +kernel
 
+theorem powerfulDetectorMargins :
+    (435 / 1000 : Rat) * (2 / 3500 + 1 / 8) + 1 / 64000 < 547 / 10000 ∧
+    (189 / 500 : Rat) + 1 / 26000 < 379 / 1000 ∧
+    (547 / 10000 : Rat) < 55 / 1000 ∧
+    2 * deltaLo * pLo * (2 / 9) * 3 < 1 ∧
+    (547 / 10000 : Rat) <
+      45 / 1000 + 2 * deltaLo * pLo * (2 / 9) * (242 / 1000 - 3 * (45 / 1000)) ∧
+    (547 / 10000 : Rat) <
+      40 / 1000 + 2 * deltaLo * pLo * (2 / 9) * (242 / 1000 - 2 * (40 / 1000)) := by
+  decide +kernel
+
+#print axioms powerfulDetectorMargins
 #print axioms centeredDualShellMargin
 #print axioms lowerOrderDualMargins
 #print axioms cubicReflectionSectorMargins

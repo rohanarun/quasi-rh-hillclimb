@@ -251,6 +251,25 @@ theorem growingDivisorProjectionMargins :
     4 * l + modeLoss = 1 / 20000 := by
   decide +kernel
 
+theorem projectedGaussObstructionMargins :
+    let h : Rat := 1240 / 1000
+    let y : Rat := 1129 / 1000
+    let p : Rat := 41 / 1000
+    let d : Rat := 199 / 1000
+    let l : Rat := 1 / 100000
+    let t := 5 * h / 6 + y / 3
+    5 * p > d ∧
+    h + (2 * y - h) / 12 < t - p / 6 ∧
+    p + y < t - p / 6 ∧
+    h / 6 + y < t ∧ h / 3 + 5 * y / 6 < t ∧
+    (4 / 5 : Rat) < y - p / 2 - 3 * d / 2 - 2 * l - 1 / 100000 ∧
+    (2 * y - 1 - h) / 2 = 9 / 1000 ∧
+    p / 6 < 9 / 1000 ∧
+    1 - y + t - p / 6 = 7643 / 6000 ∧
+    (138 / 125 : Rat) < 7643 / 6000 := by
+  decide +kernel
+
+#print axioms projectedGaussObstructionMargins
 #print axioms growingDivisorProjectionMargins
 #print axioms multiGaussProfileMargins
 #print axioms lowerOrderPrimalMargins

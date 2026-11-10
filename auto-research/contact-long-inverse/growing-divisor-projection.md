@@ -55,4 +55,6 @@ The nonunit terms and the regular unit term fit \(1.104\), and the exceptional u
 
 After this projection, for every good squarefree \(g\) of norm at most \(L\), the restricted vector on \(g\mid n\) is orthogonal up to arbitrary power accuracy to smooth quotient tests with symbols \(\chi_{n/g}(d)\) for all \(d\) in the stated range. Indeed, use the required branch and expand the indicator \(1_{g/h\mid n}\) in the centered basis at divisors of \(g/h\). The smooth norm profile on \(n/g\), normalized at \(X/\mathrm Ng\), is in the same norm coordinate as the original profile and uses the same approximation. Normalization changes by at most polynomial factors. Extra quotient deletions may also be imposed by inclusion–exclusion when the product of \(g\) and their squarefree support has norm at most \(L\). The conclusion holds after multiplying both vectors by the same normalized Gauss factor. Larger divisors and an estimate for the high-frequency residual remain open.
 
+The [projected Gauss obstruction](projected-gauss-obstruction.md) gives a structured high-shell witness that survives this projection and exact column coprimality.
+
 Prepared with OpenAI Codex assistance.

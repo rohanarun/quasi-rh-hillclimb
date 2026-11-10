@@ -47,4 +47,6 @@ The regular row contribution is bounded by \(U^{1+\epsilon}K(1+D^2E_{\rm new})\)
 
 This extends both the primal short-core estimate and the number of Gauss directions that can be removed before the first Poisson step. The estimate for the high-frequency complement remains open.
 
+The [inverse average at core scale](core-inverse-average.md) extends the full smooth short-core range by using the inverse mean square in place of its pointwise bound.
+
 Prepared with OpenAI Codex assistance.

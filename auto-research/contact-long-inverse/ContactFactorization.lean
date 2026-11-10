@@ -182,6 +182,18 @@ theorem conductorOrdinaryMargins :
     1 / 6 - 2 * (1 - theta) * bLo + (3 / 2) * d < 138 / 125 := by
   decide +kernel
 
+theorem coreInverseAverageMargins :
+    let theta : Rat := 8749 / 10000
+    let bHi : Rat := 757 / 1000
+    let cHi : Rat := 379 / 1000
+    (1 - theta) / 2 < 5 / 12 ∧
+    (theta - 1 / 2) + (1 - theta) / 2 = theta / 2 ∧
+    1 / 6 + (5 / 6) * bHi + (2 * theta - 1) * cHi < 138 / 125 ∧
+    1 / 6 + (5 / 6) * (783 / 1000) + (2 * theta - 1) * cHi < 138 / 125 ∧
+    1 / 6 + (5 / 6) * (9 / 10) + (theta - 1 / 2) * (42 / 100) < 138 / 125 := by
+  decide +kernel
+
+#print axioms coreInverseAverageMargins
 #print axioms conductorOrdinaryMargins
 #print axioms fullColumnProjectionMargins
 #print axioms columnGaussProjectionMargins

@@ -55,6 +55,13 @@ theorem signedRangeMargins :
     (1 : Rat) + 103 / 1000 < 138 / 125 := by
   decide +kernel
 
+theorem gaussProjectionMargins :
+    (1 : Rat) + 103 / 1000 < 138 / 125 ∧
+    (3 / 2 : Rat) * (103 / 1000) < 1 / 2 ∧
+    (189 / 250 : Rat) + 1 / 13000 < 1 := by
+  decide +kernel
+
+#print axioms gaussProjectionMargins
 #print axioms signedRangeMargins
 #print axioms squarefreeReturnMargins
 #print axioms contactRadicalBracket

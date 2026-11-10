@@ -45,4 +45,6 @@ The norm over the original detector rows is controlled if the **whole** smooth m
 
 When allocating a squarefree residual column \(n'=i'j'\) between its inverse and ordinary factors, \(\mu(i')=\mu(n')\mu(j')\). This lets the \(\mu(n')\) term enter the usual sextic-to-cubic Gauss conversion for a coprime quotient column. It leaves \(\mu(j')\) on the divisors assigned to the ordinary factor, together with their profile and coprimality restrictions. Common divisors and row deletions are retained as above. The known cubic-theta estimates for a single inverse column do not directly bound this divisor-weighted, signed average. A bound for that remainder, or a detector-row estimate with its smaller common-divisor range, remains necessary before the candidate can be claimed.
 
+[The small-label Gauss projection](gauss-projection.md) bounds a separate component in the original squarefree row space. It does not remove terms from the signed Poisson remainder above.
+
 Prepared with OpenAI Codex assistance.

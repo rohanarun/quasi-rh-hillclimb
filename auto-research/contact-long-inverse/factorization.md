@@ -43,6 +43,8 @@ The count after this saving is at most \(I(b)-1/14000\), up to small losses. The
 
 [The count for repeated prime powers](powerful-detector-rows.md) handles some physical detector rows directly using the moving-twist ordinary fourth moment.
 
+[The prime amplitude distribution](amplitude-dispersion.md) gives the desired count on sufficiently uneven bins, including squarefree physical rows.
+
 ## Why positive factorization alone stalls
 
 The following extends the scalar simultaneous witness in [Liu §6.7](https://hexagonmath.org/pdf/2611.00082v1) to **every finite asymmetric choice of inverse cutoffs**. It concerns magnitude bounds and the existence of a saturated factorization. It imposes no signed convolution equations between the modeled polynomials.

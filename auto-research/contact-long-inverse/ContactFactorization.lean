@@ -105,6 +105,23 @@ theorem powerfulDetectorMargins :
       40 / 1000 + 2 * deltaLo * pLo * (2 / 9) * (242 / 1000 - 2 * (40 / 1000)) := by
   decide +kernel
 
+theorem amplitudeDispersionMargins :
+    (2138 / 10000 : Rat) < (11 / 3 - 4 * (43669 / 50000)) / 0.8096863501 ∧
+    (11 / 3 - 4 * (43669 / 50000) : Rat) / 0.80963635 < 214 / 1000 ∧
+    (1219 / 10000 : Rat) < (1 - (756 / 1000 + 1 / 13000)) / 2 ∧
+    (1 - (3 / 4 - 1 / 4000) : Rat) / 2 < 1254 / 10000 ∧
+    (1219 / 10000 : Rat) <
+      (1 - 1 / 10000000000 - 2 * (378 / 1000 + 1 / 26000)) / (2 + 1 / 1000000000) ∧
+    (1 - 2 * (3 / 8 - 1 / 3500) : Rat) / 2 < 1254 / 10000 ∧
+    (413 / 1000 : Rat) < (1219 / 10000) / (214 / 1000) ∧
+    (413 / 1000 : Rat) < 1 - (1254 / 10000) / (2138 / 10000) ∧
+    (2 : Rat) - 4 * pLo / (2 + 1 / 1000000000) < 1003 / 1000 ∧
+    deltaHi * (1 - pLo) * (1003 / 1000) / (1 - pLo + 1003 / 1000) < 147 / 1000 ∧
+    eta + (147 / 1000) * (1 / 5850 + eta / minSlope) <
+      2 * deltaLo * (413 / 1000) * (137 / 1000000) := by
+  decide +kernel
+
+#print axioms amplitudeDispersionMargins
 #print axioms powerfulDetectorMargins
 #print axioms centeredDualShellMargin
 #print axioms lowerOrderDualMargins

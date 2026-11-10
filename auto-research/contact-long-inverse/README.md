@@ -37,6 +37,8 @@ At the three inherited lower edges and at $d=h-1/20000$, the inherited counts su
 
 The existing `PhysicalSchedule` count scheme takes a conductor-independent envelope. To use the smaller conductor window in a formal return, pass the conductor regime through the count bridge and prove the patched envelope antitone in $p$ on each regime. Its extra branch is the original antitone C count minus a constant, with availability upward in $p$. Alternatively, a uniform proof of the same estimate on the larger conductor range would let the count scheme keep a single envelope. [Count bridge and schedule source](https://github.com/GTimG/QuasiRiemannTracker/tree/8b1a0167c8e324099884152181e3fb2206510e88/submissions/2026-11-01-closest-fraction-contact/src/Candidate/Local/Qrh/PositiveGap/Return).
 
+[Follow-up on short inverse products](factorization.md) gives an alternative joint-moment input for the same target and explains why positive factorization with the inherited moments cannot cross the contact.
+
 ## Reproduce the arithmetic
 
 From the repository root, run the exact replay with the two pinned input files. It checks their SHA-256 hashes before use. This Bash command streams both inputs.

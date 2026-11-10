@@ -82,6 +82,12 @@ def check(replay, incumbent):
     assert step+mesh < upper_band
     b = replay["branch_polys"](k, "C")
     j, n, den, a, dj = (b[name] for name in ("J", "N", "D", "A", "DJ"))
+
+    # Absolute enclosure of the two crossings used in the factorization note.
+    for numerator, lo, hi in ((b["RN"], F(".750"), F(".756")),
+                              (b["MN"], F(".375"), F(".378"))):
+        assert replay["bern_pos"](sub(numerator, scale(lo, dj)), *local)
+        assert replay["bern_pos"](sub(scale(hi, dj), numerator), *local)
     delta, p = replay["X"], replay["Y"]
     one_minus_p = sub(const(1), p)
     v = replay["V"]()

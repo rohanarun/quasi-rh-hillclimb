@@ -59,4 +59,6 @@ Both lie below \(1.104\) in the detector window. The [Lean replay](ContactFactor
 
 The residual is orthogonal to both smooth families on the chosen ray and annulus. The result concerns the original column block and its common deletion. The earlier growing-divisor extension is available for the unphased family separately. A high-frequency estimate for the joint residual remains open.
 
+The [asymmetric joint projection](asymmetric-joint-projection.md) uses the opposite phased symbol orientation to retain the growing-divisor family and larger norm cutoffs.
+
 Prepared with OpenAI Codex assistance.

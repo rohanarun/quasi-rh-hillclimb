@@ -301,6 +301,21 @@ theorem jointGaussProjectionMargins :
     (1 + theta / 2) * d < (2 - theta) * (374 / 1000) := by
   decide +kernel
 
+theorem asymmetricJointProjectionMargins :
+    let a : Rat := 199 / 1000
+    let b : Rat := 184 / 1000
+    let xLo : Rat := 1123 / 1000
+    let xHi : Rat := 1135 / 1000
+    let d : Rat := 1 / 100000
+    let w : Rat := 1 / 1000000
+    let theta : Rat := 8749 / 10000
+    (19 / 1000 : Rat) < xLo / 2 - (3 / 4) * (a + b) - a - (3 / 2) * d - w / 2 ∧
+    (19 / 1000 : Rat) < xLo / 3 - (2 / 3) * (a + b) - a / 2 - d ∧
+    1 / 6 + (3 / 2) * (379 / 1000) + w / 2 + 2 * b + 1 / 100000 < 138 / 125 ∧
+    1 / 6 + xHi - 36 / 1000 + 2 * d - 2 * (1 - theta) * (749 / 1000) < 138 / 125 := by
+  decide +kernel
+
+#print axioms asymmetricJointProjectionMargins
 #print axioms jointGaussProjectionMargins
 #print axioms phaseProjectionMargins
 #print axioms projectedGaussObstructionMargins

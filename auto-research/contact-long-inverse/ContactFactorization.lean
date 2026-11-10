@@ -212,6 +212,23 @@ theorem lowerOrderPrimalMargins :
       (1 + theta / 3) * q < 138 / 125 := by
   decide +kernel
 
+theorem multiGaussProfileMargins :
+    let theta : Rat := 8749 / 10000
+    let b : Rat := 749 / 1000
+    let bHi : Rat := 757 / 1000
+    let c : Rat := 374 / 1000
+    let d : Rat := 207 / 1000
+    let loss : Rat := 1 / 100000
+    (3 / 2) * d + loss < (b + c) / 2 ∧
+    1 - 2 * (1 - theta) * b - (2 - theta) * c +
+      (3 + theta / 2) * d + loss < 138 / 125 ∧
+    1 - 2 * (1 - theta) * b - (b + c) + (7 / 2) * d + loss < 138 / 125 ∧
+    1 / 6 + (2 * theta - 1) * bHi - (1 - theta) * c +
+      (1 + theta / 2) * d + loss < 138 / 125 ∧
+    loss < 1 / 20000 := by
+  decide +kernel
+
+#print axioms multiGaussProfileMargins
 #print axioms lowerOrderPrimalMargins
 #print axioms coreInverseAverageMargins
 #print axioms conductorOrdinaryMargins

@@ -49,4 +49,6 @@ This extends both the primal short-core estimate and the number of Gauss directi
 
 The [inverse average at core scale](core-inverse-average.md) extends the full smooth short-core range by using the inverse mean square in place of its pointwise bound.
 
+The [growing smooth profile projection](smooth-gauss-profiles.md) removes a family of norm profiles for each allowed Gauss label on the full row average.
+
 Prepared with OpenAI Codex assistance.

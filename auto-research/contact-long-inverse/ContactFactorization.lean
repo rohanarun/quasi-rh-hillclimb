@@ -144,6 +144,27 @@ theorem columnGaussProjectionMargins :
     d < 1 := by
   decide +kernel
 
+theorem fullColumnProjectionMargins :
+    let theta : Rat := 8749 / 10000
+    let bLo : Rat := 749 / 1000
+    let bHi : Rat := 757 / 1000
+    let cLo : Rat := 374 / 1000
+    let d : Rat := 197 / 1000
+    (-(11 / 10) * cLo + (31 / 20) * d < 0) ∧
+    -(bLo + cLo) + (3 / 2) * d < 0 ∧
+    1 / 6 + (2 * theta - 1) * bHi - cLo / 10 + (31 / 20) * d < 138 / 125 ∧
+    1 / 6 - 2 * (1 - theta) * bLo + (3 / 2) * d < 138 / 125 ∧
+    1 + 11 / 20 - 1 / 6 = (83 / 60 : Rat) ∧
+    1 / 6 + (2 * theta - 1) * bHi - cLo / 10 + (83 / 60) * (293 / 1000) < 138 / 125 ∧
+    (1 / 10000000000 : Rat) + (1 / 1000000000) / 2 < 1 / 100000000 ∧
+    (1 / 100000000 : Rat) + 1 / 4000 + 2 / 26000 + 1 / 1000000 < 33 / 100000 ∧
+    (1.104 : Rat) < (1 + 5 * (22503 / 20000 : Rat)) / 6 - eta -
+      deltaHi * (1 / 4000 + 1 / 3500 + 1 / 1000000) ∧
+    1 / 20000 < 2 * (7 / 8 - theta) * bLo - (33 / 100000) / 12 -
+      (5 / 6 - deltaLo) * (1 / 13000 + 1 / 26000) - eta := by
+  decide +kernel
+
+#print axioms fullColumnProjectionMargins
 #print axioms columnGaussProjectionMargins
 #print axioms centeredCoprimeObstructionMargins
 #print axioms amplitudeDispersionMargins

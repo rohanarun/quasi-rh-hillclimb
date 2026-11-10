@@ -48,4 +48,6 @@ All three exponents are strictly below \(1.104\) for \(D\le U^{0.197}\) in the d
 
 The residual coefficient vector is orthogonal to these smooth directions. This estimate treats one fixed profile in a ray block and charges the removed vector on the actual sixth-power-free rows. It leaves the high-frequency estimate for the orthogonal complement open, including the effect of later column shortening by the exact gcd projector.
 
+The [full smooth extension](full-column-projection.md) charges this same projection on the full Poisson row average and also bounds the original mixed polynomial on short-core rows.
+
 Prepared with OpenAI Codex assistance.

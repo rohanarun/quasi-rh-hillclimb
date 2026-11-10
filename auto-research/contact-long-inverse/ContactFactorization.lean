@@ -347,6 +347,25 @@ theorem fullJointObstructionMargins :
     (138 / 125 : Rat) < main := by
   decide +kernel
 
+theorem radicalPhaseExpansionMargins :
+    let x : Rat := 1123 / 1000
+    let d : Rat := 199 / 1000
+    let p : Rat := 120 / 1000
+    let n : Rat := 350 / 1000
+    let l : Rat := 1 / 100000
+    let w : Rat := 1 / 1000000
+    let cap := 5 / 6 - 2 * x / 3
+    (23 / 1000 : Rat) < x / 2 - (7 / 4) * d - n / 4 - p / 2 -
+      (3 / 2) * l - w / 2 ∧
+    (23 / 1000 : Rat) < x / 3 - (7 / 6) * d - n / 6 - p / 2 - l ∧
+    p < 184 / 1000 ∧
+    (6 / 7) * cap < 73 / 1000 ∧
+    (30 / 11) * cap < 231 / 1000 ∧
+    (73 / 1000 : Rat) < p ∧ (231 / 1000 : Rat) < n ∧
+    (38 / 1000 : Rat) < p ∧ 5 * (38 / 1000 : Rat) < n := by
+  decide +kernel
+
+#print axioms radicalPhaseExpansionMargins
 #print axioms fullJointObstructionMargins
 #print axioms projectionPoissonTransferMargins
 #print axioms asymmetricJointProjectionMargins

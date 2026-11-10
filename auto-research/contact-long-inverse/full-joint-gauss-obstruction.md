@@ -2,6 +2,8 @@
 
 The [isolated-shell witness](projected-gauss-obstruction.md) concerns one signed high-frequency block. There is also a coefficient-uniform obstruction for the full smooth row sum on the complement of the [asymmetric joint projection](asymmetric-joint-projection.md). It holds for a vector satisfying the detector's pointwise coefficient-size bound. The construction uses the orientations and norm cutoffs of that specific projection.
 
+The [small-radical extension](small-radical-primal-gauss.md) includes the witness below in its enlarged phased family. The calculation here concerns the earlier norm-only cutoff.
+
 ## A primal Gauss vector
 
 Take the column scale \(X=U^{1.129}\) and the block with no additional moving deletion. Enlarge the fixed good-prime exclusions as allowed in the Gauss Gram formula. Choose a good primary prime \(\pi\) with \(P=\mathrm N\pi\asymp U^{0.038}\). On a fixed column ray block modulo \(36\), use the squarefree vector

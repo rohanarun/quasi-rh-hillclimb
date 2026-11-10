@@ -54,4 +54,6 @@ The residual retains quotient orthogonality for the unphased family under the gr
 
 The [Poisson transfer](projection-poisson-transfer.md) bounds the removed vector in the separated column energies and carries the existing positive-energy sectors over to the residual.
 
+The [small-radical extension](small-radical-primal-gauss.md) adds the phased labels in the Gauss Gram main-dominance range while retaining the unphased quotient conditions.
+
 Prepared with OpenAI Codex assistance.

@@ -228,6 +228,30 @@ theorem multiGaussProfileMargins :
     loss < 1 / 20000 := by
   decide +kernel
 
+theorem growingDivisorProjectionMargins :
+    let theta : Rat := 8749 / 10000
+    let b : Rat := 749 / 1000
+    let bHi : Rat := 757 / 1000
+    let c : Rat := 374 / 1000
+    let d : Rat := 199 / 1000
+    let l : Rat := 1 / 100000
+    let modeLoss : Rat := 1 / 100000
+    2 * d + 2 * l + modeLoss < (b + c) / 2 ∧
+    (2 - theta / 2) * d < (2 - theta) * c ∧
+    8 * l + (3 / 2) * d < b + c ∧
+    1 - 2 * (1 - theta) * b - (2 - theta) * c +
+      (4 - theta / 2) * d + 8 * l + modeLoss < 138 / 125 ∧
+    1 - 2 * (1 - theta) * b - (b + c) +
+      (7 / 2) * d + 8 * l + modeLoss < 138 / 125 ∧
+    1 / 6 + (2 * theta - 1) * bHi - (1 - theta) * c +
+      (2 - theta / 2) * d + 8 * l + modeLoss < 138 / 125 ∧
+    1 / 6 - 2 * (1 - theta) * b + (3 / 2) * d +
+      8 * l + modeLoss < 138 / 125 ∧
+    1 - 2 * (1 - theta) * b + 4 * l + modeLoss < 138 / 125 ∧
+    4 * l + modeLoss = 1 / 20000 := by
+  decide +kernel
+
+#print axioms growingDivisorProjectionMargins
 #print axioms multiGaussProfileMargins
 #print axioms lowerOrderPrimalMargins
 #print axioms coreInverseAverageMargins

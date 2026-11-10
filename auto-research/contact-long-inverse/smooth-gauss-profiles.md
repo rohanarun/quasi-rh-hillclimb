@@ -49,4 +49,6 @@ The construction can also retain any fixed finite collection of prime divisibili
 
 This removes the smooth Gauss profiles on these blocks. A high-frequency estimate for the remaining coefficients and control under divisibility conditions of growing norm are still required.
 
+The [growing divisor projection](growing-divisor-projection.md) extends this to a fixed positive power of the row scale and retains the exact zeros of the quotient symbols.
+
 Prepared with OpenAI Codex assistance.

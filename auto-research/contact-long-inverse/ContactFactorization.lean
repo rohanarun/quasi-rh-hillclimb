@@ -269,6 +269,26 @@ theorem projectedGaussObstructionMargins :
     (138 / 125 : Rat) < 7643 / 6000 := by
   decide +kernel
 
+theorem phaseProjectionMargins :
+    let d : Rat := 184 / 1000
+    let h : Rat := 1188 / 1000
+    let y : Rat := 1129 / 1000
+    let p : Rat := 200 / 1000
+    let t := 5 * h / 6 + y / 3
+    (3 / 2) * d < (749 / 1000 + 374 / 1000) / 2 ∧
+    1 / 6 + (3 / 2) * (379 / 1000) + 1 / 2000000 + 2 * d +
+      1 / 100000 < 138 / 125 ∧
+    (199 / 1000 : Rat) < p ∧
+    h + (2 * y - h) / 12 < t - p / 6 ∧
+    p + y < t - p / 6 ∧
+    h / 6 + y < t ∧ h / 3 + 5 * y / 6 < t ∧
+    (7 / 10 : Rat) < y - p / 2 - (3 / 2) * (199 / 1000) - 3 / 100000 ∧
+    p / 6 < (2 * y - 1 - h) / 2 ∧
+    1 - y + t - p / 6 = 301 / 250 ∧
+    (138 / 125 : Rat) < 301 / 250 := by
+  decide +kernel
+
+#print axioms phaseProjectionMargins
 #print axioms projectedGaussObstructionMargins
 #print axioms growingDivisorProjectionMargins
 #print axioms multiGaussProfileMargins

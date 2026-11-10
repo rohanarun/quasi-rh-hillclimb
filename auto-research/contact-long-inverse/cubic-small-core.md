@@ -49,4 +49,6 @@ The already certified detector windows give \(s>1.124,\ \gamma<0.379,\ w_0\le10^
 
 This removes those small-core frequencies from the sufficient full smooth moment, including frequencies above the generic dual-sieve cutoff. The ordinary factor was summed absolutely here. A stronger estimate using cancellation in that factor or in the remaining signed frequency average is still needed for the larger cores. No new zero-free endpoint follows yet.
 
+The [primal Gauss phase projection](primal-gauss-phase-projection.md) uses the same reflection for overlaps in the original column space.
+
 Prepared with OpenAI Codex assistance.

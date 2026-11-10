@@ -46,4 +46,6 @@ Here \(\rho\le t/2\) pays the shortening in the second and third terms, and the 
 
 The fixed-\(m\) reduction leaves the higher frequencies with small gcds inside each small repeated-part block. Larger repeated parts require a separate estimate. For squarefree rows the new large-sixth-power and layer-count estimates leave the high-frequency blocks with smaller power factors. The [Lean replay](ContactFactorization.lean) checks the rational margins.
 
+[Extracting selected high power divisors](frozen-high-power-frequencies.md) covers additional mixed frequency blocks, including a sizable fifth-power layer whose full norm is too costly to freeze.
+
 Prepared with OpenAI Codex assistance.

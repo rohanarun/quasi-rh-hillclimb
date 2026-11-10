@@ -446,6 +446,30 @@ theorem sparseDetectorFrequencyMargins :
     5 * n / 6 + y / 3 + t / 6 + w < 1 - gain := by
   decide +kernel
 
+theorem frozenHighPowerDetectorMargins :
+    let n : Rat := 8445 / 10000
+    let w : Rat := 14616 / 1000000
+    let a : Rat := 4222 / 10000
+    let p : Rat := 117 / 1000
+    let s : Rat := 120 / 1000
+    let x1 : Rat := 400 / 1000
+    let x5 : Rat := 150 / 1000
+    let h := x1 + 5 * x5
+    let cap := 1 - gain - w
+    n + 140 / 1000 < cap ∧
+    n / 6 + 4 * a - n < cap ∧
+    2 * n / 3 + a < cap ∧
+    1 / 2 - a < 2 * p / 3 ∧
+    p + 20 / 1000 < 140 / 1000 ∧
+    h < 2 - n ∧
+    cap < n + 5 * h / 6 - 2 / 3 ∧
+    cap < n + h - 1 + 636 / 1000 - 4 * x5 ∧
+    cap < n + x5 ∧
+    s < 140 / 1000 ∧
+    1 / 2 - a < 2 * s / 3 := by
+  decide +kernel
+
+#print axioms frozenHighPowerDetectorMargins
 #print axioms sparseDetectorFrequencyMargins
 #print axioms detectorDualFrequencyMargins
 #print axioms detectorRatioClassMargins

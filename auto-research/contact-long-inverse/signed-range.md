@@ -41,6 +41,8 @@ Thus a sufficient full-average estimate is signed cancellation at scale \(U^{138
 \]
 The norm over the original detector rows is controlled if the **whole** smooth majorant is bounded. The exact-gcd, small-frequency calculation uses a different decomposition from the Möbius opening used to bound large \(g\).
 
+[The dual sieve bound](dual-sieve.md) covers additional frequency ranges, including all normalized frequencies up to (U^{0.618}).
+
 ## Coefficients for the remaining Gauss sum
 
 When allocating a squarefree residual column \(n'=i'j'\) between its inverse and ordinary factors, \(\mu(i')=\mu(n')\mu(j')\). This lets the \(\mu(n')\) term enter the usual sextic-to-cubic Gauss conversion for a coprime quotient column. It leaves \(\mu(j')\) on the divisors assigned to the ordinary factor, together with their profile and coprimality restrictions. Common divisors and row deletions are retained as above. The known cubic-theta estimates for a single inverse column do not directly bound this divisor-weighted, signed average. A bound for that remainder, or a detector-row estimate with its smaller common-divisor range, remains necessary before the candidate can be claimed.

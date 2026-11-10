@@ -61,6 +61,16 @@ theorem gaussProjectionMargins :
     (189 / 250 : Rat) + 1 / 13000 < 1 := by
   decide +kernel
 
+theorem dualSieveMargins :
+    (1 : Rat) + (618 / 1000) / 6 < 138 / 125 ∧
+    (1 + (748 / 1000) : Rat) / 2 < 138 / 125 ∧
+    (2 / 3 : Rat) + (748 / 1000) / 2 < 138 / 125 ∧
+    (11 / 12 : Rat) + (748 / 1000) / 4 < 138 / 125 ∧
+    (1 : Rat) + (870 / 1000) / 3 - (28 / 25) / 6 < 138 / 125 ∧
+    (1 : Rat) + (1258 / 1000) / 3 - (1129 / 1000) / 6 > 138 / 125 := by
+  decide +kernel
+
+#print axioms dualSieveMargins
 #print axioms gaussProjectionMargins
 #print axioms signedRangeMargins
 #print axioms squarefreeReturnMargins

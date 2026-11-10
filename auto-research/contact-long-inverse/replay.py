@@ -88,6 +88,7 @@ def check(replay, incumbent):
                               (b["MN"], F(".375"), F(".378"))):
         assert replay["bern_pos"](sub(numerator, scale(lo, dj)), *local)
         assert replay["bern_pos"](sub(scale(hi, dj), numerator), *local)
+    assert replay["bern_pos"](sub(b["T"], scale(F(22503, 20000), j)), *local)
     delta, p = replay["X"], replay["Y"]
     one_minus_p = sub(const(1), p)
     v = replay["V"]()

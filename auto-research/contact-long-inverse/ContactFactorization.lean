@@ -38,6 +38,15 @@ theorem asymmetricCutMarginsWithBuffer :
     eta + maxInverseSlope / 4000 + 1 / 10000000 < gain := by
   decide +kernel
 
+theorem squarefreeReturnMargins :
+    (1.104 : Rat) <
+      (1 + 5 * (22503 / 20000 : Rat)) / 6 - eta -
+        deltaHi * (1 / 4000 + 1 / 3500) ∧
+    (749 / 1000 : Rat) < 2 * (3 / 8 - 1 / 3500) ∧
+    (1 : Rat) - (251 / 500 : Rat) / 2 = 749 / 1000 := by
+  decide +kernel
+
+#print axioms squarefreeReturnMargins
 #print axioms contactRadicalBracket
 #print axioms asymmetricCutMargins
 #print axioms asymmetricCutMarginsWithBuffer

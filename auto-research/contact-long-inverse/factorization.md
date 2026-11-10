@@ -39,6 +39,8 @@ Here \(Q_b\) is the selected prime product from the inherited short inverse argu
 
 The count after this saving is at most \(I(b)-1/14000\), up to small losses. The worst permitted drop in \(b\) costs at most \(\delta(1-p)/4000\), and \(1/14000>\eta+\delta(1-p)/4000\) on the whole window. Thus this estimate would supply \(R_0-\eta\) for the long detector branch in the original return. Its arithmetic margins, including a buffer, are checked by [ContactFactorization.lean](ContactFactorization.lean) with Lean 4.34.1 and Std. The analytic estimate and its integration remain open.
 
+[The squarefree reduction](squarefree.md) gives an alternative moment on the same fibres. It removes large repeated factors and fixes a sufficient exponent for the residual mixed polynomial.
+
 ## Why positive factorization alone stalls
 
 The following extends the scalar simultaneous witness in [Liu §6.7](https://hexagonmath.org/pdf/2611.00082v1) to **every finite asymmetric choice of inverse cutoffs**. It concerns magnitude bounds and the existence of a saturated factorization. It imposes no signed convolution equations between the modeled polynomials.

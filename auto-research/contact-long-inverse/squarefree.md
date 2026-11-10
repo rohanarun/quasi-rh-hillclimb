@@ -32,4 +32,6 @@ The whole-rectangle lower bound \(t_0>22503/20000\) is checked in [the rational 
 
 The generic sextic sieve on squarefree columns remains too weak. At the ideal contact with \(b+c=t_*\), its mixed term \(U^{1/3+5t_*/6}\) is \(U^{1/6}\) larger than the inherited contact budget \(U^{(1+5t_*)/6}\) even before the desired saving. The matching arbitrary-coefficient lower bound in [Xu–Sang, Theorem 1.1](https://arxiv.org/html/2610.17675v2) prevents improving that norm uniformly over all coefficients. The residual polynomial retains the actual Möbius sign on the inverse side and coefficient one on the ordinary side. An argument using those coefficients or the detector restriction is still needed.
 
+[The signed range reduction](signed-range.md) removes large common divisors and low dual frequencies from the remaining moment.
+
 The ideal-factor bookkeeping was also checked exactly on a finite labelled monoid with distinct equal-norm primes and a deleted prime. The proof above is independent of that check. Prepared with OpenAI Codex assistance.

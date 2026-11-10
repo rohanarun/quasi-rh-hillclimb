@@ -46,6 +46,16 @@ theorem squarefreeReturnMargins :
     (1 : Rat) - (251 / 500 : Rat) / 2 = 749 / 1000 := by
   decide +kernel
 
+theorem signedRangeMargins :
+    eta < deltaLo / 20000 ∧
+    (1134 / 1000 : Rat) + 1 / 13000 + 1 / 26000 - 13 / 40 < 81 / 100 ∧
+    (5 / 6 : Rat) + (81 / 100) / 3 < 138 / 125 ∧
+    (1 / 3 : Rat) + 5 * (81 / 100) / 6 < 138 / 125 ∧
+    (1 / 6 : Rat) + 81 / 100 < 138 / 125 ∧
+    (1 : Rat) + 103 / 1000 < 138 / 125 := by
+  decide +kernel
+
+#print axioms signedRangeMargins
 #print axioms squarefreeReturnMargins
 #print axioms contactRadicalBracket
 #print axioms asymmetricCutMargins

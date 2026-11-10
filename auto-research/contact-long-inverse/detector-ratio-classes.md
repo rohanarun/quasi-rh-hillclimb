@@ -36,4 +36,6 @@ The low ratio-conductor estimate of the weighted reduction applies to any symmet
 
 It is therefore sufficient to estimate the weighted signed Gram form on the actual marked inverse vector for small good gcd and high primitive ratio conductor, with \(\mathrm N\Delta_2>U^{0.088}\) and \(\mathrm N\Delta_3>U^{0.140}\). When both parity representatives are large as above, one can also require \(\mathrm N\Delta_2>U^{0.140}\). The remaining sector includes pairs of largely squarefree sextic rows whose two lower-order ratio components both have large conductor.
 
+The [squarefree detector Poisson calculation](detector-dual-frequencies.md) bounds low frequencies and some high power layers on the squarefree part of the remaining row norm.
+
 Prepared with OpenAI Codex assistance.

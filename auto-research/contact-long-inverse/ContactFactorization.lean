@@ -405,6 +405,26 @@ theorem detectorRatioClassMargins :
     2 * q < 698 / 1000 := by
   decide +kernel
 
+theorem detectorDualFrequencyMargins :
+    let n : Rat := 8445 / 10000
+    let w : Rat := 14616 / 1000000
+    let k : Rat := 844 / 1000
+    let ksf : Rat := 916 / 1000
+    let y : Rat := 990 / 1000
+    let c : Rat := 140 / 1000
+    (n + k) / 2 + w < 1 - gain ∧
+    n + k / 6 + w < 1 - gain ∧
+    2 * n / 3 + k / 2 + w < 1 - gain ∧
+    11 * n / 12 + k / 4 + w < 1 - gain ∧
+    n + ksf - y + w < 1 - gain ∧
+    n + 5 * ksf / 6 - 2 * y / 3 + w < 1 - gain ∧
+    n + ksf / 3 - y / 6 + w < 1 - gain ∧
+    n + c + w < 1 - gain ∧
+    2 * n / 3 + c + w < 1 - gain ∧
+    2 * n / 3 + 1 / 3 + 88 / 1000 + w < 1 - gain := by
+  decide +kernel
+
+#print axioms detectorDualFrequencyMargins
 #print axioms detectorRatioClassMargins
 #print axioms weightedDetectorRowGramMargins
 #print axioms detectorRowGramMargins

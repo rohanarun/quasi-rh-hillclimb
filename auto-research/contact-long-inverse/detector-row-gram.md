@@ -38,4 +38,6 @@ Let \(K_{\rm rem}\) be the Gram kernel restricted to pairs with good gcd at most
 \]
 Indeed \(\|z\|_2^4\le \|a\|_2^2\langle TT^*z,z\rangle\) by Cauchy–Schwarz. The two estimated sectors then give the desired marked moment with the usual subpower losses. The required input is a signed estimate on actual detector rows and their actual marked inverse values, with the same fibre and profile uniformity as in the short-factor reduction. The high-conductor, small-gcd sector remains open.
 
+[Splitting the prime marks](weighted-detector-row-gram.md) gives a second row Gram reduction with a smaller large-gcd cutoff.
+
 Prepared with OpenAI Codex assistance.

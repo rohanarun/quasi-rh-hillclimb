@@ -377,6 +377,21 @@ theorem detectorRowGramMargins :
     (636 / 1000 : Rat) + (727 / 1000) / 2 < cap := by
   decide +kernel
 
+theorem weightedDetectorRowGramMargins :
+    let b : Rat := 756 / 1000 + 1 / 13000
+    let n : Rat := 8445 / 10000
+    let mesh : Rat := 1 / 100000
+    let zout : Rat := 336 / 10000
+    let cost : Rat := deltaHi * zout
+    (1 + b) / 2 - n + mesh < zout ∧
+    cost = 14616 / 1000000 ∧
+    1 - (1555 / 10000) = n ∧
+    (7 / 6) * n + cost = 999866 / 1000000 ∧
+    (7 / 6) * n + cost < 1 - gain ∧
+    (636 / 1000 : Rat) + (698 / 1000) / 2 + cost < 1 - gain := by
+  decide +kernel
+
+#print axioms weightedDetectorRowGramMargins
 #print axioms detectorRowGramMargins
 #print axioms radicalPhaseExpansionMargins
 #print axioms fullJointObstructionMargins

@@ -1,0 +1,37 @@
+# Coprime squarefree reduction for the joint detector moment
+
+The [short-factor reduction](factorization.md) leaves rows where an inverse polynomial \(M_b\) and a full ordinary polynomial \(S_c\) are simultaneously large. This note removes the large repeated-prime part of their product using the inherited pointwise bounds. It gives a coprime squarefree mixed-moment route to the same conditional scalar target \(\theta=0.87338\). The mixed moment remains open.
+
+## Remove large repeated prime factors before taking the row norm
+
+Use a buffered row bin with \(\delta=2\sigma_{\rm bin}-1\) and the original zero-extended presentation \(\psi\). Put \(L=U^b\), \(C=U^c\), \(X=LC\). Use the centrally normalized product \(M_b S_c\) with its two smooth annular profiles. In each column \(n=ij\), \(i\) is the squarefree inverse index and \(j\) the ordinary index. Write \(n=vw\), where \(w\) contains the full prime powers of exponent at least two and \(v\) is squarefree and prime to \(w\). For fixed \(w\), allocate \(w_I\mid\operatorname{rad}(w)\) to the inverse factor and \(w_P=w/w_I\) to the ordinary factor. The residual factors are squarefree, pairwise coprime and prime to \(w\). There is no ambiguity even when two distinct prime ideals have the same norm.
+
+This gives an exact sum of \(\mu(w_I)\psi(w)/\sqrt{\mathrm Nw}\) times normalized coprime squarefree mixed polynomials at scales \(L/\mathrm Nw_I,C/\mathrm Nw_P\) with common deletion \(\operatorname{rad}(w)\). The coefficient formula retains the character zero in \(\psi(w)\). The original profiles are rescaled in their respective factors and do not have to be equal.
+
+For the pointwise bound, consider one such normalized coprime squarefree mixed polynomial at scales \(L',C'\), with common deletion \(F\). Expand the coprimality of the two variables by the Möbius projector. Extracting a common squarefree \(g\) contributes \(1/\mathrm Ng\) after central normalization and leaves two factors with common deletion \(Fg\). The ordinary factor is still squarefree. Expanding its squarefree indicator by \(1_{\rm sf}(j)=\sum_{e^2\mid j}\mu(e)\) contributes \(1/\mathrm Ne\) and rescales its length by \((\mathrm Ne)^2\). All character zeros are retained. The two separated factors now have coefficients \(\mu\) and \(1\) and lengths \(L'/\mathrm Ng,\ C'/[\mathrm Ng(\mathrm Ne)^2]\).
+
+The original buffered pointwise estimates give an upper bound \(U^\epsilon(\mathrm{length})^{\delta/2}\) for either normalized factor, also with a common deletion of polynomial norm. For the ordinary sum this follows by finite inclusion–exclusion. For the inverse sum, deletion multiplies the reciprocal series by \(\prod_{\mathfrak p\mid Fg}(1-\psi(\mathfrak p)(\mathrm N\mathfrak p)^{-s})^{-1}\). This expansion uses all powers of the deleted primes. The sum of its normalized weights after rescaling is bounded by \(\prod_{\mathfrak p\mid Fg}(1-(\mathrm N\mathfrak p)^{-(1+\delta)/2})^{-1}\ll_\epsilon(\mathrm N(Fg))^\epsilon\). Empty annuli give zero, and nonempty subunit scales are bounded below by the fixed support constants. These arguments keep the original presentation and stay within the buffered height allowance. The source for the pointwise bounds and height order is [OpenAI's pointwise dyadic lemma](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex#L4385).
+
+Thus the two projector sums have summable weights \((\mathrm Ng)^{-1-\delta}(\mathrm Ne)^{-1-\delta}\), and each normalized coprime squarefree polynomial is \(O_\epsilon((L'C')^{\delta/2}U^\epsilon)\) pointwise. The powerful ideals of norm at most \(W\) number \(O(W^{1/2})\) by the representation as a square times a squarefree cube. The allocation divisor costs a subpower. Consequently for any fixed \(\tau>0\) the part of \(M_bS_c\) with \(\mathrm Nw>U^\tau\) is
+\[
+ O_\epsilon\!\left(U^{\delta(b+c)/2-\delta\tau/2+\epsilon}\right).
+\]
+This sector cannot supply a near-maximal product witness when the preliminary losses are chosen smaller than the displayed gap. The argument applies to large square divisors internal to the ordinary index as well as repetitions across the two indices.
+
+There is also a row restriction. Retaining the primitive conductor in the reflected estimate of the same dyadic lemma gives \(|S_c|^2\ll U^{\delta(q-c)+\epsilon}\) when the primitive conductor is \(U^q\), up to fixed factors. Saturation is impossible for \(q\le749/1000\) since \(2c\ge2(3/8-1/3500)>749/1000\). For a physical row of norm \(\asymp U\), if its powerful part has norm \(\ge U^{251/500}\), its radical has norm \(\ll U^{749/1000}\). The conductor of a good-prime sextic presentation divides the radical times a fixed modulus, so these rows fall in the excluded sector.
+
+## A sufficient squarefree moment
+
+For a fixed small \(\tau>0\), it suffices to bound by \(O_\epsilon(U^{138/125+\epsilon})\) the squared row norm of each normalized coprime squarefree mixed polynomial on the remaining rows, uniformly over the factorization window and frozen \(\mathrm Nw\le U^\tau\). Its short moving deletion is supported on \(w\), its inverse and ordinary lengths are \(b-\log_U\mathrm Nw_I,c-\log_U\mathrm Nw_P\), and its two profiles and separated norm twists are those of the actual detector. The exponent \(138/125=1.104\) is for the normalized polynomial. No additional marked prime product is needed in this sufficient input.
+
+The sum over the small \(w\) and their allocations costs only \(U^\epsilon\) by Minkowski and \(\sum_{w\ \mathrm{powerful},\mathrm Nw\le U^\tau}(\mathrm Nw)^{-1/2+\epsilon}\ll U^{O(\epsilon)}\). Hence this hypothesis bounds the norm of the small-\(w\) part even if different rows are large on different \(w\). On a simultaneous saturation fibre the product squared is at least \(U^{\delta(b+c)-o(1)}\), and the large-\(w\) part is smaller there. Chebyshev therefore gives the required \(R_0-\eta\) count with room for small losses. In fact
+\[
+ R_0-\eta+\delta(b+c)=\frac{1+5t_0}{6}-\eta+\delta(b+c-t_0)>138/125.
+\]
+The whole-rectangle lower bound \(t_0>22503/20000\) is checked in [the rational replay](replay.py). [The Lean replay](ContactFactorization.lean) checks the strict margin using the lower endpoints for \(b,c\), and also checks the conductor cutoff.
+
+The generic sextic sieve on squarefree columns remains too weak. At the ideal contact with \(b+c=t_*\), its mixed term \(U^{1/3+5t_*/6}\) is \(U^{1/6}\) larger than the inherited contact budget \(U^{(1+5t_*)/6}\) even before the desired saving. The matching arbitrary-coefficient lower bound in [Xu–Sang, Theorem 1.1](https://arxiv.org/html/2610.17675v2) prevents improving that norm uniformly over all coefficients. The residual polynomial retains the actual Möbius sign on the inverse side and coefficient one on the ordinary side. An argument using those coefficients or the detector restriction is still needed.
+
+[The signed range reduction](signed-range.md) removes large common divisors and low dual frequencies from the remaining moment.
+
+The ideal-factor bookkeeping was also checked exactly on a finite labelled monoid with distinct equal-norm primes and a deleted prime. The proof above is independent of that check. Prepared with OpenAI Codex assistance.

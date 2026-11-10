@@ -193,6 +193,26 @@ theorem coreInverseAverageMargins :
     1 / 6 + (5 / 6) * (9 / 10) + (theta - 1 / 2) * (42 / 100) < 138 / 125 := by
   decide +kernel
 
+theorem lowerOrderPrimalMargins :
+    let theta : Rat := 8749 / 10000
+    let lam := theta - 1 / 2
+    let b : Rat := 757 / 1000
+    let g : Rat := 374 / 1000
+    let c : Rat := 106 / 1000
+    let q : Rat := 188 / 1000
+    (1 - theta) / 2 < 1 / 3 ∧
+    1 / 6 < theta / 4 ∧
+    1 / 6 < (1 + lam) / 3 ∧
+    (1 + lam) * (1 + c) / 2 < 138 / 125 ∧
+    b - (1 - theta) * g + theta / 4 + (1 + theta / 4) * c < 138 / 125 ∧
+    (2 / 3) * b - (1 - theta) * g + 1 / 3 + theta / 4 +
+      (2 / 3 + theta / 4) * c < 138 / 125 ∧
+    (1 + lam) * (1 + 2 * q) / 3 < 138 / 125 ∧
+    1 / 6 + b - (1 - theta) * g + (theta - 1) * (783 / 1000) / 6 +
+      (1 + theta / 3) * q < 138 / 125 := by
+  decide +kernel
+
+#print axioms lowerOrderPrimalMargins
 #print axioms coreInverseAverageMargins
 #print axioms conductorOrdinaryMargins
 #print axioms fullColumnProjectionMargins

@@ -44,4 +44,6 @@ The terms are for the actual mixed coefficients with their full column coprimali
 
 Using \(\beta<0.757,\ \gamma<0.379\), the first option in \(E_2\) fits \(1.104\) throughout the detector window. The first option in \(E_1\) fits \(1.104\) for \(t\le0.783\), including squarefree cores. The second option also covers some larger cores of smaller radical. For example \(t=0.9,\ r=0.42\) fits both bounds. The [Lean replay](ContactFactorization.lean) checks the rational margins. The short-core bound applies to the smooth row norm before Poisson summation. The large-core row contribution still needs a sharper joint estimate.
 
+The [lower-order inverse averages](lower-order-primal.md) handle additional large-core rows with dominant square, cube or fourth-power layers.
+
 Prepared with OpenAI Codex assistance.

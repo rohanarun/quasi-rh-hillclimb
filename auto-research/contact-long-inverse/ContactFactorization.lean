@@ -365,6 +365,19 @@ theorem radicalPhaseExpansionMargins :
     (38 / 1000 : Rat) < p ∧ 5 * (38 / 1000 : Rat) < n := by
   decide +kernel
 
+theorem detectorRowGramMargins :
+    let b : Rat := 756 / 1000
+    let h : Rat := 804 / 1000
+    let n : Rat := 8781 / 10000
+    let cap := 1 - gain
+    (1 + b + 1 / 13000) / 2 < n ∧
+    n < cap ∧ n / 6 + h < cap ∧
+    5 * h / 6 + n / 3 < cap ∧ h / 3 + 5 * n / 6 < cap ∧
+    1 - deltaLo * (pLo + (1 - pLo) * (3 / 4)) < 636 / 1000 ∧
+    (636 / 1000 : Rat) + (727 / 1000) / 2 < cap := by
+  decide +kernel
+
+#print axioms detectorRowGramMargins
 #print axioms radicalPhaseExpansionMargins
 #print axioms fullJointObstructionMargins
 #print axioms projectionPoissonTransferMargins

@@ -52,4 +52,6 @@ This includes the phased component and the change in the unphased coefficients. 
 
 The residual retains quotient orthogonality for the unphased family under the growing-divisor conditions. It also has phased orthogonality on the original annulus. This argument leaves the high-frequency bound on that residual open.
 
+The [Poisson transfer](projection-poisson-transfer.md) bounds the removed vector in the separated column energies and carries the existing positive-energy sectors over to the residual.
+
 Prepared with OpenAI Codex assistance.

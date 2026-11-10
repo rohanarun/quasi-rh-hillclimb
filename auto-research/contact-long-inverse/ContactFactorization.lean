@@ -315,6 +315,20 @@ theorem asymmetricJointProjectionMargins :
     1 / 6 + xHi - 36 / 1000 + 2 * d - 2 * (1 - theta) * (749 / 1000) < 138 / 125 := by
   decide +kernel
 
+theorem projectionPoissonTransferMargins :
+    let theta : Rat := 8749 / 10000
+    let xLo : Rat := 1123 / 1000
+    let l : Rat := 1 / 100000
+    let d : Rat := 199 / 1000
+    (1 : Rat) < xLo ∧
+    (2 - theta / 2) * d + 4 * l < (2 - theta) * (374 / 1000) ∧
+    (3 / 2) * d + 4 * l < xLo ∧
+    (1 - 2 * theta) * (749 / 1000) + (379 / 1000) / 2 +
+      2 * (184 / 1000) + 1 / 2000000 < 0 ∧
+    3 * l + 1 / 50000 = 1 / 20000 := by
+  decide +kernel
+
+#print axioms projectionPoissonTransferMargins
 #print axioms asymmetricJointProjectionMargins
 #print axioms jointGaussProjectionMargins
 #print axioms phaseProjectionMargins

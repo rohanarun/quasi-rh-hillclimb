@@ -121,6 +121,19 @@ theorem amplitudeDispersionMargins :
       2 * deltaLo * (413 / 1000) * (137 / 1000000) := by
   decide +kernel
 
+theorem centeredCoprimeObstructionMargins :
+    let h : Rat := 1240 / 1000
+    let y : Rat := 1129 / 1000
+    let v : Rat := 1 / 1000
+    let t := 5 * h / 6 + y / 3
+    h < t - v ∧ y < t - v ∧ h / 3 + 5 * y / 6 < t - v ∧
+    1 + h - 2 * (y - 2 * v) = -(14 / 1000) ∧
+    1 - y + t = 1921 / 1500 ∧ (138 / 125 : Rat) < 1921 / 1500 ∧
+    1 - y + (8765 / 10000) / 3 + 5 * y / 6 = 138 / 125 ∧
+    2 * y - 1 = 1258 / 1000 := by
+  decide +kernel
+
+#print axioms centeredCoprimeObstructionMargins
 #print axioms amplitudeDispersionMargins
 #print axioms powerfulDetectorMargins
 #print axioms centeredDualShellMargin

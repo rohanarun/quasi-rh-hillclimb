@@ -37,4 +37,6 @@ Writing \(y=\log_U Y_0,\ e_0=\log_U E,\ t_0'=\log_U T,\ \lambda=\log_U L\), this
 
 This estimate is for centered terms and smooth shells. An arithmetic restriction on the shell, such as restricting \(k\) to squarefree ideals, would need its own treatment before frequency completion. Also, the earlier positive-norm sieve bounds include the artificial diagonal in each \(e\)-term. In a joint use of these estimates, one must retain its exact cancellation or use centered bounds throughout that shell. The centered small-divisor contribution at the full Fourier scale is still open.
 
+The [centered sieve obstruction](centered-sieve-obstruction.md) gives a lower bound for arbitrary coefficients on an annular high squarefree block, even after removing the diagonal.
+
 Prepared with OpenAI Codex assistance.

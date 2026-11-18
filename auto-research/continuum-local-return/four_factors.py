@@ -1,5 +1,6 @@
 """Exact margins for secondary saturation near (2t0/3,2t0/3,t0/3,t0/3)."""
 from fractions import Fraction as F
+from math import factorial
 
 
 def positive(name, x):
@@ -105,6 +106,50 @@ def verify():
     positive("coprime mixed pair with squarefree-row twist loss",
              mixed_price - F(553, 500) - 31*gamma - shift_cost - eta - reserve)
     cmin = p0*(1+2*g0lo)+klo*blo
+    # Fixed-height central values of the original numerator on the masked class.
+    cap = F(3, 40)
+    radial_count_lo = 1-d1*cmax
+    amplitude_lo = d0*(cmin/4-p1*cap/2)
+    moment_gain = d0*(cmin/36-p1*cap/2)-F(1, 450)
+    positive("central high-sample count margin", radial_count_lo-F(".62567"))
+    positive("fixed central sample lower threshold", amplitude_lo-2*eta-F(".085"))
+    positive("high-sample fourth moment after the grid losses",
+             radial_count_lo-(1-4*F(".0936"))-4*eta)
+    positive("fractional central moment physical margin", moment_gain-F(".0001"))
+    positive("large coefficient dilation margin", d0*F(1, 10**6)/4-3*eta/4)
+    r, radius, outer = F(".6695"), F("1.331"), F("1.33075")
+    distance = r-F(".5")
+    positive("cluster inner weight numerator", (outer-(2-r))/outer-F(1, 6000))
+    positive("cluster imaginary radius", F(".72")**2+(2-F(7, 8))**2-radius**2)
+    positive("cluster Borel-Caratheodory constant",
+             10**5-(radius+3*outer)/(radius-outer))
+    positive("three-circles small power", 60000-1-9*6000)
+    argument = 8*distance
+    cos_lower = sum((-1)**k*argument**(2*k)/factorial(2*k) for k in range(4))
+    positive("horizontal cosine bound", cos_lower-F(".2"))
+    cosh_lower = sum(F(16**(2*k), factorial(2*k)) for k in range(10))
+    positive("horizontal hyperbolic cosine bound", cosh_lower-10**6)
+    positive("reflected sparse disk height budget", F(".00011")-F(".0001")-2*distance/100000)
+    sparse_cost = (distance+F(".00011")+F(".0001"))/2+F(".00002")
+    positive("sparse disk central sample gap", F(".085")-sparse_cost)
+    positive("critical numerator size for the reflected test", amplitude_lo-2*eta-F(".08516"))
+    ell_t = F(11, 3)-4*F(".87334585")
+    y_min = (F(".815324503")-2*ell_t)/(F(".815324505")+F(1, 10**10))
+    positive("short-dilation ordinary scale", y_min-F(11, 10**6)-F(".5748"))
+    rad, inner, sample = F("1.3"), F("1.2866"), F("1.2998")
+    alpha_min = 2-F(".713352")
+    positive("buffer for the reflected inner disk", 2-F(".71335")-6*F(1, 10**6)-inner)
+    positive("reflected outer disk growth", F(".007")-F(".00001")-F(".51")*(F(".713356")-F(".7")))
+    log_argument = rad/alpha_min/(1-inner/alpha_min)/(1-inner/rad)
+    exp16_lower = sum(F(16**k, factorial(k)) for k in range(32))
+    positive("reflected disk factor logarithm", exp16_lower-log_argument)
+    positive("reflected disk inner Cayley bound",
+             F(".014")-17*F(1, 10**220)-17*F(1, 10**4))
+    positive("reflected disk three-circles weight", (rad-sample)*inner/(rad*(rad-inner))-F(1, 70))
+    positive("reflected sparse disk logarithm", F(".000015")-F(".014")/999)
+    positive("reflected Mellin saving", F(".08516")-F(".4252")*F(".2002")-F(".000015"))
+    positive("reflected cluster height radius", F(".20")**2+alpha_min**2-rad**2)
+    positive("reflected cluster common grid rounding", F(1, 4)-F(".20")-F(1, 32))
     upper_price = 1+d1*(2*(bhi+delta)-cmin)
     positive("two-inverse price upper bound", F(32,25)-upper_price)
     # Opening a square on the buffered rows saves delta_density * log_U(W)

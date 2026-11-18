@@ -171,25 +171,36 @@ def verify():
     check("the genuine ordinary and short inverse at physical lengths",
           y_high + 5 * z_high < 1 and y_high + 4 * z_high < Q(5, 6) and
           2 * (y_low + 5 * Q(".0974")) > 1)
-    natural = Q(50, 69)
+    natural = Q(277, 372)
     left_r = 1 - natural / 2
-    cross_r = Q(181, 276)
+    cross_r = Q(239, 372)
     check("two marked moments cover the entire natural range",
-          left_r == Q(44, 69) and left_r < cross_r < natural and
-          (1 + 4 * cross_r) / 5 == natural == Q(41, 24) - 3 * cross_r / 2 and
+          left_r == Q(467, 744) and left_r < cross_r < natural and
+          (2 + 5 * cross_r) / 7 == natural == Q(41, 24) - 3 * cross_r / 2 and
           2 * (1 - natural) > Q(1, 6) and natural < Q(5, 6))
-    # For B <= max(1/8,2(L-r)), both affine upper bounds for each
-    # native condition attain their maximum at one of the two endpoints.
-    check("native distinct-prime widths for fixed positive prime length",
-          max(natural + Q(1, 4), 4 * natural - 3 * left_r) < 1 and
-          max(2 * natural + 1, 16 * natural - 14 * left_r) < 3)
-    cutoff = Q(1, 200)
-    left = 15 * natural + 10 - 6 * Q(5, 7) * cutoff
-    check("unmarked density pays for lifts outside the primitive range",
-          natural > Q(2, 3) and left > 0 and left**2 < 600 * natural)
-    check("complete diagonal-order eighteenth moment through 50/621",
-          natural / 9 == Q(50, 621) and natural / (9 * (1 - 6 * cutoff)) < Q(1, 8) and
-          Q(3, 4) * natural * 6 <= 5 and Q(1, 6) + Q('.01') + Q(3, 4) * natural < 1)
+    # The total width is at most w - 2*tau and the longer half has
+    # width at most (w - 2*tau + b)/2, where b < tau.
+    check("uniform slack when splitting the subpower prime mark",
+          2 + Q(5, 2) * (2 - 1) == Q(9, 2) and
+          all(r + Q(7, 2) * (2 * (1-r) / 7) == 1 for r in (left_r, natural)))
+    prime_cap = Q(".085")
+    rounding_cases = (
+        ("one", natural + 2 * prime_cap, 2 * natural + 8 * prime_cap),
+        ("two", natural + 3 * prime_cap, 2 * natural + 14 * prime_cap),
+        ("three or more", 3 * natural - 2 * left_r, 12 * natural - 10 * left_r),
+    )
+    for name, first, second in rounding_cases:
+        check(f"native moment with {name} fixed prime factors", first < 1 and second < 3)
+    check("tight two-prime rounded width", natural + 3 * prime_cap == Q(18593, 18600))
+    cutoff = Q(1, 500)
+    core = 1 - 6 * cutoff
+    left = 15 * natural + 10 * core - 30 * cutoff
+    check("optimized unmarked density pays for the outer sixth powers",
+          natural > 2 * core / 3 and -5 + 6 * Q(5, 7) < 0 and
+          left > 0 and left**2 < 600 * natural * core)
+    check("complete diagonal-order eighteenth moment through 277/3348",
+          natural / 9 == Q(277, 3348) and natural / (9 * core) < prime_cap and
+          Q(3, 4) * natural * 6 <= 5 and Q(1, 6) + Q(".01") + Q(3, 4) * natural < 1)
     for e in range(1, 12):
         for i in range(13):
             for j in range(13):

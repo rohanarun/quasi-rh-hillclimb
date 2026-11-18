@@ -85,6 +85,8 @@ To control constants in this interchange, at each Poisson split insert compact s
 
 For the selected diagonal contribution use $K/(JR)\ll U^\epsilon R D^4/U\ll U^\epsilon A D_0^5/U$, so $K\ll U^\epsilon JR$ in the stated range. Its total scalar is then at most $U^{1+\epsilon}/(GM)$ and both divisor sums are harmonic. For the restored contribution choose $c>0$ with $(1+c)r+5w<1$. The bound above is $O_\epsilon(U^{1+\epsilon}/G)$ since nonempty bounded short scales may be set equal to one. The sum over $g$ with divisor weights is harmonic, and the selections of $D$ and other dyadic scales cost $U^\epsilon$. This proves (1) including its diagonal. If $r+6w<1$, the $A^{1+c}$ enlargement in (2) can be avoided wherever $D$ is near its largest scale.
 
+A short ideal constrained to have two factors of comparable norm admits a larger range via the canonical estimate. [Two short labels](balanced-composite-inverse.md)
+
 ## Two ordinary factors with one arbitrary short coefficient
 
 Let $S_{u,i}(A_i)$ be centrally normalized ordinary ideal sums with fixed smooth annular profiles, finite ray twists and the same moving sextic symbol, with $A_i=U^{x_i}$ for $i=1,2$. Allow independent punctures of polynomial norm. Put $r=x_1+x_2$ and use the short coefficient polynomial $Q_u(D_0)$ from (1). Uniformly with the same height and derivative conventions,

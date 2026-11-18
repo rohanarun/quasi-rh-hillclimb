@@ -1,0 +1,99 @@
+# Rational divisors of the physical rows and of the marked columns
+
+Assume the preprint's $7/8$ theorem, the physical and marked-source inputs of tracker #143 and de Faveri's sixth-order large sieve. For a nonzero Eisenstein element $u=x+y\omega$ put $t(u)=\gcd(|x|,|y|)$. This is the largest positive rational integer dividing $u$. For an integral ideal $c$ define $t(c)$ by the largest integer $t$ such that $(t)\mid c$. For a principal ideal these definitions agree and are invariant under multiplying a generator by a unit.
+
+On the critical rectangle the original physical class has $O(U^{R-10^{-7}})$ rows with $t(u)\ge U^{.21004}$, where $R>.62567$ is its original count exponent. This permits discarding those rows before the marked fourth moment is taken. On the column side, the positive native moment permits a further reduction of the complete signed kernel. Its remaining order-six conductor has a product of **solitary split rational primes** greater than $U^{1.8500991}$, with “solitary” meaning that just one of the two primes above the rational prime occurs in the whole reduced conductor. [Physical return and critical class](physical-radical.md) · [Native divisibility estimate and conductor interval](near-squarefree.md)
+
+## Counting the original rows
+
+Fix the original physical bin, error mask and external heights. Its largest original prime-slot lower gain $g$ is at least the masked mean $q=\delta p\ge q_0=.425(.49995)$. If the slot width in $U$-units is $w>0$, the actual amplitude $Q_j(u)$ has $|Q_j(u)|\ge U^{gw}$ on each row. Use the same fixed slot throughout the bin. Its coefficients, including the ray restriction and the complex norm powers, have the original inverse square-root bound. Fix the mesh before the physical data to have $w\le10^{-9}$. [Whole-slot lower bounds and maximum gain](marked-window.md#actual-source-and-slot-selection) · [Physical prime coefficients](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex#L14996-L15018)
+
+Split $t=t(u)$ into dyads $M\le t<2M$ beginning at $U^{.21004}$, and put $m=\log_U M$, $D=\max(0,1-2m)$. For fixed $t$, write $u=tz$. Its residual norm satisfies $Nz\ll U^D$. The restrictions that make $t$ its exact content may be dropped in a positive row square. If $m\ge.4$, counting all $O(M)$ integers and all residual elements gives $O(M(1+U/M^2))\ll U^{.6}$ since $M\ll\sqrt U$. This includes bounded residual shells.
+
+For $.21004\le m<.4$ take $k=\lfloor(2D-2w)/(3w)\rfloor$ copies of the original slot and put $x=kw$. They obey $3x+2w\le2D$ and $x\ge2D/3-5w/3$. The complete short-product estimate at base $U^D$ gives
+$$
+ \sum_{z\text{ in the residual shell}} |Q_j(tz)|^{2k}
+ \ll_\epsilon U^{D+\epsilon}.
+$$
+Indeed the symbol at $t$, including its nonunit zeros, multiplies the fixed prime coefficient in each copy of the slot. All copies have one common orientation. Original heights, ray masks and bounded profiles remain in the coefficients, which satisfy the required inverse square-root bound. The fixed physical shell for $u$ rescales at each $t$ into a shell within fixed annular constants at $U^D$, so a fixed nonnegative smooth majorant applies. Both $k$ and the number of profiles depend only on the mesh and the original slot data fixed before $U$. The estimate is uniform in the coefficients and requires no coprimality between $t$ and $z$. [Complete moment for arbitrary bounded short labels](short-product-moments.md#product-estimate)
+
+Divide by the pointwise lower bound $U^{2q_0x}$ and sum over $t$. The resulting exponent is at most
+$$
+ m+(1-4q_0/3)(1-2m)+(10q_0/3)w+\epsilon.
+$$
+It decreases with $m$. At $m=.21004$ the upper bound including the mesh term and before $\epsilon$ is at most $.625665766<.62567-10^{-7}$. Choosing the preliminary losses within this margin pays for the dyads as well. This counts original rows with their actual slot condition. Intersect with this sector before the physical packet and use its saved count in Hölder with the same marked moment and coefficient mass. [Exact comparisons](column_divisors.py) · [Physical use of the count](extra-marks.md#the-gain-after-physical-damping)
+
+For a prescribed row-independent list of $O_\epsilon(U^{s+\epsilon})$ ideal divisors of norm $\asymp U^b$, $0\le b\le1$, freeze a generator and use residual exponent $1-b$ instead. The same count gives $s+(1-4q_0/3)(1-b)+(10q_0/3)w+\epsilon$. If $2(1-b)<2w$, take zero copies and count the residual elements directly, which satisfies the same bound. The ball bound is uniform down to bounded scales: for a smaller dyadic residual shell apply the estimate with its own exponent, or count it directly when the copy number is zero. In particular if $t$ divides a prescribed positive integer of polynomial size there are $U^\epsilon$ choices, and $t\ge U^{.079}$ already gives a strict saving at $b\ge2(.079)$.
+
+Intersect the remaining rows with the previously necessary $N\operatorname{rad}(u)>U^{1-10^{-5}}$. For the squarefree ideal $\operatorname{rad}(u)$, inert primes and paired split primes together have norm at most $O_S(t(u)^2)$. This follows prime by prime, with the fixed ramified prime contributing a bounded factor. Among the other primes, those with valuation at least two in $u$ have norm product at most $Nu/N\operatorname{rad}(u)\ll U^{10^{-5}}$. Consequently the product of rational primes at which $u$ has one split prime of valuation one and no conjugate prime is $\gg_S U^{1-2(.21004)-2(10^{-5})}=U^{.57990}$ up to a fixed factor. These are good primes of full local order six after omitting the fixed set.
+
+## Removing rational divisors and conjugate common factors from the columns
+
+Work on the same positive row measure used to open the square. Write $F=\sum_c\lambda_c\chi_c$ for the complete physical columns, $\gamma=1.01\cdot10^{-6}$ and $\kappa=2\gamma$. Let $F^<$ keep the existing restriction $NK(c)<U^\gamma$, where $K(c)=\prod_{\mathfrak p}\mathfrak p^{\lfloor v_{\mathfrak p}(c)/2\rfloor}$. A subscript $g$ restricts a polynomial to $g\mid c$. The native estimate after the small-square-part projection gives
+$$
+ \|F_g^<\|\ll_\epsilon U^{1/2+\epsilon}\tau(g)^B/\sqrt{Ng}
+ \quad(Ng\ge U^\kappa).
+$$
+Here $\|\cdot\|$ is the square root of the row energy and the fixed height polynomial is suppressed. The original labels, profiles and all row zeros enter this estimate. [Proof for projected divisible columns](near-squarefree.md#remove-the-large-square-parts-before-expanding-the-square) · [Native marked fourth moment with two profiles](https://github.com/GTimG/QuasiRiemannTracker/blob/c74d855c3bdfceeee059501aea76c8b1627b9abd/submissions/2026-11-13-continuum-exact-contact/src/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositivePhysicalPair.lean#L25-L80)
+
+By Möbius inversion on the positive rational integers, $1_{t(c)\ge U^\gamma}=\sum_{(b)\mid c}a(b)$ with $a=\mu_{\mathbb Z}*1_{[U^\gamma,\infty)}$. All nonzero terms have $b\ge U^\gamma$ and $|a(b)|\le\tau_{\mathbb Z}(b)$. Since $N(b)=b^2$, the norm bound and the harmonic sum over $b$ give
+$$
+ \left\|\sum_b a(b)F^<_{(b)}\right\|\ll_\epsilon U^{1/2+\epsilon}.
+$$
+By the triangle inequality it suffices to bound the positive energy of the polynomial $F^*$ with both $NK(c)<U^\gamma$ and $t(c)<U^\gamma$.
+
+The same divisible-column inequality holds for $F^*_g$, allowing a divisor power of the integer $Ng$ in its numerator. Indeed $F^*_g=F^<_g-\sum_b a(b)F^<_{[g,(b)]}$, where brackets denote the ideal least common multiple. Apart from divisor factors the new cost relative to $1/\sqrt{Ng}$ is
+$$
+ \sum_{b\ll U^{O(1)}} \tau_{\mathbb Z}(b)^{O(1)}
+        \frac{\sqrt{N(g,(b))}}{b}\ll_\epsilon U^\epsilon .
+$$
+For rational primes outside $Ng$ this is the harmonic divisor sum. At $\ell^f\Vert Ng$ the local terms at $b=\ell^j$ are bounded by $(j+1)^{O(1)}\ell^{\min(j,f/2)-j}$. Summing their finite initial segment and geometric tail costs a fixed power of $f+1$. Their product is $O_\epsilon(U^\epsilon)$ on the polynomial norm range.
+
+In $\|F^*\|^2$ remove the union of $N(c,c')\ge U^\kappa$ and $N(c,\overline{c'})\ge U^\kappa$. For each condition use ideal Möbius inversion with $b_T=\mu*1_{N\ge T}$, $T=U^\kappa$, so $|b_T(g)|\le\tau(g)$ and $Ng\ge T$ on its support. The second sum becomes $\sum_h b_T(h)\langle F^*_h,F^*_{\bar h}\rangle$. Each single condition costs $O_\epsilon(U^{1+\epsilon})$ by the projected norm and the harmonic sum over $h$. For their intersection the summands are $b_T(g)b_T(h)\langle F^*_{[g,h]},F^*_{[g,\bar h]}\rangle$. After Cauchy–Schwarz the arithmetic weight, apart from divisor factors, is
+$$
+ \frac{\sqrt{N(g,h)N(g,\bar h)}}{Ng\,Nh}.
+$$
+Its sum over polynomial ranges is $O_\epsilon(U^\epsilon)$. By the arithmetic–geometric mean inequality it suffices to replace the numerator by $N(g,h)$ or $N(g,\bar h)$. The two cases agree upon conjugating $h$; in the first case expand $N(g,h)\le\sum_{t\mid g,\,t\mid h}Nt$ and use three harmonic sums. Inclusion–exclusion therefore removes the union at the claimed price, in absolute value after taking the indicated inner products.
+
+For good ideals $c$ one has $(c,\bar c)=(t(c))$. At a split rational prime both valuations equal the minimum of the original two valuations in the gcd; at an inert prime the valuation is unchanged. The only ramified prime is excluded from these columns. Thus each surviving column has $N(c,\bar c)<U^{2\gamma}$. Let $d\mid cc'$ denote the squarefree reduced conductor and $d_6\mid d$ its product of local order-six primes. Primewise comparison gives
+$$
+ N(d,\bar d)
+ \le N(c,\bar c)N(c',\overline{c'})N(c,\overline{c'})^2
+ < U^{4\gamma+2\kappa}.
+$$
+The comparison uses $\min(\sum a_i,\sum b_j)\le\sum_{i,j}\min(a_i,b_j)$ for nonnegative valuations. In $d_6$ discard all inert primes and every split prime whose conjugate occurs anywhere in $d$. The loss in norm is at most $N(d,\bar d)$. The remaining ideal norm is exactly a product of distinct rational primes. From $Nd_6>U^{1.8501072}$, its exponent is greater than
+$$
+ 1.8501072-4\gamma-2\kappa=1.85009912 .
+$$
+At each such rational prime $p$, reduction of rational integers surjects onto $\mathcal O/\mathfrak p=\mathbb F_p$. The original local character has order six at $\mathfrak p$ and there is no conjugate factor to cancel it on rational integers. Thus the restriction of the paired character to integers has order six at every one of these primes. A single auxiliary prime shift can change the status of only the rational prime below it. It costs at most the polylogarithmic auxiliary norm, leaving the rounded exponent $1.8500991$ for large $U$.
+
+## Retaining the previous dual-frequency estimates
+
+Use the all-element filter and retain the old restrictions on $K(c),K(c')$ and $(c,c')$. In the existing Poisson proof the frozen data give $c_i=D_i r_i$, where the two residual ideals $r_i$ are squarefree, avoid the frozen primes and are coprime to one another. Here $c_1=c$, $c_2=c'$. Expand the two indicators $t(c_i)<U^\gamma$ by rational Möbius inversion and the indicator $N(c,\bar c')<U^\kappa$ by ideal Möbius inversion. The resulting requirements are $(m_i)\mid c_i$, $v\mid c_1$, $\bar v\mid c_2$, with coefficients bounded by divisor functions. Keep the same extension of the separated Gauss phases and the same Möbius divisor $t\mid r_1,r_2$ that implements the original residual coprimality. [Original separable phases and divisibility projections](dual-marked-frequencies.md#uniformly-summing-the-two-columns-at-small-dual-norms)
+
+Put $L_1=[(m_1),v]$, $L_2=[(m_2),\bar v]$ and $l_i=[t,L_i/(L_i,D_i)]$. The additional conditions on $r_i$ are exactly $l_i\mid r_i$. Nonempty terms have $r_i=l_i x_i$ with $l_i$ squarefree, $(l_i,D_i)=1$ and $x_i$ coprime to $l_i$ and the frozen primes. On each side CRT now splits the individual Gauss factor at $l_i x_i$ just as at the old $t x_i$. Its cross phase with the fixed $l_i$ is a bounded multiplicative twist on $x_i$ after the usual ray subdivision. Its value at the Fourier frequency also splits; the factor depending on the frequency and the fixed $l_i$ has modulus at most one. The assignment of $D_i l_i$ to the original labels gives the scalar $(ND_i\,Nl_i)^{-1/2}$ and the same upper bounds for the shortened group lengths. The new exclusion of the primes of $l_i$ is an individual column mask. In the conductor sieve the squared coefficient norm is at most $U^\epsilon/(ND_i\,Nl_i)$, and one may still use the original larger supported length $U^\ell/ND_i$. Thus in the small-frequency, low-radical and valuation-one estimates, the old product factor $1/Nt$ is replaced by $1/\sqrt{Nl_1\,Nl_2}$. Each sieve and Cauchy–Schwarz step is taken at fixed $m_1,m_2,v,t$. [Low-radical character sieve](dual-marked-frequencies.md#average-over-primitive-characters-at-low-radical) · [Sieve with a marked frequency factor](powerful-marked-frequencies.md#factoring-the-frequency-and-the-columns)
+
+Uniformly at fixed $D_i$, the sum of these new factors is $O_\epsilon(U^\epsilon)$ with the divisor coefficients included. All variables have polynomial norms on nonempty terms. Outside rational primes dividing $ND_1ND_2$, squarefreeness gives boundedly many local choices. An active $t$ or $v$ forces at least one ideal prime over that rational prime $p$ into each of the two $l_i$. An active $m_i$ puts $(p)$ of norm $p^2$ into its own $l_i$. Consequently each nonidentity local choice has weight at most $1/p$, and the product of the local bounds $1+O(1/p)$ over the polynomial range is $O_\epsilon(U^\epsilon)$. At $p^f\Vert ND_1ND_2$ all local input exponents are at most $f+1$ because $r_i$ is squarefree. The number of choices with their divisor weights is $(f+1)^{O(1)}$, whose product is also a subpower. This recovers the original harmonic cost without changing its frequency cutoffs. Finally the sparse pair graph can be intersected with the new pair restrictions by the same uniform fixed-pair estimate and absolute intersection count. [Sparse pairs and their intersection with the known frequencies](prime-pair-kernel.md#summing-the-graph-and-its-intersection-with-the-known-frequencies)
+
+## Rational directions in the dual sum
+
+Fix a surviving shifted pair with conductor norm $D=Nd$, an extracted divisor in the row mask, physical scale $Y$ and reflected length $T=D/Y$. Fix an Eisenstein direction $v$ of rational content one and take $h=kv$, $k\in\mathbb Z_{>0}$. The character value in Poisson is $\overline{\theta(v)}\xi(k)$ with $\xi(k)=\overline{\theta(k)}$. The latter is a Dirichlet character modulo $\prod_{p\mid D}p\le D$, since congruence of integers modulo this product implies congruence modulo the squarefree ideal $d$. Its primitive inducer has order six at every solitary split prime identified above. This holds after the auxiliary shift and for the conjugate orientation. A fixed twist modulo $3$ preserves that good ramification. The imprimitive character keeps its zeros at all primes of its modulus.
+
+Take $b=.873346$. The tracker's Dirichlet endpoint lies strictly to the left of $b$. For $\Re s\ge b+\delta$ with any fixed $\delta>0$, the disk proof of logarithmic control gives $|L(s,\xi)|\ll_{\delta,\epsilon}(2D(3+|\Im s|))^\epsilon$ and $|L'/L|\ll_\delta\log(2D(3+|\Im s|))$. Indeed partial sums of a nonprincipal character modulo $q$ have modulus at most $q$ by periodicity, so partial summation supplies polynomial growth on the required disks in $\Re s>1/2$. The Euler logarithm is uniformly bounded on the small disk about $2+i\Im s$. Borel–Carathéodory, three circles and Cauchy's estimate now apply as in the preprint. Any missing Euler factors are nonzero there, with product and reciprocal $O_\epsilon(D^\epsilon)$ and logarithmic derivative $O(\log(2D))$. [All-moduli Dirichlet endpoint](https://github.com/GTimG/QuasiRiemannTracker/blob/c74d855c3bdfceeee059501aea76c8b1627b9abd/submissions/2026-11-13-continuum-exact-contact/src/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/ExactEndpoint.lean#L119-L140) · [Disk estimates and deleted factors](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex#L1531-L1620)
+
+Set $X=(T/Nv)^{1/2}$. The radial test on $k$ is $\widetilde W((k/X)^2)$. Mellin inversion on smooth dyads in $k$, with $L$ for all integers or $-L'/L$ for primes, gives the fixed-pair bound
+$$
+ O_\epsilon\!\left(U^\epsilon\frac{Y}{\sqrt D}X^b\right).
+$$
+For $X<1$ one may replace $X^b$ by any fixed positive power $X^A$ by Schwartz decay and absolute summation. The estimate includes any one sharp interval in $k$ by smoothing each endpoint between consecutive integers, and includes the unweighted prime sum after dividing the test by $\log k$ and removing the higher powers. The proof and Mellin derivative bounds are the same as for the ideal dyads. Summing six associates costs at most six. Since $Y\ll U$, $D\ge U^{1.8501072-o(1)}$, the bound for each pair is
+$$
+ O_\epsilon\!\left(U^{\,1-b/2+(b-1)(1.8501072)/2+\epsilon}(Nv)^{-b/2}\right)
+ =O_\epsilon\!\left(U^{.4461652613456+\epsilon}(Nv)^{-b/2}\right).
+$$
+The divisor sums and normalized auxiliary average cost a subpower. A graph of maximum degree $U^{.5538}$ on both sides therefore has cost $O_\epsilon(U^{.9999652613456+\epsilon})$ on this direction, by the same coefficient-norm estimate. [Sharp dyads and graph summation](prime-pair-kernel.md#a-fixed-pair-at-all-frequencies-and-at-prime-frequencies)
+
+In particular all inert prime ideals have generators $h=\varepsilon p$ with $p\equiv2\bmod3$ prime and $\varepsilon$ a unit. Select that progression by the two characters modulo $3$. For these primes the previously removed norm, radical and exact-valuation-one ranges have union $p^2\le U^{.46252}$. The complementary range is one sharp interval through the top cutoff, so the bound holds on the new graph after all those deletions, including after removing the old degree-$U^{.1825}$ graph or any further **pair** restriction.
+
+For all integers on a fixed direction the earlier arithmetic cuts may intersect the line in several pieces. Their union contains $O_\epsilon(U^{.232+\epsilon})$ integers there. To see this within $Nh\le U^{.850146}$, separate from $k\le U^{.425073}$ the part supported on rational primes dividing $6Nv$. It has $O_\epsilon(U^\epsilon)$ choices uniformly for $Nv\le U^{.850146}$, by Rankin's inequality and the divisor-product bound. For the remaining integer $m$, each of its primes is unramified in the field and disjoint from $v$. Its norm as a rational ideal is $m^2$. The norm cutoff gives at most $U^{.23126}$ choices of $k$. In the valuation-one sector the integer product of the primes occurring exactly once in $m$ is at most $U^{.0374}$, so the powerful-integer count above gives exponent $(.425073+.0374)/2<.232$. Write $m=m_0 n^6$ with $m_0$ sixth-power-free. In the small-sixth-power, low-radical sector one has $n\le U^{.00000005}$ and $\operatorname{rad}_{\mathbb Z}(m_0)\le U^{.23126}$; the number of cores for a given radical is divisor-bounded. In the other radical sector summing the sixth powers costs exponent $.425073/6+5(.199/2)/6<.232$. Thus any part of that intersection costs at most $O_\epsilon(U^{1-1.8501072/2+.232+.5538+\epsilon})=O_\epsilon(U^{.8607464+\epsilon})$ by absolute counting. This permits removing the complete fixed direction on this graph from the earlier signed remainder. Split prime ideals on the dense remaining pairs still require cancellation.
+
+Prepared with OpenAI Codex assistance.

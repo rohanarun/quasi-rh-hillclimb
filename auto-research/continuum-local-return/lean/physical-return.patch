@@ -1,0 +1,174 @@
+--- a/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveActual.lean
++++ b/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveActual.lean
+@@ -90,8 +90,8 @@
+   refine ⟨J,hJ,?_⟩
+   intro τ hheight n η
+   rcases hheight with ⟨hτ,hτzero,hτcost,hτ2,hτeps,hτJ⟩
+-  obtain ⟨K,hK,hcount⟩ := masked_source_count A.D (baselineSource A.D A.F)
+-    A.counts τ sigma n hτ hτzero hτcost hτ2 A.count_budget
++  obtain ⟨K,hK,hcount⟩ := ContinuumLocalReturn.DynamicSource.masked_source_count_dynamic Geometry.h S.window S.windowCovers A.D (baselineSource A.D A.F)
++    A.counts τ sigma n hτ hτzero hτcost hτ2 A.count_budget (S.savedInput A τ n hτ hτzero hτcost hτ2)
+   refine ⟨C*Cs*K,by have hk := zero_lt_one.trans_le hK;positivity,?_⟩
+   filter_upwards [eventually_uniform_source_conductor d0 (by norm_num [d0]) hcollect,hcount η,
+     source_prime_bins A.D A.F A.P τ n hτ hτcost,
+@@ -110,7 +110,10 @@
+   have hz : ((17/50:ℂ)+q.2*Complex.I).re=17/50 := by norm_num
+   have hx : ((((a+16*A.D.e):ℝ):ℂ)+q.1*Complex.I).re=a+16*A.D.e := by simp
+   have him : |((17/50:ℂ)+q.2*Complex.I).im|≤((3*i+1:ℕ):ℝ)*Z^τ := by simpa using hq.2
+-  have hcounts := hcount d a C0 hd hd' ha hatop hC0 rows hsource i hi hnext hcurrent
++  have htop : d ≤ ContinuumLocalReturn.NonfloorSchedule.top Geometry.h := by
++    unfold ContinuumLocalReturn.NonfloorSchedule.top
++    exact hdmax.trans (add_le_add_right S.extension_guard Geometry.h)
++  have hcounts := hcount d a C0 hd hd' htop ha hatop hC0 rows hsource i hi hnext hcurrent
+     ((17/50:ℂ)+q.2*Complex.I) hz (him.trans (hheight i hi).2) hmom
+   have heq : canonicalFamily A.D (baselineSource A.D A.F) Z ((17/50:ℂ)+q.2*Complex.I)=
+       (fun (u:FreeRow) j=>HeckePrimeRow.canonicalPrimeAmplitude A.F.modulus ⊤ u.val A.F.W 2
+--- a/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveCollect.lean
++++ b/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveCollect.lean
+@@ -54,7 +54,7 @@
+         let q := weightedMean Finset.univ (fun s=>A.D.length s/d)
+           (maskedGain (Finset.univ\J) (binValue Finset.univ ((2*a-1)/2) A.D.t bin))
+         rows'.Nonempty  →  (rows'.card:ℝ)  ≤  K*C0*Z^(3*A.D.t)*
+-          U^(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma))  →
++          U^(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma))  →
+       (∀u∈rows,‖frequencyWeight z ⟨u.val,u.property.1⟩*
+         numeratorFreeRowScalar A.F.S A.F.exclusions A.F.maximal η u x z‖  ≤
+         Cs*(η.modulus.absNorm:ℝ)^(2*eps)*(3+height)^(2*eps)*
+--- a/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveCombined.lean
++++ b/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveCombined.lean
+@@ -56,7 +56,7 @@
+         let q := weightedMean Finset.univ (fun s=>A.D.length s/d)
+           (maskedGain (Finset.univ\J) (binValue Finset.univ ((2*a-1)/2) A.D.t bin))
+         rows'.Nonempty  →  (rows'.card:ℝ)  ≤  K*C0*Z^(3*A.D.t)*
+-          U^(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma))  →
++          U^(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma))  →
+       (∀u∈rows,‖frequencyWeight z ⟨u.val,u.property.1⟩*
+         numeratorFreeRowScalar A.F.S A.F.exclusions A.F.maximal η u x z‖  ≤
+         Cs*(η.modulus.absNorm:ℝ)^(2*eps)*(3+height)^(2*eps)*
+@@ -83,7 +83,12 @@
+       hrows hrow hdis hdisAll hη hQ hS Pbase Cs K C0 hCs hK hC0 hcount hscalar hupper
+     apply hh.trans
+     gcongr <;> linarith
+-  · have hh := ho.2 Z d hZ hd (le_of_not_ge hdn) hUZ η x z a height ha hatop hx hz hH him rows
++  · have hbelow : ¬ ContinuumLocalReturn.NonfloorSchedule.seam Geometry.h ≤ d := by
++      change ¬ ContinuumLocalReturn.NonfloorSchedule.seam Geometry.h ≤ d
++      change ¬ (19/25:ℝ) ≤ d at hdn
++      linarith [S.seam_after_switch]
++    simp only [ContinuumLocalReturn.NonfloorSchedule.branchesAt,ite_eq_right hbelow] at hcount
++    have hh := ho.2 Z d hZ hd (le_of_not_ge hdn) hUZ η x z a height ha hatop hx hz hH him rows
+       hrows hrow hdis hdisAll hη hQ hS Pbase Cs K C0 hCs hK hC0 hcount hscalar hupper
+     apply hh.trans
+     gcongr <;> linarith
+--- a/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveMask.lean
++++ b/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveMask.lean
+@@ -55,7 +55,7 @@
+       let q := weightedMean Finset.univ (fun s=>A.D.length s/d)
+         (maskedGain main (binValue Finset.univ ((2*a-1)/2) A.D.t bin))
+       rows'.Nonempty  →  ∀Cs K C0:ℝ,0 ≤ Cs  →  1 ≤ K  →  1 ≤ C0  →
+-      (rows'.card:ℝ) ≤ K*C0*Z^(3*A.D.t)*U^(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)  →
++      (rows'.card:ℝ) ≤ K*C0*Z^(3*A.D.t)*U^(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)  →
+       (∀u∈rows',‖frequencyWeight z ⟨u.val,u.property.1⟩*numeratorFreeRowScalar A.F.S A.F.exclusions A.F.maximal η u x z‖ ≤
+         Cs*(η.modulus.absNorm:ℝ)^(2*eps)*(3+height)^(2*eps)*U^(2*eps)*U^(-(17/50:ℝ))*Z^((17/25)*A.D.t))  →
+       (∀u∈rows',∀s,‖Q u s‖ ≤ (Z^(A.D.length s))^
+@@ -87,7 +87,7 @@
+     one_le_mul_of_one_le_of_one_le (one_le_mul_of_one_le_of_one_le hK hC0)
+       (Real.one_le_rpow hZ.le (by have := A.D.t_pos;positivity))
+   have hb := hclass.2 Z d hZ (by linarith [hd]) (hdmax.trans htop) hUZ η x z a height ha hatop hx hz hheight hzim rows hrows hrow
+-    hdis hη Pbase bin hne (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)
++    hdis hη Pbase bin hne (QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)
+     (K*C0*Z^(3*A.D.t)) hcount1 hcard hupper
+   have heq (u:FreeRow) (hu:u∈rows') := errorLabelNumerator_eq_packet A.F.S A.F.exclusions (4*A.D.e) A.F.first η u
+     (hrow u (hsub hu)) J (sourcePrimePool A.F Z) (fun s=>source_prime_pool_outside A.F Z s) hdis hη hQ
+@@ -99,7 +99,7 @@
+       (∏s∈main,Q u s)‖)  ≤
+     C*(K*C0*Z^(3*A.D.t))*(1+height)^degree*(U^(Geometry.y/d))^(-(1/2:ℝ))*(∏s:J,(Z^(A.D.length s.val))^(-(4/25:ℝ)))*
+       U^(A.D.t+q*(Geometry.ell/d)-q*Selection.zeroCapacity S.cost d/2+
+-        (3*(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
++        (3*(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
+         (2*a-1)*Cycle25.sourceMesh A.D.t/4+(2*a-1)*(A.D.t+A.D.t)/2+A.D.t*(Geometry.ell/d)) := by
+     convert hb using 1
+     calc
+@@ -117,7 +117,7 @@
+   have hselection := class_main_selection A S.cost Z d 0 (2*a-1) hZ ⟨by linarith [hd],hdmax.trans dp_lt_one.le⟩ hδ.le z rows main bin hne
+   have hq0 : 0 ≤ q := hselection.1
+   have hqmax : q ≤ (2*a-1)/2 := hselection.2.1
+-  have he := Qrh.JointDetector.BoundaryPhysical.Return.GenericPhysical.Scalar.source_packet_multiplicative_identity Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches J A.D.length A.D.slots_sum Z A.D.momentKappa d
++  have he := Qrh.JointDetector.BoundaryPhysical.Return.GenericPhysical.Scalar.source_packet_multiplicative_identity (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) J A.D.length A.D.slots_sum Z A.D.momentKappa d
+     (newCapacity d) (2*a-1) q (C*K*C0*((1+height)^degree)) (physicalLoss A.D eps sigma affineError)
+     hZ0 hd0.ne' hδ.ne'
+   have hcapscale : newCapacity d/d=Selection.zeroCapacity S.cost d := by
+@@ -128,10 +128,10 @@
+   have hcollapse : scalarFront*Z^(-(4/25:ℝ)*(∑j:{i:Fin A.D.N//i ∉ J},A.D.length j.val))*
+       (C*(K*C0*Z^(3*A.D.t))*(1+height)^degree*(U^(Geometry.y/d))^(-(1/2:ℝ))*(∏s:J,(Z^(A.D.length s.val))^(-(4/25:ℝ)))*
+       U^(A.D.t+q*(Geometry.ell/d)-q*Selection.zeroCapacity S.cost d/2+
+-        (3*(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
++        (3*(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
+         (2*a-1)*Cycle25.sourceMesh A.D.t/4+(2*a-1)*(A.D.t+A.D.t)/2+A.D.t*(Geometry.ell/d))) =
+       (C*Cs*K)*C0*(η.modulus.absNorm:ℝ)^(2*eps)*(3+height)^(2*eps)*(1+height)^degree*
+-        Z^(numeratorExponent Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches A.D.momentKappa d (newCapacity d) (2*a-1) (q/(2*a-1))+
++        Z^(numeratorExponent (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa d (newCapacity d) (2*a-1) (q/(2*a-1))+
+           weightedSourceLoss d (2*a-1) (physicalLoss A.D eps sigma affineError)) := by
+     dsimp only [scalarFront]
+     rw [hUZ]
+@@ -142,7 +142,7 @@
+           (C*(K*C0*Z^(3*A.D.t))*(1+height)^degree*((Z^d)^(Geometry.y/d))^(-(1/2:ℝ))*
+             (∏s:J,(Z^(A.D.length s.val))^(-(4/25:ℝ)))*
+             (Z^d)^(A.D.t+q*(Geometry.ell/d)-q*Selection.zeroCapacity S.cost d/2+
+-              (3*(Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.envelope A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
++              (3*(QRH.Record1252270103Return.envelope (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D.momentKappa (2*a-1) (q/(2*a-1))+sigma)+1+A.D.t+affineError+A.D.t)/4+
+               (2*a-1)*Cycle25.sourceMesh A.D.t/4+(2*a-1)*(A.D.t+A.D.t)/2+A.D.t*(Geometry.ell/d)))) := by ring
+       _ = _ := by
+         have hex : (2*a-1)*(Cycle25.sourceMesh A.D.t+4*A.D.t)/4 =
+@@ -158,7 +158,7 @@
+   have hheightpow : (1+height)^degree  ≤  (3+height)^(degree:ℝ) := by
+     rw [Real.rpow_natCast]
+     exact pow_le_pow_left₀ (by linarith) (by linarith) _
+-  have hcert := physical_packet_with_fee Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches A.D eps sigma affineError d a q (newCapacity d) S.fee hgap S.fee_pos hkap heps.le hsigma haff.le hbudget ⟨by linarith [hd],hdmax.trans dp_lt_one.le⟩ ha hatop ⟨hq0,hqmax⟩ (S.new_rows ⟨hd,hdmax⟩ (by constructor <;> linarith) ⟨div_nonneg hq0 hδ.le,(div_le_iff₀ hδ).mpr (by linarith)⟩)
++  have hcert := physical_packet_with_fee (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch S.window S.windowCovers)) A.D eps sigma affineError d a q (newCapacity d) S.fee hgap S.fee_pos hkap heps.le hsigma haff.le hbudget ⟨by linarith [hd],hdmax.trans dp_lt_one.le⟩ ha hatop ⟨hq0,hqmax⟩ (S.new_rows ⟨hd,hdmax⟩ (by constructor <;> linarith) ⟨div_nonneg hq0 hδ.le,(div_le_iff₀ hδ).mpr (by linarith)⟩)
+   apply hphysical'.trans
+   calc
+     _  ≤  (C*Cs*K)*C0*(η.modulus.absNorm:ℝ)^(2*eps)*(3+height)^(2*eps)*(3+height)^(degree:ℝ)*
+--- a/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveSchedule.lean
++++ b/Candidate/Local/Qrh/TwoSlot/AnchorContinuum/PositiveSchedule.lean
+@@ -2,6 +2,7 @@
+ Variable positive physical-return costs. Adapted from PR137's PhysicalSchedule
+ (Sil and predecessor authors, Apache-2.0), retaining the actual count envelope.
+ The submitted fixed-cost schedule and its source files are unchanged. -/
++import DynamicSourceCount
+ import Candidate.Local.Qrh.TwoSlot.AnchorContinuum.PositiveFeedback
+ import Candidate.Local.Qrh.TwoSlot.AnchorContinuum.PositiveAffineInput
+ import Candidate.Local.Qrh.TwoSlot.AnchorContinuum.PositiveSelection
+@@ -15,11 +16,24 @@
+ variable [Geometry.Parameters]
+ variable [scheme : Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCountScheme line]
+-
++
++/-- Analytic input only on the saved rectangle, for actual chosen data and source heights. -/
++def SavedInput (w : Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedWindow line scheme.naturalκ) : Prop :=
++  ∀ (A : Qrh.JointDetector.BoundaryPhysical.Return.GenericPhysical.PhysicalDirect.ChosenData (line := line))
++    (τ : ℝ) (n : ℕ), 0 < τ → τ < (1/200:ℝ)/2 → 4*τ < (1/200:ℝ)*A.D.cost → 2*τ ≤ A.D.t →
++    ContinuumLocalReturn.DynamicSource.SavedCount Geometry.h w A.D
++      (QRH.Record1252270103Return.GenericPhysical.baselineSource A.D A.F) A.counts τ
++      ((OAI.SevenEighths.HeckeZeroSupremum.beta-Geometry.theta)/10000) n
++
+ /-- All numerical costs are selected after the strict target gap. The source
+ face, conductor extension and physical row fee remain positive. -/
+ class Schedule where
++  window : Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedWindow line scheme.naturalκ
++  windowCovers : ContinuumLocalReturn.PhysicalBranch.Covers window
++  savedInput : SavedInput window
+   cost : ℝ
+   extension : ℝ
++  extension_guard : extension ≤ ContinuumLocalReturn.NonfloorSchedule.s
++  seam_after_switch : (19/25:ℝ) < ContinuumLocalReturn.NonfloorSchedule.seam Geometry.h
+   fee : ℝ
+   cost_pos : 0 < cost
+   cost_small : cost ≤ 1/1000000000
+@@ -36,6 +50,6 @@
+       (2*Geometry.theta-1) d (oldCapacityAt (2*Geometry.theta-1) d) delta p ≤ Geometry.theta-fee
+   new_rows : ∀ {d delta p : ℝ}, d ∈ Set.Icc (19/25:ℝ) (Geometry.h+extension) →
+     delta ∈ Set.Icc (0:ℝ) (3/4) → p ∈ Set.Icc (0:ℝ) (1/2) →
+-    rowAt Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches
++    rowAt (ContinuumLocalReturn.NonfloorSchedule.branchesAt Geometry.h d (Qrh.TwoSlot.AnchorZeroLoss.Affine.Return.ImprovedCount.admittedBranches (line := line)) (ContinuumLocalReturn.PhysicalBranch.savedBranch window windowCovers))
+       (2*Geometry.theta-1) d
+       (min ((3/40)*d) ((2*Geometry.y-(1+cost)*d)/(2+10*cost))) delta p ≤ Geometry.theta-fee

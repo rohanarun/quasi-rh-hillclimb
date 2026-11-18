@@ -46,6 +46,28 @@ def verify():
     require("ordinary bound contradicts witness after all losses",
             F(37, 100)/16 - F(21, 1000) > F(1, 1000))
 
+    # A common physical prime frequency supplies a near-edge zero for its own ray twist.
+    density_lo, density_hi = F(".425"), F(".4267")
+    deficit = F(1, 40000)
+    shifted = F(".000024")
+    require("external prime test forces a zero inside the proposed band",
+            density_hi*F(".00005") < shifted < deficit)
+    require("external zero detector stays in its Gamma strip",
+            min_a - deficit > F(".51"))
+    # (delta+2*d*r)/(2*(delta-d)) decreases in delta.
+    y_upper = (density_lo + 2*deficit*F("2.16"))/(2*(density_lo-deficit))
+    require("external detector length ceiling",
+            y_upper < F(".501") and F("2.16") + y_upper < F("2.7"))
+    debit = F(".000136")
+    require("external witness losses", 2*deficit*F("2.7") < debit
+            and debit/2 < F(".000070"))
+    require("coarse moment guards after retargeting",
+            F(".001")-F(".0005")-2*debit > F(1, 10**7))
+    weaker_c = F(1, 10**6)
+    require("reduced cluster threshold", (51*weaker_c)**2 * F(7, 2) < F(".0021")**3)
+    require("externally centered weak ordinary contradiction",
+            (F(".198")/16-F(".0021")-F(".001"))*F(".01") > F(".000070"))
+
 
 if __name__ == "__main__":
     verify()

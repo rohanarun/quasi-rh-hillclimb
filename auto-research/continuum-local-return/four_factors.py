@@ -75,6 +75,43 @@ def verify():
     }
     for name, gap in guards.items():
         positive(name+" margin after count gain and reserve", gap-eta-reserve)
+    # The physical denominator has a fixed amplitude debit, requiring a wider length guard.
+    physical_guard = F("1e-5")
+    for name, gap in guards.items():
+        if name in ("inverse tangent", "ordinary tangent", "amplified long inverse"):
+            gap *= physical_guard / delta
+        positive(name+" physical denominator margin", gap - 10*eta)
+    positive("left contour damping", d0/2 - F(".10") - d1/4)
+    positive("right contour stays in the mass theorem", 1 - (1+d1)/2 - F(".28"))
+    positive("lower excluded length saves on the physical integral", F(".10")*F("8e-7") - 3*eta/4)
+    positive("upper excluded length saves on the physical integral", F(".28")*F("3e-7") - 3*eta/4)
+    r_lo, r_hi = F("1.22649"), F("1.22654")
+    positive("lower denominator length", 1/(F(".815324505")+F("1e-10")) - F("8e-7") - r_lo)
+    positive("upper denominator length", r_hi - 1/(F(".815324503")-F("1e-5")) - F("3e-7"))
+    positive("short inverse lower length", r_lo - thi - 3*physical_guard - F(".0974"))
+    positive("short inverse upper length", F(".0987") - (r_hi - tlo + 4*physical_guard))
+    positive("unmarked mixed moment power reserve",
+             d0*F(".0974") - d1*F(".075") - F(".009") - 6*eta - F(".00039"))
+    one_presentation_price = F(".62567") + 2*d0*(tlo/3 - 4*physical_guard + F(".0974"))
+    positive("fourth moment for one physical presentation", one_presentation_price - F("1.028014"))
+    positive("row count after the two fixed amplitude debits", F(".000014") - 13*eta)
+    tangent_a = 1 + 6*g0lo - 4*g1hi
+    tangent_b = 1 + 2*g1hi
+    positive("cutoff decreases with p", tangent_a*(3*vlo + 2*d0) - 2*d1*tangent_b)
+    cutoff_max = 1 + d1*(1-p0*tangent_a)/(3*vlo + 2*d1*(1-p0*tangent_b))
+    positive("upper cutoff for the short inverse alone", F("1.12891") - cutoff_max)
+    positive("sharper short inverse lower length", r_lo - cutoff_max - 3*physical_guard - F(".09755"))
+    positive("eighteenth moment after count and witness debits",
+             d0*(9*F(".09755")-F(".877245")) - F(".00029") - 28*eta)
+    column_width = 9*F(".0987")
+    positive("complete ninth-power column after divisor extraction",
+             F(".5") - (column_width-F(".3884")))
+    positive("large square-root threshold suffices", 2*F(".1942") - (column_width-F(".5")))
+    for nu in (F(0), F(1, 6)):
+        row = 1-6*nu
+        sieve = max(row, F(1, 2), 5*row/6 + F(1, 6), row/3 + F(5, 12))
+        if nu + sieve > 1:
+            raise ValueError("all-element short column exceeds the unit moment price")
     positive("uniform lower anchor interior", blo-left)
     positive("uniform upper anchor interior", top-bhi-2*delta)
     positive("normal ordinary interval", ordinary_raw-natM)

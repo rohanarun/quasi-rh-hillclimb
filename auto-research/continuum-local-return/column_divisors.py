@@ -72,6 +72,11 @@ def divisor_identities():
                 2 * cubic_residue + 6 * sixth_power)
     require("ramification in the combined row character",
             {(2 * i + 3 * j) % 6 for i in range(3) for j in range(2)} == set(range(6)))
+    for i, ibar, j, jbar in product(range(6), repeat=4):
+        # Valuations on the two primes over a split rational prime.
+        common = 2 * int((i-j) % 6 != 0 and (ibar-jbar) % 6 != 0)
+        upper = 2 * (min(i, ibar) + min(j, jbar) + min(i, jbar) + min(ibar, j))
+        require("conjugate conductor comparison", common <= upper)
     print("OK local allocations, square parts, common divisors and conductor valuations")
 
 
@@ -155,6 +160,31 @@ def exponent_checks():
     require("intersection with sparse pairs",
             1 - F("1.8501072") / 2 + frequency_count + degree == F(".7204464"))
     print("OK all-frequency and prime-frequency graph bounds and the removed intersection")
+
+    rational_content = F(".2401")
+    min_gain = F(".425") * F(".49995")
+    remaining_rate = F(7, 6) - 2*min_gain
+    rational_count = rational_content + remaining_rate * (1 - 2*rational_content)
+    require("decreasing rational-content count", 2*remaining_rate > 1)
+    require("rational divisor cutoff",
+            rational_count == F(3753842549, 6000000000) and
+            rational_count + 2*min_gain*mesh < F(".62567") - F("1e-7"))
+    require("prescribed rational divisors", remaining_rate * (1 - 2*F(".079")) +
+            2*min_gain*mesh < F(".62567") - F("1e-7"))
+    require("solitary split primes of the physical row",
+            1 - 2*rational_content - 2*F("1e-5") == F(".51978"))
+    require("solitary split primes of the paired character",
+            F("1.8501072") - 4*gamma - 2*kappa == F("1.85009912") > F("1.8500991"))
+    line_price = 1 - hecke_boundary / 2 + (hecke_boundary-1)*F("1.8501072")/2
+    line_degree = F(".5538")
+    require("inert prime sums on the enlarged graph",
+            line_price == F(".4461652613456") and line_price + line_degree == F(".9999652613456") < 1)
+    require("intersection count on a rational direction",
+            max((dual_top/2 + single_primes/2)/2, hecke_radical/2 + cost/2,
+                dual_top/12 + 5*low_radical/12) < F(".232"))
+    require("intersection on rational directions and the enlarged graph",
+            1 - F("1.8501072")/2 + F(".232") + line_degree == F(".8607464"))
+    print("OK rational divisors, conjugate pairs and restriction to rational primes")
 
     s = F(1537, 1625)
     d = (F(463, 250) + s) / 2

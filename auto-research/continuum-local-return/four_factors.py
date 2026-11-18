@@ -8,6 +8,35 @@ def positive(name, x):
     print(name, "OK")
 
 
+def power_component_margins(name, smax, xmax, price, cutoff, square, cube, sixth):
+    # The buffered count costs 8/3 + 5b/2 - 10 sqrt(b/6) above the floor.
+    gap = F(8, 3) + 5*cutoff/2 - price
+    positive(name+" density square has positive left side", gap)
+    positive(name+" buffered density margin", 100*cutoff/6-gap**2)
+    positive(name+" floor margin", price-(1+cutoff/50))
+    gauss = max(xmax, 2*smax/3)
+    square_price = max((1+square)/2, F(2, 3)+smax/3+2*square/3,
+                       F(5, 6)+gauss/3+5*square/6)
+    cube_price = max(F(2, 3)-cutoff/3+2*cube/3,
+                     F(5, 6)+max(xmax/2-cutoff/6, smax/6)+5*cube/6)
+    sixth_price = F(5, 6)*(1+sixth)+max(0, xmax-2*cutoff/3)
+    for component, bound in (("square", square_price), ("cube", cube_price),
+                             ("sixth-power", sixth_price)):
+        positive(name+" "+component+" component margin", price-bound)
+
+
+def powerful_margins(name, smax, xmax, price, singleton):
+    # singleton bounds the log norm of the product of primes of valuation one.
+    gauss = max(xmax, 2*smax/3)
+    bounds = (
+        ("large residue conductor", (1+smax+singleton)/2),
+        ("intermediate residue conductor", F(5, 6)+smax/6+singleton),
+        ("small residue conductor", F(5, 6)+gauss/3+singleton/6),
+    )
+    for region, bound in bounds:
+        positive(name+" valuation-one support, "+region, price-bound)
+
+
 def verify():
     d0, d1, p0, p1 = map(F, (".425", ".4267", ".49995", ".5"))
     g0lo, g0hi = F(".05805911"), F(".05805913")
@@ -106,6 +135,24 @@ def verify():
         small_core = F(5, 6)*(1+core)+max(0, xmax-2*cutoff/3)
         positive(name+" complete Poisson small-core margin", price-small_core-reserve)
     positive("all column exponents below two", 2-2*(bhi+delta))
+    power_component_margins("mixed", thi+2*delta, xmax, F(553, 500),
+                            F(26, 25), F(1, 40), F(2, 25), F(1, 4))
+    power_component_margins("two-inverse", 2*xmax, xmax, F(63, 50),
+                            F(129, 100), F(1, 10), F(1, 5), F(51, 100))
+    positive("longest single factor", F(".753")-xmax)
+    positive("mixed product length", F("1.13")-(thi+2*delta))
+    positive("two-inverse product length", F("1.5055")-2*xmax)
+    powerful_margins("mixed", thi+2*delta, xmax, F(553, 500), F(2, 25))
+    powerful_margins("two-inverse", 2*xmax, xmax, F(63, 50), F(7, 500))
+    # The direct count reaches .51. The character sieve starts at .50.
+    inverse_price = F(63, 50)
+    allowance = inverse_price - F(5, 6) - F(1, 15000)
+    shortest = F("1.29")
+    positive("overlap with direct sixth-core count", F(".51")-F(".50"))
+    positive("ordinary and sextic common term", allowance-(2*xmax/3-F(".50")/6))
+    positive("sixth-core norm term", shortest-8*allowance/3)
+    positive("mixed-power sextic term", shortest-3*allowance)
+    positive("ordinary sieve beyond the norm cutoff", allowance+shortest/4-F(".749"))
     print("two-inverse price lies between 63/50 + 1/250 and 32/25")
 
 

@@ -49,6 +49,9 @@ python3 -B auto-research/contact-long-inverse/replay.py \
   <(curl -fsSL 'https://raw.githubusercontent.com/GTimG/QuasiRiemannTracker/8b1a0167c8e324099884152181e3fb2206510e88/submissions/2026-11-01-closest-fraction-contact/src/Candidate/Local/Qrh/PositiveGap/Return/Tuning/Data.lean')
 ```
 
+The certificate uses explicit runtime checks rather than Python `assert`
+statements, so the same checks also run under `python3 -O -B`.
+
 The replay passes all 75 inherited admission guards, 12 local inequalities, four lower conductor covers, the top complement and the corrected contact. At $(\delta,p)=(0.42608,1/2)$ the uncorrected top row fails. A separate in-memory Lean 4.34.1 run recomputed 160 successful Bernstein sign checks directly over rational numbers and checked the quadratic discriminant, the negative control and the exact comparison to $\theta_*$. That replay checks finite arithmetic. The open estimate and its end-to-end analytic integration are still required before any new zero-free bound or tracker submission.
 
 Prepared with OpenAI Codex assistance. The underlying return and source faces are Joseph Bebel's, building on the contributors credited in #103. The arithmetic helper and earlier slope targets are Jacob Sussman's.

@@ -146,6 +146,16 @@ def exponent_checks():
             frozen_count + strict_saving < length_low / 3)
     print("OK powerful frequencies and exact-valuation-one product through U^.0748, all dual norms through U^.46252")
 
+    hecke_boundary, degree = F(".873346"), F(".1825")
+    sparse_pair_cost = 1 - hecke_boundary + (2 * hecke_boundary - 1) * F(".92506758") + degree
+    require("radial sparse pair graph", sparse_pair_cost == F(".99989456144536") < F(".999895"))
+    frequency_count = F(".463")
+    require("union of earlier frequency sets",
+            max(hecke_radical + cost, (dual_top + single_primes) / 2, low_frequency) < frequency_count)
+    require("intersection with sparse pairs",
+            1 - F("1.8501072") / 2 + frequency_count + degree == F(".7204464"))
+    print("OK all-frequency and prime-frequency graph bounds and the removed intersection")
+
     s = F(1537, 1625)
     d = (F(463, 250) + s) / 2
     maxima = (F(1, 2) + s / 2, d / 2 + s / 4,

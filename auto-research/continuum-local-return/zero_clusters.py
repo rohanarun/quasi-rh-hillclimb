@@ -1,7 +1,7 @@
 """Rational guards for the reflected strip, zero disks and ordinary witness."""
 
 from fractions import Fraction as F
-from math import factorial
+from math import factorial, prod
 
 
 def require(name, condition):
@@ -69,5 +69,73 @@ def verify():
             (F(".198")/16-F(".0021")-F(".001"))*F(".01") > F(".000070"))
 
 
+def selected_zero_gaussian():
+    # Lengths in this check are divided by d. The Gaussian parameter is k / d.
+    k, c = F(".001"), F("1e-200")
+    d_max, y = F(".01"), F(".94")
+    shift = k / 6400
+    gap = F(".025")
+    exceptional_exponent = 1 - F(".425") * F(".91") + F(".002")
+    require("unmarked inverse gap at the fixed smooth dyads",
+            exceptional_exponent == F(".61525") < F(".62567") - F("1e-7"))
+    require("local rectangle fits the zero-removal disk",
+            (shift + F(1, 4)) ** 2 + F(1, 8) ** 2 < F(3, 8) ** 2)
+    require("quantitative propagation of the analytic logarithm",
+            23 * c * 43 ** 16 < (shift / 100) ** 16)
+    require("polynomial and Gaussian cost on the near-right line",
+            c * shift + c*c / (2 * k) + c < shift / 1000)
+    require("truncation outside the local height interval",
+            y * shift + k * shift ** 2 - k / 128 + shift / 1000 < -2 * shift)
+    require("local shifted contour and horizontal joins",
+            -y * shift + k * shift ** 2 + shift / 100 < -shift / 2 and
+            y * shift + k * shift ** 2 - k / 64 + shift / 100 < -shift / 2)
+    require("Gaussian loss on complementary inverse lengths",
+            gap ** 2 / (8 * k) - F(".001") - c*c / k > 2 * shift)
+    require("Gaussian decay beyond the fixed range of dyads", F(".98") ** 2 * 50 / 8 > 6)
+    require("fixed inverse saving exceeds residue threshold", F(".001") > 2 * shift * d_max)
+    require("Jensen upper count and annular remainder",
+            4 * F("2.01") < 9 and F(9, 40) < F(1, 4))
+    require("logarithmic derivative bound in the buffered disk",
+            F(7, 4) - F("1.3") > F(1, 3) and 1 + 315 + 3*45 < 1000)
+    require("vertical separation in the shallow annulus",
+            F(".025") ** 2 - F(".012") ** 2 > F(".02") ** 2)
+    require("separated ordinates on one side of the selected zero",
+            F(".51") * F("3.06") + F(".01") < 2 and
+            F(18, 1000) < F(1, 4) and 4 - F("1.02") ** 2 > 1)
+
+
+def filtered_detector():
+    d = F("1e-10")
+    slot = F("1e-6")
+    b_low, b_high = F("2.25"), F("2.26")
+    reserve = F("5e-8")
+    e_upper = F(11, 4)  # Bound the exponential series from its third-order term by a geometric series.
+    require("Gamma shift for the filtered detector", -3 + b_high * (F(5, 4) - F(".65")) < -1)
+    require("fixed squared debits in the four-factor count",
+            4 * F("4.3") * d < reserve and 4 * (F("4.3") + F(".20")) * d < reserve)
+    require("single-zero filter at the critical band",
+            (5 + F(1, 4)) * slot < 3 * slot * b_low and b_high + 5 * slot < F("2.261"))
+    require("multiplicity filter beats the restored powers",
+            e_upper ** 12 * 3 * slot < 1 and F(12, 5) - F("2.261") > F(1, 25))
+    require("tight disk growth and suppression",
+            2 * b_high + F("1.02") < F("5.6") and F("5.6") + F(2, 4) - F(200, 20) < -3)
+    require("complex packet diameter", F("1.02") ** 2 + 1 < F("1.5") ** 2)
+    min_degree, variation = F(".29"), F(".20")
+    require("interpolation factorial decay",
+            6 * slot * F("1.5") * e_upper ** 10 < min_degree)
+    require("irregular detector decay after normalizing weights",
+            9 * min_degree - variation - F("2.261") == F(".149"))
+    require("alternating interpolation weights",
+            F(1, 4) + F(".08") < F(1, 2))
+    # Vertical nodes with a common phase have a common complex factor in their denominators.
+    nodes = [0, 1, 3, 7, 12]
+    weights = [F(1, prod(x - y for y in nodes if y != x)) for x in nodes]
+    require("divided differences for nodes with equal detector phase",
+            all(sum(w * x**j for w, x in zip(weights, nodes)) == int(j == len(nodes) - 1)
+                for j in range(len(nodes))))
+
+
 if __name__ == "__main__":
     verify()
+    filtered_detector()
+    selected_zero_gaussian()

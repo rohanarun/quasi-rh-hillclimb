@@ -14,8 +14,11 @@ lake env bash -euo pipefail -s -- "$source_dir" "$output_dir" "$imports" <<'REPL
   out=$2
   export LEAN_PATH="$out:${3:+$3:}${LEAN_PATH:-}"
   modules=(TargetGeometry AsymmetricTerminal AsymmetricStep AsymmetricPacked AsymmetricRayColumn
-           AsymmetricRayGroup AsymmetricRayShape AsymmetricRayKernel AsymmetricRayLabel AsymmetricRayFirst AsymmetricRayException
-           AsymmetricPhysicalReturn)
+           AsymmetricRayGroup AsymmetricRayShape AsymmetricRayKernel AsymmetricRayLabel
+           AsymmetricRayFirst AsymmetricRayException AsymmetricPhysicalReturn
+           AsymmetricRayDiagonal AsymmetricRayPaid AsymmetricRayPaidSource AsymmetricRayPaidForward
+           AsymmetricRayGroupedSide AsymmetricRayGroupedSideUniform
+           AsymmetricRaySplitDefs AsymmetricRaySplitTwin AsymmetricRaySplitGeometry)
   for module in "${modules[@]}"; do
     lean -R "$src" -o "$out/$module.olean" "$src/$module.lean" | tee "$out/$module.log"
     python3 - "$src/$module.lean" "$out/$module.log" <<'PY'

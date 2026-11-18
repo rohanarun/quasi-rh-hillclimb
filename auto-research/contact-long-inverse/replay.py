@@ -11,6 +11,12 @@ import re
 import sys
 
 
+def require(condition, label):
+    """Keep certificate checks active when Python optimization is enabled."""
+    if not condition:
+        raise AssertionError(label)
+
+
 def read_pinned(path, digest):
     data = Path(path).read_bytes()
     if sha256(data).hexdigest() != digest:
@@ -50,45 +56,61 @@ def check(replay, incumbent):
     cut = height-F(1, 20000)
     signal = x/2+(y-x)/12
     q = 777-852*theta
-    assert q > 0 and q*q > 1081
-    assert theta < 1-incumbent["c"]
-    assert incumbent["CB"] >= k["CB"] and incumbent["CL"] <= k["CL"]
-    assert incumbent["PB"] >= k["PB"] and incumbent["PL"] <= k["PL"]
-    assert incumbent["ext"] <= k["ext"] and incumbent["reserve"] <= k["reserve"]
-    assert F(".873") < theta < F(7, 8)
-    assert F(".793") < height < F(".813")
-    assert F(".458") < y < F(".473") and F(".1672") < ell < F(".175")
-    assert y/2-height*(F(17, 50)-F(1, 6))-F(1, 50) > F(7, 100)
-    assert F(4, 25)*x-F(3, 20)-F(51, 100)*y+F(67, 100)*dp-F(3, 20)*ell <= signal-F(1, 10000)
-    assert F(1, 6) < ell < F(1, 5) and ell < x < y < F(1, 2)
-    assert x+y == 1-ell and 2*x-y-ell > 0 and 1+3*ell-2*(x+y) < 0
-    assert theta-(4+y-x)/6 == signal
-    assert 0 <= k["numCap"] < F(1, 5) and 0 < k["PB"] <= 1
-    assert 2 <= k["PL"] <= F(9, 2)
-    assert F(3, 4) < dm < cut < dp < 1 and y < dm < 2*y
-    assert 0 <= 1-k["PB"]/2-(F(9, 2)-k["PL"]/2)*k["numCap"]
-    assert ell/dp > F(1, 5) and F(7, 10) <= k["kappa"] <= k["naturalK"]/6
+    require(q > 0 and q*q > 1081, "exact comparison to theta star")
+    require(theta < 1-incumbent["c"], "strict improvement over incumbent theta")
+    require(incumbent["CB"] >= k["CB"] and incumbent["CL"] <= k["CL"],
+            "count source weakening")
+    require(incumbent["PB"] >= k["PB"] and incumbent["PL"] <= k["PL"],
+            "physical source weakening")
+    require(incumbent["ext"] <= k["ext"] and incumbent["reserve"] <= k["reserve"],
+            "extension and reserve weakening")
+    require(F(".873") < theta < F(7, 8), "theta range")
+    require(F(".793") < height < F(".813"), "height range")
+    require(F(".458") < y < F(".473") and F(".1672") < ell < F(".175"),
+            "slot geometry ranges")
+    require(y/2-height*(F(17, 50)-F(1, 6))-F(1, 50) > F(7, 100),
+            "small-row margin")
+    require(F(4, 25)*x-F(3, 20)-F(51, 100)*y+F(67, 100)*dp-F(3, 20)*ell <=
+            signal-F(1, 10000), "physical-source margin")
+    require(F(1, 6) < ell < F(1, 5) and ell < x < y < F(1, 2),
+            "ordered geometry")
+    require(x+y == 1-ell and 2*x-y-ell > 0 and 1+3*ell-2*(x+y) < 0,
+            "geometry identities")
+    require(theta-(4+y-x)/6 == signal, "Mellin identity")
+    require(0 <= k["numCap"] < F(1, 5) and 0 < k["PB"] <= 1,
+            "capacity and physical B range")
+    require(2 <= k["PL"] <= F(9, 2), "physical Lambda range")
+    require(F(3, 4) < dm < cut < dp < 1 and y < dm < 2*y,
+            "conductor ordering")
+    require(0 <= 1-k["PB"]/2-(F(9, 2)-k["PL"]/2)*k["numCap"],
+            "capacity compatibility")
+    require(ell/dp > F(1, 5) and F(7, 10) <= k["kappa"] <= k["naturalK"]/6,
+            "supply and kappa ranges")
     windows = replay["WINDOWS"]
-    assert all(replay["window_ok"](k, window)[0] for window in windows)
+    require(all(replay["window_ok"](k, window)[0] for window in windows),
+            "75 inherited admission guards")
 
     dlo, dhi, plo, half = F(".417"), F(".435"), F(".499"), F(1, 2)
     local = (dlo, dhi, plo, half)
     full = (F(0), F(3, 4), F(0), half)
-    assert any(branch == "C" and lo <= dlo <= dhi <= hi and floor <= plo
-               for branch, lo, hi, floor in windows)
+    require(any(branch == "C" and lo <= dlo <= dhi <= hi and floor <= plo
+                for branch, lo, hi, floor in windows), "local rectangle admission")
     eta, step, gain = F(1, 64000), F(1, 8750), F(1, 15000)
     lower_band, upper_band = F(1, 24000), F(1, 8500)
     mesh = F(1, 10**7)
-    assert step+mesh < upper_band
+    require(step+mesh < upper_band, "long-band upper buffer")
     b = replay["branch_polys"](k, "C")
     j, n, den, a, dj = (b[name] for name in ("J", "N", "D", "A", "DJ"))
 
     # Absolute enclosure of the two crossings used in the factorization note.
     for numerator, lo, hi in ((b["RN"], F(".750"), F(".756")),
                               (b["MN"], F(".375"), F(".378"))):
-        assert replay["bern_pos"](sub(numerator, scale(lo, dj)), *local)
-        assert replay["bern_pos"](sub(scale(hi, dj), numerator), *local)
-    assert replay["bern_pos"](sub(b["T"], scale(F(22503, 20000), j)), *local)
+        require(replay["bern_pos"](sub(numerator, scale(lo, dj)), *local),
+                f"crossing lower enclosure {lo}")
+        require(replay["bern_pos"](sub(scale(hi, dj), numerator), *local),
+                f"crossing upper enclosure {hi}")
+    require(replay["bern_pos"](sub(b["T"], scale(F(22503, 20000), j)), *local),
+            "cutoff absolute lower enclosure")
     delta, p = replay["X"], replay["Y"]
     one_minus_p = sub(const(1), p)
     v = replay["V"]()
@@ -114,10 +136,10 @@ def check(replay, incumbent):
         "long band lies above 1": sub(b["T"], scale(1+lower_band, j)),
     }
     for label, poly in local_checks.items():
-        assert replay["bern_pos"](poly, *local), label
+        require(replay["bern_pos"](poly, *local), label)
 
     def check_cover(name, cover, boxes):
-        assert all(cover.cover(30, *box) for box in boxes), name
+        require(all(cover.cover(30, *box) for box in boxes), name)
         print(f"{name}: passed ({cover.nodes} nodes, depth {cover.maxdepth})")
 
     for edge in ("oldSmall", "oldSwitch", "newSwitch"):
@@ -139,9 +161,10 @@ def check(replay, incumbent):
     uncorrected = replay["row"](k, d, capacity, j, n)
     corrected = replay["row"](k, d, capacity, j, count)
     witness = (F(".42608"), half)
-    assert replay["ev"](uncorrected, *witness) < 0 < replay["ev"](corrected, *witness)
+    require(replay["ev"](uncorrected, *witness) < 0 < replay["ev"](corrected, *witness),
+            "corrected and uncorrected witness signs")
     positive, quotient_negative, _, _ = replay["contact_ok"](corrected, dlo, dhi, plo)
-    assert positive and quotient_negative
+    require(positive and quotient_negative, "corrected contact certificate")
     print("top within local window: positive quadratic and negative quotient")
     print("75 inherited guards, 12 local inequalities, geometry and negative control passed")
     print(f"theta = {theta} ({float(theta):.5f}); open long inverse exponent saving = {gain}")

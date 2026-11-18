@@ -14,7 +14,7 @@ $$
  c\,P^{\sigma_0}\frac{\log U}{(1+\log P)^2}.                                           \tag{1}
 $$
 
-Here $C$ is fixed by the original support and $c>0$ is fixed independently of $U$. The sum may be taken over the common full good-prime set $P<N\mathfrak p\le\min(2P,CX)$, with summand $\psi_u(\mathfrak p)(N\mathfrak p/P)^{-s}$ for one $s$ satisfying $\sigma_0\le\Re s\le2$. The imaginary part is the original inverse height plus a common Fourier shift inside its allotted fraction of the buffered height. The prime span $\log_U P$ may tend to zero. Nevertheless (1) gives squarefree composite polynomials of a prescribed positive width, up to rounding by one prime width, as detailed below. Their coefficients satisfy a uniform absolute bound; a mixed moment with these composite polynomials remains a further arithmetic input.
+Here $C$ is fixed by the original support and $c>0$ is fixed independently of $U$. The sum may be taken over the common full good-prime set $P<N\mathfrak p\le\min(2P,CX)$, with summand $\psi_u(\mathfrak p)(N\mathfrak p/P)^{-s}$ for one $s$ satisfying $\sigma_0\le\Re s\le2$. The imaginary part is the original inverse height plus a common Fourier shift inside its allotted fraction of the buffered height. The prime span $\log_U P$ may tend to zero. Nevertheless (1) gives squarefree composite polynomials of a prescribed positive width, up to rounding by one prime width, as detailed below. Their coefficients satisfy a uniform absolute bound. A mixed moment for a genuine inverse and one such polynomial gives an improved complete eighteenth moment at the physical length. [Mixed moment](inverse-composite-mark.md) · [Complete moment](short-inverse-marked-density.md)
 
 ## Truncated Euler product
 

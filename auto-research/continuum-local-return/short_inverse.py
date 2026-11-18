@@ -165,6 +165,31 @@ def verify():
     check("small rational norm cores and sixth-power sum",
           Q(4, 7) > Q(1, 6) and
           Q(1, 6) + Q(5, 12) * Q(".01") + 3 * high_column / 4 < 1)
+    y_high = Q("1.12903") / 3 + Q(".00001")
+    z_high = Q(".09862")
+    y_low = Q("1.12796") / 3 - 4 * Q(".00001")
+    check("the genuine ordinary and short inverse at physical lengths",
+          y_high + 5 * z_high < 1 and y_high + 4 * z_high < Q(5, 6) and
+          2 * (y_low + 5 * Q(".0974")) > 1)
+    natural = Q(50, 69)
+    left_r = 1 - natural / 2
+    cross_r = Q(181, 276)
+    check("two marked moments cover the entire natural range",
+          left_r == Q(44, 69) and left_r < cross_r < natural and
+          (1 + 4 * cross_r) / 5 == natural == Q(41, 24) - 3 * cross_r / 2 and
+          2 * (1 - natural) > Q(1, 6) and natural < Q(5, 6))
+    # For B <= max(1/8,2(L-r)), both affine upper bounds for each
+    # native condition attain their maximum at one of the two endpoints.
+    check("native distinct-prime widths for fixed positive prime length",
+          max(natural + Q(1, 4), 4 * natural - 3 * left_r) < 1 and
+          max(2 * natural + 1, 16 * natural - 14 * left_r) < 3)
+    cutoff = Q(1, 200)
+    left = 15 * natural + 10 - 6 * Q(5, 7) * cutoff
+    check("unmarked density pays for lifts outside the primitive range",
+          natural > Q(2, 3) and left > 0 and left**2 < 600 * natural)
+    check("complete diagonal-order eighteenth moment through 50/621",
+          natural / 9 == Q(50, 621) and natural / (9 * (1 - 6 * cutoff)) < Q(1, 8) and
+          Q(3, 4) * natural * 6 <= 5 and Q(1, 6) + Q('.01') + Q(3, 4) * natural < 1)
     for e in range(1, 12):
         for i in range(13):
             for j in range(13):

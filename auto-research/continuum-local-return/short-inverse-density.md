@@ -7,7 +7,7 @@ $$
  (\sqrt{15L}-\sqrt{10})^2/6&L>2/3.
  \end{cases}                                                     \tag{1}
 $$
-In particular the twelfth moment of the genuine short inverse at $z<.0987$ is $O(U^{1+\epsilon})$, and its eighteenth moment is $O(U^{1.03970+\epsilon})$. The remaining target is $1.00029$. Estimates stated for all elements here exploit the actual inverse coefficients and conductor dependence.
+In particular the twelfth moment of the genuine short inverse at $z<.0987$ is $O(U^{1+\epsilon})$, and its eighteenth moment is $O(U^{1.03970+\epsilon})$. The single physical Möbius polynomial admits a sharper eighteenth moment using a prime sum forced by that polynomial. The remaining target is $1.00029$. [Marked density estimate](short-inverse-marked-density.md) · [Diagonal-order range](short-inverse-natural-range.md)
 
 ### The unmarked dynamic count
 

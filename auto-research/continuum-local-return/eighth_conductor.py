@@ -88,3 +88,7 @@ if __name__ == "__main__":
           "short reflected physical count below target")
     obstruction = exponent(tuple(map(F, (2, 2, 1, 1))))
     check(obstruction == F(19, 12) > price, "uncertified core at conductor exponent 2")
+    for length, expected in [(F(6, 5), F(4, 3)), (F(8, 5), F(5, 3))]:
+        sieve = max(1, length, F(5, 6) + length/3, F(1, 3) + 5*length/6)
+        check(sieve == expected, f"ordinary sieve at column length exponent {length}")
+    check(1 - 4*value_floor == F(".65936"), "ordinary fourth-moment count at the spike")

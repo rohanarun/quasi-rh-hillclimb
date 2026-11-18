@@ -161,18 +161,21 @@ def exponent_checks():
             1 - F("1.8501072") / 2 + frequency_count + degree == F(".7204464"))
     print("OK all-frequency and prime-frequency graph bounds and the removed intersection")
 
-    rational_content = F(".2401")
+    rational_content = F(".21004")
     min_gain = F(".425") * F(".49995")
-    remaining_rate = F(7, 6) - 2*min_gain
-    rational_count = rational_content + remaining_rate * (1 - 2*rational_content)
-    require("decreasing rational-content count", 2*remaining_rate > 1)
-    require("rational divisor cutoff",
-            rational_count == F(3753842549, 6000000000) and
-            rational_count + 2*min_gain*mesh < F(".62567") - F("1e-7"))
-    require("prescribed rational divisors", remaining_rate * (1 - 2*F(".079")) +
-            2*min_gain*mesh < F(".62567") - F("1e-7"))
+    remaining_rate = 1 - 4 * min_gain / 3
+    mesh_loss = 10 * min_gain * mesh / 3
+    rational_count = rational_content + remaining_rate * (1 - 2 * rational_content) + mesh_loss
+    require("decreasing rational-content count", 2 * remaining_rate > 1)
+    require("rational divisor cutoff from the complete moment",
+            rational_count == F(50053261208661, 80000000000000) and
+            rational_count < F(".625665766") < F(".62567") - F("1e-7"))
+    require("large rational divisors and bounded residual shells",
+            max(1 - F(".4"), F(1, 2)) < F(".62567") - F("1e-7"))
+    require("prescribed rational divisors", remaining_rate * (1 - 2 * F(".079")) +
+            mesh_loss < F(".62567") - F("1e-7"))
     require("solitary split primes of the physical row",
-            1 - 2*rational_content - 2*F("1e-5") == F(".51978"))
+            1 - 2 * rational_content - 2 * F("1e-5") == F(".57990"))
     require("solitary split primes of the paired character",
             F("1.8501072") - 4*gamma - 2*kappa == F("1.85009912") > F("1.8500991"))
     line_price = 1 - hecke_boundary / 2 + (hecke_boundary-1)*F("1.8501072")/2

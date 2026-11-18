@@ -22,10 +22,10 @@ def check_joint_density(width, opposite, target):
           curvature < -Q(1, 2) and value + slope**2 < target)
 
 
-def check_rational_moment(width, order, opposite, target):
+def check_rational_moment(width, order, opposite, target, correction_slope=Q(1)):
     count_weight = 1 - Q(1, 2 * order)
     residual = width - opposite
-    correction = max(0, opposite - Q(1, 2 * order))
+    correction = max(0, correction_slope * opposite - Q(1, 2 * order))
     allowance = target + opposite / 2 - correction
     # Square the positive sides of the inequality for count_weight * J.
     left = 15 * residual + 10 * count_weight - 6 * allowance
@@ -158,6 +158,10 @@ def verify():
         (6, ".075", "0"), (6, ".08749", "0"), (6, ".101", "0"),
     ):
         check_rational_moment(high_column, order, Q(opposite), Q(target))
+    # The cubic large sieve after rational Poisson gives B*K^(-t)+K^(2t/3).
+    # Its correction in the Holder bound has slope 5/6.
+    for opposite, target in ((".06454", ".00029"), (".06490", "0"), (".08749", "0")):
+        check_rational_moment(high_column, 9, Q(opposite), Q(target), correction_slope=Q(5, 6))
     check("small rational norm cores and sixth-power sum",
           Q(4, 7) > Q(1, 6) and
           Q(1, 6) + Q(5, 12) * Q(".01") + 3 * high_column / 4 < 1)

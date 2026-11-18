@@ -38,6 +38,56 @@ def powerful_margins(name, smax, xmax, price, singleton):
         positive(name+" valuation-one support, "+region, price-bound)
 
 
+def denominator_packet_margins(eta):
+    depth = F("6.3e-8")
+    maximum = F("1.01") * depth
+    conductor = F(".815325")
+    mass = 3 * eta / 4
+    narrow = F(".003") / depth
+    broad = F("8e-8")
+    for name, coefficient, height in [
+        ("narrow", narrow, 30 * depth),
+        ("joint inverse", broad, F("1.2")),
+    ]:
+        positive(name+" zero-free left edge", depth / conductor - coefficient * depth**2 - mass)
+        positive(name+" horizontal joins", coefficient * (height**2 - depth**2) - mass)
+        positive(name+" original vertical tails", coefficient * height**2 - mass)
+    positive("narrow denominator ordinate", F("4.2e-6") - 66 * depth)
+    positive("joint inverse ordinate", F("2.401") - F("2.4") - 6 * depth)
+    for shift, gap in [(F(".10"), F("8e-7")), (F(".28"), F("3e-7"))]:
+        positive("joint inverse length savings", shift * gap - broad * shift**2 - mass)
+    length = F("1.12906")
+    positive("signed calibration at the worst zero depth", F("1.06") * eta - F("1.65") * maximum)
+    positive("short arc at the selected center", F(".72") * eta - length * maximum)
+    gain = F("1.381") * eta
+    mesh = F("1e-6") * eta
+    debit = (2 / F(".815") + 3 * length / 2) * mesh + broad * maximum**2
+    positive("signed estimate on the actual denominator", gain / (2 * length * conductor) - debit - mass)
+    positive("solitary split prime restriction", F(".425") * F("2e-6") / 2 - 2 * eta)
+    radius, coefficient = F(".000025"), F(1700)
+    height, shift, y = radius / 4, F("6.5e-8"), F(".94")
+    positive("cluster contour right of selected depth", shift - maximum)
+    positive("cluster rectangle inside logarithm bound",
+             F(3, 8)**2 - (F(1, 4) + shift / radius)**2 - F(1, 4)**2)
+    positive("cluster fits the narrow physical window", F(".000030") - radius - 66 * depth)
+    positive("upper bound after the three-circles step",
+             (shift / (4300 * radius))**16 - F(23, 10**200))
+    for name, cost in [
+        ("outer tail", y * shift + coefficient * shift**2 - F(".99") * coefficient * height**2),
+        ("horizontal joins", y * shift + coefficient * (shift**2 - height**2) + shift/100),
+        ("left segment", -y * shift + coefficient * shift**2 + shift/100),
+    ]:
+        positive("cluster "+name, -cost - F("4.6e-9"))
+    positive("cluster inverse saddle past the saved window",
+             F(".03")**2 / (8 * coefficient) - F(".97") * maximum - F("4.4e-9"))
+    positive("cluster saddle monotonicity", F(".03") / (4 * coefficient) - maximum)
+    slope = (1 + F(".425")) / 2 - F("2e-6")
+    positive("Euler product inverse amplitude margin", F(".0974") * F("2e-6") - F("1.5") * eta)
+    positive("tiny prime dyads cost a subpower in the Euler product", 1 - 3 * (1-slope))
+    positive("polylogarithmic prime count on physical rows",
+             F(".6254") - (F(7, 6) - (2 * slope - 1) - 1/F("8.6")))
+
+
 def verify():
     d0, d1, p0, p1 = map(F, (".425", ".4267", ".49995", ".5"))
     g0lo, g0hi = F(".05805911"), F(".05805913")
@@ -56,6 +106,7 @@ def verify():
     cmax = p1*(1+2*g0hi)+khi*bhi
     delta = F(1, 10**6)  # half-open width used in the factor count
     eta = F(1, 10**7)  # target count gain
+    denominator_packet_margins(eta)
     reserve = F(1, 2*10**7)  # aggregate of freely chosen losses
     left, top = F(1467, 2000), F(311, 400)
     B, lam, cap = 1-F(1,10**12), 2+F(1,10**11), F(3,20)-F(1,10**7)

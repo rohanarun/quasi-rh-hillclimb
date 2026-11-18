@@ -8,7 +8,7 @@ $$
 $$
 apart from the negligible-for-this-price small primitive row class described below. In particular, a smooth deletion equal to one for $Nk\ge U^{.1000}$ and zero for $Nk\le U^{.1000}/2$ has total price less than $U^{1.00029+\epsilon}$; with $.101$ this same sector has price $O(U^{1+\epsilon})$. This bound sums both opposite orientations with their actual coefficients. It permits the separate fixed same-oriented gcd and a cutoff on the total rational gcd $Ng\,Nk$. Arbitrary ideal-prime color selectors can destroy the ordinary character sum.
 
-A [moment over rational norms](short-inverse-norm-moment.md) lowers the two cutoffs to $.06929$ and $.06964$.
+A [moment over rational norms](short-inverse-norm-moment.md) with a rational Poisson estimate lowers the two cutoffs to $.06454$ and $.06490$.
 
 ## Isolating the arithmetic character
 

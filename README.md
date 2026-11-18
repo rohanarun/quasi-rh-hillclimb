@@ -18,7 +18,7 @@ The 5 October 2026 companion preprint in the same repository proves 11/12 only, 
 
 ## Progress and Lean verification
 
-**17 November 2026.** Joseph Bebel's merged continuum-contact theorem gives nonvanishing for $\Re(s)>\theta_*$, with the principal pole excluded, where $\theta_*=0.873345856106718576801\ldots$. A Track B proposal prices a target of $0.87334585$ under the preprint's 7/8 theorem. Its finite return passes all 57 cells, assuming a new local detector count. That estimate and its analytic integration remain open. [Tracker #143](https://github.com/GTimG/QuasiRiemannTracker/pull/143) · [Exact calculation and proof obligations](auto-research/proposals/2026-11-17-local-continuum-return.md).
+**18 November 2026.** Joseph Bebel's merged continuum-contact theorem gives nonvanishing for $\Re(s)>\theta_*$, with the principal pole excluded, where $\theta_*=0.873345856106718576801\ldots$. A Track B proposal prices a target of $0.87334585$ under the preprint's 7/8 theorem. Lean reduces the proposed all-moduli bound to a saved count for one rectangle of detector rows. The count remains open. [Tracker #143](https://github.com/GTimG/QuasiRiemannTracker/pull/143) · [Exact calculation and proof obligations](auto-research/proposals/2026-11-17-local-continuum-return.md).
 
 The physical estimate now covers rows with radical norm at most $U^{0.99999}$. On the remaining critical rows, a second detector forces two simultaneous large Möbius sums at specified lengths. Such a surviving row also forces a [local cluster of primitive zeros](auto-research/continuum-local-return/zero-clusters.md). Counting these rows and bounding the joint moment remain open. [Partial estimates and their scope](auto-research/proposals/2026-11-17-local-continuum-return.md).
 

@@ -3,13 +3,18 @@
 from fractions import Fraction as Q
 
 
-DELTA_MIN = Q('.16')
-DELTA_MAX = Q('.50')
-NU_CUTOFF = Q('.0035')
+DELTA_MIN = Q('.15')
+DELTA_MAX = Q('.51')
+NU_CUTOFF = Q('.004')
 CORE_FRACTION = 1 - 6 * NU_CUTOFF
-SMALL_Z = Q('.0945')
-PRIME_CAP = Q('.101')
+SMALL_Z = Q('.094')
+PRIME_CAP = Q('.1012')
+CUTOFF_PRIME = Q('.051')
+LARGE_PRIME = Q('.084')
+RESIDUAL_RATIO = Q('9.4')
+NEEDED_MARK = Q('.0833')
 MESH = Q('.000001')
+AMPLIFICATION = Q(5, 6)
 ROW_FEE = Q('.000001')
 GRID = 50000
 
@@ -51,13 +56,19 @@ def verify(z_upper, excess):
     positive('upper detector cutoff', Q(3, 2) - cutoff(DELTA_MAX))
     positive('cutoff increasing', Q(5, 6) * (1 - length) + excess)
     positive('core exponent pays sixth-power lifts', 1 + excess - DELTA_MAX * length - Q(1, 6))
-    positive('ordinary width stays inside the second condition', Q(5, 6) - Q('.832') - 12 * MESH)
-    positive('second native condition for a single prime', 3 - 2 * Q('.832') - 8 * PRIME_CAP)
-    positive('second native condition for packed prime slots', 3 - (2 * Q('.70') + 16 * (1 - Q('.70')) / (4 - DELTA_MAX)))
-    positive('all actual mark widths below tested total', length - max(PRIME_CAP, 2 * (1 - Q('.70')) / (4 - DELTA_MAX)))
+    positive('at most one prime above the smooth cutoff', 2 * CUTOFF_PRIME - PRIME_CAP)
+    if SMALL_Z / (SMALL_Z - LARGE_PRIME) != RESIDUAL_RATIO:
+        raise ValueError('residual slope ratio')
+    positive('small prime from a residual inverse', CUTOFF_PRIME - (PRIME_CAP - CUTOFF_PRIME))
+    positive('second native condition for a large prime', 3 - 2 * Q('.84') - 8 * PRIME_CAP)
+    positive('second native condition for small packed slots', 3 - (4 - 2 * Q('.70')))
+    ordinary_cap = (Q(5, 6) - 2 * Q(133, 372)) / 4
+    inverse_cap = 2 * (1 - Q('.70')) / 7
+    positive('absorption of a residual amplitude debit',
+             length - RESIDUAL_RATIO * max(NEEDED_MARK + MESH, ordinary_cap, inverse_cap))
 
-    # A grid bounds delta only. The convex combination eliminates the inverse
-    # width in the composite case. The native function is concave in that width.
+    # The composite comparison eliminates r by convex combination. The one
+    # large-prime estimate is concave separately in r and the prime width.
     minimum = Q(1)
     for i in range(int(DELTA_MIN * GRID), int(DELTA_MAX * GRID)):
         dlo, dhi = Q(i, GRID), Q(i + 1, GRID)
@@ -67,24 +78,30 @@ def verify(z_upper, excess):
         if rlo > rhi:
             continue
         positive('lower inverse width', rlo - Q('.70'))
-        positive('upper inverse width', Q('.832') - rhi)
+        positive('upper inverse width', Q('.84') - rhi)
         positive('ordinary width selects the second cap', 2 * (tlo - rhi) - Q(1, 6))
 
         def margin(capacity, charge=0):
             # E - d*(L-capacity) is affine in d with capacity fixed.
             return excess - max(dlo * (length - capacity), dhi * (length - capacity)) - charge
 
+        needed = rhi - rlo
+        positive('maximum needed inverse mark', NEEDED_MARK - needed)
+        # (1-r)/2 - (Y-r) is increasing in r; use opposite bounds for r,Y.
+        positive('small-prime ceiling at the native moment',
+                 (1 - rlo) / 2 - needed - CUTOFF_PRIME - MESH)
         composite = (97 + 180 * tlo) / 372 - 5 * MESH
-        native_packed = rlo + (1 - rlo) / (4 - dlo)
 
-        def native_single(r):
-            return margin(r + PRIME_CAP, max(0, r + 2 * PRIME_CAP - 1) + ROW_FEE)
+        def native_single(r, b):
+            charge = AMPLIFICATION * max(0, r + 2 * b - 1) + ROW_FEE
+            return margin(r + b, charge)
 
-        least = min(margin(composite), margin(native_packed, ROW_FEE),
-                    native_single(rlo), native_single(rhi))
+        least = min(margin(composite),
+                    *(native_single(r, b) for r in (rlo, rhi)
+                      for b in (LARGE_PRIME, PRIME_CAP)))
         positive(f'forced-mark saving for delta in [{dlo}, {dhi}]', least)
         minimum = min(minimum, least)
-    print(f'9z <= {length}: exponent {1 + excess}, interval margin >= {minimum}')
+    print(f'9z <= {length}: exponent {1 + excess}, tiny/large-prime margin >= {minimum}')
 
 
 def check_target_comparison():
@@ -108,6 +125,6 @@ def check_target_comparison():
 if __name__ == '__main__':
     check_j_upper(9 * Q('.09862'), Q('.03945'))
     check_j_upper(9 * Q('.0987'), Q('.03970'))
-    verify(Q('.09862'), Q('.02814'))
-    verify(Q('.0987'), Q('.02838'))
+    verify(Q('.09862'), Q('.02694'))
+    verify(Q('.0987'), Q('.02718'))
     check_target_comparison()

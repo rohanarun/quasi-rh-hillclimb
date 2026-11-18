@@ -86,6 +86,8 @@ $$
 $$
 The first term is at most $s+o(1)$. For the other use $p\le s/7$ and $2a\le5(1+a)/14$, exactly $a\le5/23$. The latter quantity is at most $5s/7+b+\kappa+o(1)$ by the dual support. Thus $M\le s+b+\kappa+o(1)$, proving the asserted aggregate. The negative Gauss orientation conjugates this entire character. The same proof may be applied after any restriction on $(w_0,v)$, so this sector combines with the preceding two by taking disjoint subsets. [Primitive Hecke conductor sieve, Lemma 2.2](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/background-type1.tex#L175-L232)
 
+For the genuine uncolored coefficients the [second Poisson calculation](short-inverse-dual-dilation.md) also removes every frequency through a smooth norm cutoff at $U^{.3478}$, rising to $U^{.4688}$ for coprime column norms.
+
 [Exact exponent comparisons](short_inverse.py) · [Application to the physical denominator](rational-short-inverse.md)
 
 Prepared with OpenAI Codex assistance.

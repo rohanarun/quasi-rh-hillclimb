@@ -81,6 +81,18 @@ def verify():
         if name in ("inverse tangent", "ordinary tangent", "amplified long inverse"):
             gap *= physical_guard / delta
         positive(name+" physical denominator margin", gap - 10*eta)
+    signed_gap = (F("1.12796") / 3 - 3 * physical_guard) / 8 - F(7, 5) * 4 * physical_guard
+    positive("signed detector principal-sector saving", signed_gap - F(".0468"))
+    conductor_gain = (F("1.12796") / 3 - 3 * physical_guard) / 8 - 4 * physical_guard
+    positive("equal rational norm cross-term saving", conductor_gain - F(".0468"))
+    positive("negative power on small primitive quotient conductors",
+             conductor_gain - F(9, 16) * F(".08"))
+    positive("primitive quotient conductors at width .44",
+             F(".201") + conductor_gain - F(9, 16) * F(".44"))
+    positive("projected cross terms fit the physical row budget",
+             d0 * (F("1.12796") - 2 * physical_guard) - 2 * eta - F(".201"))
+    positive("signed detector separates its inverse cutoff from the short arc",
+             tlo / 3 - 6 * physical_guard)
     positive("left contour damping", d0/2 - F(".10") - d1/4)
     positive("right contour stays in the mass theorem", 1 - (1+d1)/2 - F(".28"))
     positive("lower excluded length saves on the physical integral", F(".10")*F("8e-7") - 3*eta/4)

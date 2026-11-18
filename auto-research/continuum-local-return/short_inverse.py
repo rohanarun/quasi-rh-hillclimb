@@ -9,6 +9,31 @@ def check(name, condition):
     print(name, "OK")
 
 
+def check_joint_density(width, opposite, target):
+    center = Q(".24")
+    norm_bin = (75 + 20 * center) / (130 - 32 * center)
+    norm_derivative = Q(5000) / (130 - 32 * center)**2
+    value = center * (width - opposite) - 10 * center / (15 - 6 * center)
+    value -= (1 - norm_bin) * opposite / 2
+    slope = width - opposite - Q(150) / (15 - 6 * center)**2
+    slope += opposite * norm_derivative / 2
+    curvature = -Q(1800, 15**3) + opposite * Q(320000, 2 * 106**3)
+    check(f"two zero bins at opposite width {opposite}",
+          curvature < -Q(1, 2) and value + slope**2 < target)
+
+
+def check_rational_moment(width, order, opposite, target):
+    count_weight = 1 - Q(1, 2 * order)
+    residual = width - opposite
+    correction = max(0, opposite - Q(1, 2 * order))
+    allowance = target + opposite / 2 - correction
+    # Square the positive sides of the inequality for count_weight * J.
+    left = 15 * residual + 10 * count_weight - 6 * allowance
+    check(f"rational norm moment of order {2 * order} at opposite width {opposite}",
+          residual > 2 * count_weight / 3 and allowance > 0 and
+          left > 0 and left**2 < 600 * count_weight * residual)
+
+
 def verify():
     eta = Q("1e-7")
     density = Q(".425")
@@ -99,6 +124,43 @@ def verify():
           2 * h_all < 5 * genuine_residual / 7)
     check("sixth-power-free dual frequencies at the stronger cutoff",
           (2 * Q(".33783") - genuine_residual) / 6 < Q(".000287"))
+    # After the second Poisson transform the excess is
+    # (sqrt(15*s) - sqrt(10*H))_+^2 / 6, where H is the new row exponent.
+    dilation = Q("1.466")
+    radicand_bound = 15 + 10 * dilation - 6 * Q(".000289") / high_column
+    check("dilated density price below the requested margin",
+          0 < radicand_bound and radicand_bound**2 < 600 * dilation)
+    for name, ratio, total_cut, coprime_cut in (
+        ("natural", Q(3, 2), Q(".3369"), Q(".4389")),
+        ("target", dilation, Q(".3478"), Q(".4688")),
+    ):
+        for scope, width, cutoff in (
+            ("all residual pairs", genuine_residual, total_cut),
+            ("coprime column norms", low_column, coprime_cut),
+        ):
+            check(f"{name} second Poisson cutoff for {scope}",
+                  min(2 * width - 1, (2 - ratio) * width) > cutoff)
+    check("unmarked density on a full ball pays the sixth-power sum",
+          6 * (1 - Q(5, 7)) > 1)
+    for opposite, allowed_excess in ((Q(".1000"), Q(".00029")), (Q(".101"), Q(0))):
+        residual = high_column - opposite
+        allowance = allowed_excess + opposite / 8
+        # Equivalent to (sqrt(15*residual) - sqrt(10))**2 < 6*allowance.
+        left = 15 * residual + 10 - 6 * allowance
+        check(f"opposite common primes at width {opposite}",
+              residual > Q(2, 3) and left > 0 and left**2 < 600 * residual)
+    check("exceptional rational norm and global ordinary saving",
+          Q(1, 6) + 3 * high_column / 4 < 1 - high_column / 8)
+    check_joint_density(high_column, Q(".08679"), Q(".000286646"))
+    check_joint_density(high_column, Q(".08749"), -Q(".000002951"))
+    for order, opposite, target in (
+        (7, ".06929", ".00029"), (7, ".06964", "0"), (7, ".075", "0"),
+        (6, ".075", "0"), (6, ".08749", "0"), (6, ".101", "0"),
+    ):
+        check_rational_moment(high_column, order, Q(opposite), Q(target))
+    check("small rational norm cores and sixth-power sum",
+          Q(4, 7) > Q(1, 6) and
+          Q(1, 6) + Q(5, 12) * Q(".01") + 3 * high_column / 4 < 1)
     for e in range(1, 12):
         for i in range(13):
             for j in range(13):

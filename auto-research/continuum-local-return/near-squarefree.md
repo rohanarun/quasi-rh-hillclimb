@@ -68,6 +68,6 @@ Here $H$ is the bound on the original external heights. The exact sum is real by
 
 One exact parametrization exhibits the coprime squarefree variables. Write $c=k^2 f$, $c'=k'^2 f'$ with $k=K(c)$, $k'=K(c')$ and set $g=(f,f')$. Remove from $f/g,f'/g$ their parts $e,e'$ supported on $kk'g$. Then $c=k^2 g e r$, $c'=k'^2g e' r'$ with $r,r'$ coprime squarefree and $(rr',kk'g)=1$. Here $Nk,Nk'<U^\gamma$, $Ng<U^\kappa$, and $e,e'$ divide $\operatorname{rad}(kk'g)$. Keep the exact restrictions in (3), the coefficients $\lambda_{k^2ger},\lambda_{k'^2ge'r'}$, the row’s coprimality with $g$, and the sextic phases from the frozen factors. This specifies the original signed sum with two coprime squarefree residual ideals.
 
-On the all-element measure, Poisson summation and the cubic and ordinary character large sieves already bound three explicit ranges of the dual frequency in (3). [Dual frequency ranges and the remaining signed estimate](dual-marked-frequencies.md).
+On the all-element measure, Poisson summation and the cubic and ordinary character large sieves already bound explicit ranges of the dual frequency in (3), including every powerful ideal and every frequency of norm at most $U^{.46252}$. [Dual frequency ranges and the remaining signed estimate](dual-marked-frequencies.md).
 
 Run `python3 -OB auto-research/continuum-local-return/column_divisors.py` for the rational comparisons and finite checks of the divisor identities. Prepared with OpenAI Codex assistance.

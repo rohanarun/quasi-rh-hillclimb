@@ -63,6 +63,15 @@ def divisor_identities():
         require("primitive-conductor mass",
                 i + j - conductor <= 2 * (i // 2 + j // 2 + min(i % 2, j % 2)))
         require("puncture size", 2 * (i + j > 0 and not conductor) <= i + j - conductor)
+    for exponent in range(128):
+        exact_one = int(exponent == 1)
+        odd_powerful = int(exponent >= 3 and exponent % 2 == 1)
+        root_exponent = (exponent - exact_one - 3 * odd_powerful) // 2
+        sixth_power, cubic_residue = divmod(root_exponent, 3)
+        require("frequency factorization", exponent == exact_one + 3 * odd_powerful +
+                2 * cubic_residue + 6 * sixth_power)
+    require("ramification in the combined row character",
+            {(2 * i + 3 * j) % 6 for i in range(3) for j in range(2)} == set(range(6)))
     print("OK local allocations, square parts, common divisors and conductor valuations")
 
 
@@ -106,6 +115,36 @@ def exponent_checks():
     require("powerful sixth-power-free frequency", dual_top / 2 < hecke_radical)
     require("unshortened sextic sieve expense", 1 + (3 * length_low - 2) / 6 > F("1.1286"))
     print("OK dual cutoff, cubic group lengths, small frequencies and primitive conductors")
+
+    single_primes = F(".0748")
+    sixth_switch = F(".0743")
+    extra_width = F(".0000055")
+    frozen_count = 2 * gamma + kappa
+    strict_saving = F("1e-6")
+    width_low = length_low - 2 * n_high
+    require("prime slots for a short first group",
+            width_low > sixth_switch + extra_width + mesh)
+    require("short group volume", extra_width > frozen_count + mesh + strict_saving)
+    group_cost = 2 * (extra_width + mesh) + frozen_count + strict_saving
+    require("joint primitive conductor sieve", dual_top + single_primes + group_cost < length_low)
+
+    require("all small dual norms by a joint conductor sieve",
+            2 * hecke_radical + group_cost < length_low)
+    require("small dual norms with a large sixth power",
+            hecke_radical - 5 * sixth_switch < low_frequency)
+
+    # The two original groups have lengths within one slot of ell / 2.
+    require("dual root fits below the balanced group", dual_top / 2 < length_low / 2 - mesh)
+    require("cubic sieve first term",
+            dual_top / 2 + single_primes / 2 - 2 * sixth_switch +
+            mesh + frozen_count + strict_saving < length_low / 2)
+    require("cubic sieve second term",
+            (dual_top + 2 * single_primes - 3 * sixth_switch + 4 * mesh) / 3 +
+            frozen_count + strict_saving < length_low / 3)
+    require("cubic sieve third term",
+            (dual_top + 2 * single_primes + 4 * mesh) / 3 - sixth_switch +
+            frozen_count + strict_saving < length_low / 3)
+    print("OK powerful frequencies and exact-valuation-one product through U^.0748, all dual norms through U^.46252")
 
     s = F(1537, 1625)
     d = (F(463, 250) + s) / 2

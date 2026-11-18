@@ -13,7 +13,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
 | Best audited here | **Re s > 20649/23600 = 7/8 − 1/23600** |
 | Best Lean-verified on this line | Re s > 139999/160000 = 7/8 − 1/160000 (τ = 1/40000, `lean-tau/`); the Lean proof caps τ near 2.965·10⁻⁵ |
-| Best certified (final section only) | σ₀ = **4374785349/5000000000 = 0.8749570698**, submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12); [independently replayed with Node BigInt](auto-research/track-a-independent-replay.md). No new point is claimed by the replay. |
+| Best recorded explicit Track A certificate (final section only) | **35286435714595391/40329333783993290**, the minimum for reduced boundary denominators below 2⁶³. [Height rule, exact certificate and audit scope](auto-research/track-a-farey.md). |
 | Audited default point | ℓ = 2953/17700 (= 1/6 + 1/5900), h = 405989/500000 |
 | Edge of the frozen architecture | σ₀ ≈ 7/8 − 4.293·10⁻⁵ (ℓ ≈ 1/6 + 1.7172·10⁻⁴) |
 | Exact obstruction in the frozen budget | Every feasible point requires σ₀ > (1507 − 2√921)/1653; [algebra checked against the budget](auto-research/track-a-near-edge.md), matching the prior report in issue #4 |
@@ -51,12 +51,10 @@ where E_* is the high exponent at d = h with the balanced row count R_*. The cod
 
 ### Track A: parameter hill-climbing (small gains, easy to verify)
 
-The remaining room is **less than 10⁻¹² in σ₀**, by an exact obstruction checked in `auto-research/edge_certificate.py`. For ℓ = 1/6 + 1/N with N > 0, feasibility requires N > 2910 + 96√921 ≈ 5823.406253854755. Thus N = 5824 is the best possible integer choice; the current record uses rational N = 1250000000/214651. To claim any remaining room:
-The [exact limit proof](auto-research/track-a-exact-limit.md) establishes the sharp infimum of this frozen budget, including arbitrarily close strictly feasible rational points. The concurrent [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies the best integer choice `N=5824`, its necessary obstruction, and a fractional-N point less than 10⁻¹² above the limit. Check its current status before starting another search. The search recipe below starts from the historical main-branch certificate; do not report those submitted points as new.
-The near-edge point submitted in [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) is already within 10⁻¹² of the frozen-budget obstruction. The [independent Node replay](auto-research/track-a-independent-replay.md) checks it against the same formulas without Python or SymPy. Check current submissions before searching; the original integer-search recipe below starts from the historical N=5826 certificate, and the submitted N=5824 and fractional-N points must not be claimed again as new.
+The [exact limit proof](auto-research/track-a-exact-limit.md) gives the strict infimum σ* = (1507 − 2√921)/1653. The [rational height rule](auto-research/track-a-farey.md) realizes every rational σ in (σ*, 7/8] in the frozen budget. The recorded width above σ* is now less than 2.7 × 10⁻³⁶. PR #12 supplied the optimal integer N = 5824 and the earlier fractional-N certificate within 10⁻¹². Both historical points have an [independent Node replay](auto-research/track-a-independent-replay.md).
 
-1. Pick rational N between 2910 + 96√921 and 1250000000/214651, and rational h near 0.8119602997.
-2. Run `python certify.py N h --maxdepth 34`. Every side constraint must print `OK`, and the adaptive endpoint and denominator must print `True`.
+1. To seek a smaller explicit witness, select a rational σ strictly between σ* and 35286435714595391/40329333783993290. Its denominator must exceed 2⁶³−1. Set ℓ = 4(11/12 − σ), h = (1015 + 5869ℓ)/2456, and N = 1/(ℓ − 1/6).
+2. Run `python certify.py N h --maxdepth 160`. Every side constraint must print `OK`, and the adaptive endpoint and denominator must print `True`.
 3. If the Bernstein bisection gives up (prints `False`) close to the edge, raise `--maxdepth`, or subdivide more cleverly. A `False` is not a disproof.
 4. Record the result (see "Reporting" below).
 
@@ -115,7 +113,7 @@ Append one row to `auto-research/results.md` and open a pull request:
 ```
 pip install numpy scipy sympy
 python certify.py                   # audited baseline
-python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate (PR #12)
+python auto-research/certify_track_a_farey.py # denominator-bounded optimum and rational height rule
 python auto-research/edge_certificate.py # exact frozen-budget obstruction and near-edge certificate
 python auto-research/hillclimb.py   # Track A
 python auto-research/whatif.py --alpha 0.75 --cap 1.5   # Track B

@@ -82,6 +82,11 @@ def verify():
     general_mean = 1 + max(Q(0), (3 * high_column - 2) / 6, (5 * high_column - 3) / 18)
     check("full upper bound for arbitrary short-label coefficients",
           general_mean == Q(66649, 60000) < Q("1.110817"))
+    physical_capacity = (Q(".49995") * (1 + 2 * Q(".05805911")) +
+                         (1 - Q(".5") * (1 + 2 * Q(".07599620"))) * 2 * Q("1.12796") / 3)
+    check("unmarked density moment-order obstruction on the physical rectangle",
+          physical_capacity == Q(".876842854921") and
+          Q(".425") * (physical_capacity - 10 / (15 - 6 * Q(".4267"))) > Q(".031"))
     genuine_gcd = Q(".2040")
     genuine_residual = low_column - genuine_gcd
     h_all = Q(".24069")

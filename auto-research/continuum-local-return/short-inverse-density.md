@@ -40,6 +40,14 @@ $$
 $$
 The dyadic and finite bin choices, floor width and preliminary losses fit into any prescribed $U^\epsilon$. This proves (1). The height parameters and bumps may vary rowwise in the buffered pointwise product, subject to the uniform source conditions.
 
+### Limit of the unmarked density calculation
+
+Changing the moment order in (1) cannot supply the missing physical count. For any total width $L$ covered by (1), use the lower bound $U^{\delta L}$ on the squared product of saturated factors, even granting zero loss in that bound. Markov's inequality with (1) gives exponent $1+J(L)-\delta L$. The definition of $J$ and the arithmetic-geometric mean calculation above give
+$$
+ 1+J(L)-\delta L\ge 1-\delta C(\delta).
+$$
+The original critical count has exponent $R=1-\delta C_{\rm phys}$, where $C_{\rm phys}=p(1+2g_0)+(1-p(1+2g_1))2t_0/3$. On the [physical rectangle](short-physical-inverse.md) its lower bound from $t_0>1.12796$ is $.876842854921$, whereas $C(\delta)\le 10/(15-6(.4267))$. Using $\delta\ge.425$ therefore gives $1-\delta C(\delta)>R+.031$ throughout the rectangle. This lower bound concerns the exponent furnished by the density calculation, for any number of saturated factors in its range. The arithmetic correlation of the actual factors could give a stronger estimate.
+
 ### Dense pairs with a common rational norm divisor
 
 For the original ninth-power column $C$, the signed sector with $\gcd_{\mathbb Z}(NC,NC')\ge U^{.2040}$ costs $O_\epsilon(U^{1.000288+\epsilon})$ in the complete smooth all-element square. The assertion also holds if all columns are required to have rational-squarefree norm (and exclude the finitely many additional rational primes). Take $P_k$ to be the subpolynomial on $k\mid NC$. The mixed differences of each rational-prime threshold applied to the nine ideal-coordinate valuations express this as a sum of $\tau(k)^{O(1)}$ coordinate divisibilities $d_j\mid n_j$ with $D=\prod Nd_j\ge k$. At a split prime use the threshold on the sum of the eighteen nonnegative valuations, whose mixed differences are supported on total exponent between $e$ and $e+17$ when $p^e\Vert k$. At inert primes each ideal valuation counts twice for rational norm, so the threshold is $\lceil e/2\rceil$ on their sum. The sum of absolute coefficients is a fixed power of $\tau(k)$. In a nonempty term each $d_j$ is squarefree as an ideal. Extract $d_j$, retaining its row phase, the coprimality of the remaining inverse variable to $d_j$, and the normalization $D^{-1/2}$. Products with $k\ge U^{.2040}$ have remaining total exponent at most $9(.0987)-.2040=.6843+O(1/\log U)$. If any scale is below one but has support, rescale to one at fixed dilation. Formula (1) now gives

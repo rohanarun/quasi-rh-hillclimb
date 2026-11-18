@@ -5,7 +5,7 @@ $$
  \sum_{u\in\mathcal C}|P_u(n,v)S_u(y,t)|^2
  \ll_\epsilon U^{1-q(W_P+W_S)+\epsilon}(1+|v|+|t|+H)^J.       \tag{1}
 $$
-Here $H$ bounds the fixed external heights, $q=\delta p$ is the masked prime gain, and $W_P,W_S$ are the respective marked widths defined below. An improvement of $8\cdot10^{-6}$ in the exponent of (1) would suffice throughout the remaining physical window. A second sufficient estimate requires cancellation only in the expansion of extra prime factors of total width $3\cdot10^{-5}$. Both improvements remain open. They concern the physical mass in the return. [Reflected numerator window](marked-window.md) · [Denominator witness and its localization](short-physical-inverse.md#localization-by-the-exact-inverse-identity)
+Here $H$ bounds the fixed external heights, $q=\delta p$ is the masked prime gain, and $W_P,W_S$ are the respective marked widths defined below. An improvement of $8\cdot10^{-6}$ in the exponent of (1) would suffice throughout the remaining physical window. A second sufficient estimate requires cancellation only in the expansion of extra prime factors of total width $3\cdot10^{-5}$. The grouped two-coordinate estimate gives a proposed proof of the first saving. Its two-character transfer and application to the physical integral are described separately. The signed estimate on the extra factors remains open. [Grouped estimate](asymmetric-root.md). [Reflected numerator window](marked-window.md) · [Denominator witness and its localization](short-physical-inverse.md#localization-by-the-exact-inverse-identity)
 
 ## Witnesses on the same row
 

@@ -2,6 +2,12 @@
 
 The target is $t=17466917/20000000=0.87334585$. Let $\theta_*$ be Joseph Bebel's exact contact from tracker #143. Its published isolating interval gives $6\cdot10^{-9}<\theta_*-t<7\cdot10^{-9}$. At $t$ a Lean proof reduces all-moduli nonvanishing to a local count of actual detector rows. That count remains open. The reduction includes the finite return, the source estimates and the passage from the Hecke zero supremum to Dirichlet characters. The proposed zero-free interpretation assumes the preprint's 7/8 theorem. [Tracker #143](https://github.com/GTimG/QuasiRiemannTracker/pull/143) · [pinned parameter enclosures and return proof](https://github.com/GTimG/QuasiRiemannTracker/tree/c74d855c3bdfceeee059501aea76c8b1627b9abd/submissions/2026-11-13-continuum-exact-contact/src/Candidate/Local/Qrh/TwoSlot/AnchorContinuum).
 
+## A direct estimate of the physical integral
+
+The reflected numerator and an ordinary factor from the physical denominator have lengths near $U^{.42506}$ and $U^{.376}$ on the same rows. Keeping both lengths through a selected Poisson step permits an additional prime width of $21/10^6$ over the mean of the separate fourth-moment allowances. The resulting terminal inequalities have spare exponent greater than $7\cdot10^{-6}$, and the final physical comparison has spare exponent greater than $5.47\cdot10^{-7}$. Lean checks these real inequalities, the scalar conditions for the selected step and the propagation of both length bounds in the native grouped source. The physical denominator can carry an additional finite ray character on its own ideal. Lean now verifies several two-character identities and a direct all-moduli return from the literal finite integral. Connecting the signed source to its grouped terminal estimates and using them to establish the integral bound remain open. [Terminal estimate](../continuum-local-return/asymmetric-child.md) · [Grouped source and physical return](../continuum-local-return/asymmetric-root.md) · [Two-character transfer](../continuum-local-return/marked-ray-transfer.md) · [Lean checks](../continuum-local-return/lean/README.md).
+
+For the full-class count, a zero-mean test on the ordinary detector permits comparison at two row scales. After removing the rational square and common-divisor contributions, a signed bound of $U^{1+4\cdot10^{-7}+\epsilon}$ in the interval $U^{2c-1-36\cdot10^{-6}}\ll Nh\ll U^{2c-1}$ would suffice. Here $c$ is the column log length. Cancellation in this interval is open. [Detector comparison and exact cutoffs](../continuum-local-return/detector-ordinary-frequency-band.md).
+
 ## The estimate to prove
 
 Keep #143's stationary conductor $h$, tangent line, and exact marked count $R=N/J$. Set $u_0=T/J$ for its detector cutoff, $s=10^{-6}$, $G=6\cdot10^{-7}$, and $U=Z^D$. Use the actual common-witness fibres selected at cutoff $u_0+s$. For every allowed loss $\epsilon>0$, the new input is
@@ -139,6 +145,8 @@ python -OB auto-research/continuum-local-return/short_inverse.py
 python -OB auto-research/continuum-local-return/marked_density.py
 python -OB auto-research/continuum-local-return/long_inverse_band.py
 python -OB auto-research/continuum-local-return/asymmetric_ordinary.py
+python -OB auto-research/continuum-local-return/asymmetric-child.py
+python -OB auto-research/continuum-local-return/detector_ordinary_frequency_band.py
 ```
 
 The first replay checks the input's SHA-256 before parsing its rational data. The remaining scripts check the reductions for the physical rows. The separate Lean replay applies the five edge bounds to the actual conductor-dependent branch list, propagates the saved count through the source and proves both the Hecke and Dirichlet conclusions conditional on that count. The current proved zero-free boundary remains tracker #143. [Lean replay and dependency provenance](../continuum-local-return/lean/README.md).

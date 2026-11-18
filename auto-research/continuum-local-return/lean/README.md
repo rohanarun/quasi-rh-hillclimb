@@ -2,7 +2,30 @@
 
 Assume the preprint's 7/8 theorem and the inputs used in tracker #143. The new theorem `TargetReturn.dirichlet` reduces nonvanishing for every positive modulus on $\Re s>17466917/20000000$, with the principal pole excluded, to one additional arithmetic premise, `TargetReturn.SavedClassCount`. Proving that premise remains open. [Endpoint and exact premise](TargetReturn.lean) · [Tracker #143](https://github.com/GTimG/QuasiRiemannTracker/pull/143).
 
-The premise concerns a nonempty, full amplitude class of actual detector rows. Put $U=Z^D$, $\delta=2a-1$ and $p=q/\delta$ with $q$ the full class mean. Write $R$ for the exact marked-window exponent. The estimate is $\#\mathcal C\le CC_0 U^{R(\delta,p)-10^{-7}+\sigma}$ on the following ranges.
+## Direct return from the physical integral
+
+The theorem `AsymmetricPhysicalReturn.dirichlet` proves a second conditional endpoint at the same target. Its premise `atTarget` bounds a sum of the original finite central cube integrals over the intermediate physical rows. The integrals retain the reciprocal of the denominator character. One source and a positive saving are chosen before the character. Each character may choose its own positive height exponent before the grid size and buffered row selections. The proof uses the tracker's transport to the principal signal, its low estimate, and continuation to all positive Dirichlet moduli. The estimate `atTarget` is open. [Exact definitions and endpoint](AsymmetricPhysicalReturn.lean) · [Proposed integral estimate](../asymmetric-root.md).
+
+| Part of the proposed integral estimate | Verified scope |
+|---|---|
+| Terminal exponents | Continuous real inequalities over the critical window, including cofactor counting and the final physical saving. [AsymmetricTerminal.lean](AsymmetricTerminal.lean) |
+| Selected Poisson step | The tracker's scalar `StepGates`, including all allowed frozen widths and reference reserve $.01$. [AsymmetricStep.lean](AsymmetricStep.lean) |
+| Two ordinary lengths | Separate upper bounds at the native physical and reference rectangles, their first allocations, the native positive child and dyadic common profiles. [AsymmetricPacked.lean](AsymmetricPacked.lean) |
+| Two ordinary characters | Exact cube-free restoration with both multipliers, including overlapping prime labels. Exact common-column and signed divisor-allocation identities, keeping both residual weights. [Root restoration](AsymmetricRayKernel.lean) · [Columns and allocations](AsymmetricRayColumn.lean) |
+| Exceptional and packed rows | The full cube-free marked exceptional rectangle saves $L^{-\alpha}$ for every $0\le\alpha<2/3$, with an inducing witness and conductor cap for each ordinary character. The packed calculation retains the punctures, the two ordinary heights and the moving sublattice. [Exceptional rectangles](AsymmetricRayException.lean) · [Packed labels](AsymmetricRayLabel.lean) |
+| Grouped positive estimate | Fourier separation bounds a weighted sum on sublattices by the energy on one common ball. On a class with a known pair of length bounds, its input can be restricted to the original or reference rectangle. [Two-character grouping](AsymmetricRayGroup.lean) · [Restriction by shape](AsymmetricRayShape.lean) |
+
+The connected inequality from a signed raw source to those terminal energies remains to be proved. In particular, control of one shortened rectangle must survive the common-ideal and divisor weights when all labels are summed. The scalar price here is an allowance for these two physical shapes. The corresponding uniform theorem over *all* shapes with the same total length would require additional estimates. [Source comparison and unresolved implication](../marked-ray-transfer.md).
+
+For a fresh compilation and kernel replay, use Lean 4.34.1 and the compiled imports from tracker revision `c74d855c3bdfceeee059501aea76c8b1627b9abd`. Run from this directory. The script also verifies the axiom report for each listed public declaration. It uses the unmodified tracker imports for the direct return.
+
+```sh
+bash replay_asymmetric.sh /path/to/challenge-project /path/to/compiled/tracker/lean
+```
+
+## Return from a saved detector count
+
+The full-count premise concerns a nonempty, full amplitude class of actual detector rows. Put $U=Z^D$, $\delta=2a-1$ and $p=q/\delta$ with $q$ the full class mean. Write $R$ for the exact marked-window exponent. The estimate is $\#\mathcal C\le CC_0 U^{R(\delta,p)-10^{-7}+\sigma}$ on the following ranges.
 
 | Quantity | Required range |
 |---|---|

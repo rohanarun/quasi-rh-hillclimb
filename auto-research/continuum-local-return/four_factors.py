@@ -78,6 +78,34 @@ def verify():
     cmin = p0*(1+2*g0lo)+klo*blo
     upper_price = 1+d1*(2*(bhi+delta)-cmin)
     positive("two-inverse price upper bound", F(32,25)-upper_price)
+    # Opening a square on the buffered rows saves delta_density * log_U(W)
+    # on pairs whose column gcd exceeds W. Use the correlated formula for R.
+    mixed_upper = (1+5*thi)/6 + 2*d1*delta
+    inverse_upper = F(1, 6) + (F(5, 6)+d1/3)*thi + 2*d1*delta
+    positive("mixed large-gcd tail below its moment price",
+             F(553, 500) - (mixed_upper - d0/250) - reserve)
+    positive("two-inverse large-gcd tail below its moment price",
+             F(63, 50) - (inverse_upper - d0/50) - reserve)
+    positive("small-gcd square lower bound on selected shifted rows",
+             d0*gamma - 2*eta)
+    xmax = bhi+delta
+    for name, s, smax, ymin, saving, cutoff, core, price in [
+        ("mixed", tlo-18*delta-gamma, thi+2*delta,
+         mlo-9*delta-gamma, F(".375"), F(".81"), F(".07"), F(553, 500)),
+        ("two-inverse", 2*(blo-9*delta)-gamma, 2*xmax,
+         blo-9*delta-gamma, F(".500"), F("1.11"), F(".49"), F(63, 50)),
+    ]:
+        positive(name+" column exponent above one", s-1)
+        positive(name+" arbitrary-vector coprime exponent above the price",
+                 F(1, 3)+F(5, 6)*s-price)
+        positive(name+" Gauss correlation saving", min(ymin, s/3)-saving)
+        positive(name+" projected row moment",
+                 price-(F(1, 3)+F(5, 6)*smax+F(4, 25)-saving)-reserve)
+        sieve = max(1, cutoff, F(5, 6)+cutoff/3, F(1, 3)+5*cutoff/6)
+        positive(name+" complete square large-gcd margin", price-sieve-reserve)
+        small_core = F(5, 6)*(1+core)+max(0, xmax-2*cutoff/3)
+        positive(name+" complete Poisson small-core margin", price-small_core-reserve)
+    positive("all column exponents below two", 2-2*(bhi+delta))
     print("two-inverse price lies between 63/50 + 1/250 and 32/25")
 
 

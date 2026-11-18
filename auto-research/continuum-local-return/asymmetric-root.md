@@ -64,7 +64,21 @@ The tuple weights, active-column support and additional fixed-inducing rows are 
 
 ### Remaining estimate for a retained block
 
-Fix the restored physical source, a pair of first common ideals $C,D$, the inactive local choices $E$, and a retained frequency block $\mathbf n$ with dyadic scale at least $1/2$. The missing estimate is the version of Sil and Bebel's `BlockData` for this source with $\omega_1,\omega_2$ on its two ordinary coordinates. It needs the diagonal and off-diagonal bounds on *both* sides with the paired normalization, uniformly before summing $C,D,E,\mathbf n$. In the first artificial-divisor sum the factor $\omega_1(D_1)\omega_2(D_2)$ must still multiply the signed term when balanced Cauchy is applied. Taking absolute values of each allocation separately there can lose the required divisor saving. The root can be charged only after the two bounds have been put back into the first retained block. The two separate ordinary ceilings then suffice at the grouped positive classes. [Exact native block statement and consumer][blockdata] · [Retained-block summation][first]
+Fix the restored physical source, a pair of first common ideals $C,D$, the inactive local choices $E$, and a retained frequency block $\mathbf n$ with dyadic scale at least $1/2$. The missing estimate is the version of Sil and Bebel's `BlockData` for this source with $\omega_1,\omega_2$ on its two ordinary coordinates. It needs the diagonal and off-diagonal bounds on *both* sides with the paired normalization, uniformly before summing $C,D,E,\mathbf n$. On a fixed allocation the extracted factor is $\omega_1(D_1)\omega_2(D_2)$. Cauchy over the finitely many allocations is permitted with the native subpower multiplicity. The remaining ideal terms still have to be collected into the two signed residual columns before applying the second Poisson bound. A pointwise comparison of an absolute decorated column with the absolute undecorated column can fail through cancellation. The root can be charged only after the two bounds have been put back into the first retained block. The two separate ordinary ceilings then suffice at the grouped positive classes. [Exact native block statement and consumer][blockdata] · [Retained-block summation][first]
+
+More precisely, write $E_{i,u}^{\omega}(v)$ for the positive raw energy of side $i=L,R$ at height $v$ with squarefree artificial divisor $u$ and both ordinary multipliers. Use the right-hand ray inverse and reflected row from the paired transform. It suffices to bound the product
+$$
+ \left(\sup_v {\sum_u E_{L,u}^{\omega}(v)\over(1+|v|)^{2J}}\right)
+ \left(\sup_v {\sum_u E_{R,u}^{\omega}(v)\over(1+|v|)^{2J}}\right)
+ \ \le\ B_L B_R
+$$
+at the two native side budgets $B_L,B_R$ for each retained block and ray pair, with the allowed uniform profile constants and arbitrarily small power losses. Lean now proves the balanced comparison on the actual signed decorated block, including the native $256$ ray-projector factor and the two opposite column pools. [Verified first-block inequality](lean/AsymmetricRayFirst.lean). The divisor sum here has no additional weight $1/Nu$. The second divisor price comes from the coefficients *inside* the estimate. A proof for an individual allocated row in terms of its separated leaves is given in the [paid divisor transfer](paid-divisor-transfer.md). In the tracker's notation the outstanding nonexceptional bound on one side is
+$$
+ \mathrm{splitLabel}_{\omega}(t)
+ \ll \#\mathrm{box}(M)\,(\mathrm{vol}/c_{\rm low})\,M_m\,
+       \mathrm{gAmp}\,U^{A-c+q_C+\epsilon}(1+|t|)^{2J}.
+$$
+Here the left side is the off-diagonal sum over the actual residual labels with the two ordinary multipliers. In this display $M$ indexes the finite dyadic box. The box size, volume ratio, multiplicity $M_m$, and profile control $\mathrm{gAmp}$ are those of the native grouped side. Replacing that left side by a single leaf estimate would omit precisely the reassembly whose price is at issue. [Paired raw-energy comparison][balanced]
 
 ## Return to the physical integral
 
@@ -96,3 +110,5 @@ Prepared with OpenAI Codex assistance, building on the OpenAI preprint and work 
 [continuation]: https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex#L16374-L16460
 
 [blockdata]: https://github.com/GTimG/QuasiRiemannTracker/blob/c74d855c3bdfceeee059501aea76c8b1627b9abd/submissions/2026-11-13-continuum-exact-contact/src/Candidate/Local/Qrh/TwoSlot/AnchorExtension/Library/MarkedAnchor/Ordinary/Second/Provider.lean#L61-L105
+
+[balanced]: https://github.com/GTimG/QuasiRiemannTracker/blob/c74d855c3bdfceeee059501aea76c8b1627b9abd/submissions/2026-10-26-sil-density-split/src/Submissions/sil_density_split_20261026/CubeFree/Second/Concrete.lean#L116-L141

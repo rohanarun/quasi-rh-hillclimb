@@ -11,7 +11,7 @@ The 5 October 2026 companion preprint in the same repository proves 11/12 only, 
 > ```
 > pip install numpy scipy sympy
 > python certify.py                             # verify the audited baseline
-> python certify.py 1250000000/214651 8119602997/10000000000 --maxdepth 34 # best Track A certificate
+> python auto-research/certify_track_a_farey.py # optimal Track A witness for boundary denominators below 2^63
 > python auto-research/hillclimb.py             # Track A: search and certify (ℓ, h)
 > python auto-research/whatif.py --alpha 0.75   # Track B: what would a better input buy?
 > ```
@@ -178,7 +178,7 @@ below 13/15.
 ## Main structural facts
 
 1. **Closed form of the boundary.** With l_x = 1 + ℓ − h and M + ℓ = 1, the low estimate Z^{l_x/2 + b/12} and the Mellin exponent C(s) = l_x/2 + s − 1 + h/6 meet at **σ₀ = 11/12 − ℓ/4** (h cancels). Part I (ℓ = 0) gives 11/12, and the preprint's ℓ = 1/6 gives 7/8.
-2. **The frozen Track A limit is exact.** With plain capacity 2/9, strictly feasible boundaries have infimum **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, which is not attained. The [global limiting certificate and strict-feasibility proof](auto-research/track-a-exact-limit.md) establish sharpness on the whole adaptive rectangle with all twelve side constraints. The formula was already reported in [issue #4](https://github.com/rohanarun/quasi-rh-hillclimb/issues/4); [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies a rational point within 10⁻¹². This is a limit of the frozen budget, not a new zero-free theorem.
+2. **The frozen Track A limit is exact.** With plain capacity 2/9, strictly feasible boundaries have infimum **(1507 − 2√921)/1653 ≈ 0.87495706979916874**, which is not attained. The [global limiting certificate and strict-feasibility proof](auto-research/track-a-exact-limit.md) establish sharpness on the whole adaptive rectangle with all twelve side constraints. The formula was already reported in [issue #4](https://github.com/rohanarun/quasi-rh-hillclimb/issues/4); [PR #12](https://github.com/rohanarun/quasi-rh-hillclimb/pull/12) supplies a rational point within 10⁻¹². The [rational height rule and Farey certificate](auto-research/track-a-farey.md) give the smallest feasible rational boundary of denominator below 2⁶³, **35286435714595391/40329333783993290**, less than 2.7 × 10⁻³⁶ above the limit. Liu previously proved nonvanishing above the exact algebraic limit.
 3. **Freeing M requires a low-side loss.** The [general completed-row bound](auto-research/completed-row-geometry.md) permits ρ = M + ℓ − 1 of either sign, with low allowance L = ρ₊/2 + (5ℓ − 1 − 2ρ)₊/8. The corrected boundary is σ₀ = 5/6 + M/12 − ℓ/6 + L. With the existing row counts and this allowance, nonzero ρ strictly worsens the high exponent at the same boundary. An exact comparison gives a positive penalty above the known frozen-budget obstruction; improving the underlying norm estimate remains open.
 4. **Exact floor-bin obstructions.** Keep the detector floor at 51/100, its count exponent R = 1, the worst allowed q = 1/100, and the probe scale relations. Regardless of improvements to other row counts:
    - the original low estimate and b > 0 force σ₀ > 167/192 ≈ 0.869792;
@@ -235,7 +235,7 @@ Contributions from humans and agents are welcome. See [CONTRIBUTING.md](CONTRIBU
 - `leverage.py`: sensitivity to the amplification slope and the plain capacity.
 - `auto-research/certify_side_constraint_limits.py`: exact limits from the retained floor-bin and intermediate-row checks under ideal adaptive counts; [proof and source audit](auto-research/side-constraint-limits.md).
 - `AUDIT_SUMMARY.md`, `audit/*.md`: the line-by-line audit.
-- `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The best Track A final-section certificate is 4374785349/5000000000, less than 10⁻¹² above the exact frozen-budget obstruction; see [evidence and audit scope](auto-research/track-a-near-edge.md), `edge_certificate.py`, and `auto-research/results.md`.
+- `auto-research.md`, `auto-research/`: instructions and tools for agents continuing the hill-climb (`hillclimb.py`, `whatif.py`, `results.md`, `proposals/`). The [rational height rule, Farey certificate and audit scope](auto-research/track-a-farey.md) give the best recorded Track A finite witness. All earlier certificates remain in `auto-research/results.md`.
 - `auto-research/plot_improvement.py`: regenerates `graphs/improvement.png`.
 - `auto-research/plot_pr8_comparison.py`: regenerates the independently verified comparison chart; see the [verification report](verification/pr8-independent/README.md).
 - `auto-research/update_readme_progress.py`: regenerates the upstream contributor/verification table from the retained tracker snapshot.

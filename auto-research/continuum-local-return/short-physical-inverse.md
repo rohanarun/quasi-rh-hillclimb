@@ -98,4 +98,6 @@ For this sufficient estimate one can enlarge the positive row measure to all Eis
 
 Thus a single signed sum over the complementary pairs, evaluated with the nine actual short-inverse coefficients and the smooth all-element row kernel, suffices at price $U^{1.00029+\epsilon}$. This use of the enlarged positive row measure requires no auxiliary prime filter. The sum on the complementary pairs is open. [Rational cutoff checks](four_factors.py)
 
+The [all-element product estimates](short-product-moments.md) prove the full twelfth moment at the required length and the eighteenth moment at shorter scales. For nine actual inverse factors the [unmarked density estimate](short-inverse-density.md) gives a full eighteenth moment of exponent $1.03970$ at the required length. A further reduction at the target price restricts each column to a [squarefree rational norm](rational-short-inverse.md) at nine slightly shortened scales. The square of this polynomial admits [dual-frequency estimates](short-inverse-frequencies.md), including all powerful dual ideals. Independently, [differencing a nonprincipal pair of the original columns](short-inverse-pairs.md) bounds any graph with at most $U^{.2041}$ partners per column for the complete row kernel.
+
 Prepared with OpenAI Codex assistance.

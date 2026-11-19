@@ -105,14 +105,19 @@ if __name__ == "__main__":
     print("check paper point: sigma0(1/6) =", Fr(11, 12) - Fr(1, 6)/4)
     F, J = adaptive_poly(ell, h)
     box = ((sp.Rational(0), sp.Rational(5, 6)), (sp.Rational(0), sp.Rational(1, 2)))
-    print("J>0 on box:", prove_positive(J, box, maxdepth=args.maxdepth))
+    j_ok = prove_positive(J, box, maxdepth=args.maxdepth)
+    print("J>0 on box:", j_ok)
     log = []
     ok = prove_positive(F, box, maxdepth=args.maxdepth, log=log)
     print(f"adaptive endpoint F>0 on delta in [0,5/6], y in [0,1/2]: {ok}  ({len(log)} boxes)")
     if ok:
         print(f"   smallest Bernstein lower bound among boxes: {float(min(b for _, b in log)):.3e}")
-    for k, v in side_constraints(ell, h).items():
+    sides = side_constraints(ell, h)
+    for k, v in sides.items():
         print(f"   {'OK ' if v > 0 else 'FAIL'} {k}: {v} (~{float(v):.5f})")
     # sanity: the paper's own point must certify
     F0, _ = adaptive_poly(Fr(1, 6), Fr(13, 16))
-    print("paper point (1/6, 13/16) certifies:", prove_positive(F0, box, maxdepth=args.maxdepth))
+    paper_ok = prove_positive(F0, box, maxdepth=args.maxdepth)
+    print("paper point (1/6, 13/16) certifies:", paper_ok)
+    if not (j_ok and ok and paper_ok and all(v > 0 for v in sides.values())):
+        raise SystemExit(1)

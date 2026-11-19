@@ -21,7 +21,8 @@ def snap(x, digits):
 def crossing(f, a, b, digits=6):
     """Lean crossingSearch: point where f turns nonnegative, rounded UP to `digits`."""
     fa, fb = f(a), f(b)
-    assert fa < 0 <= fb, (float(fa), float(fb))
+    if not (fa < 0 <= fb):
+        raise ValueError(f"crossing requires fa < 0 <= fb, got {(float(fa), float(fb))}")
     lo, hi = Q(a), Q(b)
     for _ in range(60):
         mid = snap((lo + hi) / 2, digits + 6)

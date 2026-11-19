@@ -27,7 +27,8 @@ class I:
             return
         lo = Q(lo)
         hi = lo if hi is None else Q(hi)
-        assert lo <= hi
+        if lo > hi:
+            raise ValueError(f"interval endpoints out of order: {lo} > {hi}")
         self.lo, self.hi = lo, hi
 
     @staticmethod
@@ -64,11 +65,13 @@ class I:
         return I._c(o) / self
 
     def __pow__(self, n):
-        assert n == 2
+        if n != 2:
+            raise ValueError(f"only interval squaring (n == 2) is supported, got {n!r}")
         return self * self
 
     def sqrt(self):
-        assert self.lo >= 0
+        if self.lo < 0:
+            raise ValueError(f"interval sqrt requires nonnegative lower bound, got {self.lo}")
         return I(_sqrt_down(self.lo), _sqrt_up(self.hi))
 
     def __lt__(self, o):   # certainly less

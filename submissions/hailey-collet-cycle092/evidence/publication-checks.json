@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-11-19",
+  "canonical_proof_bytes": 1044288,
+  "canonical_proof_sha256": "c1876d05ad7376e6b9ecf91005b6be496d061b304cfd598adb54ac2603f87247",
+  "all_13_selected_original_files_hash_verified": true,
+  "fresh_exact_arithmetic_replay": {
+    "status": "PASS",
+    "supplied_files_checked": 13,
+    "arithmetic_recomputed": true,
+    "replayed_receipt_byte_identical": true,
+    "receipt_sha256": "4f00c210d430a6e8a543b93758725e83d9b6a509e41c3d1784a5e0f8bdb2ad66",
+    "c": "63333603/500000000",
+    "theta": "436666397/500000000",
+    "unpaid": 0,
+    "coverage_digest": "cc3300be47edd831ba7b5be899710a8a7478d0cb58d735849653cc39e07097cc",
+    "elapsed_seconds": 29.808,
+    "scope": "Exact finite arithmetic and source binding; analytic foundations are as stated in the manuscript. No Lean or kernel verification."
+  },
+  "formalization_status": "in progress; will be submitted to GTimG/QuasiRiemannTracker when complete",
+  "new_lean_or_kernel_verification": false,
+  "scope": "Local publication checks and fresh finite arithmetic replay; inherited analytic foundations remain as stated in the manuscript.",
+  "repository_baseline": {
+    "exit_code": 0,
+    "adaptive_endpoint": true,
+    "all_reported_checks": "OK",
+    "qualification": "Reproduces the repository existing default parameter point only, not the submitted new endpoint."
+  }
+}

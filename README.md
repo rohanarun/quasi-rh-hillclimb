@@ -16,6 +16,10 @@ The 5 October 2026 companion preprint in the same repository proves 11/12 only, 
 > python auto-research/whatif.py --alpha 0.75   # Track B: what would a better input buy?
 > ```
 
+## Cycle092 written record: θ = 0.873332794
+
+Hailey Collet ([@HaileyStormC](https://x.com/HaileyStormC)) submits [the Cycle092 written proof and exact finite-return certificates](submissions/hailey-collet-cycle092/README.md) for **c = 63333603/500000000 = 0.126667206**, or strict **Re(s) > 436666397/500000000 = 0.873332794**, for all ordinary Dirichlet characters at each fixed positive presented modulus, with the principal pole excluded. Theorem Q retains the stated OpenAI/A–P and adopted H6/SN9 foundations. **Formalization is in progress and will be submitted to [GTimG/QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker) when complete.** This is a written submission, separate from the independently Lean-verified entries below. See the [structural writeup](auto-research/proposals/2026-11-19-cycle092-ordinary-record.md) for exact scope and evidence. [QRH-Catalogue](https://github.com/HaileyStorm/QRH-Catalogue) is the accompanying source-backed mathematical and formal-component catalogue.
+
 ## Progress and Lean verification
 
 **Update, 29 October 2026:** the merged tracker record is **θ = 43693617/50000000 = 0.87387234**, ArviFoxy's [marked density chain, tracker #94](https://github.com/GTimG/QuasiRiemannTracker/pull/94). Before it, the tracker merged SovereignSteak's four companion proofs of this repo's PRs [#32](auto-research/density-wide/README.md) (0.8739465, tracker #89), [#34](auto-research/density-refined/README.md) (0.8739461, tracker #90), [#36](auto-research/density-batch/README.md) (0.873945166, tracker #91) and [#39](auto-research/density-ten/README.md) (2731076077/3125000000 = 0.87394434464, tracker #92), and Joseph Bebel's 0.87393379 (tracker #93). Joseph Bebel's [tracker #95](https://github.com/GTimG/QuasiRiemannTracker/pull/95) (0.8738357) is open and not yet admitted. All statements concern nonvanishing for **Re(s) > θ**, principal pole excluded; lower θ is stronger. The dated reports below retain their historical scope.

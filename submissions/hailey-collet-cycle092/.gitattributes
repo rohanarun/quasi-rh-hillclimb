@@ -1,0 +1,2 @@
+# Preserve supplied proof, arithmetic scripts and certificate hash identities.
+packet/** -text

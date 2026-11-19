@@ -1,0 +1,18 @@
+ell = 2953/17700  h = 405989/500000  ->  sigma0 = 20649/23600 = 7/8 - 1/23600  (~0.87495763)
+check paper point: sigma0(1/6) = 7/8
+J>0 on box: True
+adaptive endpoint F>0 on delta in [0,5/6], y in [0,1/2]: True  (18 boxes)
+   smallest Bernstein lower bound among boxes: 1.543e-04
+   OK  floor bin (delta0=1/50, R=1, q=delta0/2): -E(h): 519949/88500000 (~0.00588)
+   OK  delta=5/6 endpoint (R=1-delta, q=delta/2): -E(h): 12800053/177000000 (~0.07232)
+   OK  intermediate d=1/2, delta=1/50: 1901868451/8850000000 (~0.21490)
+   OK  intermediate d=1/2, delta=5/6: 71041819/26550000000 (~0.00268)
+   OK  small rows: -(h(z0-1/6) - l_y/2 + 2 d_min): 115654733/1475000000 (~0.07841)
+   OK  prime supply at d=h: ell/h - 7/37: 43284629/2658821961 (~0.01628)
+   OK  extension room: 5 ell - h (paper uses zeta < 5ell-h): 1964947/88500000 (~0.02220)
+   OK  b > 0: 1820851/14750000 (~0.12345)
+   OK  low side: l_x - ell: 94011/500000 (~0.18802)
+   OK  low side: l_y - ell - 11b/6: 1883923/22125000 (~0.08515)
+   OK  low side: M - 2 ell = 1 - 3 ell: 2947/5900 (~0.49949)
+   OK  high margin coefficient 1 - h/4: 1594011/2000000 (~0.79701)
+paper point (1/6, 13/16) certifies: True

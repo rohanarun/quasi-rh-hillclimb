@@ -8,6 +8,7 @@ See the README's [PR progress and Lean verification tables](README.md#progress-a
 
 | | value |
 |---|---|
+| Cycle092 submitted written endpoint | **θ = 436666397/500000000 = 0.873332794**, c = 63333603/500000000; [proof and exact finite certificates](submissions/hailey-collet-cycle092/README.md), on retained OpenAI/A–P and adopted H6/SN9 foundations; **formalization in progress, to be submitted to GTimG when complete** |
 | Independently Lean-verified source-moment endpoint | θ = 8747729897/10000000000; [fresh 6,471-module build, canonical endpoint, standard-axiom audit and fresh Lean kernel replay passed](verification/pr8-independent/README.md); tracker three-kernel admission pending |
 | Conditional role-specific source/return proposal | theta = 87477137/100000000 = .87477137; [exact finite replay and handoff](auto-research/role-source-caps/README.md); new analytic integration and Lean endpoint pending; not an accepted record |
 | Preprint bound (OpenAI, 30 Sep 2026) | Re s > 7/8 |
